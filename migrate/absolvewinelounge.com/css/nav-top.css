@@ -1,0 +1,90 @@
+/* CSS Document */
+
+
+	#navbar
+	{
+
+		background:#F9F9F9;
+		height:64px;
+		width:896px;
+		float:left;
+
+margin: 0 auto;
+text-align: center;
+	}
+	
+	#navbuttons
+	{
+margin-top: 18px;
+margin-left: 132px;
+background: #FFA;
+text-align: center;
+	}
+
+
+	#nav-top, #nav-top ul { /* all lists */
+	padding: 0;
+margin: 0 auto;
+text-align: center;
+	list-style: none;
+	/*line-height: 1;*/
+	float: left;
+	z-index: 5;
+	background:#F9F9F9;
+	}
+
+
+	
+	
+	
+	#nav-top a {
+		font-family: 'Montserrat Alternates', cursive;
+		/*font-family: 'Alex Brush', cursive;*/
+		display: block;
+		text-decoration: none;
+		background:#F9F9F9;
+		/*color:#FEC10A;*/
+		color:#000;
+		/*width: 115px;*/
+		font-weight: normal;
+		font-size: 17px;
+		margin: 5px 50px 5px 5px;
+		text-align: left;
+	}
+	
+	
+	#nav-top a.selected {
+		color:#ffc955;
+	}
+	
+	
+	#nav-top li { /* all list items */
+		float: left;
+		/*width: 125px; *//* width needed or else Opera goes nuts */
+		background:#F9F9F9;
+	}
+	
+	#nav-top li ul { /* second-level lists */
+		position: absolute;
+		margin-left:20px;
+		width: 125px;
+		left: -999px; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	}
+	
+	#nav-top li:hover ul, #nav-top li.sfhover ul { /* lists nested under hovered list items */
+		
+		
+		left: auto;
+		
+	}
+
+
+	#nav-top li a:hover {
+		color : #ffc955;
+	}
+	
+	#nav-top li.nav-top-tab
+	{
+		background:#F9F9F9;
+		
+	}
