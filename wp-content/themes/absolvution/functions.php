@@ -87,7 +87,7 @@ add_action( 'init', 'absolvution_editor_style' );
  */
 function absolvution_enqueue_scripts() {
 	wp_enqueue_style( 'absolvution-styles', get_stylesheet_uri(), array(), '1.0' );
-	wp_enqueue_script( 'default-scripts', get_template_directory_uri() . '/grunt/bower_components/require.js', array(), '1.0', true );
+	wp_enqueue_script( 'default-scripts', get_template_directory_uri() . '/grunt/dist/require.js', array(), '1.0', true );
   if ( is_singular() ) {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'comment-reply' );
