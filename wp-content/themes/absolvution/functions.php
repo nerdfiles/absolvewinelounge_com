@@ -81,13 +81,19 @@ add_action( 'init', 'absolvution_editor_style' );
 	Scripts and Styles
 \******************************************************************************/
 
+define( 'AMD', true );
 /**
  * Enqueue absolvution scripts
  * @return void
  */
 function absolvution_enqueue_scripts() {
 	wp_enqueue_style( 'absolvution-styles', get_stylesheet_uri(), array(), '1.0' );
-	wp_enqueue_script( 'default-scripts', get_template_directory_uri() . '/grunt/dist/require.js', array(), '1.0', true );
+  // @TODO If local, on-demand!
+  if ( AMD == true ) {
+    wp_enqueue_script( 'require.js', get_template_directory_uri() . '/grunt/bower_components/requirejs/require.js', array(), '1.0', true );
+  } else {
+    wp_enqueue_script( 'require.js', get_template_directory_uri() . '/grunt/dist/require.js', array(), '1.0', true );
+  }
   if ( is_singular() ) {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'comment-reply' );
@@ -95,12 +101,23 @@ function absolvution_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'absolvution_enqueue_scripts' );
 
-add_filter('script_loader_src','add_id_to_script',10,2);
+/**
+ * For On-demand Architecture
+ */
+add_filter('script_loader_src', 'add_id_to_script', 10, 2);
 function add_id_to_script($src, $handle) {
+  $theme = 'absolvution';
+  $gruntBase = './wp-content/themes/' . $theme . '/grunt';
+  $config = $gruntBase . '/app/config';
   if ($handle != 'require.js') {
     return $src;
   }
-  return $src."' id='requirejs' data-main='../app/config'";
+  if ( AMD == true )
+    echo '<script id="requirejs" type="text/javascript" src="' . esc_url( $src ) . '" data-main="' . $config . '"></script>' . PHP_EOL;
+  else
+    echo '<script id="requirejs" type="text/javascript" src="' . esc_url( $src ) . '"></script>' . PHP_EOL;
+
+  return false;
 }
 
 /******************************************************************************\
