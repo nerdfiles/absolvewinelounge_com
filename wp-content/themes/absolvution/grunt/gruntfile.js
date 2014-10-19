@@ -38,6 +38,19 @@ module.exports = function(grunt) {
 			}
 		},
 
+    coffee: {
+      src: {
+        options: {
+          sourceMap: false
+        },
+        files: {
+          './app/config.js': './app/config.coffee', // 1:1 compile
+          './app/main.js': './app/main.coffee' // 1:1 compile
+          //'path/to/another.js': ['path/to/sources/*.coffee', 'path/to/more/*.coffee'] // concat then compile into single file
+        }
+      }
+    },
+
     concat: {
       options: {
         banner: '<%= banner %>',
@@ -72,18 +85,18 @@ module.exports = function(grunt) {
     },
 		// chech our JS
 		jshint: {
-			all: [
-				'gruntfile.js',
-				'../js/script.js'
-			],
       /*
-       *gruntfile: {
-       *  options: {
-       *    jshintrc: '.jshintrc'
-       *  },
-       *  src: 'gruntfile.js'
-       *},
+			 *all: [
+			 *  'gruntfile.js',
+			 *  '../js/script.js'
+			 *],
        */
+      gruntfile: {
+        options: {
+          jshintrc: '.jshintrc'
+        },
+        src: 'gruntfile.js'
+      },
       app: {
         options: {
           jshintrc: 'app/.jshintrc'
@@ -107,27 +120,29 @@ module.exports = function(grunt) {
 					'notify:scss'
 				]
 			},
-			js: {
-				files: [
-					'<%= jshint.all %>'
-				],
-				tasks: [
-					'jshint',
-					'uglify',
-					'notify:js'
-				]
-			},
+      /*
+			 *js: {
+			 *  files: [
+			 *    '<%= jshint.all %>'
+			 *  ],
+			 *  tasks: [
+			 *    'jshint',
+			 *    'uglify',
+			 *    'notify:js'
+			 *  ]
+			 *},
+       */
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
+        tasks: ['jshint:gruntfile', 'notify:js']
       },
       app: {
         files: '<%= jshint.app.src %>',
-        tasks: ['jshint:app', 'qunit']
+        tasks: ['coffee', 'jshint:app', 'qunit', 'notify:js']
       },
       test: {
         files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'qunit']
+        tasks: ['coffee', 'jshint:test', 'qunit', 'notify:js']
       },
     },
 
@@ -231,6 +246,7 @@ module.exports = function(grunt) {
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-qunit');
@@ -245,6 +261,7 @@ module.exports = function(grunt) {
 
   // Development Suite
   grunt.registerTask('default', [
+    'coffee',
     'jshint',
     'qunit',
     'clean',
@@ -258,6 +275,7 @@ module.exports = function(grunt) {
   // Production Suite
   grunt.registerTask('dist', function() {
     grunt.task.run([
+      'coffee',
       'jshint',
       'uglify',
       'sass:prod',

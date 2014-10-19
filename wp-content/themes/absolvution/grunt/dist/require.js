@@ -9191,30 +9191,26 @@ return jQuery;
 
 }));
 
-// to depend on a bower installed component:
-// define(['bower_components/componentName/file'])
+(function() {
+  define('main',["jquery"], function($) {
+    $("body").append("jQuery " + $.fn.jquery + " loaded!");
+  });
 
-define('main',["jquery"], function($) {
-  $('body').append('jQuery ' + $.fn.jquery + ' loaded!');
-});
+}).call(this);
 
-require.config({
-  // make components more sensible
-  // expose jquery 
-  paths: {
-    "components": "../bower_components",
-    "jquery": "../bower_components/jquery/dist/jquery"
+(function() {
+  require.config({
+    paths: {
+      components: "../bower_components",
+      jquery: "../bower_components/jquery/dist/jquery"
+    }
+  });
+
+  if (!window.requireTestMode) {
+    require(["main"], function() {});
   }
-});
 
-if (!window.requireTestMode) {
-  require(['main'], function(){ });
-}
+}).call(this);
 
-
-
-
-
-;
 define("config", function(){});
 
