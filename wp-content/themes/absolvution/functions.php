@@ -96,11 +96,11 @@ function absolvution_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'absolvution_enqueue_scripts' );
 
 add_filter('script_loader_src','add_id_to_script',10,2);
-function add_id_to_script($src, $handle){
+function add_id_to_script($src, $handle) {
   if ($handle != 'require.js') {
     return $src;
   }
-  return $src."' id='requirejs' data-main='../app/config';
+  return $src."' id='requirejs' data-main='../app/config'";
 }
 
 /******************************************************************************\
