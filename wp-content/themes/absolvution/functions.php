@@ -81,7 +81,27 @@ add_action( 'init', 'absolvution_editor_style' );
 	Scripts and Styles
 \******************************************************************************/
 
+/**
+ * There are multiple strategies for asynchronous module definition:
+ *
+ * 1. Source AMD (SAMD) with Static On-demand Resources
+ *    Preserves architecture in payload requests for resources, where modules
+ *    are unminified with comments.
+ * 2. Optimized AMD (OAMD; Recursive R.js) with Static On-demand Resources
+ *    Preserves architecture in payload requests for resources, but resources
+ *    are minified and potentially obfuscated.
+ * 3. Packaged AMD (R.js) - Single Package
+ *    Entire application is bundled as one package and marked commit-ish,
+ *    where R.js.
+ * 4. Route-based; see: https://gist.github.com/ajcrites/7380041,
+ *    angularAMD allows mapping of modules to "Module Controllers". Like
+ *    event-loading images under responsive @class namespacing, the
+ *    application would load JavaScript resources and namespaces based on URI
+ *    conditions, which would execute prior to @class-based hooks, as
+ *    mentioned above.
+ */
 define( 'AMD', true );
+
 /**
  * Enqueue absolvution scripts
  * @return void
