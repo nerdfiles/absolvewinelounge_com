@@ -1,50 +1,19 @@
 module.exports = function(grunt) {
 
-	grunt.initConfig({
+  // Project configuration.
+  grunt.initConfig({
 
-		pkg: grunt.file.readJSON('package.json'),
+    // Metadata.
+    pkg: grunt.file.readJSON('package.json'),
 
-		// chech our JS
-		jshint: {
-			options: {
-				"bitwise": true,
-				"browser": true,
-				"curly": true,
-				"eqeqeq": true,
-				"eqnull": true,
-				"esnext": true,
-				"immed": true,
-				"jquery": true,
-				"latedef": true,
-				"newcap": true,
-				"noarg": true,
-				"node": true,
-				"strict": false,
-				"trailing": true,
-				"undef": true,
-				"globals": {
-					"jQuery": true,
-					"alert": true
-				}
-			},
-			all: [
-				'gruntfile.js',
-				'../js/script.js'
-			]
-		},
+    banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+      '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
+      '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
+      '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
+      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+    // Task configuration.
 
-		// concat and minify our JS
-		uglify: {
-			dist: {
-				files: {
-					'../js/scripts.min.js': [
-						'../js/scripts.js'
-					]
-				}
-			}
-		},
-
-		// compile your sass
+    // compile your sass
 		sass: {
 			dev: {
 				options: {
@@ -69,6 +38,63 @@ module.exports = function(grunt) {
 			}
 		},
 
+    concat: {
+      options: {
+        banner: '<%= banner %>',
+        stripBanners: true
+      },
+      dist: {
+        src: ['bower_components/requirejs/require.js', '<%= concat.dist.dest %>'],
+        dest: 'dist/require.js'
+      },
+    },
+
+		// concat and minify our JS
+		uglify: {
+      options: {
+        banner: '<%= banner %>'
+      },
+			dist: {
+				files: {
+					'../js/scripts.min.js': [
+						'../js/scripts.js'
+					],
+          'dist/require.min.js': [
+            '<%= concat.dist.dest %>'
+          ]
+				}
+			}
+    },
+    qunit: {
+      files: ['test/**/*.html']
+    },
+		// chech our JS
+		jshint: {
+			all: [
+				'gruntfile.js',
+				'../js/script.js'
+			],
+      /*
+       *gruntfile: {
+       *  options: {
+       *    jshintrc: '.jshintrc'
+       *  },
+       *  src: 'gruntfile.js'
+       *},
+       */
+      app: {
+        options: {
+          jshintrc: 'app/.jshintrc'
+        },
+        src: ['app/**/*.js']
+      },
+      test: {
+        options: {
+          jshintrc: 'test/.jshintrc'
+        },
+        src: ['test/**/*.js']
+      },
+    },
 		// watch for changes
 		watch: {
 			scss: {
@@ -88,8 +114,31 @@ module.exports = function(grunt) {
 					'uglify',
 					'notify:js'
 				]
-			}
-		},
+			},
+      gruntfile: {
+        files: '<%= jshint.gruntfile.src %>',
+        tasks: ['jshint:gruntfile']
+      },
+      app: {
+        files: '<%= jshint.app.src %>',
+        tasks: ['jshint:app', 'qunit']
+      },
+      test: {
+        files: '<%= jshint.test.src %>',
+        tasks: ['jshint:test', 'qunit']
+      },
+    },
+
+    requirejs: {
+      compile: {
+        options: {
+          name: 'config',
+          mainConfigFile: 'app/config.js',
+          out: '<%= concat.dist.dest %>',
+          optimize: 'none'
+        }
+      }
+    },
 
 		// check your php
 		phpcs: {
@@ -124,6 +173,7 @@ module.exports = function(grunt) {
 		},
 
 		clean: {
+      files: ['dist'],
 			dist: {
 				src: ['../dist'],
 				options: {
@@ -146,30 +196,79 @@ module.exports = function(grunt) {
 					]
 				}
 			}
-		}
-	});
+		},
 
-	// Load NPM's via matchdep
-	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+    connect: {
+      development: {
+        options: {
+          keepalive: true,
+        }
+      },
+      production: {
+        options: {
+          keepalive: true,
+          port: 8000,
+          middleware: function(connect, options) {
+            return [
+              // rewrite requirejs to the compiled version
+              function(req, res, next) {
+                if (req.url === '/bower_components/requirejs/require.js') {
+                  req.url = '/dist/require.min.js';
+                }
+                next();
+              },
+              connect.static(options.base),
 
-	// Development task
-	grunt.registerTask('default', [
-		'jshint',
-		'uglify',
-		'sass:dev',
-		'sass:editorstyles'
-	]);
+            ];
+          }
+        }
+      }
+    }
 
-	// Production task
-	grunt.registerTask('dist', function() {
-		grunt.task.run([
-			'jshint',
-			'uglify',
-			'sass:prod',
-			'sass:editorstyles',
-			'clean:dist',
-			'copyto:dist',
-			'notify:dist'
-		]);
-	});
+  });
+
+  // These plugins provide necessary tasks.
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  // Load NPM's via matchdep
+  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+
+  // Development Suite
+  grunt.registerTask('default', [
+    'jshint',
+    'qunit',
+    'clean',
+    'requirejs',
+    'concat',
+    'uglify',
+    'sass:dev',
+    'sass:editorstyles'
+  ]);
+
+  // Production Suite
+  grunt.registerTask('dist', function() {
+    grunt.task.run([
+      'jshint',
+      'uglify',
+      'sass:prod',
+      'sass:editorstyles',
+      'clean:dist',
+      'copyto:dist',
+      'notify:dist'
+    ]);
+  });
+
+  // Review Suite
+  grunt.registerTask('preview', ['connect:development']);
+  grunt.registerTask('preview-live', ['default', 'connect:production']);
+
 };
+

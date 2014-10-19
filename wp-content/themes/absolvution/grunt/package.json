@@ -1,19 +1,34 @@
 {
-  "name": "grunt-absolvution",
-  "version": "0.0.1",
+  "name": "absolvution",
+  "description": "Absolve Wine Lounge with on-demand scripts.",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt qunit"
+  },
+  "author": {
+    "name": "nerdfiles",
+    "email": "hello@nerdfiles.net",
+    "url": "http://nerdfiles.net"
+  },
+  "licenses": [
+    {
+      "type": "WTFPL",
+      "url": "http://www.wtfpl.net/txt/copying/"
+    }
+  ],
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-watch": "~0.4.3",
-    "grunt-contrib-uglify": "~0.2.5",
-    "matchdep": "~0.1.2",
-    "grunt-sass": "~0.8.1",
-    "grunt-phpcs": "~0.2.1",
-    "grunt-contrib-jshint": "~0.7.2",
-    "grunt-notify": "~0.2.16",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-copy-to": "0.0.10",
-    "grunt-rm": "0.0.4",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-sass": "~0.6.0"
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-qunit": "*",
+    "grunt-contrib-requirejs": "*",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*"
   }
 }
