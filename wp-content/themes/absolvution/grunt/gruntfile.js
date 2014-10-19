@@ -5,6 +5,7 @@ module.exports = function(grunt) {
 
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
+    secret: grunt.file.readJSON('secret.json'),
 
     banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
@@ -157,6 +158,18 @@ module.exports = function(grunt) {
       }
     },
 
+    sshexec: {
+      test: {
+        command: 'cd $HOME/www/wp; git pull -u origin master',
+        options: {
+          host: '<%= secret.host %>',
+          username: '<%= secret.username %>',
+          password: '<%= secret.password %>',
+          port: 2222
+        }
+      }
+    },
+
 		// check your php
 		phpcs: {
 			application: {
@@ -269,7 +282,8 @@ module.exports = function(grunt) {
     'concat',
     'uglify',
     'sass:dev',
-    'sass:editorstyles'
+    'sass:editorstyles',
+    'sshexec'
   ]);
 
   // Production Suite

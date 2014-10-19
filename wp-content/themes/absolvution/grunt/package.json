@@ -30,6 +30,7 @@
     "grunt-contrib-requirejs": "*",
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*"
+    "grunt-contrib-watch": "*",
+    "grunt-ssh": "^0.12.0"
   }
 }
