@@ -1,175 +1,127 @@
+'use strict';
+
 module.exports = function(grunt) {
 
-	grunt.initConfig({
+  // Project configuration.
+  grunt.initConfig({
+    // Metadata.
+    pkg: grunt.file.readJSON('package.json'),
+    banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+      '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
+      '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
+      '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
+      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+    // Task configuration.
+    clean: {
+      files: ['dist']
+    },
+    concat: {
+      options: {
+        banner: '<%= banner %>',
+        stripBanners: true
+      },
+      dist: {
+        src: ['bower_components/requirejs/require.js', '<%= concat.dist.dest %>'],
+        dest: 'dist/require.js'
+      },
+    },
+    uglify: {
+      options: {
+        banner: '<%= banner %>'
+      },
+      dist: {
+        src: '<%= concat.dist.dest %>',
+        dest: 'dist/require.min.js'
+      },
+    },
+    qunit: {
+      files: ['test/**/*.html']
+    },
+    jshint: {
+      gruntfile: {
+        options: {
+          jshintrc: '.jshintrc'
+        },
+        src: 'Gruntfile.js'
+      },
+      app: {
+        options: {
+          jshintrc: 'app/.jshintrc'
+        },
+        src: ['app/**/*.js']
+      },
+      test: {
+        options: {
+          jshintrc: 'test/.jshintrc'
+        },
+        src: ['test/**/*.js']
+      },
+    },
+    watch: {
+      gruntfile: {
+        files: '<%= jshint.gruntfile.src %>',
+        tasks: ['jshint:gruntfile']
+      },
+      app: {
+        files: '<%= jshint.app.src %>',
+        tasks: ['jshint:app', 'qunit']
+      },
+      test: {
+        files: '<%= jshint.test.src %>',
+        tasks: ['jshint:test', 'qunit']
+      },
+    },
+    requirejs: {
+      compile: {
+        options: {
+          name: 'config',
+          mainConfigFile: 'app/config.js',
+          out: '<%= concat.dist.dest %>',
+          optimize: 'none'
+        }
+      }
+    },
+    connect: {
+      development: {
+        options: {
+          keepalive: true,
+        }
+      },
+      production: {
+        options: {
+          keepalive: true,
+          port: 8000,
+          middleware: function(connect, options) {
+            return [
+              // rewrite requirejs to the compiled version
+              function(req, res, next) {
+                if (req.url === '/bower_components/requirejs/require.js') {
+                  req.url = '/dist/require.min.js';
+                }
+                next();
+              },
+              connect.static(options.base),
 
-		pkg: grunt.file.readJSON('package.json'),
+            ];
+          }
+        }
+      }
+    }
+  });
 
-		// chech our JS
-		jshint: {
-			options: {
-				"bitwise": true,
-				"browser": true,
-				"curly": true,
-				"eqeqeq": true,
-				"eqnull": true,
-				"esnext": true,
-				"immed": true,
-				"jquery": true,
-				"latedef": true,
-				"newcap": true,
-				"noarg": true,
-				"node": true,
-				"strict": false,
-				"trailing": true,
-				"undef": true,
-				"globals": {
-					"jQuery": true,
-					"alert": true
-				}
-			},
-			all: [
-				'gruntfile.js',
-				'../js/script.js'
-			]
-		},
+  // These plugins provide necessary tasks.
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
-		// concat and minify our JS
-		uglify: {
-			dist: {
-				files: {
-					'../js/scripts.min.js': [
-						'../js/scripts.js'
-					]
-				}
-			}
-		},
+  // Default task.
+  grunt.registerTask('default', ['jshint', 'qunit', 'clean', 'requirejs', 'concat', 'uglify']);
+  grunt.registerTask('preview', ['connect:development']);
+  grunt.registerTask('preview-live', ['default', 'connect:production']);
 
-		// compile your sass
-		sass: {
-			dev: {
-				options: {
-					style: 'expanded'
-				},
-				src: ['../scss/style.scss'],
-				dest: '../style.css'
-			},
-			prod: {
-				options: {
-					style: 'compressed'
-				},
-				src: ['../scss/style.scss'],
-				dest: '../style.css'
-			},
-			editorstyles: {
-				options: {
-					style: 'expanded'
-				},
-				src: ['../scss/wp-editor-style.scss'],
-				dest: '../css/wp-editor-style.css'
-			}
-		},
-
-		// watch for changes
-		watch: {
-			scss: {
-				files: ['../scss/**/*.scss'],
-				tasks: [
-					'sass:dev',
-					'sass:editorstyles',
-					'notify:scss'
-				]
-			},
-			js: {
-				files: [
-					'<%= jshint.all %>'
-				],
-				tasks: [
-					'jshint',
-					'uglify',
-					'notify:js'
-				]
-			}
-		},
-
-		// check your php
-		phpcs: {
-			application: {
-				dir: '../*.php'
-			},
-			options: {
-				bin: '/usr/bin/phpcs'
-			}
-		},
-
-		// notify cross-OS
-		notify: {
-			scss: {
-				options: {
-					title: 'Grunt, grunt!',
-					message: 'SCSS is all gravy'
-				}
-			},
-			js: {
-				options: {
-					title: 'Grunt, grunt!',
-					message: 'JS is all good'
-				}
-			},
-			dist: {
-				options: {
-					title: 'Grunt, grunt!',
-					message: 'Theme ready for production'
-				}
-			}
-		},
-
-		clean: {
-			dist: {
-				src: ['../dist'],
-				options: {
-					force: true
-				}
-			}
-		},
-
-		copyto: {
-			dist: {
-				files: [
-					{cwd: '../', src: ['**/*'], dest: '../dist/'}
-				],
-				options: {
-					ignore: [
-						'../dist{,/**/*}',
-						'../doc{,/**/*}',
-						'../grunt{,/**/*}',
-						'../scss{,/**/*}'
-					]
-				}
-			}
-		}
-	});
-
-	// Load NPM's via matchdep
-	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-
-	// Development task
-	grunt.registerTask('default', [
-		'jshint',
-		'uglify',
-		'sass:dev',
-		'sass:editorstyles'
-	]);
-
-	// Production task
-	grunt.registerTask('dist', function() {
-		grunt.task.run([
-			'jshint',
-			'uglify',
-			'sass:prod',
-			'sass:editorstyles',
-			'clean:dist',
-			'copyto:dist',
-			'notify:dist'
-		]);
-	});
 };

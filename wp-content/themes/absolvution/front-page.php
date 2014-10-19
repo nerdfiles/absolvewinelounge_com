@@ -15,26 +15,26 @@ get_header(); ?>
 		endif; ?>
 	</div>
 
-	<section class="page-content primary" role="main">
+  <section
+    class="page-content primary"
+    role="main"
+  >
+
 		<?php
+
 			if ( have_posts() ) :
-
 				while ( have_posts() ) : the_post();
-
 					get_template_part( 'loop', get_post_format() );
-
 				endwhile;
 
 			else :
-
 				get_template_part( 'loop', 'empty' );
-
 			endif;
+
 		?>
+
 		<div class="pagination">
-
 			<?php get_template_part( 'template-part', 'pagination' ); ?>
-
 		</div>
 	</section>
 

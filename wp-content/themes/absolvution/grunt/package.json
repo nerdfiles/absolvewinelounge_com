@@ -1,19 +1,33 @@
 {
-  "name": "grunt-absolvution",
-  "version": "0.0.1",
+  "name": "absolvution",
+  "description": "Absolve Wine Lounge with on-demand scripts.",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt qunit"
+  },
+  "author": {
+    "name": "Author Name",
+    "email": "email@domain.com",
+    "url": "http://bower.io/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://mit-license.org"
+    }
+  ],
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-watch": "~0.4.3",
-    "grunt-contrib-uglify": "~0.2.5",
-    "matchdep": "~0.1.2",
-    "grunt-sass": "~0.8.1",
-    "grunt-phpcs": "~0.2.1",
-    "grunt-contrib-jshint": "~0.7.2",
-    "grunt-notify": "~0.2.16",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-copy-to": "0.0.10",
-    "grunt-rm": "0.0.4",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-sass": "~0.6.0"
+    "grunt": "~0.4.1",
+    "grunt-contrib-qunit": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-requirejs": "*",
+    "grunt-contrib-connect": "*"
   }
 }
