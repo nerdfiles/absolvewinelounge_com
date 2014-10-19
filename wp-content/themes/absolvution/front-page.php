@@ -9,11 +9,13 @@
 
 get_header(); ?>
 
-	<div class="home-widgets"><?php
-		if ( function_exists( 'dynamic_sidebar' ) ) :
-			dynamic_sidebar( 'home-sidebar' );
-		endif; ?>
-	</div>
+  <div class="home-widgets">
+    <ul class="inner"><?php
+      if ( function_exists( 'dynamic_sidebar' ) ) :
+        dynamic_sidebar( 'home-sidebar' );
+      endif;
+    ?></ul>
+  </div>
 
   <section
     class="page-content primary"

@@ -132,6 +132,10 @@ article {
 	Widgets
 \******************************************************************************/
 
+.home-widgets {
+  @include clearfix;
+}
+
 .page-content .widgets {
 	@include outer-container;
 
