@@ -133,7 +133,9 @@ article {
 \******************************************************************************/
 
 .home-widgets {
-  @include clearfix;
+  .inner {
+    @include clearfix;
+  }
 }
 
 .page-content .widgets {
