@@ -44,7 +44,11 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       dist: {
-        src: ['bower_components/requirejs/require.js', '<%= concat.dist.dest %>'],
+        src: [
+          '../js/scripts.js',
+          'bower_components/requirejs/require.js',
+          '<%= concat.dist.dest %>'
+        ],
         dest: 'dist/require.js'
       },
     },
@@ -56,9 +60,6 @@ module.exports = function(grunt) {
       },
 			dist: {
 				files: {
-					'../js/scripts.min.js': [
-						'../js/scripts.js'
-					],
           'dist/require.min.js': [
             '<%= concat.dist.dest %>'
           ]
