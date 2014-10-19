@@ -977,14 +977,14 @@ article:after {
 /******************************************************************************\
 	Widgets
 \******************************************************************************/
-.home-widgets {
+.home-widgets .inner {
   *zoom: 1;
 }
-.home-widgets:before, .home-widgets:after {
+.home-widgets .inner:before, .home-widgets .inner:after {
   content: " ";
   display: table;
 }
-.home-widgets:after {
+.home-widgets .inner:after {
   clear: both;
 }
 
