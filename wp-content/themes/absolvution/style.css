@@ -977,6 +977,17 @@ article:after {
 /******************************************************************************\
 	Widgets
 \******************************************************************************/
+.home-widgets {
+  *zoom: 1;
+}
+.home-widgets:before, .home-widgets:after {
+  content: " ";
+  display: table;
+}
+.home-widgets:after {
+  clear: both;
+}
+
 .page-content .widgets {
   *zoom: 1;
   max-width: 980px;
