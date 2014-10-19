@@ -45,8 +45,9 @@ module.exports = function(grunt) {
       },
       dist: {
         src: [
-          '../js/scripts.js',
-          'bower_components/requirejs/require.js',
+          //'../js/scripts.js',
+          // @TODO (AMD == true) ?
+          //'bower_components/requirejs/require.js',
           '<%= concat.dist.dest %>'
         ],
         dest: 'dist/require.js'
