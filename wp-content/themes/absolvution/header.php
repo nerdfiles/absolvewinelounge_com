@@ -52,22 +52,60 @@
         <?php endif; ?>
       >
 
-        <a class="logo" href="<?php echo home_url(); ?>" title="<?php bloginfo( 'name' ); ?>">
-          <h1 class="blog-name"><?php bloginfo( 'name' ); ?></h1>
-          <div class="blog-description"><?php bloginfo( 'description' ); ?></div>
-        </a>
+        <div class="site-banner">
+          <a class="logo" href="<?php echo home_url(); ?>" title="<?php bloginfo( 'name' ); ?>">
+            <h1 class="blog-name"><?php bloginfo( 'name' ); ?></h1>
+            <!--div class="blog-description"><?php bloginfo( 'description' ); ?></div-->
+          </a>
 
-        <div class="menu"><?php
+          <div class="menu"><?php
+            $nav_menu = wp_nav_menu(
+              array(
+                'container' => 'nav',
+                'container_class' => 'main-menu',
+                'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+                'theme_location' => 'main-menu',
+                'fallback_cb' => '__return_false',
+              )
+            ); ?>
+          </div>
+        </div>
 
-          $nav_menu = wp_nav_menu(
-            array(
-              'container' => 'nav',
-              'container_class' => 'main-menu',
-              'items_wrap' => '<ul class="%2$s">%3$s</ul>',
-              'theme_location' => 'main-menu',
-              'fallback_cb' => '__return_false',
-            )
-          ); ?>
+        <div class="site-twop">
+
+          <div class="site-meta">
+            <?php get_search_form(); ?>
+            <div class="menu"><?php
+              $meta_menu = wp_nav_menu(
+                array(
+                  'container' => 'nav',
+                  'container_class' => 'meta-menu',
+                  'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+                  'theme_location' => 'meta-menu',
+                  'fallback_cb' => '__return_false',
+                )
+              ); ?>
+            </div>
+          </div>
+
+          <div class="site-caro">
+            <div class="menu">
+              <div class="long-logo">
+                <div class="inner">
+                  <div class="placeholder">
+                    <span class="logo"></span>
+                  </div>
+                </div>
+              </div>
+              <nav class="caro-menu">
+                <ul class="menu">
+                  <?php
+                    echo absolvution_background_gen();
+                  ?>
+                </ul>
+              </nav>
+            </div>
+          </div>
 
         </div>
 

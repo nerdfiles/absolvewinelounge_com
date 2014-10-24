@@ -36,15 +36,22 @@
 		</nav>
 		<?php endif; ?>
 
+    <!--div class="comment-close">
+        <a href="#comments" class="fa fa-close fa-close-lg"></a>
+    </div-->
+
 		<ol class="comment-list">
+      <?php wp_list_comments( 'type=comment&callback=mytheme_comment' ); ?>
 			<?php
-				wp_list_comments(
-					array(
-						'style'       => 'ol',
-						'short_ping'  => true,
-						'avatar_size' => 34,
-					)
-				);
+        /*
+				 *wp_list_comments(
+				 *  array(
+				 *    'style'       => 'ol',
+				 *    'short_ping'  => true,
+				 *    'avatar_size' => 34,
+				 *  )
+				 *);
+         */
 			?>
 		</ol>
 

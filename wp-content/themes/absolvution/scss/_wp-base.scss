@@ -25,8 +25,39 @@
 	background: $color1;
 }
 
-.bypostauthor {
-	background: $color1;
+ol.comment-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  a {
+    color: #2b87c3;
+  }
+  position: relative;
+  li.bypostauthor {
+    /*background: $color1;*/
+    /*background-color: #111;*/
+    margin-top: 3em;
+    color: #f9f9f9;
+    @include transition (all 1.0s ease-in-out);
+    &:target {
+      @include span-columns(6);
+      @include shift(3);
+      background-color: #111;
+      position: fixed;
+      top: 0.1em;
+      left: 0;
+      @extend .fade-in;
+      @extend .animated;
+      z-index: 9001;
+    }
+    .comment-body {
+    }
+  }
+}
+
+.reply {
+  .comment-reply-link { color: #deb5e8; }
+  padding-left: $gutter;
 }
 
 .post-links {
@@ -101,15 +132,35 @@
 	color: $color1;
 	box-shadow: none;
 }
+/*
+ *#comments:not(:target) {
+ *  .comment-close {
+ *    display: block !important;
+ *    position: fixed;
+ *    top: 2em;
+ *    left: 50%;
+ *    width: 1em;
+ *    margin-left: -.5em;
+ *    height: 1em;
+ *    z-index: 9002;
+ *    a {
+ *      color: red;
+ *    }
+ *  }
+ *}
+ *body:not(:target) #comments .comment-close {
+ *  display: none !important;
+ *}
+ */
 
 .comments {
 	@include span-columns(10);
 	@include shift(1);
 	@include font-size(0.9);
+  color: #f9f9f9;
 
 	background-color: $color1;
 	margin-bottom: 3em;
-	padding: 2em;
 
 	ol {
 		list-style: none;
@@ -120,6 +171,9 @@
 
 .comment-body {
 	margin-bottom: 1.5em;
+  p {
+    padding-left: $gutter;
+  }
 }
 
 .children .comment-body {
@@ -127,25 +181,30 @@
 }
 
 .comment-author {
-	border-top: 0.1em solid $color2;
-	border-bottom: 0.1em solid $color2;
+	/*border-top: 0.1em solid $color2;*/
+	/*border-bottom: 0.1em solid $color2;*/
+	border-bottom: 0.1em solid #222;
 	text-align: center;
 	padding: 0.6em 0;
 	position:relative;
 
 	img {
 		position:absolute;
-		top: 0;
 		bottom:0;
-		left:0;
+		right:0;
 		height:100%;
 		width:auto;
 	}
 }
 
+ol.comment-list .comment-edit-link {
+  color: #deb5e8;
+}
+
 .byuser .comment-author {
 	/*background-color: $color3;*/
 	color: $color1;
+  color: #f9f9f9;
 
 	a {
 		color: $color1;
@@ -163,4 +222,91 @@
 	@include font-size(1.1);
 	text-align:center;
 	margin-top: 0;
+}
+
+.screen-reader-text {
+  position: absolute;
+  left: -9999px;
+}
+
+.comments {
+  a {
+    color: #deb5e8;
+  }
+  input,
+  textarea {
+    background: #111;
+    color: #f9f9f9;
+    &:focus {
+      outline: none;
+    }
+  }
+
+}
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+  @include span-columns(12);
+  label {
+    @include span-columns(2);
+  }
+  input[type="text"] {
+    @include span-columns(5);
+    box-shadow: none;
+  }
+}
+.comment #respond .comment-form-comment {
+  input,
+  textarea {
+    background-color: #333 !important;
+    box-shadow: none !important;
+    height: 5rem;
+  }
+  display: flex;
+  p {
+  }
+}
+
+.comment-form-comment {
+  label {
+    position: absolute;
+    left: -9999px;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  margin: 0;
+}
+
+.comment-reply-title {
+  @include span-columns(12);
+  @include pad(0 default);
+}
+
+.comment-form {
+  @include span-columns(12);
+  @include pad(0 default 2em);
+}
+
+.form-allowed-tags {
+  position: absolute;
+  left: -9999px;
+}
+.form-submit {
+  margin-bottom: 0;
+  input[type="submit"]#submit {
+    color: #f9f9f9;
+    background: transparent;
+    border: none;
+  }
+}
+
+.logged-in-as {
+
+}
+
+.comment-respond {
+  @include span-columns(12);
 }

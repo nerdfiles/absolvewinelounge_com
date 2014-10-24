@@ -22,22 +22,22 @@ get_header(); ?>
     role="main"
   >
 
-		<?php
+    <?php
 
-			if ( have_posts() ) :
-				while ( have_posts() ) : the_post();
-					get_template_part( 'loop', get_post_format() );
-				endwhile;
+      if ( have_posts() ) :
+        while ( have_posts() ) : the_post();
+          get_template_part( 'loop', get_post_format() );
+        endwhile;
+      else :
+        get_template_part( 'loop', 'empty' );
+      endif;
 
-			else :
-				get_template_part( 'loop', 'empty' );
-			endif;
+    ?>
 
-		?>
+    <div class="pagination">
+      <?php get_template_part( 'template-part', 'pagination' ); ?>
+    </div>
 
-		<div class="pagination">
-			<?php get_template_part( 'template-part', 'pagination' ); ?>
-		</div>
-	</section>
+  </section>
 
 <?php get_footer(); ?>

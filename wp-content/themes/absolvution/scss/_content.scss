@@ -51,10 +51,16 @@ article {
 	@include span-columns(10);
 	@include shift(1);
 
-	border-top: 0.03em solid $color2;
-	border-bottom: 0.03em solid $color2;
-	text-align: center;
+  /*
+	 *border-top: 0.03em solid $color2;
+	 *border-bottom: 0.03em solid $color2;
+   */
+	text-align: left;
 	margin-bottom: 0.2em;
+  font-family: $header-font;
+  font-size: 1.3rem;
+  padding: 0 0rem;
+  color: #f9f9f9;
 
 	&:first-child {
 		margin-top: 1em;
@@ -69,10 +75,14 @@ article {
 
 .post-meta {
 	@include span-columns(8);
-	@include shift(2);
+  @include shift(.25);
+  margin-top: -2em;
 
-	text-align: center;
+	text-align: left;
 	font-style: italic;
+  a {
+    color: #deb5e8;
+  }
 }
 
 .post-content {
@@ -95,15 +105,14 @@ article {
 	Front-page and archives
 \******************************************************************************/
 
-.home, .archive, .search, .author {
+.home, .page, .archive, .search, .author {
 
   .post-content {
-    @include span-columns(8);
-    @include shift(2);
+    @include span-columns(5);
     background: none;
     color: $color2;
     padding: 0;
-    text-align: center;
+    text-align: left;
   }
 
 }
@@ -115,7 +124,7 @@ article {
 
   ul {
     list-style: none;
-    text-align:center;
+    text-align: left;
     margin: 1em 0 0 0;
     padding: 0.6em 0;
     background: $color1;
@@ -185,5 +194,14 @@ article {
     padding-bottom: 0.25em;
 
     &:hover { border-bottom: 2px solid #fff; }
+  }
+}
+
+.page-template-default {
+  .page-content {
+    @include row();
+    .page {
+    }
+    .type-page { }
   }
 }
