@@ -4,12 +4,15 @@
 	position:relative;
 	height: 300px;
 	border-bottom: 3px solid $color2;
+  @include clearfix;
 }
 
 .custom-header {
-	position: absolute;
-	top:0;
-  left:0;
+  /*
+	 *position: absolute;
+	 *top:0;
+   *left:0;
+   */
 }
 
 .logo {
