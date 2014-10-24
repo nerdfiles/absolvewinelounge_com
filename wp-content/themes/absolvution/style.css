@@ -6353,7 +6353,7 @@ ol.comment-list li.bypostauthor:target:last-child {
   margin-top: 1em;
 }
 
-.widget {
+div:not(div#layout_page) .widget {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -6363,10 +6363,10 @@ ol.comment-list li.bypostauthor:target:last-child {
   padding: 10em 1.8em;
   position: relative;
 }
-.widget:last-child {
+div:not(div#layout_page) .widget:last-child {
   margin-right: 0;
 }
-.widget h2 {
+div:not(div#layout_page) .widget h2 {
   font-size: 17.6px;
   font-size: 1.1rem;
   text-align: center;
@@ -6374,18 +6374,18 @@ ol.comment-list li.bypostauthor:target:last-child {
   margin-bottom: 0.5em;
   border-bottom: 0.1em solid #efefef;
 }
-.widget ul {
+div:not(div#layout_page) .widget ul {
   padding-left: 1.6em;
 }
-.widget p {
+div:not(div#layout_page) .widget p {
   text-align: justify;
 }
 
-.widget:nth-child(3n) {
+div:not(div#layout_page) .widget:nth-child(3n) {
   margin-right: 0;
 }
 
-.widget:nth-child(3n+1) {
+div:not(div#layout_page) .widget:nth-child(3n+1) {
   clear: left;
 }
 

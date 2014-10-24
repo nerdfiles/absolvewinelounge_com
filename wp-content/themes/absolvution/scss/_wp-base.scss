@@ -80,7 +80,7 @@ ol.comment-list {
 	margin-top: 1em;
 }
 
-.widget {
+div:not(div#layout_page) .widget {
   @include span-columns(4);
   @include font-size(0.8);
   padding: 10em 1.8em;
@@ -103,11 +103,11 @@ ol.comment-list {
   }
 }
 
-.widget:nth-child(3n) {
+div:not(div#layout_page) .widget:nth-child(3n) {
 	@include omega();
 }
 
-.widget:nth-child(3n+1) {
+div:not(div#layout_page) .widget:nth-child(3n+1) {
 	clear: left;
 }
 
