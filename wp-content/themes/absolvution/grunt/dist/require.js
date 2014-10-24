@@ -9193,7 +9193,7 @@ return jQuery;
 
 (function() {
   define('main',["jquery"], function($) {
-    $("body").append("jQuery " + $.fn.jquery + " loaded!");
+    $("body").attr('jquery-version', $.fn.jquery);
   });
 
 }).call(this);

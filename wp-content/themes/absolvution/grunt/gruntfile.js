@@ -102,7 +102,9 @@ module.exports = function(grunt) {
         options: {
           jshintrc: 'app/.jshintrc'
         },
-        src: ['app/**/*.js']
+        src: [
+          'app/**/*.js'
+        ]
       },
       test: {
         options: {
@@ -138,7 +140,7 @@ module.exports = function(grunt) {
         tasks: ['jshint:gruntfile', 'notify:js']
       },
       app: {
-        files: '<%= jshint.app.src %>',
+        files: 'app/**/*.coffee',
         tasks: ['coffee', 'jshint:app', 'qunit', 'notify:js']
       },
       test: {

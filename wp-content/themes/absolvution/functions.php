@@ -74,7 +74,7 @@ if ( ! isset( $content_width ) ) $content_width = 650;
 function absolvution_editor_style() {
     add_editor_style( 'css/wp-editor-style.css' );
 }
-add_action( 'init', 'absolvution_editor_style' );
+//add_action( 'init', 'absolvution_editor_style' );
 
 
 /******************************************************************************\

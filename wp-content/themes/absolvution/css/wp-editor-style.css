@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #fba919;
-  color: #efefef;
-}
-
 body.custom-background {
   background-position: center;
   background-repeat: no-repeat;

@@ -1,6 +1,6 @@
 (function() {
   define(["jquery"], function($) {
-    $("body").append("jQuery " + $.fn.jquery + " loaded!");
+    $("body").attr('jquery-version', $.fn.jquery);
   });
 
 }).call(this);

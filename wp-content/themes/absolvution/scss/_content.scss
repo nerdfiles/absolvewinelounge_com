@@ -135,6 +135,7 @@ article {
 .home-widgets {
   .inner {
     @include clearfix;
+    padding-left: 0;
   }
 }
 

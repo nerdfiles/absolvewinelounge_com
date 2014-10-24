@@ -50,27 +50,26 @@
 }
 
 .widget {
-	@include span-columns(4);
-	@include font-size(0.8);
-	padding: 2em 1.8em;
+  @include span-columns(4);
+  @include font-size(0.8);
+  padding: 10em 1.8em;
+  position: relative;
 
-	position: relative;
+  h2 {
+    @include font-size(1.1);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    border-bottom: 0.1em solid $color2;
+  }
 
-	h2 {
-		@include font-size(1.1);
-		text-align: center;
-		margin-top: 0;
-		margin-bottom: 0.5em;
-		border-bottom: 0.1em solid $color2;
-	}
+  ul {
+    padding-left: 1.6em;
+  }
 
-	ul {
-		padding-left: 1.6em;
-	}
-
-	p {
-		text-align: justify;
-	}
+  p {
+    text-align: justify;
+  }
 }
 
 .widget:nth-child(3n) {

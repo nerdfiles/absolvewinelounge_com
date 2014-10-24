@@ -393,11 +393,6 @@ table {
   box-sizing: border-box;
 }
 
-body {
-  background: #fba919;
-  color: #efefef;
-}
-
 body.custom-background {
   background-position: center;
   background-repeat: no-repeat;
@@ -665,7 +660,7 @@ p ~ h1 {
   width: 31.28834%;
   font-size: 12.8px;
   font-size: 0.8rem;
-  padding: 2em 1.8em;
+  padding: 10em 1.8em;
   position: relative;
 }
 .widget:last-child {
@@ -979,6 +974,7 @@ article:after {
 \******************************************************************************/
 .home-widgets .inner {
   *zoom: 1;
+  padding-left: 0;
 }
 .home-widgets .inner:before, .home-widgets .inner:after {
   content: " ";
