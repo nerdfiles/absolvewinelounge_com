@@ -269,6 +269,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-notify');
 
   // Load NPM's via matchdep
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);

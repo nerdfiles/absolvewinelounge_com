@@ -1,4 +1,4 @@
-/*! absolvution - v0.0.0 - 2014-10-19
+/*! absolvution - v0.0.0 - 2014-10-23
 * Copyright (c) 2014 nerdfiles; Licensed WTFPL */
 /*!
  * jQuery JavaScript Library v2.1.1
