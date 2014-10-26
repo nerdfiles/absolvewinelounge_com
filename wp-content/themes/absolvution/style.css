@@ -7526,12 +7526,7 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.events-archive) .home .post-content, body:not(.events-archive) .page .post-content, body:not(.events-archive) .archive .post-content, body:not(.events-archive) .search .post-content, body:not(.events-archive) .author .post-content,
-body:not(.page-gallery) .home .post-content,
-body:not(.page-gallery) .page .post-content,
-body:not(.page-gallery) .archive .post-content,
-body:not(.page-gallery) .search .post-content,
-body:not(.page-gallery) .author .post-content {
+body:not(.events-gridview) .home .post-content, body:not(.events-gridview) .page .post-content, body:not(.events-gridview) .archive .post-content, body:not(.events-gridview) .search .post-content, body:not(.events-gridview) .author .post-content {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -7541,12 +7536,7 @@ body:not(.page-gallery) .author .post-content {
   padding: 0;
   text-align: left;
 }
-body:not(.events-archive) .home .post-content:last-child, body:not(.events-archive) .page .post-content:last-child, body:not(.events-archive) .archive .post-content:last-child, body:not(.events-archive) .search .post-content:last-child, body:not(.events-archive) .author .post-content:last-child,
-body:not(.page-gallery) .home .post-content:last-child,
-body:not(.page-gallery) .page .post-content:last-child,
-body:not(.page-gallery) .archive .post-content:last-child,
-body:not(.page-gallery) .search .post-content:last-child,
-body:not(.page-gallery) .author .post-content:last-child {
+body:not(.events-gridview) .home .post-content:last-child, body:not(.events-gridview) .page .post-content:last-child, body:not(.events-gridview) .archive .post-content:last-child, body:not(.events-gridview) .search .post-content:last-child, body:not(.events-gridview) .author .post-content:last-child {
   margin-right: 0;
 }
 
