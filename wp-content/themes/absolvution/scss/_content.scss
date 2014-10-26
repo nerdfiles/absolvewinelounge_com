@@ -120,18 +120,16 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.tribe-theme-absolvution) {
-  .home, .page, .archive, .search, .author {
+.home, .page, .archive, .search, .author {
 
-    .post-content {
-      @include span-columns(5);
-      background: none;
-      color: $color2;
-      padding: 0;
-      text-align: left;
-    }
-
+  .post-content {
+    @include span-columns(5);
+    background: none;
+    color: $color2;
+    padding: 0;
+    text-align: left;
   }
+
 }
 
 .pagination {
