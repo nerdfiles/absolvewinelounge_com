@@ -120,6 +120,7 @@ singular
 customize-support
 tribe-is-responsive
 */
+body:not(.page-id-22),
 body:not(.events-gridview) {
   .home, .page, .archive, .search, .author {
 
@@ -129,6 +130,8 @@ body:not(.events-gridview) {
       color: $color2;
       padding: 0;
       text-align: left;
+      position: relative;
+      z-index: 25;
     }
 
   }
