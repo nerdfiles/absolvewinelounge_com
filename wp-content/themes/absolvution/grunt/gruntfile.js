@@ -102,7 +102,9 @@ module.exports = function(grunt) {
         options: {
           jshintrc: 'app/.jshintrc'
         },
-        src: ['app/**/*.js']
+        src: [
+          'app/**/*.js'
+        ]
       },
       test: {
         options: {
@@ -119,7 +121,10 @@ module.exports = function(grunt) {
 					'sass:dev',
 					'sass:editorstyles',
 					'notify:scss'
-				]
+				],
+        options: {
+          livereload: true,
+        }
 			},
       /*
 			 *js: {
@@ -138,8 +143,11 @@ module.exports = function(grunt) {
         tasks: ['jshint:gruntfile', 'notify:js']
       },
       app: {
-        files: '<%= jshint.app.src %>',
-        tasks: ['coffee', 'jshint:app', 'qunit', 'notify:js']
+        files: 'app/**/*.coffee',
+        tasks: ['coffee', 'jshint:app', 'qunit', 'notify:js'],
+        options: {
+          livereload: true,
+        }
       },
       test: {
         files: '<%= jshint.test.src %>',
@@ -227,34 +235,36 @@ module.exports = function(grunt) {
 					]
 				}
 			}
-		},
+		}
 
-    connect: {
-      development: {
-        options: {
-          keepalive: true,
-        }
-      },
-      production: {
-        options: {
-          keepalive: true,
-          port: 8000,
-          middleware: function(connect, options) {
-            return [
-              // rewrite requirejs to the compiled version
-              function(req, res, next) {
-                if (req.url === '/bower_components/requirejs/require.js') {
-                  req.url = '/dist/require.min.js';
-                }
-                next();
-              },
-              connect.static(options.base),
-
-            ];
-          }
-        }
-      }
-    }
+/*
+ *    connect: {
+ *      development: {
+ *        options: {
+ *          keepalive: true,
+ *        }
+ *      },
+ *      production: {
+ *        options: {
+ *          keepalive: true,
+ *          port: 8000,
+ *          middleware: function(connect, options) {
+ *            return [
+ *              // rewrite requirejs to the compiled version
+ *              function(req, res, next) {
+ *                if (req.url === '/bower_components/requirejs/require.js') {
+ *                  req.url = '/dist/require.min.js';
+ *                }
+ *                next();
+ *              },
+ *              connect.static(options.base),
+ *
+ *            ];
+ *          }
+ *        }
+ *      }
+ *    }
+ */
 
   });
 
@@ -269,6 +279,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-notify');
 
   // Load NPM's via matchdep
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
@@ -302,8 +313,10 @@ module.exports = function(grunt) {
   });
 
   // Review Suite
-  grunt.registerTask('preview', ['connect:development']);
-  grunt.registerTask('preview-live', ['default', 'connect:production']);
+  /*
+   *grunt.registerTask('preview', ['connect:development']);
+   *grunt.registerTask('preview-live', ['default', 'connect:production']);
+   */
 
 };
 

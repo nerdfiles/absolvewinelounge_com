@@ -7,40 +7,40 @@ article {
 }
 
 .archive-title, .search-title h1 {
-	@include font-size(1.3);
+  @include font-size(1.3);
 
-	font-weight: normal;
-	background: $color2;
-	text-align:center;
-	color: $color1;
-	margin-top: 0;
-	margin-bottom:0;
-	padding: 0.6em 0;
+  font-weight: normal;
+  background: $color2;
+  text-align:center;
+  color: $color1;
+  margin-top: 0;
+  margin-bottom:0;
+  padding: 0.6em 0;
 }
 
 .archive-description, .second-search {
-	@include font-size(0.9);
+  @include font-size(0.9);
 
-	font-style: italic;
-	margin-top:0;
-	background: $color2;
-	color: $color1;
-	text-align: center;
-	padding-top:0;
-	padding-bottom: 0.8em;
+  font-style: italic;
+  margin-top:0;
+  background: $color2;
+  color: $color1;
+  text-align: center;
+  padding-top:0;
+  padding-bottom: 0.8em;
 
-	p {
-		margin:0;
-	}
+  p {
+    margin:0;
+  }
 
-	form {
-		margin-top:0.5em;
-		margin-bottom: 0.6em;
-	}
+  form {
+    margin-top:0.5em;
+    margin-bottom: 0.6em;
+  }
 
-	input {
-		box-shadow:none;
-	}
+  input {
+    box-shadow:none;
+  }
 }
 
 /******************************************************************************\
@@ -51,10 +51,16 @@ article {
 	@include span-columns(10);
 	@include shift(1);
 
-	border-top: 0.03em solid $color2;
-	border-bottom: 0.03em solid $color2;
-	text-align: center;
+  /*
+	 *border-top: 0.03em solid $color2;
+	 *border-bottom: 0.03em solid $color2;
+   */
+	text-align: left;
 	margin-bottom: 0.2em;
+  font-family: $header-font;
+  font-size: 1.3rem;
+  padding: 0 0rem;
+  color: #f9f9f9;
 
 	&:first-child {
 		margin-top: 1em;
@@ -69,10 +75,14 @@ article {
 
 .post-meta {
 	@include span-columns(8);
-	@include shift(2);
+  @include shift(.25);
+  margin-top: -2em;
 
-	text-align: center;
+	text-align: left;
 	font-style: italic;
+  a {
+    color: #deb5e8;
+  }
 }
 
 .post-content {
@@ -95,94 +105,103 @@ article {
 	Front-page and archives
 \******************************************************************************/
 
-.home, .archive, .search, .author {
-	.post-content {
-		@include span-columns(8);
-		@include shift(2);
+.home, .page, .archive, .search, .author {
 
-		background: none;
-		color: $color2;
-		padding: 0;
-		text-align: center;
-	}
+  .post-content {
+    @include span-columns(5);
+    background: none;
+    color: $color2;
+    padding: 0;
+    text-align: left;
+  }
 
 }
 
 .pagination {
-	@include span-columns(12);
+  @include span-columns(12);
 
-	border-bottom: 3px solid $color2;
+  /*border-bottom: 3px solid $color2;*/
 
-	ul {
-		list-style: none;
-		text-align:center;
-		margin: 1em 0 0 0;
-		padding: 0.6em 0;
-		background: $color1;
-	}
+  ul {
+    list-style: none;
+    text-align: left;
+    margin: 1em 0 0 0;
+    padding: 0.6em 0;
+    background: $color1;
+  }
 
-	li {
-		display: inline;
-		margin: 0 0.5em;
-	}
+  li {
+    display: inline;
+    margin: 0 0.5em;
+  }
 }
 
 
 /******************************************************************************\
-	Widgets
+  Widgets
 \******************************************************************************/
 
 .home-widgets {
   .inner {
     @include clearfix;
+    padding-left: 0;
   }
 }
 
 .page-content .widgets {
-	@include outer-container;
+  @include outer-container;
 
-	.widgettitle {
-		color: #fff;
-		margin-top: 0;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		line-height: 1.3;
+  .widgettitle {
+    color: #fff;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.3;
 
-		@include media($medium) { @include font-size(1.2); }
+    @include media($medium) { @include font-size(1.2); }
 
-		@include media($large) { @include font-size(2); }
-	}
+    @include media($large) { @include font-size(2); }
+  }
 
-	.widget {
-		@include span-columns(12);
-		margin-bottom: 2em;
-		color: shade($color1, 50%);
+  .widget {
+    @include span-columns(12);
+    margin-bottom: 2em;
+    color: shade($color1, 50%);
 
-		&:last-child { margin-bottom: 0; }
+    &:last-child { margin-bottom: 0; }
 
-		@include media($medium) {
-			@include span-columns(4);
-			@include omega(3n);
-			@include font-size(.8);
-			margin-bottom: 0;
-		}
+    @include media($medium) {
+      @include span-columns(4);
+      @include omega(3n);
+      @include font-size(.8);
+      margin-bottom: 0;
+    }
 
-		@include media($large) { @include font-size(1); };
-	}
+    @include media($large) { @include font-size(1); };
+  }
 
-	.wp-post-image {
-		width: 100%;
-		height: auto;
-		display: block;
-		margin-bottom: 1em;
-	}
+  .wp-post-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+  }
 
-	.read-more {
-		@include transition(padding .25s ease-in-out);
-		border-bottom: 2px solid #fff;
-		padding-bottom: 0.25em;
+  .read-more {
+    @include transition(padding .25s ease-in-out);
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.25em;
 
-		&:hover { border-bottom: 2px solid #fff; }
-	}
+    &:hover { border-bottom: 2px solid #fff; }
+  }
+}
+
+.page-template-default {
+  .page-content {
+    @include row();
+    .page {
+    }
+    .type-page { }
+  }
 }

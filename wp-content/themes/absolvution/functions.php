@@ -46,12 +46,21 @@ $custom_bg_args = array(
 add_theme_support( 'custom-background', $custom_bg_args );
 
 register_nav_menu( 'main-menu', __( 'Your sites main menu', 'absolvution' ) );
+register_nav_menu( 'meta-menu', __( 'Your sites meta menu', 'absolvution' ) );
 
 if ( function_exists( 'register_sidebars' ) ) {
 	register_sidebar(
 		array(
 			'id' => 'home-sidebar',
 			'name' => __( 'Home widgets', 'absolvution' ),
+			'description' => __( 'Shows on home page', 'absolvution' )
+		)
+	);
+
+	register_sidebar(
+		array(
+			'id' => 'home-sidebar-followup',
+			'name' => __( 'Home widgets (Followup)', 'absolvution' ),
 			'description' => __( 'Shows on home page', 'absolvution' )
 		)
 	);
@@ -74,7 +83,7 @@ if ( ! isset( $content_width ) ) $content_width = 650;
 function absolvution_editor_style() {
     add_editor_style( 'css/wp-editor-style.css' );
 }
-add_action( 'init', 'absolvution_editor_style' );
+//add_action( 'init', 'absolvution_editor_style' );
 
 
 /******************************************************************************\
@@ -114,6 +123,7 @@ function absolvution_enqueue_scripts() {
   } else {
     wp_enqueue_script( 'require.js', get_template_directory_uri() . '/grunt/dist/require.js', array(), '1.0', true );
   }
+  wp_enqueue_script( '', 'http://localhost:35729/livereload.js', array(), '0.0.1', true);
   if ( is_singular() ) {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'comment-reply' );
@@ -159,4 +169,73 @@ function absolvution_post_meta() {
 		);
 	}
 	edit_post_link( __( ' (edit)', 'absolvution' ), '<span class="edit-link">', '</span>' );
+}
+
+function absolvution_background_gen() {
+  $query_images_args = array(
+    'post_type' => 'attachment',
+    'post_mime_type' => 'image',
+    'post_status' => 'inherit',
+    'posts_per_page' => -1,
+    'category_name' => 'carousel'
+  );
+
+  $query_images = new WP_Query( $query_images_args );
+  $images = array();
+  $count = 0;
+  foreach ( $query_images->posts as $image) {
+      if ($count > 1) {
+        $images[]= "";
+      } else {
+        $images[]= "\n" . '<li class="img-monad img-monad--' . $count . '" style="' . 'background-image: url(' . wp_get_attachment_url( $image->ID ) . ');"><p>' . $image->caption . '</p></li>';
+      }
+      $count++;
+  }
+  return implode('', $images);
+}
+
+function mytheme_comment($comment, $args, $depth) {
+	$GLOBALS['comment'] = $comment;
+	extract($args, EXTR_SKIP);
+
+	if ( 'div' == $args['style'] ) {
+		$tag = 'div';
+		$add_below = 'comment';
+	} else {
+		$tag = 'li';
+		$add_below = 'div-comment';
+	}
+?>
+	<<?php echo $tag ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
+	<?php if ( 'div' != $args['style'] ) : ?>
+	<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
+	<?php endif; ?>
+	<div class="comment-author vcard">
+	<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+	<?php printf( __( '<cite class="fn">%s</cite> <span class="says">says:</span>' ), get_comment_author_link() ); ?>
+	</div>
+	<?php if ( $comment->comment_approved == '0' ) : ?>
+		<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em>
+		<br />
+	<?php endif; ?>
+
+	<div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
+		<?php
+			/* translators: 1: date, 2: time */
+			printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time() ); ?></a><?php edit_comment_link( __( '(Edit)' ), '  ', '' );
+		?>
+	</div>
+
+	<?php comment_text(); ?>
+
+	<div class="reply">
+  <?php
+    comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) );
+  ?>
+  <a href="#close">Close</a>
+	</div>
+	<?php if ( 'div' != $args['style'] ) : ?>
+	</div>
+	<?php endif; ?>
+<?php
 }

@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #fba919;
-  color: #efefef;
-}
-
 body.custom-background {
   background-position: center;
   background-repeat: no-repeat;
@@ -18,7 +13,7 @@ body.custom-background {
 }
 
 a {
-  color: #fba919;
+  /*color: $color3;*/
   text-decoration: none;
 }
 
@@ -42,7 +37,7 @@ input, textarea {
   overflow: hidden;
   background: rgba(34, 34, 34, 0.85);
   *zoom: 1;
-  max-width: 980px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -66,6 +61,7 @@ input, textarea {
 /******************************************************************************\
 	Settings
 \******************************************************************************/
+/*$header-font: 'Georgia', serif;*/
 html {
   font-size: 16px;
 }
@@ -87,7 +83,7 @@ html {
 	Standard font styling
 \******************************************************************************/
 body {
-  font-family: "Verdana", sans-serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -130,7 +126,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Georgia", serif;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 1.2;
   text-transform: uppercase;
 }
