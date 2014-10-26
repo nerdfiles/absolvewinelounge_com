@@ -120,7 +120,7 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.events-gridview):not(.page-id-22):not(.page-contact) {
+body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery) {
   .home, .page, .archive, .search, .author {
 
     .post-content {
@@ -136,7 +136,8 @@ body:not(.events-gridview):not(.page-id-22):not(.page-contact) {
   }
 }
 
-body.page-contact {
+body.page-contact,
+body.page-gallery {
   .post-content {
     @include span-columns(12);
     @include shift(0);
