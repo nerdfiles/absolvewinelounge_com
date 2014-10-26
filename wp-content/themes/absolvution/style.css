@@ -7530,7 +7530,7 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery) .home .post-content, body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery) .page .post-content, body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery) .archive .post-content, body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery) .search .post-content, body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery) .author .post-content {
+body:not(.events-gridview):not(.page-contact):not(.page-gallery) .home .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .page .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .archive .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .search .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .author .post-content {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -7542,7 +7542,7 @@ body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery
   position: relative;
   z-index: 25;
 }
-body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery) .home .post-content:last-child, body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery) .page .post-content:last-child, body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery) .archive .post-content:last-child, body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery) .search .post-content:last-child, body:not(.events-gridview):not(.page-id-22):not(.page-contact):not(.page-gallery) .author .post-content:last-child {
+body:not(.events-gridview):not(.page-contact):not(.page-gallery) .home .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .page .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .archive .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .search .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .author .post-content:last-child {
   margin-right: 0;
 }
 
