@@ -120,7 +120,7 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.events-gridview) {
+body:not(.events-gridview):not(.page-id-22) {
   .home, .page, .archive, .search, .author {
 
     .post-content {
@@ -135,21 +135,7 @@ body:not(.events-gridview) {
 
   }
 }
-body:not(.page-id-22) {
-  .home, .page, .archive, .search, .author {
 
-    .post-content {
-      @include span-columns(5);
-      background: none;
-      color: $color2;
-      padding: 0;
-      text-align: left;
-      position: relative;
-      z-index: 25;
-    }
-
-  }
-}
 .pagination {
   @include span-columns(12);
 
