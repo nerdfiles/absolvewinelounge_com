@@ -7491,7 +7491,22 @@ article:after {
 /******************************************************************************\
 	Front-page and archives
 \******************************************************************************/
-.home .post-content, .page .post-content, .archive .post-content, .search .post-content, .author .post-content {
+/*
+single
+single-tribe_events
+postid-59
+logged-in
+admin-bar
+custom-background
+tribe-filter-live
+events-single
+tribe-theme-absolvution
+page-template-page-php
+singular
+customize-support
+tribe-is-responsive
+*/
+body:not(.tribe-theme-absolvution) .home .post-content, body:not(.tribe-theme-absolvution) .page .post-content, body:not(.tribe-theme-absolvution) .archive .post-content, body:not(.tribe-theme-absolvution) .search .post-content, body:not(.tribe-theme-absolvution) .author .post-content {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -7501,7 +7516,7 @@ article:after {
   padding: 0;
   text-align: left;
 }
-.home .post-content:last-child, .page .post-content:last-child, .archive .post-content:last-child, .search .post-content:last-child, .author .post-content:last-child {
+body:not(.tribe-theme-absolvution) .home .post-content:last-child, body:not(.tribe-theme-absolvution) .page .post-content:last-child, body:not(.tribe-theme-absolvution) .archive .post-content:last-child, body:not(.tribe-theme-absolvution) .search .post-content:last-child, body:not(.tribe-theme-absolvution) .author .post-content:last-child {
   margin-right: 0;
 }
 
