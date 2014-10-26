@@ -7528,7 +7528,7 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.events-gridview):not(.page-id-22) .home .post-content, body:not(.events-gridview):not(.page-id-22) .page .post-content, body:not(.events-gridview):not(.page-id-22) .archive .post-content, body:not(.events-gridview):not(.page-id-22) .search .post-content, body:not(.events-gridview):not(.page-id-22) .author .post-content {
+body:not(.events-gridview):not(.page-id-22):not(.page-contact) .home .post-content, body:not(.events-gridview):not(.page-id-22):not(.page-contact) .page .post-content, body:not(.events-gridview):not(.page-id-22):not(.page-contact) .archive .post-content, body:not(.events-gridview):not(.page-id-22):not(.page-contact) .search .post-content, body:not(.events-gridview):not(.page-id-22):not(.page-contact) .author .post-content {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -7540,7 +7540,19 @@ body:not(.events-gridview):not(.page-id-22) .home .post-content, body:not(.event
   position: relative;
   z-index: 25;
 }
-body:not(.events-gridview):not(.page-id-22) .home .post-content:last-child, body:not(.events-gridview):not(.page-id-22) .page .post-content:last-child, body:not(.events-gridview):not(.page-id-22) .archive .post-content:last-child, body:not(.events-gridview):not(.page-id-22) .search .post-content:last-child, body:not(.events-gridview):not(.page-id-22) .author .post-content:last-child {
+body:not(.events-gridview):not(.page-id-22):not(.page-contact) .home .post-content:last-child, body:not(.events-gridview):not(.page-id-22):not(.page-contact) .page .post-content:last-child, body:not(.events-gridview):not(.page-id-22):not(.page-contact) .archive .post-content:last-child, body:not(.events-gridview):not(.page-id-22):not(.page-contact) .search .post-content:last-child, body:not(.events-gridview):not(.page-id-22):not(.page-contact) .author .post-content:last-child {
+  margin-right: 0;
+}
+
+body.page-contact .post-content {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 100%;
+  margin-left: 0%;
+  padding: 0;
+}
+body.page-contact .post-content:last-child {
   margin-right: 0;
 }
 
