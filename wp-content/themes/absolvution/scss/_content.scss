@@ -120,7 +120,8 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.events-archive) {
+body:not(.events-archive),
+body:not(.page-gallery) {
   .home, .page, .archive, .search, .author {
 
     .post-content {
