@@ -16,6 +16,7 @@ body.custom-background {
 a {
 	/*color: $color3;*/
 	text-decoration: none;
+  color: #111;
 }
 
 h1 a {
@@ -36,7 +37,8 @@ input, textarea {
 
 .site {
 	overflow: hidden;
-	background: rgba($color1, 0.85);
+	/*background: rgba($color1, 0.85);*/
+  background: #222;
 	@include outer-container;
 }
 
