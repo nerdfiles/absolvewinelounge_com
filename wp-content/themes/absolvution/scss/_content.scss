@@ -120,16 +120,18 @@ singular
 customize-support
 tribe-is-responsive
 */
-.home, .page, .archive, .search, .author {
+body:not(.events-archive) {
+  .home, .page, .archive, .search, .author {
 
-  .post-content {
-    @include span-columns(5);
-    background: none;
-    color: $color2;
-    padding: 0;
-    text-align: left;
+    .post-content {
+      @include span-columns(5);
+      background: none;
+      color: $color2;
+      padding: 0;
+      text-align: left;
+    }
+
   }
-
 }
 
 .pagination {

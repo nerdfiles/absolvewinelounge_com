@@ -7526,7 +7526,7 @@ singular
 customize-support
 tribe-is-responsive
 */
-.home .post-content, .page .post-content, .archive .post-content, .search .post-content, .author .post-content {
+body:not(.events-archive) .home .post-content, body:not(.events-archive) .page .post-content, body:not(.events-archive) .archive .post-content, body:not(.events-archive) .search .post-content, body:not(.events-archive) .author .post-content {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -7536,7 +7536,7 @@ tribe-is-responsive
   padding: 0;
   text-align: left;
 }
-.home .post-content:last-child, .page .post-content:last-child, .archive .post-content:last-child, .search .post-content:last-child, .author .post-content:last-child {
+body:not(.events-archive) .home .post-content:last-child, body:not(.events-archive) .page .post-content:last-child, body:not(.events-archive) .archive .post-content:last-child, body:not(.events-archive) .search .post-content:last-child, body:not(.events-archive) .author .post-content:last-child {
   margin-right: 0;
 }
 
