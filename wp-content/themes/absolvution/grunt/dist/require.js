@@ -1,4 +1,4 @@
-/*! absolvution - v0.0.0 - 2014-10-23
+/*! absolvution - v0.0.0 - 2014-10-26
 * Copyright (c) 2014 nerdfiles; Licensed WTFPL */
 /*!
  * jQuery JavaScript Library v2.1.1
@@ -9193,7 +9193,24 @@ return jQuery;
 
 (function() {
   define('main',["jquery"], function($) {
+    var $vcalendar, aw, w, __;
+    __ = function(obj) {
+      window.console.log(obj);
+    };
     $("body").attr('jquery-version', $.fn.jquery);
+    w = $(".tribe-events-list-widget-events").css('width');
+    $vcalendar = $('body.home .vcalendar');
+    aw = parseInt(w) + 10;
+    $vcalendar.css('margin-top', '-' + aw + 'px');
+    $(".tribe-events-list-widget-events").each(function(index, element) {
+      var $this;
+      __(element);
+      if (index === 5) {
+        return;
+      }
+      $this = $(this);
+      return $this.css('height', w);
+    });
   });
 
 }).call(this);
