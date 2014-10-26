@@ -120,7 +120,7 @@ article {
 .pagination {
   @include span-columns(12);
 
-  border-bottom: 3px solid $color2;
+  /*border-bottom: 3px solid $color2;*/
 
   ul {
     list-style: none;

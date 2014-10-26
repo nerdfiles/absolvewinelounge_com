@@ -59,6 +59,14 @@ if ( function_exists( 'register_sidebars' ) ) {
 
 	register_sidebar(
 		array(
+			'id' => 'home-sidebar-followup',
+			'name' => __( 'Home widgets (Followup)', 'absolvution' ),
+			'description' => __( 'Shows on home page', 'absolvution' )
+		)
+	);
+
+	register_sidebar(
+		array(
 			'id' => 'footer-sidebar',
 			'name' => __( 'Footer widgets', 'absolvution' ),
 			'description' => __( 'Shows in the sites footer', 'absolvution' )

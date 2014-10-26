@@ -67,7 +67,7 @@ $g: $gutter + $gutter;
     }
     ul.menu {
       list-style: none;
-      padding: 0 0 0 0;
+      padding: 0 0 5px 0;
       margin-bottom: 30px;
       text-align: center;
       @include row();
@@ -214,6 +214,7 @@ $g: $gutter + $gutter;
         @include span-columns(4, block-collapse);
         @include shift(4);
         position: relative;
+        z-index: 2;
         .inner {
           position: absolute;
           width: 100%;
@@ -222,6 +223,7 @@ $g: $gutter + $gutter;
             width: 100%;
             background: #4bb4e0;
             position: relative;
+            opacity: .8;
             /*
              *.logo {
              *  position: absolute;

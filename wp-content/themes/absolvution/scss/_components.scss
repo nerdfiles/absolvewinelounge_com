@@ -1,0 +1,234 @@
+.widget {
+  color: #fff;
+}
+
+.home--banner-image {
+  @include row();
+}
+
+.widget_sp_image:nth-of-type(1) {
+  position: relative;
+  top: -2rem;
+  z-index: 1;
+  img {
+    width: 100% !important;
+  }
+}
+
+.widget_sp_image:nth-of-type(4) {
+  img {
+    width: 100% !important;
+  }
+}
+
+.home-followup-widgets {
+  @include row();
+  ul { margin: 0; }
+  position: relative;
+  margin-top: -2rem;
+}
+dd {
+  margin-left: 0;
+}
+
+.home--specials {
+  @include span-columns(5);
+  @include shift(1);
+  padding-bottom: 3rem;
+  .textwidget {
+  }
+  dl {
+    @include row();
+    dt {
+      @include span-columns(4);
+    }
+    dd {
+      @include span-columns(7.5);
+    }
+    
+  }
+}
+
+.home-followup-widgets {
+
+  position: relative;
+
+  .home--logo {
+
+    @include span-columns(2.9, block-collapse);
+    z-index: 11;
+    position: relative;
+    left: $gutter / 2;
+    position: relative;
+    @include row();
+
+    img {
+      display: block;
+      margin: 0 auto;
+      z-index: 11;
+      position: relative;
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+    }
+
+    &:before {
+      height: 825px;
+      background: #4bb4e0;
+      position: absolute;
+      opacity: .8;
+      z-index: 1;
+      content: " ";
+      display: block;
+      top: -4rem;
+      @include span-columns(11.55, block-collapse);
+    }
+
+  }
+
+  .home--social {
+    left: $gutter / 2;
+    @include span-columns(2.8, block-collapse);
+    @include row();
+    position: relative;
+    z-index: 13;
+    .acx_smw_float_fix {
+      z-index: 12;
+      @include span-columns(12, block-collapse);
+      position: absolute;
+      z-index: 13;
+      bottom: -29.5rem;
+      a {
+        display: inline-block;
+        @extend .fa;
+        @extend .fa-twitter;
+        img { display: none; }
+      }
+    }
+  }
+
+  .home--our-story {
+    background: #f0c214;
+    position: relative;
+    z-index: 20;
+    font-size: .9rem;
+    height: 1000px;
+    top: -.42rem;
+    @include span-columns(3.23);
+    @include shift(.5);
+    @include pad(5rem default 0 default);
+    font-family: $base-font;
+    h2 {
+      font-family: $header-font;
+      font-size: 1.5rem;
+    }
+  }
+
+  .tribe-events-list-widget.home--calendar {
+
+    @include row();
+    position: relative;
+
+    .tribe-events-widget-link {
+      margin: 0;
+      position: absolute;
+      z-index: 25;
+      top: -50px;
+      left: 0;
+      @include span-columns(3.5);
+      @include shift(.5);
+      text-align: center;
+      text-indent: -$gutter;
+    }
+    h2 { position: absolute; left: -9999px; }
+    @include span-columns(12);
+    /*@include shift(-3);*/
+    ol.vcalendar {
+      @include row();
+      margin-bottom: 0;
+    }
+    .long {
+      height: 700px;
+    }
+
+    li.tribe-events-list-widget-events {}
+
+    .hentry {}
+    .vevent {}
+    .duration {
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      z-index: 12;
+      @include pad(.5rem 0.15rem 0.15rem .5rem);
+      @include transition (all .5s ease-in-out);
+    }
+    li.type-tribe_events {
+      position: relative;
+
+      &:hover {
+        .duration {
+          padding-top: 55%;
+        }
+      }
+      h4 {
+        height: 100%; margin: 0 0; }
+      h4 {
+
+      }
+      a {
+        @include transition (all .5s ease-in-out);
+        position: relative;
+        z-index: 14;
+        @include pad(.5rem 0.15rem 0.15rem .5rem);
+        display: block; height: 100%; width: 100%;
+        &:hover {
+          @include pad(.5rem 0.15rem 0.15rem 55%);
+        }
+      }
+      @include span-columns(2.847, block-collapse);
+      @include pad(0 0 0 0);
+      margin-bottom: 0;
+
+      &:nth-child(even) {
+        background: #83AAC9;
+      }
+
+      &:nth-child(odd) {
+        background: #BDCCD4;
+      }
+      &:nth-of-type(1) {
+        @include shift(3.1);
+      }
+      &:nth-of-type(4) {
+        @include span-columns(2.961, block-collapse);
+        @include shift(.139);
+      }
+      &:nth-of-type(6) {
+        @extend .long;
+      }
+      &:nth-of-type(7) {
+        @include span-columns(3.2, block-collapse);
+      }
+    }
+    .tribe-events-first {}
+    .tribe-events-last {}
+  }
+
+  .home--recent-tweets {
+    @include span-columns(3);
+    @include shift(2.5);
+    @include pad(0 $gutter/2);
+    margin-top: 6rem;
+    h2 { font-size: 1.5rem; }
+    ul {
+      padding: 0;
+      font-size: 1rem;
+    }
+  }
+
+
+
+}
+ul.footer-widgets {
+  padding: 0;
+}

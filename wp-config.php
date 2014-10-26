@@ -69,6 +69,7 @@ $table_prefix  = 'e32db47_';
  * in their development environments.
  */
 define('WP_DEBUG', false);
+define('FS_METHOD','direct');
 
 /* That's all, stop editing! Happy blogging. */
 

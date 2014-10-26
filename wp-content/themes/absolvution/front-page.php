@@ -9,14 +9,6 @@
 
 get_header(); ?>
 
-  <div class="home-widgets">
-    <ul class="inner"><?php
-      if ( function_exists( 'dynamic_sidebar' ) ) :
-        dynamic_sidebar( 'home-sidebar' );
-      endif;
-    ?></ul>
-  </div>
-
   <section
     class="page-content primary"
     role="main"
@@ -24,12 +16,13 @@ get_header(); ?>
 
     <?php
 
-      if ( have_posts() ) :
-        while ( have_posts() ) : the_post();
-          get_template_part( 'loop', get_post_format() );
-        endwhile;
+      if ( have_posts() ) : the_post();
+        get_template_part( 'loop' );
+        //while ( have_posts() ) : the_post();
+          //get_template_part( 'loop', get_post_format() );
+        //endwhile;
       else :
-        get_template_part( 'loop', 'empty' );
+        //get_template_part( 'loop', 'empty' );
       endif;
 
     ?>
@@ -40,4 +33,21 @@ get_header(); ?>
 
   </section>
 
+  <div class="home-widgets">
+    <ul class="inner"><?php
+      if ( function_exists( 'dynamic_sidebar' ) ) :
+        dynamic_sidebar( 'home-sidebar' );
+      endif;
+    ?></ul>
+  </div>
+
+  <div class="home-widgets home-followup-widgets">
+    <ul class="inner"><?php
+      if ( function_exists( 'dynamic_sidebar' ) ) :
+        dynamic_sidebar( 'home-sidebar-followup' );
+      endif;
+    ?></ul>
+  </div>
+
 <?php get_footer(); ?>
+
