@@ -105,16 +105,33 @@ article {
 	Front-page and archives
 \******************************************************************************/
 
-.home, .page, .archive, .search, .author {
+/*
+single
+single-tribe_events
+postid-59
+logged-in
+admin-bar
+custom-background
+tribe-filter-live
+events-single
+tribe-theme-absolvution
+page-template-page-php
+singular
+customize-support
+tribe-is-responsive
+*/
+body:not(.events-single) {
+  .home, .page, .archive, .search, .author {
 
-  .post-content {
-    @include span-columns(5);
-    background: none;
-    color: $color2;
-    padding: 0;
-    text-align: left;
+    .post-content {
+      @include span-columns(5);
+      background: none;
+      color: $color2;
+      padding: 0;
+      text-align: left;
+    }
+
   }
-
 }
 
 .pagination {
