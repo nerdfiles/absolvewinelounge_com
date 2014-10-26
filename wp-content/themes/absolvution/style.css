@@ -6614,24 +6614,26 @@ ul.footer-widgets {
   padding: 0;
 }
 
-body:not(.events-gridview):not(.page-id-22) .site-header {
+body:not(.events-gridview):not(.page-id-22):not(.page-contact) .site-header {
   position: relative;
   z-index: 10;
 }
-body:not(.events-gridview):not(.page-id-22) .post-meta {
+body:not(.events-gridview):not(.page-id-22):not(.page-contact) .post-meta {
   position: relative;
   z-index: 11;
 }
-body:not(.events-gridview):not(.page-id-22) .post-content {
+body:not(.events-gridview):not(.page-id-22):not(.page-contact) .post-content {
   z-index: 1;
 }
 
 body.page-id-22 .site-header,
+body.page-contact .site-header,
 body.events-gridview .site-header {
   position: relative;
   z-index: 1;
 }
 body.page-id-22 .post-content,
+body.page-contact .post-content,
 body.events-gridview .post-content {
   z-index: 1;
 }
