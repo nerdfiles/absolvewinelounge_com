@@ -7526,12 +7526,7 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.page-id-22) .home .post-content, body:not(.page-id-22) .page .post-content, body:not(.page-id-22) .archive .post-content, body:not(.page-id-22) .search .post-content, body:not(.page-id-22) .author .post-content,
-body:not(.events-gridview) .home .post-content,
-body:not(.events-gridview) .page .post-content,
-body:not(.events-gridview) .archive .post-content,
-body:not(.events-gridview) .search .post-content,
-body:not(.events-gridview) .author .post-content {
+body:not(.events-gridview) .home .post-content, body:not(.events-gridview) .page .post-content, body:not(.events-gridview) .archive .post-content, body:not(.events-gridview) .search .post-content, body:not(.events-gridview) .author .post-content {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -7543,12 +7538,23 @@ body:not(.events-gridview) .author .post-content {
   position: relative;
   z-index: 25;
 }
-body:not(.page-id-22) .home .post-content:last-child, body:not(.page-id-22) .page .post-content:last-child, body:not(.page-id-22) .archive .post-content:last-child, body:not(.page-id-22) .search .post-content:last-child, body:not(.page-id-22) .author .post-content:last-child,
-body:not(.events-gridview) .home .post-content:last-child,
-body:not(.events-gridview) .page .post-content:last-child,
-body:not(.events-gridview) .archive .post-content:last-child,
-body:not(.events-gridview) .search .post-content:last-child,
-body:not(.events-gridview) .author .post-content:last-child {
+body:not(.events-gridview) .home .post-content:last-child, body:not(.events-gridview) .page .post-content:last-child, body:not(.events-gridview) .archive .post-content:last-child, body:not(.events-gridview) .search .post-content:last-child, body:not(.events-gridview) .author .post-content:last-child {
+  margin-right: 0;
+}
+
+body:not(.page-id-22) .home .post-content, body:not(.page-id-22) .page .post-content, body:not(.page-id-22) .archive .post-content, body:not(.page-id-22) .search .post-content, body:not(.page-id-22) .author .post-content {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 39.8773%;
+  background: none;
+  color: #efefef;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  z-index: 25;
+}
+body:not(.page-id-22) .home .post-content:last-child, body:not(.page-id-22) .page .post-content:last-child, body:not(.page-id-22) .archive .post-content:last-child, body:not(.page-id-22) .search .post-content:last-child, body:not(.page-id-22) .author .post-content:last-child {
   margin-right: 0;
 }
 
