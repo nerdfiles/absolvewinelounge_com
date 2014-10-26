@@ -7506,7 +7506,7 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.events-single) .home .post-content, body:not(.events-single) .page .post-content, body:not(.events-single) .archive .post-content, body:not(.events-single) .search .post-content, body:not(.events-single) .author .post-content {
+body:not(.tribe-theme-absolvution) .home .post-content, body:not(.tribe-theme-absolvution) .page .post-content, body:not(.tribe-theme-absolvution) .archive .post-content, body:not(.tribe-theme-absolvution) .search .post-content, body:not(.tribe-theme-absolvution) .author .post-content {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -7516,7 +7516,7 @@ body:not(.events-single) .home .post-content, body:not(.events-single) .page .po
   padding: 0;
   text-align: left;
 }
-body:not(.events-single) .home .post-content:last-child, body:not(.events-single) .page .post-content:last-child, body:not(.events-single) .archive .post-content:last-child, body:not(.events-single) .search .post-content:last-child, body:not(.events-single) .author .post-content:last-child {
+body:not(.tribe-theme-absolvution) .home .post-content:last-child, body:not(.tribe-theme-absolvution) .page .post-content:last-child, body:not(.tribe-theme-absolvution) .archive .post-content:last-child, body:not(.tribe-theme-absolvution) .search .post-content:last-child, body:not(.tribe-theme-absolvution) .author .post-content:last-child {
   margin-right: 0;
 }
 
