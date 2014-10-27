@@ -148,6 +148,11 @@ body:not(.events-gridview):not(.page-contact):not(.page-gallery) {
   }
 }
 
+.page-gallery {
+  .post-content {
+    background-color: transparent;
+  }
+}
 body.page-contact,
 body.page-gallery {
   .post-content {

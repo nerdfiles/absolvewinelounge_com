@@ -7597,6 +7597,10 @@ body:not(.events-gridview):not(.page-contact):not(.page-gallery) .home .post-con
   margin-right: 0;
 }
 
+.page-gallery .post-content {
+  background-color: transparent;
+}
+
 body.page-contact .post-content,
 body.page-gallery .post-content {
   float: left;
