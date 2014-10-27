@@ -7182,10 +7182,14 @@ ol.comment-list .comment-edit-link {
 .site-banner ul.menu a {
   color: #fff;
   letter-spacing: .1rem;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .site-banner ul.menu a:hover {
   color: #f0c214;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .site-twop {
