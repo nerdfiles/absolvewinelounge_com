@@ -75,9 +75,11 @@ $g: $gutter + $gutter;
       a {
         color: #fff;
         letter-spacing: .1rem;
+        font-weight: 700;
         text-transform: uppercase;
         &:hover {
           color: #f0c214;
+          @include transition (all .5s linear);
         } } } }
 
   .site-twop {
