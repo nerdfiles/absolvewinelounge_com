@@ -12,12 +12,18 @@
   z-index: 1;
   img {
     width: 100% !important;
+    -webkit-box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
+    -moz-box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
+    box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
   }
 }
 
 .widget_sp_image:nth-of-type(4) {
   img {
     width: 100% !important;
+    -webkit-box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
+    -moz-box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
+    box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
   }
 }
 
@@ -176,15 +182,19 @@ dd {
       }
       margin: 0;
       position: absolute;
+      top: -350px;
+      left: 380px;
       z-index: 35;
-      margin-top: -18rem;
-      margin-left: 12.8rem;
+      /*
+       *margin-top: -18rem;
+       *margin-left: 12.8rem;
+       */
       /*
        *@include span-columns(3.5);
        *@include shift(.5);
        */
       text-align: center;
-      text-indent: -$gutter;
+      /*text-indent: -$gutter;*/
     }
     h2 { position: absolute; left: -9999px; }
     @include span-columns(12);
@@ -196,6 +206,10 @@ dd {
     .long {
       height: 700px;
       height: 40rem;
+      /*
+       *background-image: url('./wp-content/themes/absolvution/images/whitenoise.png');
+       *background-size: 50%;
+       */
     }
 
     li.tribe-events-list-widget-events {}

@@ -69,7 +69,7 @@ article {
 
 .single .post-title {
 	&:first-child {
-		margin-top: 1em;
+		margin-top: 5rem;
 	}
 }
 
@@ -249,4 +249,7 @@ body.page-gallery {
     }
     .type-page { }
   }
+}
+
+.search-title {
 }
