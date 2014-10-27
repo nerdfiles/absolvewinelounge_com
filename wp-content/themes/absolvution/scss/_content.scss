@@ -76,11 +76,14 @@ article {
 .post-meta {
 	@include span-columns(8);
   @include shift(.25);
-  margin-top: -2em;
+  /*margin-top: -2em;*/
 
 	text-align: left;
 	font-style: italic;
   a {
+    position: absolute;
+    top: 0;
+    left: 0;
     color: #deb5e8;
   }
 }

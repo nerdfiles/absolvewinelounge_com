@@ -274,3 +274,13 @@ body.events-gridview {
 }
 .tribe-bar-submit {
 }
+
+.single-tribe_events .tribe-events-event-meta {
+  background: #111;
+  a {
+    color: #83AAC9;
+  }
+}
+.tribe-events-meta-group-gmap {
+  @include span-columns(12);
+}
