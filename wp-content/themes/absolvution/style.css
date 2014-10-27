@@ -6433,7 +6433,7 @@ dd {
   width: 103.06748%;
   position: absolute;
   z-index: 13;
-  bottom: -29.5rem;
+  bottom: -27rem;
 }
 .home-followup-widgets .home--social #acurax_si_widget_simple:last-child {
   width: 100%;
@@ -7529,7 +7529,8 @@ article:after {
 .post-meta:last-child {
   margin-right: 0;
 }
-.post-meta a {
+
+body:not(.single-post) .post-meta a {
   position: absolute;
   top: 0;
   left: 0;
@@ -7550,6 +7551,9 @@ article:after {
 }
 .post-content:last-child {
   margin-right: 0;
+}
+.post-content a {
+  color: #83AAC9;
 }
 
 .page .post-content {
@@ -7574,7 +7578,7 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.events-gridview):not(.page-contact):not(.page-gallery) .home .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .page .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .archive .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .search .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .author .post-content {
+body:not(.events-gridview):not(.page-contact):not(.page-gallery) .home .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .post .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .page .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .archive .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .search .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .author .post-content {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -7586,7 +7590,7 @@ body:not(.events-gridview):not(.page-contact):not(.page-gallery) .home .post-con
   position: relative;
   z-index: 25;
 }
-body:not(.events-gridview):not(.page-contact):not(.page-gallery) .home .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .page .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .archive .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .search .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .author .post-content:last-child {
+body:not(.events-gridview):not(.page-contact):not(.page-gallery) .home .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .post .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .page .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .archive .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .search .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .author .post-content:last-child {
   margin-right: 0;
 }
 
