@@ -80,13 +80,16 @@ article {
 
 	text-align: left;
 	font-style: italic;
-  a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #deb5e8;
-  }
 }
+
+body:not(.single-post) {
+  .post-meta {
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #deb5e8;
+    } } }
 
 .post-content {
 	@include span-columns(10);
@@ -97,6 +100,9 @@ article {
 	color: $color1;
 	padding: 1.5em;
 	margin-top: 1.5em;
+  a {
+    color: #83AAC9;
+  }
 }
 
 .page .post-content {
@@ -124,7 +130,7 @@ customize-support
 tribe-is-responsive
 */
 body:not(.events-gridview):not(.page-contact):not(.page-gallery) {
-  .home, .page, .archive, .search, .author {
+  .home, .post, .page, .archive, .search, .author {
 
     .post-content {
       @include span-columns(5);
