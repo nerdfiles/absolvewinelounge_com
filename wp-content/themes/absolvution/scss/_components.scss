@@ -122,6 +122,15 @@ dd {
         @extend .fa-google-plus;
         @extend .fa-lg;
       }
+      a {
+        margin: 0 $gutter/2;
+        &:hover {
+          color: #f0c214;
+          @include transition (all .5s ease-in-out);
+          @include transform( rotate(360deg) scale(2) );
+        }
+      }
+
     }
   }
 
