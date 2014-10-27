@@ -6479,6 +6479,7 @@ dd {
   transform: rotate(360deg) scale(2);
 }
 .home-followup-widgets .home--our-story {
+  overflow: scroll;
   background: #bf9713;
   position: relative;
   z-index: 20;
@@ -6666,7 +6667,7 @@ dd {
   font-size: .65rem;
 }
 .home-followup-widgets .home--recent-tweets a {
-  color: #a6b5bc;
+  color: #f0c214;
 }
 
 ul.footer-widgets {
