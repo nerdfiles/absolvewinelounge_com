@@ -6483,12 +6483,12 @@ dd {
   position: relative;
   z-index: 20;
   font-size: .9rem;
-  height: 1000px;
+  height: 50rem;
   top: -.42rem;
   float: left;
   display: block;
   margin-right: 3.06748%;
-  width: 24.67485%;
+  width: 24.58896%;
   margin-left: 4.29448%;
   padding: 5rem 3.06748% 0 3.06748%;
   font-family: "Quicksand", sans-serif;
@@ -6499,6 +6499,21 @@ dd {
 .home-followup-widgets .home--our-story h2 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5rem;
+}
+.home-followup-widgets .home--our-story a {
+  font-weight: 700;
+  color: #306170;
+}
+@-moz-document url-prefix() {
+  .home-followup-widgets .home--our-story {
+    float: left;
+    display: block;
+    margin-right: 3.06748%;
+    width: 24.67485%;
+  }
+  .home-followup-widgets .home--our-story:last-child {
+    margin-right: 0;
+  }
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar {
   *zoom: 1;
@@ -6520,9 +6535,9 @@ dd {
 .home-followup-widgets .tribe-events-list-widget.home--calendar .tribe-events-widget-link {
   margin: 0;
   position: absolute;
-  z-index: 25;
-  top: -50px;
-  left: 0;
+  z-index: 35;
+  top: -15rem;
+  left: 12rem;
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -6530,6 +6545,13 @@ dd {
   margin-left: 4.29448%;
   text-align: center;
   text-indent: -30px;
+}
+.home-followup-widgets .tribe-events-list-widget.home--calendar .tribe-events-widget-link a {
+  font-weight: 700;
+  letter-spacing: .1rem;
+  text-transform: lowercase;
+  color: #c1503a;
+  font-variant: small-caps;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar .tribe-events-widget-link:last-child {
   margin-right: 0;
@@ -6555,6 +6577,7 @@ dd {
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar .long, .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6) {
   height: 700px;
+  height: 40rem;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar .duration {
   position: absolute;
@@ -6641,7 +6664,13 @@ dd {
 }
 .home-followup-widgets .home--recent-tweets ul {
   padding: 0;
-  font-size: 1rem;
+  font-size: .85rem;
+}
+.home-followup-widgets .home--recent-tweets ul li {
+  font-size: .65rem;
+}
+.home-followup-widgets .home--recent-tweets a {
+  color: #a6b5bc;
 }
 
 ul.footer-widgets {
