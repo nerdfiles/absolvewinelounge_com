@@ -50,7 +50,7 @@ $g: $gutter + $gutter;
         background-image: url('http://absolvewinelounge.com/wp/wp-content/uploads/2014/10/logo-test-04-01.png');
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 150px;
+        height: 8rem;
         @include span-columns(12);
       }
 
@@ -67,15 +67,18 @@ $g: $gutter + $gutter;
     }
     ul.menu {
       list-style: none;
-      padding: 0 0 5px 0;
-      margin-bottom: 30px;
+      padding: 0 0 .3rem 0;
+      margin-bottom: 1.2rem;
       text-align: center;
       @include row();
       li { padding: .25em 0; display: block; }
-      a { color: #fff;
-        text-transform: uppercase; }
-    }
-  }
+      a {
+        color: #fff;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        &:hover {
+          color: #f0c214;
+        } } } }
 
   .site-twop {
     @include span-columns(8.75);
@@ -219,7 +222,7 @@ $g: $gutter + $gutter;
           position: absolute;
           width: 100%;
           .placeholder {
-            height: 600px;
+            height: 31rem;
             width: 100%;
             background: #2e6f89;
             position: relative;
@@ -251,7 +254,8 @@ $g: $gutter + $gutter;
       li {
         @include span-columns(4 of 12, block-collapse);
         background-size: cover;
-        min-height: 285px;
+        min-height: 14.5rem;
+        /*max-height: 14.5rem;*/
         /*
          *&.last {
          *  @include shift(4);
