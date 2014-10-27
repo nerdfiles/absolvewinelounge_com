@@ -173,10 +173,12 @@ dd {
       margin: 0;
       position: absolute;
       z-index: 35;
-      top: -15rem;
-      left: 12rem;
-      @include span-columns(3.5);
-      @include shift(.5);
+      margin-top: -18rem;
+      margin-left: 12.8rem;
+      /*
+       *@include span-columns(3.5);
+       *@include shift(.5);
+       */
       text-align: center;
       text-indent: -$gutter;
     }
