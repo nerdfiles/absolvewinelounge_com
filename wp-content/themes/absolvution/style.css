@@ -6392,7 +6392,7 @@ dd {
 }
 .home-followup-widgets .home--logo:before {
   height: 825px;
-  background: #4bb4e0;
+  background: #2e6f89;
   position: absolute;
   opacity: .8;
   z-index: 1;
@@ -6458,7 +6458,7 @@ dd {
   margin: 0 15px;
 }
 .home-followup-widgets .home--social #acurax_si_widget_simple a:hover {
-  color: #f0c214;
+  color: #bf9713;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -6469,7 +6469,7 @@ dd {
   transform: rotate(360deg) scale(2);
 }
 .home-followup-widgets .home--our-story {
-  background: #f0c214;
+  background: #bf9713;
   position: relative;
   z-index: 20;
   font-size: .9rem;
@@ -6589,10 +6589,10 @@ dd {
   width: 21.38528%;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-child(even) {
-  background: #83AAC9;
+  background: #6689a3;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-child(odd) {
-  background: #BDCCD4;
+  background: #a6b5bc;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(1) {
   margin-left: 26.62577%;
@@ -7087,7 +7087,7 @@ ol.comment-list .comment-edit-link {
   margin-left: -8.58896%;
   padding: 0 3.06748% 0 0;
   content: ' ';
-  background: #f0c214;
+  background: #bf9713;
   position: absolute;
   height: 100%;
 }

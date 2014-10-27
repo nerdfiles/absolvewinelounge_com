@@ -73,7 +73,7 @@ dd {
 
     &:before {
       height: 825px;
-      background: #4bb4e0;
+      background: #2e6f89;
       position: absolute;
       opacity: .8;
       z-index: 1;
@@ -125,7 +125,7 @@ dd {
       a {
         margin: 0 $gutter/2;
         &:hover {
-          color: #f0c214;
+          color: $color4;
           @include transition (all .5s ease-in-out);
           @include transform( rotate(360deg) scale(2) );
         }
@@ -135,7 +135,7 @@ dd {
   }
 
   .home--our-story {
-    background: #f0c214;
+    background: $color4;
     position: relative;
     z-index: 20;
     font-size: .9rem;
@@ -218,11 +218,11 @@ dd {
       margin-bottom: 0;
 
       &:nth-child(even) {
-        background: #83AAC9;
+        background: #6689a3;
       }
 
       &:nth-child(odd) {
-        background: #BDCCD4;
+        background: #a6b5bc;
       }
       &:nth-of-type(1) {
         @include shift(3.1);
