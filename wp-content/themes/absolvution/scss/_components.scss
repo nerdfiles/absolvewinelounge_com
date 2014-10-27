@@ -91,35 +91,36 @@ dd {
     @include row();
     position: relative;
     z-index: 13;
-    .acx_smw_float_fix {
+    #acurax_si_widget_simple {
       z-index: 12;
       @include span-columns(12, block-collapse);
       position: absolute;
       z-index: 13;
       bottom: -29.5rem;
-      a[href="*twitter"] {
+      img { position: absolute; left: -9999px; }
+      a[href*="twitter"] {
         display: inline-block;
         @extend .fa;
         @extend .fa-twitter;
-        img { display: none; }
+        @extend .fa-lg;
       }
-      a[href="*facebook"] {
+      a[href*="facebook"] {
         display: inline-block;
         @extend .fa;
         @extend .fa-facebook;
-        img { display: none; }
+        @extend .fa-lg;
       }
-      a[href="*pinterest"] {
+      a[href*="pinterest"] {
         display: inline-block;
         @extend .fa;
         @extend .fa-pinterest;
-        img { display: none; }
+        @extend .fa-lg;
       }
-      a[href="*google"] {
+      a[href*="google"] {
         display: inline-block;
         @extend .fa;
         @extend .fa-google-plus;
-        img { display: none; }
+        @extend .fa-lg;
       }
     }
   }

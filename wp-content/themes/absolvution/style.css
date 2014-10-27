@@ -3887,7 +3887,7 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-.fa, .home-followup-widgets .home--social .acx_smw_float_fix a[href="*twitter"], .home-followup-widgets .home--social .acx_smw_float_fix a[href="*facebook"], .home-followup-widgets .home--social .acx_smw_float_fix a[href="*pinterest"], .home-followup-widgets .home--social .acx_smw_float_fix a[href="*google"], .site-meta .searchform div::after {
+.fa, .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"], .site-meta .searchform div::after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -3897,7 +3897,7 @@ table {
 }
 
 /* makes the font 33% larger relative to the icon container */
-.fa-lg {
+.fa-lg, .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"] {
   font-size: 1.33333em;
   line-height: 0.75em;
   vertical-align: -15%;
@@ -3940,7 +3940,7 @@ table {
   top: 0.14286em;
   text-align: center;
 }
-.fa-li.fa-lg {
+.fa-li.fa-lg, .home-followup-widgets .home--social #acurax_si_widget_simple a.fa-li[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.fa-li[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.fa-li[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.fa-li[href*="google"] {
   left: -1.85714em;
 }
 
@@ -3958,10 +3958,10 @@ table {
   float: left;
 }
 
-.fa.pull-left, .home-followup-widgets .home--social .acx_smw_float_fix a.pull-left[href="*twitter"], .home-followup-widgets .home--social .acx_smw_float_fix a.pull-left[href="*facebook"], .home-followup-widgets .home--social .acx_smw_float_fix a.pull-left[href="*pinterest"], .home-followup-widgets .home--social .acx_smw_float_fix a.pull-left[href="*google"], .site-meta .searchform div.pull-left::after {
+.fa.pull-left, .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="google"], .site-meta .searchform div.pull-left::after {
   margin-right: .3em;
 }
-.fa.pull-right, .home-followup-widgets .home--social .acx_smw_float_fix a.pull-right[href="*twitter"], .home-followup-widgets .home--social .acx_smw_float_fix a.pull-right[href="*facebook"], .home-followup-widgets .home--social .acx_smw_float_fix a.pull-right[href="*pinterest"], .home-followup-widgets .home--social .acx_smw_float_fix a.pull-right[href="*google"], .site-meta .searchform div.pull-right::after {
+.fa.pull-right, .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="google"], .site-meta .searchform div.pull-right::after {
   margin-left: .3em;
 }
 
@@ -4651,11 +4651,11 @@ table {
   content: "";
 }
 
-.fa-twitter:before, .home-followup-widgets .home--social .acx_smw_float_fix a[href="*twitter"]:before {
+.fa-twitter:before, .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="twitter"]:before {
   content: "";
 }
 
-.fa-facebook:before, .home-followup-widgets .home--social .acx_smw_float_fix a[href="*facebook"]:before {
+.fa-facebook:before, .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="facebook"]:before {
   content: "";
 }
 
@@ -4822,7 +4822,7 @@ table {
   content: "";
 }
 
-.fa-pinterest:before, .home-followup-widgets .home--social .acx_smw_float_fix a[href="*pinterest"]:before {
+.fa-pinterest:before, .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="pinterest"]:before {
   content: "";
 }
 
@@ -4834,7 +4834,7 @@ table {
   content: "";
 }
 
-.fa-google-plus:before, .home-followup-widgets .home--social .acx_smw_float_fix a[href="*google"]:before {
+.fa-google-plus:before, .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"]:before {
   content: "";
 }
 
@@ -6426,7 +6426,7 @@ dd {
 .home-followup-widgets .home--social:after {
   clear: both;
 }
-.home-followup-widgets .home--social .acx_smw_float_fix {
+.home-followup-widgets .home--social #acurax_si_widget_simple {
   z-index: 12;
   float: left;
   display: block;
@@ -6435,32 +6435,24 @@ dd {
   z-index: 13;
   bottom: -29.5rem;
 }
-.home-followup-widgets .home--social .acx_smw_float_fix:last-child {
+.home-followup-widgets .home--social #acurax_si_widget_simple:last-child {
   width: 100%;
 }
-.home-followup-widgets .home--social .acx_smw_float_fix a[href="*twitter"] {
+.home-followup-widgets .home--social #acurax_si_widget_simple img {
+  position: absolute;
+  left: -9999px;
+}
+.home-followup-widgets .home--social #acurax_si_widget_simple a[href*="twitter"] {
   display: inline-block;
 }
-.home-followup-widgets .home--social .acx_smw_float_fix a[href="*twitter"] img {
-  display: none;
-}
-.home-followup-widgets .home--social .acx_smw_float_fix a[href="*facebook"] {
+.home-followup-widgets .home--social #acurax_si_widget_simple a[href*="facebook"] {
   display: inline-block;
 }
-.home-followup-widgets .home--social .acx_smw_float_fix a[href="*facebook"] img {
-  display: none;
-}
-.home-followup-widgets .home--social .acx_smw_float_fix a[href="*pinterest"] {
+.home-followup-widgets .home--social #acurax_si_widget_simple a[href*="pinterest"] {
   display: inline-block;
 }
-.home-followup-widgets .home--social .acx_smw_float_fix a[href="*pinterest"] img {
-  display: none;
-}
-.home-followup-widgets .home--social .acx_smw_float_fix a[href="*google"] {
+.home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"] {
   display: inline-block;
-}
-.home-followup-widgets .home--social .acx_smw_float_fix a[href="*google"] img {
-  display: none;
 }
 .home-followup-widgets .home--our-story {
   background: #f0c214;
