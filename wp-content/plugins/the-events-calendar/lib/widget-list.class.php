@@ -97,8 +97,8 @@ class TribeEventsListWidget extends WP_Widget {
 		$posts = tribe_get_events(
 			apply_filters(
 				'tribe_events_list_widget_query_args', array(
-					'eventDisplay'   => 'list',
-					'posts_per_page' => $limit
+					'eventDisplay'   => 'all',
+          'posts_per_page' => $limit
 				)
 			)
 		);
