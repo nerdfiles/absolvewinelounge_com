@@ -7529,6 +7529,9 @@ article:after {
 .post-meta:last-child {
   margin-right: 0;
 }
+.post-meta a {
+  color: #83AAC9;
+}
 
 body:not(.single-post) .post-meta a {
   position: absolute;
