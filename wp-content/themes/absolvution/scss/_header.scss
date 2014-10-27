@@ -22,7 +22,7 @@ $g: $gutter + $gutter;
       @include shift(-1);
       @include pad(0 default 0 0);
       content: ' ';
-      background: #f0c214;
+      background: $color4;
       position: absolute;
       height: 100%;
     }
