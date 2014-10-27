@@ -70,7 +70,7 @@ dd {
     }
 
     &:before {
-      height: 39rem;
+      height: 41rem;
       background: #2e6f89;
       position: absolute;
       opacity: .8;
@@ -136,12 +136,13 @@ dd {
     overflow: scroll;
     background: $color4;
     position: relative;
-    z-index: 20;
     font-size: .9rem;
-    height: 50rem;
+    border-bottom: 5px #306170 solid;
+    height: 51rem;
     top: -.42rem;
     @include span-columns(3.22);
-    @include shift(.5);
+    margin-left: 54px;
+    /*@include shift(.5);*/
     @include pad(5rem default 0 default);
     font-family: $base-font;
     h2 {
@@ -151,6 +152,8 @@ dd {
     a {
       font-weight: 700;
       color: #306170;
+      position: relative;
+      z-index: 30;
     }
   }
   @-moz-document url-prefix() {
@@ -230,7 +233,7 @@ dd {
           @include pad(.5rem 0.15rem 0.15rem 55%);
         }
       }
-      @include span-columns(2.847, block-collapse);
+      @include span-columns(2.846, block-collapse);
       @include pad(0 0 0 0);
       margin-bottom: 0;
 
@@ -245,11 +248,12 @@ dd {
         @include shift(3.1);
       }
       &:nth-of-type(4) {
-        @include span-columns(2.961, block-collapse);
-        @include shift(.139);
+        @include span-columns(2.968, block-collapse);
+        @include shift(.13);
       }
       &:nth-of-type(6) {
         @extend .long;
+        @include span-columns(2.85, block-collapse);
       }
       &:nth-of-type(7) {
         @include span-columns(3.2, block-collapse);
