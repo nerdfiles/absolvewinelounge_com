@@ -133,6 +133,7 @@ dd {
   }
 
   .home--our-story {
+    overflow: scroll;
     background: $color4;
     position: relative;
     z-index: 20;
