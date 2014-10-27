@@ -97,10 +97,28 @@ dd {
       position: absolute;
       z-index: 13;
       bottom: -29.5rem;
-      a {
+      a[href="*twitter"] {
         display: inline-block;
         @extend .fa;
         @extend .fa-twitter;
+        img { display: none; }
+      }
+      a[href="*facebook"] {
+        display: inline-block;
+        @extend .fa;
+        @extend .fa-facebook;
+        img { display: none; }
+      }
+      a[href="*pinterest"] {
+        display: inline-block;
+        @extend .fa;
+        @extend .fa-pinterest;
+        img { display: none; }
+      }
+      a[href="*google"] {
+        display: inline-block;
+        @extend .fa;
+        @extend .fa-google-plus;
         img { display: none; }
       }
     }
