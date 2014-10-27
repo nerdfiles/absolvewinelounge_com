@@ -6401,7 +6401,7 @@ dd {
   position: relative;
 }
 .home-followup-widgets .home--logo:before {
-  height: 39rem;
+  height: 41rem;
   background: #2e6f89;
   position: absolute;
   opacity: .8;
@@ -6482,15 +6482,16 @@ dd {
   overflow: scroll;
   background: #bf9713;
   position: relative;
-  z-index: 20;
   font-size: .9rem;
-  height: 50rem;
+  border-bottom: 5px #306170 solid;
+  height: 51rem;
   top: -.42rem;
   float: left;
   display: block;
   margin-right: 3.06748%;
   width: 24.58896%;
-  margin-left: 4.29448%;
+  margin-left: 54px;
+  /*@include shift(.5);*/
   padding: 5rem 3.06748% 0 3.06748%;
   font-family: "Quicksand", sans-serif;
 }
@@ -6504,6 +6505,8 @@ dd {
 .home-followup-widgets .home--our-story a {
   font-weight: 700;
   color: #306170;
+  position: relative;
+  z-index: 30;
 }
 @-moz-document url-prefix() {
   .home-followup-widgets .home--our-story {
@@ -6590,7 +6593,7 @@ dd {
   position: relative;
   float: left;
   display: block;
-  width: 24.45276%;
+  width: 24.44417%;
   padding: 0 0 0 0;
   margin-bottom: 0;
 }
@@ -6616,7 +6619,7 @@ dd {
   padding: 0.5rem 0.15rem 0.15rem 55%;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:last-child {
-  width: 21.38528%;
+  width: 21.37669%;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-child(even) {
   background: #6689a3;
@@ -6630,11 +6633,19 @@ dd {
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(4) {
   float: left;
   display: block;
-  width: 25.4319%;
-  margin-left: 1.19387%;
+  width: 25.49202%;
+  margin-left: 1.11656%;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(4):last-child {
-  width: 22.36442%;
+  width: 22.42454%;
+}
+.home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6) {
+  float: left;
+  display: block;
+  width: 24.47853%;
+}
+.home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6):last-child {
+  width: 21.41104%;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(7) {
   float: left;
