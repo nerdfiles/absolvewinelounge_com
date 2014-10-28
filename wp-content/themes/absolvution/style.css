@@ -8237,6 +8237,9 @@ article:after {
   margin-top: 1em;
 }
 
+.single .post-title {
+  outline: 1px solid #111;
+}
 .single .post-title:first-child {
   margin-top: 5rem;
 }
