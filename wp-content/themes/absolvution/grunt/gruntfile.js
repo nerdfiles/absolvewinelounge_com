@@ -180,7 +180,6 @@ module.exports = function(grunt) {
       test: {
         command: 'uname && pwd && cd /home2/mccabe56/www/wp && git pull -u origin master',
         options: {
-          async: false,
           showProgress: true,
           host: '<%= secret.host %>',
           username: '<%= secret.username %>',
