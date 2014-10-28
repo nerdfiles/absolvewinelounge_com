@@ -1,4 +1,4 @@
-/*! absolvution - v0.0.0 - 2014-10-27
+/*! absolvution - v0.0.0 - 2014-10-28
 * Copyright (c) 2014 nerdfiles; Licensed WTFPL */
 /*!
  * jQuery JavaScript Library v2.1.1
@@ -9192,39 +9192,52 @@ return jQuery;
 }));
 
 (function() {
-  define('main',["jquery"], function($) {
-    var $vcalendar, aw, w, __;
-    __ = function(obj) {
-      window.console.log(obj);
-    };
-    $("body").attr('jquery-version', $.fn.jquery);
-    w = $(".tribe-events-list-widget-events").css('width');
-    $vcalendar = $('body.home .vcalendar');
-    aw = parseInt(w) + 10;
-    $vcalendar.css('margin-top', '-' + aw + 'px');
-    $(".tribe-events-list-widget-events").each(function(index, element) {
-      var $this;
-      __(element);
-      if (index === 5) {
-        return;
-      }
-      $this = $(this);
-      return $this.css('height', w);
+  if (!window.requireTestMode) {
+    define('main',["jquery"], function($) {
+      var $vcalendar, aw, w, __;
+      $("body").attr('jquery-version', $.fn.jquery);
+      __ = function(obj) {
+        window.console.log(obj);
+      };
+      w = $(".tribe-events-list-widget-events").css('width');
+      $vcalendar = $('body.home .vcalendar');
+      aw = parseInt(w) + 10;
+      $vcalendar.css('margin-top', '-' + aw + 'px');
+      $(".tribe-events-list-widget-events").each(function(index, element) {
+        var $this;
+        __(element);
+        if (index === 5) {
+          return;
+        }
+        $this = $(this);
+        return $this.css('height', w);
+      });
     });
-  });
+  }
 
 }).call(this);
 
 (function() {
   require.config({
     paths: {
-      components: "../bower_components",
-      jquery: "../bower_components/jquery/dist/jquery"
+      'components': "../bower_components",
+      'jquery': "../bower_components/jquery/dist/jquery",
+      'main': "./main"
+    },
+    shim: {
+      'jquery': {
+        'exports': 'jquery'
+      },
+      'main': {
+        'exports': 'main'
+      }
     }
   });
 
   if (!window.requireTestMode) {
-    require(["main"], function() {});
+    require(['jquery', 'main'], function(main) {
+      return window.console.log(main);
+    });
   }
 
 }).call(this);

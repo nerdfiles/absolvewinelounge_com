@@ -1,4 +1,4 @@
-define(function() { 
+define(function() {
   QUnit.start();
   /*
     ======== A Handy Little QUnit Reference ========
@@ -35,6 +35,7 @@ define(function() {
     stop();
     require(['jquery'], function($) {
       start();
+      window.console.log($);
       strictEqual(typeof $, 'function', 'is a function');
     });
   });

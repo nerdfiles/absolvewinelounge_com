@@ -144,14 +144,24 @@ module.exports = function(grunt) {
       },
       app: {
         files: 'app/**/*.coffee',
-        tasks: ['coffee', 'jshint:app', 'qunit', 'notify:js'],
+        tasks: [
+          'coffee',
+          'jshint:app',
+          //'qunit',
+          'notify:js'
+        ],
         options: {
           livereload: true,
         }
       },
       test: {
         files: '<%= jshint.test.src %>',
-        tasks: ['coffee', 'jshint:test', 'qunit', 'notify:js']
+        tasks: [
+          'coffee',
+          'jshint:test',
+          //'qunit',
+          'notify:js'
+        ]
       },
     },
 
@@ -288,7 +298,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'coffee',
     'jshint',
-    'qunit',
+    //'qunit',
     'clean',
     'requirejs',
     'concat',
