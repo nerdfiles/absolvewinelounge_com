@@ -12,8 +12,6 @@
   z-index: 1;
   img {
     width: 100% !important;
-    -webkit-box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
-    -moz-box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
     box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
   }
 }
@@ -21,8 +19,6 @@
 .widget_sp_image:nth-of-type(4) {
   img {
     width: 100% !important;
-    -webkit-box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
-    -moz-box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
     box-shadow: 10px 29px 74px -6px rgba(0,0,0,0.69);
   }
 }
@@ -146,7 +142,7 @@ dd {
     border-bottom: 5px #306170 solid;
     height: 51rem;
     top: -.42rem;
-    @include span-columns(3.22);
+    @include span-columns(3.23);
     margin-left: 54px;
     /*@include shift(.5);*/
     @include pad(5rem default 0 default);
