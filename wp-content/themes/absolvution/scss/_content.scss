@@ -67,9 +67,8 @@ article {
 	}
 }
 
-// Test.
-
 .single .post-title {
+  outline: 1px solid #111;
 	&:first-child {
 		margin-top: 5rem;
 	}
