@@ -180,7 +180,7 @@ module.exports = function(grunt) {
 
     sshexec: {
       test: {
-        command: 'uname && pwd && cd /home2/mccabe56/www/wp && git pull -u origin master',
+        command: 'uname && pwd && cd /home2/mccabe56/www/wp && git pull -uf origin master',
         options: {
           showProgress: true,
           host: '<%= secret.host %>',
