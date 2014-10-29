@@ -22,9 +22,17 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
     };
     $search = $('#s');
     $search.attr('placeholder', 'Find something new');
-    $('.page-content').waypoint(function() {
-      $('.info--location > div').addClass('flip-x-in').addClass('animated');
-      return $('.info--hours > div').addClass('flip-x-in').addClass('animated');
+    $('.site-footer').waypoint(function(direction) {
+      var infoHours$, infoLocation$;
+      infoLocation$ = $('.info--location > div');
+      infoHours$ = $('.info--hours > div');
+      if (direction === 'down') {
+        infoLocation$.addClass('flip-x-in').addClass('animated');
+        return infoHours$.addClass('flip-x-in').addClass('animated');
+      } else {
+        infoLocation$.removeClass('animated').removeClass('flip-x-in');
+        return infoHours$.removeClass('animated').removeClass('flip-x-in');
+      }
     }, {
       offset: '50%'
     });
