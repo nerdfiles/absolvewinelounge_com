@@ -2,6 +2,11 @@
   color: #fff;
 }
 
+/**
+ * Home Banner Image
+ *
+ * Logo placement.
+ */
 .home--banner-image {
   @include row();
 }
@@ -33,6 +38,9 @@ dd {
   margin-left: 0;
 }
 
+/**
+ * Home Specials
+ */
 .home--specials {
   @include span-columns(5);
   @include shift(1);
@@ -47,7 +55,6 @@ dd {
     dd {
       @include span-columns(7.5);
     }
-    
   }
 }
 
@@ -227,6 +234,9 @@ dd {
         .duration {
           padding-top: 55%;
         }
+        a {
+          @include pad(.5rem 0.15rem 0.15rem 55%);
+        }
       }
       h4 {
         height: 100%; margin: 0 0; }
@@ -238,10 +248,8 @@ dd {
         position: relative;
         z-index: 14;
         @include pad(.5rem 0.15rem 0.15rem .5rem);
-        display: block; height: 100%; width: 100%;
-        &:hover {
-          @include pad(.5rem 0.15rem 0.15rem 55%);
-        }
+        display: block;
+        height: 100%; width: 100%;
       }
       @include span-columns(2.846, block-collapse);
       @include pad(0 0 0 0);
@@ -262,8 +270,12 @@ dd {
         @include shift(.13);
       }
       &:nth-of-type(6) {
-        @extend .long;
+        /*@extend .long;*/
         @include span-columns(2.85, block-collapse);
+        &:after {
+          @extend .long;
+          height: 800px;
+        }
       }
       &:nth-of-type(7) {
         @include span-columns(3.2, block-collapse);
@@ -322,3 +334,78 @@ body.events-gridview {
 .tribe-events-meta-group-gmap {
   @include span-columns(12);
 }
+
+/**
+ * Location and Hours Information
+ */
+.site-footer {
+  position: relative;
+
+  li {
+    list-style: none; }
+
+  a {
+    color: #fff;
+    &:hover {
+      color: #f0c214;
+      @include transition (all .5s linear);
+    }
+  }
+
+  div.menu {
+    position: absolute;
+    left: 0;
+    bottom: 425px;
+    @include span-columns(5.5);
+    @include shift(.5);
+    nav.footer-menu {}
+    .menu {
+      margin: 0;
+      padding: 0;
+      @include shift(1);
+      li {
+        @include span-columns(3);
+      }
+    }
+  }
+
+  .footer-widgets {
+    position: absolute;
+    right: 0;
+    bottom: 85px;
+    @include span-columns(6);
+    .home--copyright {
+      position: absolute;
+      bottom: 225px;
+      @include span-columns(12, block-collapse);
+      @include shift(-10.45);
+    }
+    .home--info {
+      h4 {
+        @include transform(scaleY(1) rotate(-90deg));
+        position: absolute;
+        left: -120px
+      }
+      .info--location,
+      .info--hours {
+        margin-left: $gutter;
+      }
+      .info--location {
+        h4 {
+          left: -90px;
+        }
+        margin-bottom: 7rem;
+        @include span-columns(5.5);
+      }
+      .info--hours {
+        h4 {
+        }
+        @include span-columns(5.5);
+      }
+    }
+  }
+}
+
+/**
+ * Home Copyright
+ */
