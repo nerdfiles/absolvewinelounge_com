@@ -310,7 +310,7 @@ ul.footer-widgets {
   padding: 0;
 }
 
-body:not(.events-gridview):not(.page-gallery):not(.page-contact):not(.search-results) {
+body:not(.events-gridview):not(.events-single):not(.page-gallery):not(.page-contact):not(.search-results) {
   .site-header { position: relative; z-index: 10; }
   .post-meta { position: relative; z-index: 11; }
   .post-content { z-index: 1; }
@@ -318,6 +318,7 @@ body:not(.events-gridview):not(.page-gallery):not(.page-contact):not(.search-res
 body.page-gallery,
 body.search-results,
 body.page-contact,
+body.events-single,
 body.events-gridview {
   .site-header { position: relative; z-index: 1; }
   .post-content { z-index: 1; }

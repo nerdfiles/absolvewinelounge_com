@@ -390,7 +390,9 @@ table {
   border-spacing: 0;
 }
 
-.animated, ol.comment-list li.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input {
+.animated, ol.comment-list li.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .type-tribe_events,
+body.events-single .type-tribe_events, body.events-gridview td:hover,
+body.events-single td:hover {
   -webkit-animation-duration: 0.75s;
   -moz-animation-duration: 0.75s;
   -o-animation-duration: 0.75s;
@@ -1248,7 +1250,8 @@ table {
     -moz-transform: translateY(0);
   }
 }
-.fade-down-in {
+.fade-down-in, body.events-gridview .type-tribe_events,
+body.events-single .type-tribe_events {
   -webkit-animation-name: fade-down-in;
   -moz-animation-name: fade-down-in;
   -o-animation-name: fade-down-in;
@@ -2051,7 +2054,9 @@ table {
   animation-name: fold-in;
 }
 
-.animated.fold-in, ol.comment-list li.fold-in.bypostauthor:target, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in {
+.animated.fold-in, ol.comment-list li.fold-in.bypostauthor:target, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.events-gridview .fold-in.type-tribe_events,
+body.events-single .fold-in.type-tribe_events, body.events-gridview td.fold-in:hover,
+body.events-single td.fold-in:hover {
   -webkit-animation-duration: 1.2s;
   -moz-animation-duration: 1.2s;
   -o-animation-duration: 1.2s;
@@ -2098,7 +2103,9 @@ table {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-in, ol.comment-list li.fold-small-in.bypostauthor:target, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in {
+.animated.fold-small-in, ol.comment-list li.fold-small-in.bypostauthor:target, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.events-gridview .fold-small-in.type-tribe_events,
+body.events-single .fold-small-in.type-tribe_events, body.events-gridview td.fold-small-in:hover,
+body.events-single td.fold-small-in:hover {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -o-animation-duration: 1s;
@@ -2145,7 +2152,9 @@ table {
   animation-name: fold-out;
 }
 
-.animated.fold-out, ol.comment-list li.fold-out.bypostauthor:target, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out {
+.animated.fold-out, ol.comment-list li.fold-out.bypostauthor:target, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.events-gridview .fold-out.type-tribe_events,
+body.events-single .fold-out.type-tribe_events, body.events-gridview td.fold-out:hover,
+body.events-single td.fold-out:hover {
   -webkit-animation-duration: 1.2s;
   -moz-animation-duration: 1.2s;
   -o-animation-duration: 1.2s;
@@ -2192,11 +2201,368 @@ table {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-out, ol.comment-list li.fold-small-out.bypostauthor:target, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out {
+.animated.fold-small-out, ol.comment-list li.fold-small-out.bypostauthor:target, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.events-gridview .fold-small-out.type-tribe_events,
+body.events-single .fold-small-out.type-tribe_events, body.events-gridview td.fold-small-out:hover,
+body.events-single td.fold-small-out:hover {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -o-animation-duration: 1s;
   animation-duration: 1s;
+}
+
+@keyframes flip {
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+  }
+  40% {
+    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: perspective(400px) rotateY(360deg) scale(0.95);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
+  }
+}
+@-webkit-keyframes flip {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(0);
+    -webkit-animation-timing-function: ease-out;
+  }
+  40% {
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -webkit-animation-timing-function: ease-in;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -webkit-animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: perspective(400px) scale(1);
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+@-o-keyframes flip {
+  0% {
+    -o-transform: perspective(400px) rotateY(0);
+    -o-animation-timing-function: ease-out;
+  }
+  40% {
+    -o-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -o-animation-timing-function: ease-out;
+  }
+  50% {
+    -o-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -o-animation-timing-function: ease-in;
+  }
+  80% {
+    -o-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -o-animation-timing-function: ease-in;
+  }
+  100% {
+    -o-transform: perspective(400px) scale(1);
+    -o-animation-timing-function: ease-in;
+  }
+}
+@-moz-keyframes flip {
+  0% {
+    -moz-transform: perspective(400px) rotateY(0);
+    -moz-animation-timing-function: ease-out;
+  }
+  40% {
+    -moz-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -moz-animation-timing-function: ease-out;
+  }
+  50% {
+    -moz-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -moz-animation-timing-function: ease-in;
+  }
+  80% {
+    -moz-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -moz-animation-timing-function: ease-in;
+  }
+  100% {
+    -moz-transform: perspective(400px) scale(1);
+    -moz-animation-timing-function: ease-in;
+  }
+}
+.flip {
+  -webkit-animation-name: flip;
+  -moz-animation-name: flip;
+  -o-animation-name: flip;
+  animation-name: flip;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: visible !important;
+  -moz-backface-visibility: visible !important;
+  -o-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+@keyframes flip-x-in {
+  0% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flip-x-in {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-o-keyframes flip-x-in {
+  0% {
+    -o-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes flip-x-in {
+  0% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+.flip-x-in {
+  -webkit-animation-name: flip-x-in;
+  -moz-animation-name: flip-x-in;
+  -o-animation-name: flip-x-in;
+  animation-name: flip-x-in;
+  -webkit-backface-visibility: visible !important;
+  -moz-backface-visibility: visible !important;
+  -o-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+@keyframes flip-y-in {
+  0% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotateY(-10deg);
+  }
+  70% {
+    transform: perspective(400px) rotateY(10deg);
+  }
+  100% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flip-y-in {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotateY(-10deg);
+  }
+  70% {
+    transform: perspective(400px) rotateY(10deg);
+  }
+  100% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+@-o-keyframes flip-y-in {
+  0% {
+    -o-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotateY(-10deg);
+  }
+  70% {
+    transform: perspective(400px) rotateY(10deg);
+  }
+  100% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes flip-y-in {
+  0% {
+    -moz-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotateY(-10deg);
+  }
+  70% {
+    transform: perspective(400px) rotateY(10deg);
+  }
+  100% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+.flip-y-in {
+  -webkit-animation-name: flip-y-in;
+  -moz-animation-name: flip-y-in;
+  -o-animation-name: flip-y-in;
+  animation-name: flip-y-in;
+  -webkit-backface-visibility: visible !important;
+  -moz-backface-visibility: visible !important;
+  -o-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+@keyframes flip-x-out {
+  0% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flip-x-out {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+@-o-keyframes flip-x-out {
+  0% {
+    -o-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+@-moz-keyframes flip-x-out {
+  0% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+.flip-x-out {
+  -webkit-animation-name: flip-x-out;
+  -moz-animation-name: flip-x-out;
+  -o-animation-name: flip-x-out;
+  animation-name: flip-x-out;
+  -webkit-backface-visibility: visible !important;
+  -moz-backface-visibility: visible !important;
+  -o-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+@keyframes flip-y-out {
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flip-y-out {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+@-o-keyframes flip-y-out {
+  0% {
+    -o-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+@-moz-keyframes flip-y-out {
+  0% {
+    -moz-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+.flip-y-out {
+  -webkit-animation-name: flip-y-out;
+  -moz-animation-name: flip-y-out;
+  -o-animation-name: flip-y-out;
+  animation-name: flip-y-out;
+  -webkit-backface-visibility: visible !important;
+  -moz-backface-visibility: visible !important;
+  -o-backface-visibility: visible !important;
+  backface-visibility: visible !important;
 }
 
 @keyframes grow-in {
@@ -2412,7 +2778,9 @@ table {
   animation-name: hinge-out;
 }
 
-.animated.hinge-out, ol.comment-list li.hinge-out.bypostauthor:target, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out {
+.animated.hinge-out, ol.comment-list li.hinge-out.bypostauthor:target, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.events-gridview .hinge-out.type-tribe_events,
+body.events-single .hinge-out.type-tribe_events, body.events-gridview td.hinge-out:hover,
+body.events-single td.hinge-out:hover {
   -webkit-animation-duration: 1.75s;
   -moz-animation-duration: 1.75s;
   -o-animation-duration: 1.75s;
@@ -2502,7 +2870,9 @@ table {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in {
+.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
+body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
+body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.4s;
   -moz-animation-duration: 0.4s;
   -o-animation-duration: 0.4s;
@@ -2560,7 +2930,9 @@ table {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in {
+.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
+body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
+body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.2s;
   -moz-animation-duration: 0.2s;
   -o-animation-duration: 0.2s;
@@ -2611,7 +2983,8 @@ table {
     -moz-transform: scale(1);
   }
 }
-.pulse {
+.pulse, body.events-gridview td:hover,
+body.events-single td:hover {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
   -o-animation-name: pulse;
@@ -3768,7 +4141,9 @@ table {
   animation-timing-function: ease-in;
 }
 
-.animated.wiggle, ol.comment-list li.wiggle.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input {
+.animated.wiggle, ol.comment-list li.wiggle.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .wiggle.type-tribe_events,
+body.events-single .wiggle.type-tribe_events, body.events-gridview td.wiggle:hover,
+body.events-single td.wiggle:hover {
   -webkit-animation-duration: 0.5;
   -moz-animation-duration: 0.5;
   -o-animation-duration: 0.5;
@@ -6707,21 +7082,22 @@ ul.footer-widgets {
   padding: 0;
 }
 
-body:not(.events-gridview):not(.page-gallery):not(.page-contact):not(.search-results) .site-header {
+body:not(.events-gridview):not(.events-single):not(.page-gallery):not(.page-contact):not(.search-results) .site-header {
   position: relative;
   z-index: 10;
 }
-body:not(.events-gridview):not(.page-gallery):not(.page-contact):not(.search-results) .post-meta {
+body:not(.events-gridview):not(.events-single):not(.page-gallery):not(.page-contact):not(.search-results) .post-meta {
   position: relative;
   z-index: 11;
 }
-body:not(.events-gridview):not(.page-gallery):not(.page-contact):not(.search-results) .post-content {
+body:not(.events-gridview):not(.events-single):not(.page-gallery):not(.page-contact):not(.search-results) .post-content {
   z-index: 1;
 }
 
 body.page-gallery .site-header,
 body.search-results .site-header,
 body.page-contact .site-header,
+body.events-single .site-header,
 body.events-gridview .site-header {
   position: relative;
   z-index: 1;
@@ -6729,6 +7105,7 @@ body.events-gridview .site-header {
 body.page-gallery .post-content,
 body.search-results .post-content,
 body.page-contact .post-content,
+body.events-single .post-content,
 body.events-gridview .post-content {
   z-index: 1;
 }
@@ -7910,7 +8287,7 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.events-gridview):not(.page-contact):not(.page-gallery) .home .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .post .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .page .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .archive .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .search .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .author .post-content {
+body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .home .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .post .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .page .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .archive .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .search .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .author .post-content {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -7922,7 +8299,7 @@ body:not(.events-gridview):not(.page-contact):not(.page-gallery) .home .post-con
   position: relative;
   z-index: 25;
 }
-body:not(.events-gridview):not(.page-contact):not(.page-gallery) .home .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .post .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .page .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .archive .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .search .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery) .author .post-content:last-child {
+body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .home .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .post .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .page .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .archive .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .search .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .author .post-content:last-child {
   margin-right: 0;
 }
 
@@ -8083,29 +8460,40 @@ body.page-gallery .post-content:last-child {
   clear: both;
 }
 
-body.events-gridview .post-content {
+body.events-gridview .post-content,
+body.events-single .post-content {
   background-color: transparent;
-}
-body.events-gridview .tribe-events-page-title {
   color: #fff;
 }
-body.events-gridview #tribe-events-content .tribe-events-calendar td {
+body.events-gridview .tribe-events-page-title,
+body.events-single .tribe-events-page-title {
+  color: #fff;
+}
+body.events-gridview #tribe-events-content .tribe-events-calendar td,
+body.events-single #tribe-events-content .tribe-events-calendar td {
   border: 10px solid #222;
 }
-body.events-gridview .tribe-events-calendar div[id*="tribe-events-daynum-"] {
+body.events-gridview .tribe-events-calendar div[id*="tribe-events-daynum-"],
+body.events-single .tribe-events-calendar div[id*="tribe-events-daynum-"] {
   background-color: #BF9713;
 }
-body.events-gridview .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] {
+body.events-gridview .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"],
+body.events-single .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] {
   color: #111;
 }
-body.events-gridview .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] > a {
+body.events-gridview .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] > a,
+body.events-single .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] > a {
   color: #111;
   background-color: transparent;
 }
-body.events-gridview .tribe-events-calendar div[id*="tribe-events-daynum-"] {
+body.events-gridview .tribe-events-calendar div[id*="tribe-events-daynum-"],
+body.events-gridview .tribe-events-calendar div[id*="tribe-events-daynum-"] a,
+body.events-single .tribe-events-calendar div[id*="tribe-events-daynum-"],
+body.events-single .tribe-events-calendar div[id*="tribe-events-daynum-"] a {
   font-size: .85rem;
 }
-body.events-gridview .tribe-events-calendar {
+body.events-gridview .tribe-events-calendar,
+body.events-single .tribe-events-calendar {
   font-size: .85rem;
 }
 

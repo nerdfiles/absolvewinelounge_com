@@ -132,7 +132,7 @@ singular
 customize-support
 tribe-is-responsive
 */
-body:not(.events-gridview):not(.page-contact):not(.page-gallery) {
+body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) {
   .home, .post, .page, .archive, .search, .author {
 
     .post-content {
@@ -254,9 +254,11 @@ body.page-gallery {
 .search-title {
 }
 
-body.events-gridview {
+body.events-gridview,
+body.events-single {
   .post-content {
     background-color: transparent;
+    color: #fff;
   }
   .tribe-events-page-title {
     color: #fff;
@@ -276,8 +278,19 @@ body.events-gridview {
     color: #111;
     background-color: transparent;
   }
-  .tribe-events-calendar div[id*="tribe-events-daynum-"] {
+  .tribe-events-calendar div[id*="tribe-events-daynum-"],
+  .tribe-events-calendar div[id*="tribe-events-daynum-"] a {
     font-size: .85rem;
   }
   .tribe-events-calendar { font-size: .85rem; }
+  .type-tribe_events {
+    @extend .fade-down-in;
+    @extend .animated;
+  }
+  td {
+    &:hover {
+      @extend .pulse;
+      @extend .animated;
+    }
+  }
 }
