@@ -1,6 +1,6 @@
 (function() {
   (function($) {
-    var $search, $vcalendar, aw, i, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _i, _ref;
+    var $search, $vcalendar, aw, i, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
     $("body").attr('jquery-version', $.fn.jquery);
     __ = function(obj) {
       window.console.log(obj);
@@ -8,17 +8,42 @@
     $search = $('#s');
     $search.attr('placeholder', 'Find something new');
     recentTweets$ = $('.home--recent-tweets');
-    twitterTime$ = recentTweets$.find('.twitter_time');
-    twitterHref = twitterTime$.attr('href');
-    tHref = twitterHref.split('/');
-    window.console.log(tHref);
-    s = '';
-    for (i = _i = 0, _ref = tHref.length; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
-      if (i < 4 && i > 2) {
-        s += tHref[i];
+    if (recentTweets$.length) {
+      twitterTime$ = recentTweets$.find('.twitter_time');
+      twitterHref = twitterTime$.attr('href');
+      tHref = twitterHref.split('/');
+      window.console.log(tHref);
+      s = '';
+      for (i = _i = 0, _ref = tHref.length; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
+        if (i < 4 && i > 2) {
+          s += tHref[i];
+        }
       }
+      recentTweets$.find('.widgettitle').after("<div class='byline'>\n  Follow \n  <a href='https://twitter.com/" + s + "'>\n<span class='handler-symbol'>@</span><span class='label'>" + s + "</span>\n  </a> on <a class=\"source\" href=\"https://twitter.com/\">Twitter</a>\n</div>");
     }
-    recentTweets$.find('.widgettitle').after("<div class='byline'>\n  Follow \n  <a href='https://twitter.com/" + s + "'>\n<span class='handler-symbol'>@</span><span class='label'>" + s + "</span>\n  </a> on <a class=\"source\" href=\"https://twitter.com/\">Twitter</a>\n</div>");
+    _href = void 0;
+    $('.foogallery-panel').on('click', function() {
+      return $('.foogallery-panel').removeClass('active');
+    });
+    $('.foogallery-link-image a').on('click', function(e) {
+      var $this, href, img;
+      $this = $(this);
+      href = $this.attr('href');
+      if (_href !== href) {
+        $('.foogallery-panel').removeClass('active');
+      }
+      $('.foogallery-panel').toggleClass('active');
+      $('.foogallery-panel img').remove();
+      img = $("<img />").attr('src', href).load(function() {
+        if (!this.complete || typeof this.naturalWidth === "undefined" || this.naturalWidth === 0) {
+          return alert('broken image!');
+        } else {
+          return $(".foogallery-panel").append(img);
+        }
+      });
+      _href = href;
+      return e.preventDefault();
+    });
     $('.site-footer').waypoint(function(direction) {
       var infoHours$, infoLocation$;
       infoLocation$ = $('.info--location > div');

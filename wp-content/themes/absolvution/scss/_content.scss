@@ -79,12 +79,12 @@ article {
   }
 }
 .post-meta {
-	@include span-columns(8);
+  @include span-columns(8);
   @include shift(.25);
   /*margin-top: -2em;*/
 
-	text-align: left;
-	font-style: italic;
+  text-align: left;
+  font-style: italic;
   a {
     color: #83AAC9;
   }
@@ -93,9 +93,11 @@ article {
 body:not(.single-post) {
   .post-meta {
     a {
-      position: absolute;
-      top: 0;
-      left: 0;
+      /*
+       *position: absolute;
+       *top: 0;
+       *left: 0;
+       */
       color: #deb5e8;
     } } }
 
@@ -137,6 +139,31 @@ singular
 customize-support
 tribe-is-responsive
 */
+body.blog,
+body.single-post,
+body.search-results {
+  .page-content {
+    z-index: 9001;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+}
+body.search-results .post-content {
+  padding-top: 0;
+  margin-top: 0;
+  color: #fff;
+  .price-tag {
+    display: inline-block;
+    position: absolute;
+    top: -25%;
+    left: 0;
+    color: #F0C214;
+    font-weight: 700;
+    &:after {
+      content: "USD";
+    }
+  }
+}
 body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) {
   .home, .post, .page, .archive, .search, .author {
 
@@ -153,11 +180,17 @@ body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-sin
   }
 }
 
-.page-gallery {
+body.search-results {
+  img { position: absolute; left: -9999px; }
+}
+
+body.search-results,
+body.page-gallery {
   .post-content {
     background-color: transparent;
   }
 }
+/*body.single-post,*/
 body.page-contact,
 body.page-gallery {
   .post-content {

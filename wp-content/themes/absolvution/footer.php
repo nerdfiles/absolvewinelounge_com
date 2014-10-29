@@ -32,6 +32,7 @@
           </ul>
         </div><!-- .site-footer -->
 
+        <div class="foogallery-panel"></div>
       </div><!-- .site -->
     <?php wp_footer(); ?>
   </body>

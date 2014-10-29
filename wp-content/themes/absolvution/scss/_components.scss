@@ -507,15 +507,15 @@ body.home {
     }
       .info--location {
         margin-left: $gutter;
-        margin-bottom: 7rem;
+        margin-bottom: 6rem;
         h4 {
-          left: -100px;
+          left: -110px;
         }
       }
       .info--hours {
         margin-left: $gutter;
         h4 {
-          left: -130px;
+          left: -140px;
         }
       }
   }
@@ -539,4 +539,23 @@ body.home {
   .source {
     color: #6689a3 !important;
   }
+}
+
+.foogallery-panel.active {
+  cursor: not-allowed;
+  position: fixed;
+  top: 25%;
+  right: 35%;
+  z-index: 9001;
+  padding: 1rem;
+  background: #111;
+  width: 65%;
+  height: 65%;
+  border-left: 3px #F0C214 double;
+  @extend .grow-in;
+  @extend .animated;
+  img { max-height: 100%;
+    margin: 0 auto;
+    display: block;
+    }
 }
