@@ -62,7 +62,9 @@ module.exports = function(grunt) {
           //'../js/scripts.js',
           // @TODO (AMD == true) ?
           //'bower_components/requirejs/require.js',
-          '<%= concat.dist.dest %>'
+          'bower_components/jquery/dist/jquery.min.js',
+          'bower_components/jquery-waypoints/waypoints.min.js',
+          'app/main.js'
         ],
         dest: 'dist/require.js'
       },
@@ -126,18 +128,6 @@ module.exports = function(grunt) {
           livereload: true,
         }
 			},
-      /*
-			 *js: {
-			 *  files: [
-			 *    '<%= jshint.all %>'
-			 *  ],
-			 *  tasks: [
-			 *    'jshint',
-			 *    'uglify',
-			 *    'notify:js'
-			 *  ]
-			 *},
-       */
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
         tasks: ['jshint:gruntfile', 'notify:js']
@@ -153,6 +143,18 @@ module.exports = function(grunt) {
         options: {
           livereload: true,
         }
+      },
+      js: {
+        files: [
+          '<%= jshint.gruntfile.src %>',
+          '<%= jshint.app.src %>'
+        ],
+        tasks: [
+          'jshint',
+          'concat',
+          'uglify',
+          'notify:js'
+        ]
       },
       test: {
         files: '<%= jshint.test.src %>',
