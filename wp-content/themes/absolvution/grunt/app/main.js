@@ -7,22 +7,18 @@
     };
     $search = $('#s');
     $search.attr('placeholder', 'Find something new');
-    $('.site-footer').waypoint(function(direction) {
-      if (direction === 'down') {
-        $('.info--location > div').addClass('flip-x-in');
-        return $('.info--hours > div').addClass('flip-x-in');
-      }
+    $('.page-content').waypoint(function() {
+      $('.info--location > div').addClass('flip-x-in').addClass('animated');
+      return $('.info--hours > div').addClass('flip-x-in').addClass('animated');
+    }, {
+      offset: '50%'
     });
     w = $(".tribe-events-list-widget-events").css('width');
     $vcalendar = $('body.home .vcalendar');
     aw = parseInt(w) + 10;
     $vcalendar.css('margin-top', '-' + aw + 'px');
-    $(".tribe-events-list-widget-events").each(function(index, element) {
+    $(".tribe-events-list-widget-events").each(function() {
       var $this;
-      __(element);
-      if (index === 5) {
-        return;
-      }
       $this = $(this);
       return $this.css('height', w);
     });
