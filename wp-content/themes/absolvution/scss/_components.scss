@@ -220,6 +220,7 @@ dd {
     .hentry {}
     .vevent {}
     .duration {
+      font-size: .85rem;
       position: absolute;
       top: 2rem;
       left: 0;
@@ -229,27 +230,55 @@ dd {
     }
     li.type-tribe_events {
       position: relative;
-
+      overflow: hidden;
       &:hover {
         .duration {
-          padding-top: 55%;
+          margin-top: 60%;
+          color: #111;
+          background-color: #fff;
+          @include transition (all .5s ease-in-out);
+        }
+        &:after {
         }
         a {
+          z-index: 9001;
           @include pad(.5rem 0.15rem 0.15rem 55%);
         }
       }
       h4 {
         height: 100%; margin: 0 0; }
       h4 {
-
       }
       a {
+        &:after {
+          content: " ";
+          background: #111;
+          display: block;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          margin-top: -100%;
+          position: absolute;
+          z-index: 5;
+          opacity: 0;
+          margin-left: -5%;
+        }
         @include transition (all .5s ease-in-out);
         position: relative;
-        z-index: 14;
+        z-index: 9001;
+        color: #fff;
         @include pad(.5rem 0.15rem 0.15rem .5rem);
         display: block;
-        height: 100%; width: 100%;
+        height: 100%;
+        width: 100%;
+        span { z-index: 9001; position: relative; }
+        &:hover {
+          &:after {
+            margin-top: -65%;
+            opacity: .75;
+            @include transition (all .5s ease-in-out);
+          }
+        }
       }
       @include span-columns(2.846, block-collapse);
       @include pad(0 0 0 0);
