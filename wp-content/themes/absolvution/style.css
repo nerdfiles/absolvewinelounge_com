@@ -6759,10 +6759,19 @@ body.events-gridview .post-content {
 .site-footer li {
   list-style: none;
 }
+.site-footer a {
+  color: #fff;
+}
+.site-footer a:hover {
+  color: #f0c214;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
 .site-footer div.menu {
   position: absolute;
   left: 0;
-  bottom: 450px;
+  bottom: 425px;
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -6775,12 +6784,13 @@ body.events-gridview .post-content {
 .site-footer div.menu .menu {
   margin: 0;
   padding: 0;
+  margin-left: 8.58896%;
 }
 .site-footer div.menu .menu li {
   float: left;
   display: block;
   margin-right: 3.06748%;
-  width: 14.11043%;
+  width: 22.69939%;
 }
 .site-footer div.menu .menu li:last-child {
   margin-right: 0;
@@ -6788,7 +6798,7 @@ body.events-gridview .post-content {
 .site-footer .footer-widgets {
   position: absolute;
   right: 0;
-  bottom: 450px;
+  bottom: 85px;
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -6797,6 +6807,17 @@ body.events-gridview .post-content {
 .site-footer .footer-widgets:last-child {
   margin-right: 0;
 }
+.site-footer .footer-widgets .home--copyright {
+  position: absolute;
+  bottom: 225px;
+  float: left;
+  display: block;
+  width: 103.06748%;
+  margin-left: -89.7546%;
+}
+.site-footer .footer-widgets .home--copyright:last-child {
+  width: 100%;
+}
 .site-footer .footer-widgets .home--info h4 {
   -webkit-transform: scaleY(1) rotate(-90deg);
   -moz-transform: scaleY(1) rotate(-90deg);
@@ -6804,6 +6825,33 @@ body.events-gridview .post-content {
   -o-transform: scaleY(1) rotate(-90deg);
   transform: scaleY(1) rotate(-90deg);
   position: absolute;
+  left: -120px;
+}
+.site-footer .footer-widgets .home--info .info--location,
+.site-footer .footer-widgets .home--info .info--hours {
+  margin-left: 30px;
+}
+.site-footer .footer-widgets .home--info .info--location {
+  margin-bottom: 7rem;
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 44.17178%;
+}
+.site-footer .footer-widgets .home--info .info--location h4 {
+  left: -90px;
+}
+.site-footer .footer-widgets .home--info .info--location:last-child {
+  margin-right: 0;
+}
+.site-footer .footer-widgets .home--info .info--hours {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 44.17178%;
+}
+.site-footer .footer-widgets .home--info .info--hours:last-child {
+  margin-right: 0;
 }
 
 /**

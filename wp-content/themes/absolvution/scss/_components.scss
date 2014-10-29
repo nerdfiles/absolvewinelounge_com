@@ -340,39 +340,67 @@ body.events-gridview {
  */
 .site-footer {
   position: relative;
+
   li {
     list-style: none; }
+
+  a {
+    color: #fff;
+    &:hover {
+      color: #f0c214;
+      @include transition (all .5s linear);
+    }
+  }
 
   div.menu {
     position: absolute;
     left: 0;
-    bottom: 450px;
+    bottom: 425px;
     @include span-columns(5.5);
     @include shift(.5);
     nav.footer-menu {}
     .menu {
       margin: 0;
       padding: 0;
-      li { @include span-columns(2); }
+      @include shift(1);
+      li {
+        @include span-columns(3);
+      }
     }
   }
 
   .footer-widgets {
     position: absolute;
     right: 0;
-    bottom: 450px;
+    bottom: 85px;
     @include span-columns(6);
     .home--copyright {
-
+      position: absolute;
+      bottom: 225px;
+      @include span-columns(12, block-collapse);
+      @include shift(-10.45);
     }
     .home--info {
       h4 {
         @include transform(scaleY(1) rotate(-90deg));
         position: absolute;
+        left: -120px
+      }
+      .info--location,
+      .info--hours {
+        margin-left: $gutter;
       }
       .info--location {
+        h4 {
+          left: -90px;
+        }
+        margin-bottom: 7rem;
+        @include span-columns(5.5);
       }
       .info--hours {
+        h4 {
+        }
+        @include span-columns(5.5);
       }
     }
   }
@@ -381,6 +409,3 @@ body.events-gridview {
 /**
  * Home Copyright
  */
-.home--copyright {
-
-}
