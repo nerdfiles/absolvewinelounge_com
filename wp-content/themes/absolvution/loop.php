@@ -37,6 +37,12 @@
 		<?php if ( is_category() || is_archive() || is_search() ) : ?>
 
 			<?php the_excerpt(); ?>
+      <!-- Item Price Specification -->
+      <div class="price-tag">
+      <?php
+          echo get_post_meta(get_the_ID(), 'item_price', true);
+      ?>
+      </div>
 			<a href="<?php the_permalink(); ?>"><?php _e( 'Read more &raquo;', 'absolvution' ); ?></a>
 
 		<?php else : ?>

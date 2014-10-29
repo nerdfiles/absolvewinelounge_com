@@ -73,6 +73,11 @@ article {
 	}
 }
 
+.post-links {
+  a {
+    color: #83AAC9;
+  }
+}
 .post-meta {
 	@include span-columns(8);
   @include shift(.25);
