@@ -73,6 +73,18 @@
 
         <div class="site-twop">
 
+          <?php if (is_front_page()): ?>
+            <div class="home-widgets home-display-widgets">
+              <ul class="inner"><?php
+                if ( function_exists( 'dynamic_sidebar' ) ) :
+                  dynamic_sidebar( 'home-sidebar-display' );
+                endif;
+              ?></ul>
+            </div>
+          <?php
+            endif;
+          ?>
+
           <div class="site-meta">
             <?php get_search_form(); ?>
             <div class="menu"><?php

@@ -49,6 +49,23 @@ ol.comment-list {
       @extend .fade-in;
       @extend .animated;
       z-index: 9001;
+      .comment-author {
+        border-bottom: 3px #f0c214 double;
+      }
+      a[href*="close"] {
+        color: #c1503a !important;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        .label {
+          text-indent: -9999px;
+          display: inline-block;
+        }
+        .icon {
+          @extend .fa;
+          @extend .fa-close;
+        }
+      }
     }
     .comment-body {
     }
@@ -313,5 +330,164 @@ ol.comment-list .comment-edit-link {
 body:not(.home) {
   .page-content {
     min-height: 30rem;
+  }
+}
+
+.post-title,
+h1.post-title {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 3px #f0c214 double;
+}
+.post-content h2 {
+  &:first-child {
+    width: 150%;
+  }
+}
+
+body.term-happy-hour,
+body.term-wines,
+body.term-foods {
+
+  .site-header {
+    z-index: 0 !important;
+  }
+
+  .archive-title {
+    position: relative;
+    z-index: 9001;
+    @include shift(-.2);
+    margin-bottom: 2rem;
+  }
+  .post-meta {
+    position: absolute;
+    left: -9999px;
+  }
+  .post-content {
+    background-color: transparent;
+    margin-bottom: 5rem;
+  }
+  .page-content {
+    @include span-columns(12);
+    @include shift(.2);
+    position: relative;
+    z-index: auto !important;
+    article.menu_item {
+      &:hover .price-tag {
+        @extend .flip;
+        @extend .animated;
+      }
+      &:hover {
+        .post-title {
+          a {
+            position: relative;
+          }
+        }
+      }
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+      @include span-columns(5.8);
+      overflow: hidden;
+      height: 10rem;
+      .post-title {
+        position: absolute;
+        z-index: 21;
+        margin: 0;
+        @include transition (all .5s ease-in-out);
+        @include span-columns(6);
+        height: 10rem;
+        a {
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .post-content {
+    background: none;
+    color: $color2;
+    padding: 0;
+    text-align: left;
+    position: relative;
+    z-index: auto !important;
+    margin: 0;
+
+    .price-tag {
+      position: absolute;
+      z-index: 28;
+      top: 8rem;
+      right: 5%;
+      letter-spacing: 0;
+      word-spacing: 0;
+      font-size: 1.5rem;
+      background: #111;
+      padding: 0 .4rem;
+      &:after {
+        content: "USD";
+        display: inline-block;
+        font-size: 1rem;
+        letter-spacing: 0;
+        word-spacing: 0;
+        background: #f0c214;
+        padding: 0 .4rem;
+      }
+    }
+    p {
+      display: none;
+      top: 0;
+      position: absolute;
+      font-size: 1.3rem;
+    }
+  }
+
+  .post-content,
+  .post-content img{
+    width: 100%; /* gotta be responsive these days */
+  }
+  .post-content {
+    background-color: #222; /* some background color for short images */
+    overflow: hidden;
+    /* remove white-space for inline-block elements */
+    letter-spacing: -0.31em; /* webkit */
+    *letter-spacing: normal; /* reset IE < 8 */
+    word-spacing: -0.43em; /* IE < 8 && gecko */
+  }
+  .post-content:before,
+  .post-content img{
+    /* vertically center the image */
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .post-content:before{
+    /* pseudo element to vertically align image to */
+    content: "";
+    /* Magic Number */
+    /* Set this to your desired height(to width) ratio */
+    padding-top: 50%; /* % of original image width */
+  }
+  .post-content img{
+    /* removes(sorta) image from the flow */
+    margin: -999em 0%;
+    padding-left: 0px;
+  }
+}
+
+body.single-menu_item {
+  .post-content {
+    background-color: transparent;
+  }
+  .post-content {
+    @include span-columns(5);
+    background: none;
+    color: $color2;
+    padding: 0;
+    text-align: left;
+    position: relative;
+    z-index: 25;
   }
 }

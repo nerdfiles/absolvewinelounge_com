@@ -82,6 +82,19 @@ $g: $gutter + $gutter;
           @include transition (all .5s linear);
         } } } }
 
+.home-display-widgets {
+  position: absolute;
+  top: 20%;
+  @include span-columns(8.3, block-collapse);
+  text-transform: uppercase;
+  font-style: italic;
+  li {
+    list-style: none;
+    @include pad(0 default);
+    border-right: 5px double #F0C214;
+  }
+}
+
   .site-twop {
     @include span-columns(8.75);
     @include omega();
@@ -124,7 +137,7 @@ $g: $gutter + $gutter;
             outline: none;
           }
           &[type="text"]::before {
-            content: "Placeholder...";
+            content: " ";
             color: #fff;
             position: absolute;
             display: block;
@@ -224,7 +237,7 @@ $g: $gutter + $gutter;
           position: absolute;
           width: 100%;
           .placeholder {
-            height: 31rem;
+            height: 37rem;
             width: 100%;
             background: #2e6f89;
             position: relative;

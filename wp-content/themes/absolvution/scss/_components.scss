@@ -1,5 +1,26 @@
 .widget {
   color: #fff;
+  .widgettitle {
+    font-style: italic;
+  }
+}
+
+.home .post-content {
+  &:after {
+    /*
+     *background-color: #2E6F89;
+     *display: block;
+     *@include span-columns(6.5);
+     *height: 100px;
+     *content: " ";
+     *@include shift(3);
+     *position: absolute;
+     *margin-left: 110.5%;
+     *width: 62.2%;
+     *top: 79.2%;
+     *opacity: 0.8;
+     */
+  }
 }
 
 /**
@@ -51,6 +72,8 @@ dd {
     @include row();
     dt {
       @include span-columns(4);
+      color: #f0c214;
+      font-weight: 700;
     }
     dd {
       @include span-columns(7.5);
@@ -142,6 +165,9 @@ dd {
   }
 
   .home--our-story {
+    h2 {
+      border-bottom: 3px #306170 double;
+    }
     overflow: scroll;
     background: $color4;
     position: relative;
@@ -186,7 +212,8 @@ dd {
       margin: 0;
       position: absolute;
       top: -350px;
-      left: 380px;
+      /*left: $gutter;*/
+      right: 5%;
       z-index: 35;
       /*
        *margin-top: -18rem;
@@ -222,7 +249,7 @@ dd {
     .duration {
       font-size: .85rem;
       position: absolute;
-      top: 2rem;
+      top: 3rem;
       left: 0;
       z-index: 12;
       @include pad(.5rem 0.15rem 0.15rem .5rem);
@@ -255,10 +282,10 @@ dd {
           background: #111;
           display: block;
           height: 100%;
-          width: 100%;
+          width: 110%;
           top: 0;
           margin-top: -100%;
-          position: absolute;
+          position: relative;
           z-index: 5;
           opacity: 0;
           margin-left: -5%;
@@ -274,7 +301,7 @@ dd {
         span { z-index: 9001; position: relative; }
         &:hover {
           &:after {
-            margin-top: -65%;
+            margin-top: -140%;
             opacity: .75;
             @include transition (all .5s ease-in-out);
           }
@@ -384,7 +411,7 @@ body.events-gridview {
     ul.menu {
       border-top: 3px #BF9713 double;
       a {
-        border-bottom: 1px solid #111;
+        border-bottom: 1px solid #6689A3;
         display: block;
         @include pad(.3rem 0 default 0);
         text-transform: lowercase;
@@ -426,11 +453,12 @@ body.home {
     }
     ul { }
     li {
-      &:nth-child(n+4) {
-      }
-      &:nth-child(n+7) {
-      }
-
+      /*
+       *&:nth-child(n+4) {
+       *}
+       *&:nth-child(n+7) {
+       *}
+       */
       @include span-columns(3, block-collapse);
     }
   }
@@ -503,3 +531,12 @@ body.home {
   position: absolute;
 }
 
+.byline {
+  text-align: right;
+  font-size: .6rem;
+  position: relative;
+  top: -.5rem;
+  .source {
+    color: #6689a3 !important;
+  }
+}

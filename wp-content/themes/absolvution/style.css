@@ -390,7 +390,9 @@ table {
   border-spacing: 0;
 }
 
-.animated, ol.comment-list li.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .type-tribe_events,
+.animated, ol.comment-list li.bypostauthor:target, body.term-happy-hour .page-content article.menu_item:hover .price-tag,
+body.term-wines .page-content article.menu_item:hover .price-tag,
+body.term-foods .page-content article.menu_item:hover .price-tag, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .type-tribe_events,
 body.events-single .type-tribe_events, body.events-gridview td:hover,
 body.events-single td:hover {
   -webkit-animation-duration: 0.75s;
@@ -2054,7 +2056,9 @@ body.events-single .type-tribe_events {
   animation-name: fold-in;
 }
 
-.animated.fold-in, ol.comment-list li.fold-in.bypostauthor:target, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.events-gridview .fold-in.type-tribe_events,
+.animated.fold-in, ol.comment-list li.fold-in.bypostauthor:target, body.term-happy-hour .page-content article.menu_item:hover .fold-in.price-tag,
+body.term-wines .page-content article.menu_item:hover .fold-in.price-tag,
+body.term-foods .page-content article.menu_item:hover .fold-in.price-tag, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.events-gridview .fold-in.type-tribe_events,
 body.events-single .fold-in.type-tribe_events, body.events-gridview td.fold-in:hover,
 body.events-single td.fold-in:hover {
   -webkit-animation-duration: 1.2s;
@@ -2103,7 +2107,9 @@ body.events-single td.fold-in:hover {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-in, ol.comment-list li.fold-small-in.bypostauthor:target, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.events-gridview .fold-small-in.type-tribe_events,
+.animated.fold-small-in, ol.comment-list li.fold-small-in.bypostauthor:target, body.term-happy-hour .page-content article.menu_item:hover .fold-small-in.price-tag,
+body.term-wines .page-content article.menu_item:hover .fold-small-in.price-tag,
+body.term-foods .page-content article.menu_item:hover .fold-small-in.price-tag, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.events-gridview .fold-small-in.type-tribe_events,
 body.events-single .fold-small-in.type-tribe_events, body.events-gridview td.fold-small-in:hover,
 body.events-single td.fold-small-in:hover {
   -webkit-animation-duration: 1s;
@@ -2152,7 +2158,9 @@ body.events-single td.fold-small-in:hover {
   animation-name: fold-out;
 }
 
-.animated.fold-out, ol.comment-list li.fold-out.bypostauthor:target, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.events-gridview .fold-out.type-tribe_events,
+.animated.fold-out, ol.comment-list li.fold-out.bypostauthor:target, body.term-happy-hour .page-content article.menu_item:hover .fold-out.price-tag,
+body.term-wines .page-content article.menu_item:hover .fold-out.price-tag,
+body.term-foods .page-content article.menu_item:hover .fold-out.price-tag, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.events-gridview .fold-out.type-tribe_events,
 body.events-single .fold-out.type-tribe_events, body.events-gridview td.fold-out:hover,
 body.events-single td.fold-out:hover {
   -webkit-animation-duration: 1.2s;
@@ -2201,7 +2209,9 @@ body.events-single td.fold-out:hover {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-out, ol.comment-list li.fold-small-out.bypostauthor:target, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.events-gridview .fold-small-out.type-tribe_events,
+.animated.fold-small-out, ol.comment-list li.fold-small-out.bypostauthor:target, body.term-happy-hour .page-content article.menu_item:hover .fold-small-out.price-tag,
+body.term-wines .page-content article.menu_item:hover .fold-small-out.price-tag,
+body.term-foods .page-content article.menu_item:hover .fold-small-out.price-tag, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.events-gridview .fold-small-out.type-tribe_events,
 body.events-single .fold-small-out.type-tribe_events, body.events-gridview td.fold-small-out:hover,
 body.events-single td.fold-small-out:hover {
   -webkit-animation-duration: 1s;
@@ -2298,7 +2308,9 @@ body.events-single td.fold-small-out:hover {
     -moz-animation-timing-function: ease-in;
   }
 }
-.flip {
+.flip, body.term-happy-hour .page-content article.menu_item:hover .price-tag,
+body.term-wines .page-content article.menu_item:hover .price-tag,
+body.term-foods .page-content article.menu_item:hover .price-tag {
   -webkit-animation-name: flip;
   -moz-animation-name: flip;
   -o-animation-name: flip;
@@ -2778,7 +2790,9 @@ body.events-single td.fold-small-out:hover {
   animation-name: hinge-out;
 }
 
-.animated.hinge-out, ol.comment-list li.hinge-out.bypostauthor:target, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.events-gridview .hinge-out.type-tribe_events,
+.animated.hinge-out, ol.comment-list li.hinge-out.bypostauthor:target, body.term-happy-hour .page-content article.menu_item:hover .hinge-out.price-tag,
+body.term-wines .page-content article.menu_item:hover .hinge-out.price-tag,
+body.term-foods .page-content article.menu_item:hover .hinge-out.price-tag, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.events-gridview .hinge-out.type-tribe_events,
 body.events-single .hinge-out.type-tribe_events, body.events-gridview td.hinge-out:hover,
 body.events-single td.hinge-out:hover {
   -webkit-animation-duration: 1.75s;
@@ -2870,7 +2884,9 @@ body.events-single td.hinge-out:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
+.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, body.term-happy-hour .page-content article.menu_item:hover .light-speed-in.price-tag,
+body.term-wines .page-content article.menu_item:hover .light-speed-in.price-tag,
+body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.4s;
@@ -2930,7 +2946,9 @@ body.events-single td.light-speed-in:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
+.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, body.term-happy-hour .page-content article.menu_item:hover .light-speed-in.price-tag,
+body.term-wines .page-content article.menu_item:hover .light-speed-in.price-tag,
+body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.2s;
@@ -4141,7 +4159,21 @@ body.events-single td:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.wiggle, ol.comment-list li.wiggle.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .wiggle.type-tribe_events,
+.animated.wiggle, ol.comment-list li.wiggle.bypostauthor:target, body.term-happy-hour .page-content article.menu_item:hover .wiggle.price-tag, body.term-happy-hour .page-content article.menu_item:hover .site-meta .searchform:focus div.price-tag::after, .site-meta .searchform:focus body.term-happy-hour .page-content article.menu_item:hover div.price-tag::after, body.term-happy-hour .page-content article.menu_item:hover .site-meta .searchform:active div.price-tag::after, .site-meta .searchform:active body.term-happy-hour .page-content article.menu_item:hover div.price-tag::after, body.term-happy-hour .page-content article.menu_item:hover .site-meta .searchform input[type="text"]:focus + input.price-tag, .site-meta .searchform body.term-happy-hour .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag,
+body.term-wines .page-content article.menu_item:hover .wiggle.price-tag,
+body.term-wines .page-content article.menu_item:hover .site-meta .searchform:focus div.price-tag::after,
+.site-meta .searchform:focus body.term-wines .page-content article.menu_item:hover div.price-tag::after,
+body.term-wines .page-content article.menu_item:hover .site-meta .searchform:active div.price-tag::after,
+.site-meta .searchform:active body.term-wines .page-content article.menu_item:hover div.price-tag::after,
+body.term-wines .page-content article.menu_item:hover .site-meta .searchform input[type="text"]:focus + input.price-tag,
+.site-meta .searchform body.term-wines .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag,
+body.term-foods .page-content article.menu_item:hover .wiggle.price-tag,
+body.term-foods .page-content article.menu_item:hover .site-meta .searchform:focus div.price-tag::after,
+.site-meta .searchform:focus body.term-foods .page-content article.menu_item:hover div.price-tag::after,
+body.term-foods .page-content article.menu_item:hover .site-meta .searchform:active div.price-tag::after,
+.site-meta .searchform:active body.term-foods .page-content article.menu_item:hover div.price-tag::after,
+body.term-foods .page-content article.menu_item:hover .site-meta .searchform input[type="text"]:focus + input.price-tag,
+.site-meta .searchform body.term-foods .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .wiggle.type-tribe_events,
 body.events-single .wiggle.type-tribe_events, body.events-gridview td.wiggle:hover,
 body.events-single td.wiggle:hover {
   -webkit-animation-duration: 0.5;
@@ -4262,7 +4294,7 @@ body.events-single td.wiggle:hover {
   font-weight: normal;
   font-style: normal;
 }
-.fa, .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"], .site-meta .searchform div::after {
+.fa, .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"], ol.comment-list li.bypostauthor:target a[href*="close"] .icon, .site-meta .searchform div::after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -4333,10 +4365,10 @@ body.events-single td.wiggle:hover {
   float: left;
 }
 
-.fa.pull-left, .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="google"], .site-meta .searchform div.pull-left::after {
+.fa.pull-left, .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="google"], ol.comment-list li.bypostauthor:target a[href*="close"] .pull-left.icon, .site-meta .searchform div.pull-left::after {
   margin-right: .3em;
 }
-.fa.pull-right, .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="google"], .site-meta .searchform div.pull-right::after {
+.fa.pull-right, .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="google"], ol.comment-list li.bypostauthor:target a[href*="close"] .pull-right.icon, .site-meta .searchform div.pull-right::after {
   margin-left: .3em;
 }
 
@@ -4492,6 +4524,7 @@ body.events-single td.wiggle:hover {
 
 .fa-remove:before,
 .fa-close:before,
+ol.comment-list li.bypostauthor:target a[href*="close"] .icon:before,
 .fa-times:before {
   content: "";
 }
@@ -6498,6 +6531,18 @@ input, textarea {
   height: auto;
 }
 
+::-moz-selection {
+  background: #f0c214;
+  color: #111;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+::selection {
+  background: #f0c214;
+  color: #111;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
 /******************************************************************************\
 	Settings
 \******************************************************************************/
@@ -6657,6 +6702,25 @@ p ~ h1 {
 .widget {
   color: #fff;
 }
+.widget .widgettitle {
+  font-style: italic;
+}
+
+.home .post-content:after {
+  /*
+   *background-color: #2E6F89;
+   *display: block;
+   *@include span-columns(6.5);
+   *height: 100px;
+   *content: " ";
+   *@include shift(3);
+   *position: absolute;
+   *margin-left: 110.5%;
+   *width: 62.2%;
+   *top: 79.2%;
+   *opacity: 0.8;
+   */
+}
 
 /**
  * Home Banner Image
@@ -6741,6 +6805,8 @@ dd {
   display: block;
   margin-right: 3.06748%;
   width: 31.28834%;
+  color: #f0c214;
+  font-weight: 700;
 }
 .home--specials dl dt:last-child {
   margin-right: 0;
@@ -6880,6 +6946,9 @@ dd {
   padding: 5rem 3.06748% 0 3.06748%;
   font-family: "Quicksand", sans-serif;
 }
+.home-followup-widgets .home--our-story h2 {
+  border-bottom: 3px #306170 double;
+}
 .home-followup-widgets .home--our-story:last-child {
   margin-right: 0;
 }
@@ -6925,7 +6994,8 @@ dd {
   margin: 0;
   position: absolute;
   top: -350px;
-  left: 380px;
+  /*left: $gutter;*/
+  right: 5%;
   z-index: 35;
   /*
    *margin-top: -18rem;
@@ -6975,7 +7045,7 @@ dd {
 .home-followup-widgets .tribe-events-list-widget.home--calendar .duration {
   font-size: .85rem;
   position: absolute;
-  top: 2rem;
+  top: 3rem;
   left: 0;
   z-index: 12;
   padding: 0.5rem 0.15rem 0.15rem 0.5rem;
@@ -7025,10 +7095,10 @@ dd {
   background: #111;
   display: block;
   height: 100%;
-  width: 100%;
+  width: 110%;
   top: 0;
   margin-top: -100%;
-  position: absolute;
+  position: relative;
   z-index: 5;
   opacity: 0;
   margin-left: -5%;
@@ -7038,7 +7108,7 @@ dd {
   position: relative;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events a:hover:after {
-  margin-top: -65%;
+  margin-top: -140%;
   opacity: .75;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -7187,7 +7257,7 @@ body.events-gridview .post-content {
   border-top: 3px #BF9713 double;
 }
 .site-footer div.menu ul.menu a {
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #6689A3;
   display: block;
   padding: 0.3rem 0 3.06748% 0;
   text-transform: lowercase;
@@ -7230,6 +7300,12 @@ body.home .site-footer {
   margin-left: 8.58896%;
 }
 .site-footer div.menu li {
+  /*
+   *&:nth-child(n+4) {
+   *}
+   *&:nth-child(n+7) {
+   *}
+   */
   float: left;
   display: block;
   width: 25.76687%;
@@ -7320,6 +7396,16 @@ body.home .site-footer {
   position: absolute;
 }
 
+.byline {
+  text-align: right;
+  font-size: .6rem;
+  position: relative;
+  top: -.5rem;
+}
+.byline .source {
+  color: #6689a3 !important;
+}
+
 .sticky {
   background: none;
 }
@@ -7376,6 +7462,19 @@ ol.comment-list li.bypostauthor:target {
 }
 ol.comment-list li.bypostauthor:target:last-child {
   margin-right: 0;
+}
+ol.comment-list li.bypostauthor:target .comment-author {
+  border-bottom: 3px #f0c214 double;
+}
+ol.comment-list li.bypostauthor:target a[href*="close"] {
+  color: #c1503a !important;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+ol.comment-list li.bypostauthor:target a[href*="close"] .label {
+  text-indent: -9999px;
+  display: inline-block;
 }
 
 .reply {
@@ -7686,6 +7785,223 @@ body:not(.home) .page-content {
   min-height: 30rem;
 }
 
+.post-title,
+h1.post-title {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 3px #f0c214 double;
+}
+
+.post-content h2:first-child {
+  width: 150%;
+}
+
+body.term-happy-hour .site-header,
+body.term-wines .site-header,
+body.term-foods .site-header {
+  z-index: 0 !important;
+}
+body.term-happy-hour .archive-title,
+body.term-wines .archive-title,
+body.term-foods .archive-title {
+  position: relative;
+  z-index: 9001;
+  margin-left: -1.71779%;
+  margin-bottom: 2rem;
+}
+body.term-happy-hour .post-meta,
+body.term-wines .post-meta,
+body.term-foods .post-meta {
+  position: absolute;
+  left: -9999px;
+}
+body.term-happy-hour .post-content,
+body.term-wines .post-content,
+body.term-foods .post-content {
+  background-color: transparent;
+  margin-bottom: 5rem;
+}
+body.term-happy-hour .page-content,
+body.term-wines .page-content,
+body.term-foods .page-content {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 100%;
+  margin-left: 1.71779%;
+  position: relative;
+  z-index: auto !important;
+}
+body.term-happy-hour .page-content:last-child,
+body.term-wines .page-content:last-child,
+body.term-foods .page-content:last-child {
+  margin-right: 0;
+}
+body.term-happy-hour .page-content article.menu_item,
+body.term-wines .page-content article.menu_item,
+body.term-foods .page-content article.menu_item {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 46.74847%;
+  overflow: hidden;
+  height: 10rem;
+}
+body.term-happy-hour .page-content article.menu_item:hover .post-title a,
+body.term-wines .page-content article.menu_item:hover .post-title a,
+body.term-foods .page-content article.menu_item:hover .post-title a {
+  position: relative;
+}
+body.term-happy-hour .page-content article.menu_item:last-child,
+body.term-wines .page-content article.menu_item:last-child,
+body.term-foods .page-content article.menu_item:last-child {
+  margin-right: 0;
+}
+body.term-happy-hour .page-content article.menu_item .post-title,
+body.term-wines .page-content article.menu_item .post-title,
+body.term-foods .page-content article.menu_item .post-title {
+  position: absolute;
+  z-index: 21;
+  margin: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 48.46626%;
+  height: 10rem;
+}
+body.term-happy-hour .page-content article.menu_item .post-title:last-child,
+body.term-wines .page-content article.menu_item .post-title:last-child,
+body.term-foods .page-content article.menu_item .post-title:last-child {
+  margin-right: 0;
+}
+body.term-happy-hour .page-content article.menu_item .post-title a,
+body.term-wines .page-content article.menu_item .post-title a,
+body.term-foods .page-content article.menu_item .post-title a {
+  height: 100%;
+  display: block;
+}
+body.term-happy-hour .post-content,
+body.term-wines .post-content,
+body.term-foods .post-content {
+  background: none;
+  color: #efefef;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  z-index: auto !important;
+  margin: 0;
+}
+body.term-happy-hour .post-content .price-tag,
+body.term-wines .post-content .price-tag,
+body.term-foods .post-content .price-tag {
+  position: absolute;
+  z-index: 28;
+  top: 8rem;
+  right: 5%;
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-size: 1.5rem;
+  background: #111;
+  padding: 0 .4rem;
+}
+body.term-happy-hour .post-content .price-tag:after,
+body.term-wines .post-content .price-tag:after,
+body.term-foods .post-content .price-tag:after {
+  content: "USD";
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0;
+  word-spacing: 0;
+  background: #f0c214;
+  padding: 0 .4rem;
+}
+body.term-happy-hour .post-content p,
+body.term-wines .post-content p,
+body.term-foods .post-content p {
+  display: none;
+  top: 0;
+  position: absolute;
+  font-size: 1.3rem;
+}
+body.term-happy-hour .post-content,
+body.term-happy-hour .post-content img,
+body.term-wines .post-content,
+body.term-wines .post-content img,
+body.term-foods .post-content,
+body.term-foods .post-content img {
+  width: 100%;
+  /* gotta be responsive these days */
+}
+body.term-happy-hour .post-content,
+body.term-wines .post-content,
+body.term-foods .post-content {
+  background-color: #222;
+  /* some background color for short images */
+  overflow: hidden;
+  /* remove white-space for inline-block elements */
+  letter-spacing: -0.31em;
+  /* webkit */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  word-spacing: -0.43em;
+  /* IE < 8 && gecko */
+}
+body.term-happy-hour .post-content:before,
+body.term-happy-hour .post-content img,
+body.term-wines .post-content:before,
+body.term-wines .post-content img,
+body.term-foods .post-content:before,
+body.term-foods .post-content img {
+  /* vertically center the image */
+  display: inline-block;
+  vertical-align: middle;
+}
+body.term-happy-hour .post-content:before,
+body.term-wines .post-content:before,
+body.term-foods .post-content:before {
+  /* pseudo element to vertically align image to */
+  content: "";
+  /* Magic Number */
+  /* Set this to your desired height(to width) ratio */
+  padding-top: 50%;
+  /* % of original image width */
+}
+body.term-happy-hour .post-content img,
+body.term-wines .post-content img,
+body.term-foods .post-content img {
+  /* removes(sorta) image from the flow */
+  margin: -999em 0%;
+  padding-left: 0px;
+}
+
+body.single-menu_item .post-content {
+  background-color: transparent;
+}
+body.single-menu_item .post-content {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 39.8773%;
+  background: none;
+  color: #efefef;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  z-index: 25;
+}
+body.single-menu_item .post-content:last-child {
+  margin-right: 0;
+}
+
 .site-header {
   /*overflow: hidden;*/
   padding: 0;
@@ -7799,6 +8115,24 @@ body:not(.home) .page-content {
   transition: all 0.5s linear;
 }
 
+.home-display-widgets {
+  position: absolute;
+  top: 20%;
+  float: left;
+  display: block;
+  width: 71.28834%;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.home-display-widgets:last-child {
+  width: 68.22086%;
+}
+.home-display-widgets li {
+  list-style: none;
+  padding: 0 3.06748%;
+  border-right: 5px double #F0C214;
+}
+
 .site-twop {
   float: left;
   display: block;
@@ -7857,7 +8191,7 @@ body:not(.home) .page-content {
   outline: none;
 }
 .site-meta .searchform input[type="text"]::before {
-  content: "Placeholder...";
+  content: " ";
   color: #fff;
   position: absolute;
   display: block;
@@ -8032,7 +8366,7 @@ body:not(.home) .page-content {
   width: 100%;
 }
 .site-caro .long-logo .inner .placeholder {
-  height: 31rem;
+  height: 37rem;
   width: 100%;
   background: #2e6f89;
   position: relative;
@@ -8168,6 +8502,10 @@ article:after {
 
 .single .post-title:first-child {
   margin-top: 5rem;
+}
+
+.post-links a {
+  color: #83AAC9;
 }
 
 .post-meta {

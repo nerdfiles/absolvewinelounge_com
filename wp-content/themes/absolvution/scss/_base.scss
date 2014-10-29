@@ -58,3 +58,12 @@ input, textarea {
 	max-width: 100%;
 	height: auto;
 }
+
+::-moz-selection {
+  background: #f0c214; color: #111;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+}
+::selection {
+  background: #f0c214; color: #111;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+}
