@@ -310,6 +310,8 @@ ol.comment-list .comment-edit-link {
 .comment-respond {
   @include span-columns(12);
 }
-.page-content {
-  min-height: 30rem;
+body:not(.home) {
+  .page-content {
+    min-height: 30rem;
+  }
 }

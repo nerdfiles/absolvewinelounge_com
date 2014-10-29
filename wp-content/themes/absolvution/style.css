@@ -7747,7 +7747,7 @@ ol.comment-list .comment-edit-link {
   margin-right: 0;
 }
 
-.page-content {
+body:not(.home) .page-content {
   min-height: 30rem;
 }
 
