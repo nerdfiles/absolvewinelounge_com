@@ -390,8 +390,7 @@ table {
   border-spacing: 0;
 }
 
-.animated, .site-footer .footer-widgets .info--location div,
-.site-footer .footer-widgets .info--hours div, ol.comment-list li.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .type-tribe_events,
+.animated, ol.comment-list li.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .type-tribe_events,
 body.events-single .type-tribe_events, body.events-gridview td:hover,
 body.events-single td:hover {
   -webkit-animation-duration: 0.75s;
@@ -2055,8 +2054,7 @@ body.events-single .type-tribe_events {
   animation-name: fold-in;
 }
 
-.animated.fold-in, .site-footer .footer-widgets .info--location div.fold-in,
-.site-footer .footer-widgets .info--hours div.fold-in, ol.comment-list li.fold-in.bypostauthor:target, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.events-gridview .fold-in.type-tribe_events,
+.animated.fold-in, ol.comment-list li.fold-in.bypostauthor:target, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.events-gridview .fold-in.type-tribe_events,
 body.events-single .fold-in.type-tribe_events, body.events-gridview td.fold-in:hover,
 body.events-single td.fold-in:hover {
   -webkit-animation-duration: 1.2s;
@@ -2105,8 +2103,7 @@ body.events-single td.fold-in:hover {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-in, .site-footer .footer-widgets .info--location div.fold-small-in,
-.site-footer .footer-widgets .info--hours div.fold-small-in, ol.comment-list li.fold-small-in.bypostauthor:target, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.events-gridview .fold-small-in.type-tribe_events,
+.animated.fold-small-in, ol.comment-list li.fold-small-in.bypostauthor:target, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.events-gridview .fold-small-in.type-tribe_events,
 body.events-single .fold-small-in.type-tribe_events, body.events-gridview td.fold-small-in:hover,
 body.events-single td.fold-small-in:hover {
   -webkit-animation-duration: 1s;
@@ -2155,8 +2152,7 @@ body.events-single td.fold-small-in:hover {
   animation-name: fold-out;
 }
 
-.animated.fold-out, .site-footer .footer-widgets .info--location div.fold-out,
-.site-footer .footer-widgets .info--hours div.fold-out, ol.comment-list li.fold-out.bypostauthor:target, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.events-gridview .fold-out.type-tribe_events,
+.animated.fold-out, ol.comment-list li.fold-out.bypostauthor:target, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.events-gridview .fold-out.type-tribe_events,
 body.events-single .fold-out.type-tribe_events, body.events-gridview td.fold-out:hover,
 body.events-single td.fold-out:hover {
   -webkit-animation-duration: 1.2s;
@@ -2205,8 +2201,7 @@ body.events-single td.fold-out:hover {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-out, .site-footer .footer-widgets .info--location div.fold-small-out,
-.site-footer .footer-widgets .info--hours div.fold-small-out, ol.comment-list li.fold-small-out.bypostauthor:target, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.events-gridview .fold-small-out.type-tribe_events,
+.animated.fold-small-out, ol.comment-list li.fold-small-out.bypostauthor:target, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.events-gridview .fold-small-out.type-tribe_events,
 body.events-single .fold-small-out.type-tribe_events, body.events-gridview td.fold-small-out:hover,
 body.events-single td.fold-small-out:hover {
   -webkit-animation-duration: 1s;
@@ -2783,8 +2778,7 @@ body.events-single td.fold-small-out:hover {
   animation-name: hinge-out;
 }
 
-.animated.hinge-out, .site-footer .footer-widgets .info--location div.hinge-out,
-.site-footer .footer-widgets .info--hours div.hinge-out, ol.comment-list li.hinge-out.bypostauthor:target, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.events-gridview .hinge-out.type-tribe_events,
+.animated.hinge-out, ol.comment-list li.hinge-out.bypostauthor:target, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.events-gridview .hinge-out.type-tribe_events,
 body.events-single .hinge-out.type-tribe_events, body.events-gridview td.hinge-out:hover,
 body.events-single td.hinge-out:hover {
   -webkit-animation-duration: 1.75s;
@@ -2876,8 +2870,7 @@ body.events-single td.hinge-out:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, .site-footer .footer-widgets .info--location div.light-speed-in,
-.site-footer .footer-widgets .info--hours div.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
+.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.4s;
@@ -2937,8 +2930,7 @@ body.events-single td.light-speed-in:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, .site-footer .footer-widgets .info--location div.light-speed-in,
-.site-footer .footer-widgets .info--hours div.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
+.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.2s;
@@ -4149,8 +4141,7 @@ body.events-single td:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.wiggle, .site-footer .footer-widgets .info--location div.wiggle,
-.site-footer .footer-widgets .info--hours div.wiggle, ol.comment-list li.wiggle.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .wiggle.type-tribe_events,
+.animated.wiggle, ol.comment-list li.wiggle.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .wiggle.type-tribe_events,
 body.events-single .wiggle.type-tribe_events, body.events-gridview td.wiggle:hover,
 body.events-single td.wiggle:hover {
   -webkit-animation-duration: 0.5;
@@ -6973,7 +6964,7 @@ dd {
 .home-followup-widgets .tribe-events-list-widget.home--calendar ol.vcalendar:after {
   clear: both;
 }
-.home-followup-widgets .tribe-events-list-widget.home--calendar .long, .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6):after {
+.home-followup-widgets .tribe-events-list-widget.home--calendar .long {
   height: 700px;
   height: 40rem;
   /*
@@ -7042,16 +7033,12 @@ dd {
   width: 22.42454%;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6) {
-  /*@extend .long;*/
   float: left;
   display: block;
   width: 24.47853%;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6):last-child {
   width: 21.41104%;
-}
-.home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6):after {
-  height: 800px;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(7) {
   float: left;
@@ -7187,33 +7174,37 @@ body.events-gridview .post-content {
   position: absolute;
 }
 
-body:not(.home) .site-footer {
+body.home .site-footer {
+  margin-top: 50px;
+}
+
+.site-footer {
   height: 510px;
 }
-body:not(.home) .site-footer div.menu {
+.site-footer div.menu {
   float: left;
   display: block;
   margin-right: 3.06748%;
   width: 44.17178%;
   margin-left: 4.29448%;
 }
-body:not(.home) .site-footer div.menu:last-child {
+.site-footer div.menu:last-child {
   margin-right: 0;
 }
-body:not(.home) .site-footer div.menu .menu {
+.site-footer div.menu .menu {
   margin: 0;
   padding: 0;
   margin-left: 8.58896%;
 }
-body:not(.home) .site-footer div.menu li {
+.site-footer div.menu li {
   float: left;
   display: block;
   width: 25.76687%;
 }
-body:not(.home) .site-footer div.menu li:last-child {
+.site-footer div.menu li:last-child {
   width: 22.69939%;
 }
-body:not(.home) .site-footer ul.footer-widgets {
+.site-footer ul.footer-widgets {
   position: relative;
   float: left;
   display: block;
@@ -7222,6 +7213,7 @@ body:not(.home) .site-footer ul.footer-widgets {
   height: 100%;
   margin-bottom: 0;
   margin-top: -50px;
+  left: 15px;
   /*
    *&:after {
    *  content: " ";
@@ -7236,30 +7228,30 @@ body:not(.home) .site-footer ul.footer-widgets {
    *}
    */
 }
-body:not(.home) .site-footer ul.footer-widgets:last-child {
+.site-footer ul.footer-widgets:last-child {
   margin-right: 0;
 }
-body:not(.home) .site-footer ul.footer-widgets:before {
+.site-footer ul.footer-widgets:before {
   background-color: #6689A3;
   content: " ";
   height: 100%;
   float: left;
   display: block;
   margin-right: 3.06748%;
-  width: 52.76074%;
+  width: 48.46626%;
   position: absolute;
   z-index: 0;
   padding-bottom: 50px;
 }
-body:not(.home) .site-footer ul.footer-widgets:before:last-child {
+.site-footer ul.footer-widgets:before:last-child {
   margin-right: 0;
 }
-body:not(.home) .site-footer ul.footer-widgets .home--copyright {
+.site-footer ul.footer-widgets .home--copyright {
   position: absolute;
   margin-left: -90.18405%;
   margin-top: 200px;
 }
-body:not(.home) .site-footer ul.footer-widgets .home--info .textwidget {
+.site-footer ul.footer-widgets .home--info .textwidget {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -7268,111 +7260,21 @@ body:not(.home) .site-footer ul.footer-widgets .home--info .textwidget {
   position: relative;
   z-index: 1;
 }
-body:not(.home) .site-footer ul.footer-widgets .home--info .textwidget:last-child {
+.site-footer ul.footer-widgets .home--info .textwidget:last-child {
   margin-right: 0;
 }
-body:not(.home) .site-footer ul.footer-widgets .info--location {
+.site-footer ul.footer-widgets .info--location {
   margin-left: 30px;
   margin-bottom: 7rem;
 }
-body:not(.home) .site-footer ul.footer-widgets .info--location h4 {
+.site-footer ul.footer-widgets .info--location h4 {
   left: -100px;
 }
-body:not(.home) .site-footer ul.footer-widgets .info--hours {
+.site-footer ul.footer-widgets .info--hours {
   margin-left: 30px;
 }
-body:not(.home) .site-footer ul.footer-widgets .info--hours h4 {
+.site-footer ul.footer-widgets .info--hours h4 {
   left: -130px;
-}
-
-body.home .site-footer {
-  position: relative;
-}
-body.home .site-footer div.menu {
-  position: absolute;
-  left: 0;
-  bottom: 380px;
-  float: left;
-  display: block;
-  margin-right: 3.06748%;
-  width: 44.17178%;
-  margin-left: 4.29448%;
-}
-body.home .site-footer div.menu:last-child {
-  margin-right: 0;
-}
-body.home .site-footer div.menu .menu {
-  margin: 0;
-  padding: 0;
-  margin-left: 8.58896%;
-  *zoom: 1;
-}
-body.home .site-footer div.menu .menu:before, body.home .site-footer div.menu .menu:after {
-  content: " ";
-  display: table;
-}
-body.home .site-footer div.menu .menu:after {
-  clear: both;
-}
-body.home .site-footer div.menu .menu li {
-  float: left;
-  display: block;
-  width: 25.76687%;
-}
-body.home .site-footer div.menu .menu li:last-child {
-  width: 22.69939%;
-}
-body.home .site-footer .footer-widgets {
-  position: absolute;
-  right: 0;
-  bottom: 85px;
-  float: left;
-  display: block;
-  margin-right: 3.06748%;
-  width: 48.46626%;
-}
-body.home .site-footer .footer-widgets:last-child {
-  margin-right: 0;
-}
-body.home .site-footer .footer-widgets .home--copyright {
-  position: absolute;
-  bottom: 180px;
-  float: left;
-  display: block;
-  width: 103.06748%;
-  margin-left: -89.7546%;
-}
-body.home .site-footer .footer-widgets .home--copyright:last-child {
-  width: 100%;
-}
-body.home .site-footer .footer-widgets .home--info .info--location,
-body.home .site-footer .footer-widgets .home--info .info--hours {
-  margin-left: 30px;
-}
-body.home .site-footer .footer-widgets .home--info h4 {
-  position: absolute;
-}
-body.home .site-footer .footer-widgets .home--info .info--location {
-  margin-bottom: 7rem;
-  float: left;
-  display: block;
-  margin-right: 3.06748%;
-  width: 44.17178%;
-}
-body.home .site-footer .footer-widgets .home--info .info--location h4 {
-  left: -90px;
-}
-body.home .site-footer .footer-widgets .home--info .info--location:last-child {
-  margin-right: 0;
-}
-body.home .site-footer .footer-widgets .home--info .info--hours {
-  float: left;
-  display: block;
-  margin-right: 3.06748%;
-  width: 44.17178%;
-}
-body.home .site-footer .footer-widgets .home--info .info--hours:last-child {
-  margin-right: 0;
 }
 
 .background-thumbnail {

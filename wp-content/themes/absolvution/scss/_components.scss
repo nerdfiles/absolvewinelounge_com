@@ -270,12 +270,7 @@ dd {
         @include shift(.13);
       }
       &:nth-of-type(6) {
-        /*@extend .long;*/
         @include span-columns(2.85, block-collapse);
-        &:after {
-          @extend .long;
-          height: 800px;
-        }
       }
       &:nth-of-type(7) {
         @include span-columns(3.2, block-collapse);
@@ -382,148 +377,90 @@ body.events-gridview {
         position: absolute;
       }
     }
-    .info--location div,
-    .info--hours div {
-      @extend .animated;
-    }
 
-  }
-}
-
-body:not(.home) {
-  .site-footer {
-    height: 510px;
-    div.menu {
-      @include span-columns(5.5);
-      @include shift(.5);
-      .menu {
-        margin: 0; padding: 0;
-        @include shift(1);
-      }
-      ul { }
-      li {
-        &:nth-child(n+4) {
-        }
-        &:nth-child(n+7) {
-        }
-
-        @include span-columns(3, block-collapse);
-      }
-    }
-    ul.footer-widgets {
-      position: relative;
-      @include span-columns(6);
-      height: 100%;
-      margin-bottom: 0;
-      margin-top: -50px;
-
-      /*
-       *&:after {
-       *  content: " ";
-       *  position: absolute;
-       *  left: 11%;
-       *  top: 10px;
-       *  width: 200px;
-       *  height: 200px;
-       *  transform: rotate(-45deg);
-       *  background: #6689A3;
-       *  z-index: 0;
-       *}
-       */
-
-      &:before {
-        background-color: #6689A3;
-        content: " ";
-        height: 100%;
-        @include span-columns(6.5);
-        position: absolute;
-        z-index: 0;
-        padding-bottom: 50px;
-      }
-
-      .home--copyright {
-        position: absolute;
-        @include shift(-10.5);
-        margin-top: 200px;
-      }
-      .home--info .textwidget {
-        @include span-columns(6);
-        margin-top: 90px;
-        position: relative;
-        z-index: 1;
-      }
-        .info--location {
-          margin-left: $gutter;
-          margin-bottom: 7rem;
-          h4 {
-            left: -100px;
-          }
-        }
-        .info--hours {
-          margin-left: $gutter;
-          h4 {
-            left: -130px;
-          }
-        }
-    }
   }
 }
 
 body.home {
   .site-footer {
+    margin-top: 50px;
+  }
+}
+.site-footer {
+  height: 510px;
+  div.menu {
+    @include span-columns(5.5);
+    @include shift(.5);
+    .menu {
+      margin: 0; padding: 0;
+      @include shift(1);
+    }
+    ul { }
+    li {
+      &:nth-child(n+4) {
+      }
+      &:nth-child(n+7) {
+      }
+
+      @include span-columns(3, block-collapse);
+    }
+  }
+  ul.footer-widgets {
     position: relative;
+    @include span-columns(6);
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: -50px;
+    left: 15px;
 
-    div.menu {
-      position: absolute;
-      left: 0;
-      bottom: 380px;
-      @include span-columns(5.5);
-      @include shift(.5);
-      nav.footer-menu {}
-      .menu {
-        margin: 0;
-        padding: 0;
-        @include shift(1);
-        @include clearfix;
-        li {
-          @include span-columns(3, block-collapse);
-        }
-      }
-    }
+    /*
+     *&:after {
+     *  content: " ";
+     *  position: absolute;
+     *  left: 11%;
+     *  top: 10px;
+     *  width: 200px;
+     *  height: 200px;
+     *  transform: rotate(-45deg);
+     *  background: #6689A3;
+     *  z-index: 0;
+     *}
+     */
 
-    .footer-widgets {
-      position: absolute;
-      right: 0;
-      bottom: 85px;
+    &:before {
+      background-color: #6689A3;
+      content: " ";
+      height: 100%;
       @include span-columns(6);
-      .home--copyright {
-        position: absolute;
-        bottom: 180px;
-        @include span-columns(12, block-collapse);
-        @include shift(-10.45);
-      }
-      .home--info {
-        .info--location,
-        .info--hours {
-          margin-left: $gutter;
-        }
-        h4 {
-          position: absolute;
-        }
-        .info--location {
-          h4 {
-            left: -90px;
-          }
-          margin-bottom: 7rem;
-          @include span-columns(5.5);
-        }
-        .info--hours {
-          h4 {
-          }
-          @include span-columns(5.5);
-        }
-      }
+      position: absolute;
+      z-index: 0;
+      padding-bottom: 50px;
     }
+
+    .home--copyright {
+      position: absolute;
+      @include shift(-10.5);
+      margin-top: 200px;
+    }
+    .home--info .textwidget {
+      @include span-columns(6);
+      margin-top: 90px;
+      position: relative;
+      z-index: 1;
+    }
+      .info--location {
+        margin-left: $gutter;
+        margin-bottom: 7rem;
+        h4 {
+          left: -100px;
+        }
+      }
+      .info--hours {
+        margin-left: $gutter;
+        h4 {
+          left: -130px;
+        }
+      }
   }
 }
 
