@@ -47,6 +47,7 @@ add_theme_support( 'custom-background', $custom_bg_args );
 
 register_nav_menu( 'main-menu', __( 'Your sites main menu', 'absolvution' ) );
 register_nav_menu( 'meta-menu', __( 'Your sites meta menu', 'absolvution' ) );
+register_nav_menu( 'footer-menu', __( 'Your sites footer menu', 'absolvution' ) );
 
 if ( function_exists( 'register_sidebars' ) ) {
 	register_sidebar(
@@ -242,6 +243,9 @@ function mytheme_comment($comment, $args, $depth) {
 <?php
 }
 
+/**
+ * Body Class with Post/Page name
+ */
 function add_body_class( $classes )
 {
     global $post;
@@ -251,3 +255,25 @@ function add_body_class( $classes )
     return $classes;
 }
 add_filter( 'body_class', 'add_body_class' );
+
+/**
+ * Prevent TinyMCE from stripping out schema.org metadata
+ */
+function schema_TinyMCE_init($in)
+{
+    /**
+     *   Edit extended_valid_elements as needed. For syntax, see
+     *   http://www.tinymce.com/wiki.php/Configuration:valid_elements
+     *
+     *   NOTE: Adding an element to extended_valid_elements will cause TinyMCE to ignore
+     *   default attributes for that element.
+     *   Eg. a[title] would remove href unless included in new rule: a[title|href]
+     */
+    if(!empty($in['extended_valid_elements']))
+        $in['extended_valid_elements'] .= ',';
+
+    $in['extended_valid_elements'] .= '@[id|class|style|title|itemscope|itemtype|itemprop|datetime|rel],div,dl,ul,dt,dd,li,span,a|rev|charset|href|lang|tabindex|accesskey|type|name|href|target|title|class|onfocus|onblur]';
+
+    return $in;
+}
+add_filter('tiny_mce_before_init', 'schema_TinyMCE_init' );

@@ -59,7 +59,7 @@
           </a>
 
           <div class="menu"><?php
-            $nav_menu = wp_nav_menu(
+            $main_nav_menu = wp_nav_menu(
               array(
                 'container' => 'nav',
                 'container_class' => 'main-menu',
@@ -76,7 +76,7 @@
           <div class="site-meta">
             <?php get_search_form(); ?>
             <div class="menu"><?php
-              $meta_menu = wp_nav_menu(
+              $meta_nav_menu = wp_nav_menu(
                 array(
                   'container' => 'nav',
                   'container_class' => 'meta-menu',
@@ -90,6 +90,10 @@
 
           <div class="site-caro">
             <div class="menu">
+
+              <!--
+                Another Logo Placement
+              -->
               <div class="long-logo">
                 <div class="inner">
                   <div class="placeholder">
@@ -97,11 +101,10 @@
                   </div>
                 </div>
               </div>
+
               <nav class="caro-menu">
                 <ul class="menu">
-                  <?php
-                    echo absolvution_background_gen();
-                  ?>
+                  <?php echo absolvution_background_gen(); ?>
                 </ul>
               </nav>
             </div>

@@ -6283,6 +6283,11 @@ p ~ h1 {
   color: #fff;
 }
 
+/**
+ * Home Banner Image
+ *
+ * Logo placement.
+ */
 .home--banner-image {
   *zoom: 1;
   display: block;
@@ -6331,6 +6336,9 @@ dd {
   margin-left: 0;
 }
 
+/**
+ * Home Specials
+ */
 .home--specials {
   float: left;
   display: block;
@@ -6581,7 +6589,7 @@ dd {
 .home-followup-widgets .tribe-events-list-widget.home--calendar ol.vcalendar:after {
   clear: both;
 }
-.home-followup-widgets .tribe-events-list-widget.home--calendar .long, .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6) {
+.home-followup-widgets .tribe-events-list-widget.home--calendar .long, .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6):after {
   height: 700px;
   height: 40rem;
   /*
@@ -6610,6 +6618,9 @@ dd {
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:hover .duration {
   padding-top: 55%;
 }
+.home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:hover a {
+  padding: 0.5rem 0.15rem 0.15rem 55%;
+}
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events h4 {
   height: 100%;
   margin: 0 0;
@@ -6624,9 +6635,6 @@ dd {
   display: block;
   height: 100%;
   width: 100%;
-}
-.home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events a:hover {
-  padding: 0.5rem 0.15rem 0.15rem 55%;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:last-child {
   width: 21.37669%;
@@ -6650,12 +6658,16 @@ dd {
   width: 22.42454%;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6) {
+  /*@extend .long;*/
   float: left;
   display: block;
   width: 24.47853%;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6):last-child {
   width: 21.41104%;
+}
+.home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(6):after {
+  height: 800px;
 }
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events:nth-of-type(7) {
   float: left;
@@ -6738,6 +6750,65 @@ body.events-gridview .post-content {
   margin-right: 0;
 }
 
+/**
+ * Location and Hours Information
+ */
+.site-footer {
+  position: relative;
+}
+.site-footer li {
+  list-style: none;
+}
+.site-footer div.menu {
+  position: absolute;
+  left: 0;
+  bottom: 450px;
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 44.17178%;
+  margin-left: 4.29448%;
+}
+.site-footer div.menu:last-child {
+  margin-right: 0;
+}
+.site-footer div.menu .menu {
+  margin: 0;
+  padding: 0;
+}
+.site-footer div.menu .menu li {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 14.11043%;
+}
+.site-footer div.menu .menu li:last-child {
+  margin-right: 0;
+}
+.site-footer .footer-widgets {
+  position: absolute;
+  right: 0;
+  bottom: 450px;
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 48.46626%;
+}
+.site-footer .footer-widgets:last-child {
+  margin-right: 0;
+}
+.site-footer .footer-widgets .home--info h4 {
+  -webkit-transform: scaleY(1) rotate(-90deg);
+  -moz-transform: scaleY(1) rotate(-90deg);
+  -ms-transform: scaleY(1) rotate(-90deg);
+  -o-transform: scaleY(1) rotate(-90deg);
+  transform: scaleY(1) rotate(-90deg);
+  position: absolute;
+}
+
+/**
+ * Home Copyright
+ */
 .sticky {
   background: none;
 }
@@ -7852,25 +7923,15 @@ body.page-gallery .post-content:last-child {
 }
 
 .footer-widgets {
-  *zoom: 1;
-  float: left;
-  display: block;
-  margin-right: 3.06748%;
-  width: 100%;
-  background: #222;
-  padding: 1.5em 0;
-  list-style: none;
-  margin: 0;
-}
-.footer-widgets:before, .footer-widgets:after {
-  content: " ";
-  display: table;
-}
-.footer-widgets:after {
-  clear: both;
-}
-.footer-widgets:last-child {
-  margin-right: 0;
+  /*
+   *  @include clearfix;
+   *  @include span-columns(12);
+   *
+   *  background: $color1;
+   *  padding: 1.5em 0;
+   *  list-style: none;
+   *  margin: 0;
+   */
 }
 
 /*# sourceMappingURL=style.css.map */
