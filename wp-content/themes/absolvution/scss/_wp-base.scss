@@ -141,6 +141,9 @@ div:not(div#layout_page) .widget:nth-child(3n+1) {
 
 }
 
+#s {
+  font-style: italic;
+}
 #searchsubmit, #submit {
 	padding: 0.3em 0.4em;
 	border: 1px solid $color1;
@@ -350,6 +353,12 @@ h2 {
   }
 }
 
+body.single-post {
+  .post-meta {
+    color: #fff;
+  }
+}
+body.archive,
 body.term-happy-hour,
 body.term-wines,
 body.term-foods {
