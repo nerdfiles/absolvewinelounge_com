@@ -390,7 +390,8 @@ table {
   border-spacing: 0;
 }
 
-.animated, ol.comment-list li.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .type-tribe_events,
+.animated, .site-footer .footer-widgets .info--location div,
+.site-footer .footer-widgets .info--hours div, ol.comment-list li.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .type-tribe_events,
 body.events-single .type-tribe_events, body.events-gridview td:hover,
 body.events-single td:hover {
   -webkit-animation-duration: 0.75s;
@@ -2054,7 +2055,8 @@ body.events-single .type-tribe_events {
   animation-name: fold-in;
 }
 
-.animated.fold-in, ol.comment-list li.fold-in.bypostauthor:target, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.events-gridview .fold-in.type-tribe_events,
+.animated.fold-in, .site-footer .footer-widgets .info--location div.fold-in,
+.site-footer .footer-widgets .info--hours div.fold-in, ol.comment-list li.fold-in.bypostauthor:target, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.events-gridview .fold-in.type-tribe_events,
 body.events-single .fold-in.type-tribe_events, body.events-gridview td.fold-in:hover,
 body.events-single td.fold-in:hover {
   -webkit-animation-duration: 1.2s;
@@ -2103,7 +2105,8 @@ body.events-single td.fold-in:hover {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-in, ol.comment-list li.fold-small-in.bypostauthor:target, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.events-gridview .fold-small-in.type-tribe_events,
+.animated.fold-small-in, .site-footer .footer-widgets .info--location div.fold-small-in,
+.site-footer .footer-widgets .info--hours div.fold-small-in, ol.comment-list li.fold-small-in.bypostauthor:target, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.events-gridview .fold-small-in.type-tribe_events,
 body.events-single .fold-small-in.type-tribe_events, body.events-gridview td.fold-small-in:hover,
 body.events-single td.fold-small-in:hover {
   -webkit-animation-duration: 1s;
@@ -2152,7 +2155,8 @@ body.events-single td.fold-small-in:hover {
   animation-name: fold-out;
 }
 
-.animated.fold-out, ol.comment-list li.fold-out.bypostauthor:target, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.events-gridview .fold-out.type-tribe_events,
+.animated.fold-out, .site-footer .footer-widgets .info--location div.fold-out,
+.site-footer .footer-widgets .info--hours div.fold-out, ol.comment-list li.fold-out.bypostauthor:target, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.events-gridview .fold-out.type-tribe_events,
 body.events-single .fold-out.type-tribe_events, body.events-gridview td.fold-out:hover,
 body.events-single td.fold-out:hover {
   -webkit-animation-duration: 1.2s;
@@ -2201,7 +2205,8 @@ body.events-single td.fold-out:hover {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-out, ol.comment-list li.fold-small-out.bypostauthor:target, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.events-gridview .fold-small-out.type-tribe_events,
+.animated.fold-small-out, .site-footer .footer-widgets .info--location div.fold-small-out,
+.site-footer .footer-widgets .info--hours div.fold-small-out, ol.comment-list li.fold-small-out.bypostauthor:target, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.events-gridview .fold-small-out.type-tribe_events,
 body.events-single .fold-small-out.type-tribe_events, body.events-gridview td.fold-small-out:hover,
 body.events-single td.fold-small-out:hover {
   -webkit-animation-duration: 1s;
@@ -2778,7 +2783,8 @@ body.events-single td.fold-small-out:hover {
   animation-name: hinge-out;
 }
 
-.animated.hinge-out, ol.comment-list li.hinge-out.bypostauthor:target, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.events-gridview .hinge-out.type-tribe_events,
+.animated.hinge-out, .site-footer .footer-widgets .info--location div.hinge-out,
+.site-footer .footer-widgets .info--hours div.hinge-out, ol.comment-list li.hinge-out.bypostauthor:target, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.events-gridview .hinge-out.type-tribe_events,
 body.events-single .hinge-out.type-tribe_events, body.events-gridview td.hinge-out:hover,
 body.events-single td.hinge-out:hover {
   -webkit-animation-duration: 1.75s;
@@ -2870,7 +2876,8 @@ body.events-single td.hinge-out:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
+.animated.light-speed-in, .site-footer .footer-widgets .info--location div.light-speed-in,
+.site-footer .footer-widgets .info--hours div.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.4s;
@@ -2930,7 +2937,8 @@ body.events-single td.light-speed-in:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
+.animated.light-speed-in, .site-footer .footer-widgets .info--location div.light-speed-in,
+.site-footer .footer-widgets .info--hours div.light-speed-in, ol.comment-list li.light-speed-in.bypostauthor:target, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.2s;
@@ -4141,7 +4149,8 @@ body.events-single td:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.wiggle, ol.comment-list li.wiggle.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .wiggle.type-tribe_events,
+.animated.wiggle, .site-footer .footer-widgets .info--location div.wiggle,
+.site-footer .footer-widgets .info--hours div.wiggle, ol.comment-list li.wiggle.bypostauthor:target, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .wiggle.type-tribe_events,
 body.events-single .wiggle.type-tribe_events, body.events-gridview td.wiggle:hover,
 body.events-single td.wiggle:hover {
   -webkit-animation-duration: 0.5;
@@ -7738,6 +7747,10 @@ ol.comment-list .comment-edit-link {
   margin-right: 0;
 }
 
+.page-content {
+  min-height: 30rem;
+}
+
 .site-header {
   /*overflow: hidden;*/
   padding: 0;
@@ -8495,6 +8508,14 @@ body.events-single .tribe-events-calendar div[id*="tribe-events-daynum-"] a {
 body.events-gridview .tribe-events-calendar,
 body.events-single .tribe-events-calendar {
   font-size: .85rem;
+}
+body.events-gridview label.label-tribe-bar-search,
+body.events-single label.label-tribe-bar-search {
+  color: #2E6F89;
+}
+body.events-gridview label.label-tribe-bar-date,
+body.events-single label.label-tribe-bar-date {
+  color: #2E6F89;
 }
 
 .format-status .date, .format-link .date, .format-quote .date {

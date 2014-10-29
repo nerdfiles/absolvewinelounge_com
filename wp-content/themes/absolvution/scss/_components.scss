@@ -382,6 +382,11 @@ body.events-gridview {
         position: absolute;
       }
     }
+    .info--location div,
+    .info--hours div {
+      @extend .animated;
+    }
+
   }
 }
 
