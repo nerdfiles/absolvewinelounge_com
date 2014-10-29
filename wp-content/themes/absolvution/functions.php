@@ -277,3 +277,10 @@ function schema_TinyMCE_init($in)
     return $in;
 }
 add_filter('tiny_mce_before_init', 'schema_TinyMCE_init' );
+
+function thumbnailing($post) {
+  global $post;
+  $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
+  echo '<div class="background-thumbnail" style="background-image: url(' . $thumb[0] . ');"></div>';
+}
+add_action('tribe_events_list_widget_before_the_event_title', 'thumbnailing');

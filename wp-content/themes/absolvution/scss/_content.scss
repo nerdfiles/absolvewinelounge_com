@@ -253,3 +253,31 @@ body.page-gallery {
 
 .search-title {
 }
+
+body.events-gridview {
+  .post-content {
+    background-color: transparent;
+  }
+  .tribe-events-page-title {
+    color: #fff;
+  }
+  #tribe-events-content .tribe-events-calendar td {
+    border: 10px solid #222;
+  }
+  .tribe-events-calendar div[id*="tribe-events-daynum-"] {
+    background-color: #BF9713;
+  }
+  .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] {
+    color: #111;
+  }
+  .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] > a {
+  }
+  .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] > a {
+    color: #111;
+    background-color: transparent;
+  }
+  .tribe-events-calendar div[id*="tribe-events-daynum-"] {
+    font-size: .85rem;
+  }
+  .tribe-events-calendar { font-size: .85rem; }
+}
