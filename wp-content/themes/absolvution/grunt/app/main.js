@@ -19,7 +19,7 @@
         return infoHours$.removeClass('animated').removeClass('flip-x-in');
       }
     }, {
-      offset: '50%'
+      offset: '75%'
     });
     w = $(".tribe-events-list-widget-events").css('width');
     $vcalendar = $('body.home .vcalendar');
