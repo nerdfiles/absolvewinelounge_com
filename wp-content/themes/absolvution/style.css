@@ -393,7 +393,7 @@ table {
 .animated, .foogallery-panel.active, ol.comment-list li.bypostauthor:target, body.archive .page-content article.menu_item:hover .price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .price-tag,
 body.term-wines .page-content article.menu_item:hover .price-tag,
-body.term-foods .page-content article.menu_item:hover .price-tag, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .price-tag, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .google-maps-builder-wrap, body.events-gridview .type-tribe_events,
 body.events-single .type-tribe_events, body.events-gridview td:hover,
 body.events-single td:hover {
   -webkit-animation-duration: 0.75s;
@@ -1167,7 +1167,7 @@ body.events-single td:hover {
     opacity: 1;
   }
 }
-.fade-in, ol.comment-list li.bypostauthor:target, .site-meta .searchform input[type="text"]:focus {
+.fade-in, ol.comment-list li.bypostauthor:target, .site-meta .searchform input[type="text"]:focus, body.page-contact .google-maps-builder-wrap {
   -webkit-animation-name: fade-in;
   -moz-animation-name: fade-in;
   -o-animation-name: fade-in;
@@ -2060,7 +2060,7 @@ body.events-single .type-tribe_events {
 .animated.fold-in, .fold-in.foogallery-panel.active, ol.comment-list li.fold-in.bypostauthor:target, body.archive .page-content article.menu_item:hover .fold-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-in.price-tag,
 body.term-wines .page-content article.menu_item:hover .fold-in.price-tag,
-body.term-foods .page-content article.menu_item:hover .fold-in.price-tag, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.events-gridview .fold-in.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .fold-in.price-tag, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.page-contact .fold-in.google-maps-builder-wrap, body.events-gridview .fold-in.type-tribe_events,
 body.events-single .fold-in.type-tribe_events, body.events-gridview td.fold-in:hover,
 body.events-single td.fold-in:hover {
   -webkit-animation-duration: 1.2s;
@@ -2112,7 +2112,7 @@ body.events-single td.fold-in:hover {
 .animated.fold-small-in, .fold-small-in.foogallery-panel.active, ol.comment-list li.fold-small-in.bypostauthor:target, body.archive .page-content article.menu_item:hover .fold-small-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-small-in.price-tag,
 body.term-wines .page-content article.menu_item:hover .fold-small-in.price-tag,
-body.term-foods .page-content article.menu_item:hover .fold-small-in.price-tag, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.events-gridview .fold-small-in.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .fold-small-in.price-tag, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.page-contact .fold-small-in.google-maps-builder-wrap, body.events-gridview .fold-small-in.type-tribe_events,
 body.events-single .fold-small-in.type-tribe_events, body.events-gridview td.fold-small-in:hover,
 body.events-single td.fold-small-in:hover {
   -webkit-animation-duration: 1s;
@@ -2164,7 +2164,7 @@ body.events-single td.fold-small-in:hover {
 .animated.fold-out, .fold-out.foogallery-panel.active, ol.comment-list li.fold-out.bypostauthor:target, body.archive .page-content article.menu_item:hover .fold-out.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-out.price-tag,
 body.term-wines .page-content article.menu_item:hover .fold-out.price-tag,
-body.term-foods .page-content article.menu_item:hover .fold-out.price-tag, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.events-gridview .fold-out.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .fold-out.price-tag, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.page-contact .fold-out.google-maps-builder-wrap, body.events-gridview .fold-out.type-tribe_events,
 body.events-single .fold-out.type-tribe_events, body.events-gridview td.fold-out:hover,
 body.events-single td.fold-out:hover {
   -webkit-animation-duration: 1.2s;
@@ -2216,7 +2216,7 @@ body.events-single td.fold-out:hover {
 .animated.fold-small-out, .fold-small-out.foogallery-panel.active, ol.comment-list li.fold-small-out.bypostauthor:target, body.archive .page-content article.menu_item:hover .fold-small-out.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-small-out.price-tag,
 body.term-wines .page-content article.menu_item:hover .fold-small-out.price-tag,
-body.term-foods .page-content article.menu_item:hover .fold-small-out.price-tag, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.events-gridview .fold-small-out.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .fold-small-out.price-tag, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.page-contact .fold-small-out.google-maps-builder-wrap, body.events-gridview .fold-small-out.type-tribe_events,
 body.events-single .fold-small-out.type-tribe_events, body.events-gridview td.fold-small-out:hover,
 body.events-single td.fold-small-out:hover {
   -webkit-animation-duration: 1s;
@@ -2799,7 +2799,7 @@ body.term-foods .page-content article.menu_item:hover .price-tag {
 .animated.hinge-out, .hinge-out.foogallery-panel.active, ol.comment-list li.hinge-out.bypostauthor:target, body.archive .page-content article.menu_item:hover .hinge-out.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .hinge-out.price-tag,
 body.term-wines .page-content article.menu_item:hover .hinge-out.price-tag,
-body.term-foods .page-content article.menu_item:hover .hinge-out.price-tag, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.events-gridview .hinge-out.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .hinge-out.price-tag, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.page-contact .hinge-out.google-maps-builder-wrap, body.events-gridview .hinge-out.type-tribe_events,
 body.events-single .hinge-out.type-tribe_events, body.events-gridview td.hinge-out:hover,
 body.events-single td.hinge-out:hover {
   -webkit-animation-duration: 1.75s;
@@ -2894,7 +2894,7 @@ body.events-single td.hinge-out:hover {
 .animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, body.archive .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-wines .page-content article.menu_item:hover .light-speed-in.price-tag,
-body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.4s;
@@ -2957,7 +2957,7 @@ body.events-single td.light-speed-in:hover {
 .animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, body.archive .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-wines .page-content article.menu_item:hover .light-speed-in.price-tag,
-body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.events-gridview .light-speed-in.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.2s;
@@ -4189,7 +4189,7 @@ body.term-foods .page-content article.menu_item:hover .site-meta .searchform:foc
 body.term-foods .page-content article.menu_item:hover .site-meta .searchform:active div.price-tag::after,
 .site-meta .searchform:active body.term-foods .page-content article.menu_item:hover div.price-tag::after,
 body.term-foods .page-content article.menu_item:hover .site-meta .searchform input[type="text"]:focus + input.price-tag,
-.site-meta .searchform body.term-foods .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.events-gridview .wiggle.type-tribe_events,
+.site-meta .searchform body.term-foods .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .wiggle.google-maps-builder-wrap, body.events-gridview .wiggle.type-tribe_events,
 body.events-single .wiggle.type-tribe_events, body.events-gridview td.wiggle:hover,
 body.events-single td.wiggle:hover {
   -webkit-animation-duration: 0.5;
@@ -8705,7 +8705,8 @@ body.page-contact .post-content h2, body.page-contact .post-content h3, body.pag
   float: left;
   display: block;
   margin-right: 3.06748%;
-  width: 100%;
+  width: 95.70552%;
+  margin-left: 4.29448%;
 }
 body.page-contact .post-content h2:last-child, body.page-contact .post-content h3:last-child, body.page-contact .post-content p:last-child, body.page-contact .post-content ul:last-child, body.page-contact .post-content ol:last-child, body.page-contact .post-content dl:last-child {
   margin-right: 0;

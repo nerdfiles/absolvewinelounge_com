@@ -192,10 +192,15 @@ body.page-gallery {
   }
 }
 body.page-contact {
+  .google-maps-builder-wrap {
+    @extend .fade-in;
+    @extend .animated;
+  }
   .post-content {
     color: #fff;
     h2, h3, p, ul, ol, dl {
-      @include span-columns(12);
+      @include span-columns(11.5);
+      @include shift(.5);
     }
   }
 }
