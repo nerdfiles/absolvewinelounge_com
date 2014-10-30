@@ -192,8 +192,10 @@ body.page-gallery {
   }
 }
 body.page-contact {
-  *:not(.google-maps-builder-wrap) {
-    @include span-columns(12);
+  .post-content {
+    *:not(.google-maps-builder-wrap) {
+      @include span-columns(12);
+    }
   }
 }
 /*body.single-post,*/
