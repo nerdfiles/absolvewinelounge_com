@@ -193,6 +193,7 @@ body.page-gallery {
 }
 body.page-contact {
   .post-content {
+    color: #fff;
     h2, h3, p, ul, ol, dl {
       @include span-columns(12);
     }

@@ -8698,6 +8698,9 @@ body.page-gallery .post-content {
   background-color: transparent;
 }
 
+body.page-contact .post-content {
+  color: #fff;
+}
 body.page-contact .post-content h2, body.page-contact .post-content h3, body.page-contact .post-content p, body.page-contact .post-content ul, body.page-contact .post-content ol, body.page-contact .post-content dl {
   float: left;
   display: block;
