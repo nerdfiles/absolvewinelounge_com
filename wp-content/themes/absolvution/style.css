@@ -7843,6 +7843,12 @@ body.single-post .post-meta {
   color: #fff;
 }
 
+body.archive .post-meta,
+body.term-happy-hour .post-meta,
+body.term-wines .post-meta,
+body.term-foods .post-meta {
+  height: 0;
+}
 body.archive .site-header,
 body.term-happy-hour .site-header,
 body.term-wines .site-header,
@@ -8686,9 +8692,20 @@ body.search-results img {
   left: -9999px;
 }
 
+body.page-contact .post-content,
 body.search-results .post-content,
 body.page-gallery .post-content {
   background-color: transparent;
+}
+
+body.page-contact *:not(.google-maps-builder-wrap) {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 100%;
+}
+body.page-contact *:not(.google-maps-builder-wrap):last-child {
+  margin-right: 0;
 }
 
 /*body.single-post,*/

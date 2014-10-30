@@ -184,10 +184,16 @@ body.search-results {
   img { position: absolute; left: -9999px; }
 }
 
+body.page-contact,
 body.search-results,
 body.page-gallery {
   .post-content {
     background-color: transparent;
+  }
+}
+body.page-contact {
+  *:not(.google-maps-builder-wrap) {
+    @include span-columns(12);
   }
 }
 /*body.single-post,*/
