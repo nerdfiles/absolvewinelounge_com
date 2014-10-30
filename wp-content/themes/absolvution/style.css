@@ -8698,13 +8698,13 @@ body.page-gallery .post-content {
   background-color: transparent;
 }
 
-body.page-contact *:not(.google-maps-builder-wrap) {
+body.page-contact .post-content *:not(.google-maps-builder-wrap) {
   float: left;
   display: block;
   margin-right: 3.06748%;
   width: 100%;
 }
-body.page-contact *:not(.google-maps-builder-wrap):last-child {
+body.page-contact .post-content *:not(.google-maps-builder-wrap):last-child {
   margin-right: 0;
 }
 
