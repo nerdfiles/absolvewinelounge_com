@@ -8128,10 +8128,18 @@ body.single-menu_item .post-content:last-child {
   color: #efefef;
   position: relative;
   z-index: 2;
+  *zoom: 1;
+}
+.site-banner .logo:before, .site-banner .logo:after {
+  content: " ";
+  display: table;
+}
+.site-banner .logo:after {
+  clear: both;
 }
 .site-banner .logo .blog-name {
-  margin-bottom: 1em;
-  margin-top: 4em;
+  margin-bottom: 0;
+  margin-top: 3rem;
   text-align: center;
   text-shadow: 0 0 0.5em #222;
   text-indent: -9999px;
@@ -8154,10 +8162,13 @@ body.single-menu_item .post-content:last-child {
   font-style: italic;
   text-shadow: 0 0 0.5em #222;
 }
+.site-banner .main-menu {
+  padding-top: 0;
+}
 .site-banner ul.menu {
   list-style: none;
   padding: 0 0 .3rem 0;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   *zoom: 1;
   display: block;
@@ -8178,6 +8189,8 @@ body.single-menu_item .post-content:last-child {
   letter-spacing: .1rem;
   font-weight: 700;
   text-transform: uppercase;
+  display: block;
+  padding: .15rem;
 }
 .site-banner ul.menu a:hover {
   color: #f0c214;
