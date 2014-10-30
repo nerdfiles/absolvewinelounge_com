@@ -193,7 +193,7 @@ body.page-gallery {
 }
 body.page-contact {
   .post-content {
-    *:not(.google-maps-builder-wrap) {
+    h2, h3, p, ul, ol, dl {
       @include span-columns(12);
     }
   }
