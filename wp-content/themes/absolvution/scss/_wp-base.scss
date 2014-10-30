@@ -363,6 +363,9 @@ body.term-happy-hour,
 body.term-wines,
 body.term-foods {
 
+  .post-meta {
+    height: 0;
+  }
   .site-header {
     z-index: 0 !important;
   }
