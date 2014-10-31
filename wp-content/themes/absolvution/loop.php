@@ -43,7 +43,10 @@
           echo get_post_meta(get_the_ID(), 'item_price', true);
       ?>
       </div>
-			<a href="<?php the_permalink(); ?>"><?php _e( 'Read more &raquo;', 'absolvution' ); ?></a>
+      <a
+        class="read-more"
+        href="<?php the_permalink(); ?>"
+      ><?php _e( 'Read more &raquo;', 'absolvution' ); ?></a>
 
 		<?php else : ?>
 
