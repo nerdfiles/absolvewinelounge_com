@@ -554,7 +554,8 @@ body.home {
   border-left: 3px #F0C214 double;
   @extend .grow-in;
   @extend .animated;
-  img { max-height: 100%;
+  img {
+    max-height: 100%;
     margin: 0 auto;
     display: block;
     }

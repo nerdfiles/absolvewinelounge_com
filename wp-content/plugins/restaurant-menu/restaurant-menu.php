@@ -82,6 +82,7 @@ class MenuItemPostType {
       'hierarchical' => false,
       'has_archive' => true,
       'menu_position' => null,
+      'taxonomies' => array( 'post_tag' ),
       'supports' => array(
       	'title',
       	'editor',

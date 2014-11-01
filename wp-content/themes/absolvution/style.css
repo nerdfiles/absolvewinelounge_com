@@ -7821,13 +7821,14 @@ ol.comment-list .comment-edit-link {
 
 body:not(.home) .page-content {
   min-height: 30rem;
+  margin-bottom: 5rem;
 }
 
 .post-title,
 h1.post-title {
   font-style: italic;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h2 {
@@ -7843,6 +7844,13 @@ body.single-post .post-meta {
   color: #fff;
 }
 
+body.archive .read-more,
+body.term-happy-hour .read-more,
+body.term-wines .read-more,
+body.term-foods .read-more {
+  position: absolute;
+  left: -9999px;
+}
 body.archive .post-meta,
 body.term-happy-hour .post-meta,
 body.term-wines .post-meta,
@@ -7878,6 +7886,18 @@ body.term-foods .post-content {
   background-color: transparent;
   margin-bottom: 5rem;
 }
+body.archive .page-content .menu_item,
+body.term-happy-hour .page-content .menu_item,
+body.term-wines .page-content .menu_item,
+body.term-foods .page-content .menu_item {
+  background-color: #111;
+}
+body.archive .page-content .menu_item:hover img,
+body.term-happy-hour .page-content .menu_item:hover img,
+body.term-wines .page-content .menu_item:hover img,
+body.term-foods .page-content .menu_item:hover img {
+  opacity: 1;
+}
 body.archive .page-content,
 body.term-happy-hour .page-content,
 body.term-wines .page-content,
@@ -7907,6 +7927,7 @@ body.term-foods .page-content article.menu_item {
   width: 46.74847%;
   overflow: hidden;
   height: 10rem;
+  margin-bottom: 1rem;
 }
 body.archive .page-content article.menu_item:hover .post-title a,
 body.term-happy-hour .page-content article.menu_item:hover .post-title a,
@@ -7984,7 +8005,7 @@ body.term-foods .post-content .price-tag:after {
   font-size: 1rem;
   letter-spacing: 0;
   word-spacing: 0;
-  background: #f0c214;
+  background: #c6a013;
   padding: 0 .4rem;
 }
 body.archive .post-content p,
@@ -8052,6 +8073,7 @@ body.term-foods .post-content img {
   /* removes(sorta) image from the flow */
   margin: -999em 0%;
   padding-left: 0px;
+  opacity: .5;
 }
 
 body.single-menu_item .post-content {
@@ -8744,15 +8766,20 @@ body.page-gallery .post-content:last-child {
   float: left;
   display: block;
   margin-right: 3.06748%;
-  width: 100%;
+  width: 31.28834%;
+  margin-left: 30.06135%;
+  color: #fff;
   /*border-bottom: 3px solid $color2;*/
 }
 .pagination:last-child {
   margin-right: 0;
 }
+.pagination span.page-numbers.current {
+  font-size: 2rem;
+}
 .pagination ul {
   list-style: none;
-  text-align: left;
+  text-align: center;
   margin: 1em 0 0 0;
   padding: 0.6em 0;
   background: #222;
@@ -8760,6 +8787,9 @@ body.page-gallery .post-content:last-child {
 .pagination li {
   display: inline;
   margin: 0 0.5em;
+}
+.pagination a {
+  color: #fff;
 }
 
 /******************************************************************************\

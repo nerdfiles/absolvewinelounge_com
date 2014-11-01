@@ -333,6 +333,7 @@ ol.comment-list .comment-edit-link {
 body:not(.home) {
   .page-content {
     min-height: 30rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -340,7 +341,7 @@ body:not(.home) {
 h1.post-title {
   font-style: italic;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h2 {
@@ -363,6 +364,11 @@ body.term-happy-hour,
 body.term-wines,
 body.term-foods {
 
+  .read-more {
+    position: absolute;
+    left: -9999px;
+  }
+
   .post-meta {
     height: 0;
   }
@@ -383,6 +389,12 @@ body.term-foods {
   .post-content {
     background-color: transparent;
     margin-bottom: 5rem;
+  }
+  .page-content .menu_item {
+    background-color: #111;
+    &:hover {
+      img { opacity: 1; }
+    }
   }
   .page-content {
     @include span-columns(12);
@@ -405,6 +417,7 @@ body.term-foods {
       @include span-columns(5.8);
       overflow: hidden;
       height: 10rem;
+      margin-bottom: 1rem;
       .post-title {
         position: absolute;
         z-index: 21;
@@ -445,7 +458,7 @@ body.term-foods {
         font-size: 1rem;
         letter-spacing: 0;
         word-spacing: 0;
-        background: #f0c214;
+        background: #c6a013;
         padding: 0 .4rem;
       }
     }
@@ -486,6 +499,7 @@ body.term-foods {
     /* removes(sorta) image from the flow */
     margin: -999em 0%;
     padding-left: 0px;
+    opacity: .5;
   }
 }
 

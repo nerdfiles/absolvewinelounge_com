@@ -215,13 +215,29 @@ body.page-gallery {
 }
 
 .pagination {
-  @include span-columns(12);
+  @include span-columns(4);
+  @include shift(3.5);
+  color: #fff;
+
+  span.page-numbers {
+  }
+  span.page-numbers.current {
+    font-size: 2rem;
+  }
+
+  a.page-numbers {
+  }
+
+  a.prev.page-numbers {
+  }
+  a.next.page-numbers {
+  }
 
   /*border-bottom: 3px solid $color2;*/
 
   ul {
     list-style: none;
-    text-align: left;
+    text-align: center;
     margin: 1em 0 0 0;
     padding: 0.6em 0;
     background: $color1;
@@ -230,6 +246,10 @@ body.page-gallery {
   li {
     display: inline;
     margin: 0 0.5em;
+  }
+
+  a {
+    color: #fff;
   }
 }
 
