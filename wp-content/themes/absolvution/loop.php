@@ -8,35 +8,33 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article data-price="<?php echo get_post_meta(get_the_ID(), 'item_price', true); ?>" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<h1 class="post-title"><?php
 
-		if ( is_singular() ) :
-			the_title();
-		else : ?>
+    if ( is_singular() ) :
+      the_title();
+    else : ?>
+      <a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php
+        the_title(); ?>
+      </a><?php
+    endif; ?>
 
-			<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php
-				the_title(); ?>
-			</a><?php
+  </h1>
 
-		endif; ?>
+  <div class="post-meta"><?php
+    absolvution_post_meta(); ?>
+  </div>
 
-	</h1>
+  <div class="post-content"><?php
 
-	<div class="post-meta"><?php
-		absolvution_post_meta(); ?>
-	</div>
+    if ( '' != get_the_post_thumbnail() ) : ?>
+      <?php the_post_thumbnail(); ?><?php
+    endif; ?>
 
-	<div class="post-content"><?php
+    <?php if ( is_category() || is_archive() || is_search() ) : ?>
 
-		if ( '' != get_the_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail(); ?><?php
-		endif; ?>
-
-		<?php if ( is_category() || is_archive() || is_search() ) : ?>
-
-			<?php the_excerpt(); ?>
+      <?php the_excerpt(); ?>
       <!-- Item Price Specification -->
       <div class="price-tag">
       <?php

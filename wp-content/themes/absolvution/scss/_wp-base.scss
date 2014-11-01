@@ -340,7 +340,7 @@ body:not(.home) {
 .post-title,
 h1.post-title {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -354,6 +354,15 @@ h2 {
   }
 }
 
+/*
+ *body.term-foods {
+ *  .page-content article.menu_item[data-price="0"] {
+ *    display: none;
+ *  }
+ *}
+ */
+
+body.blog .post-meta,
 body.single-post {
   .post-meta {
     color: #fff;
@@ -402,6 +411,13 @@ body.term-foods {
     position: relative;
     z-index: auto !important;
     article.menu_item {
+
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+      @include span-columns(5.8);
+      overflow: hidden;
+      height: 10rem;
+      margin-bottom: 2rem;
+
       &:hover .price-tag {
         @extend .flip;
         @extend .animated;
@@ -413,11 +429,17 @@ body.term-foods {
           }
         }
       }
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
-      @include span-columns(5.8);
-      overflow: hidden;
-      height: 10rem;
-      margin-bottom: 1rem;
+
+      &.no-feature-image {
+        height: 4rem;
+        .post-title {
+          height: 4rem;
+        }
+        .price-tag {
+          top: 2rem;
+        }
+      }
+
       .post-title {
         position: absolute;
         z-index: 21;
