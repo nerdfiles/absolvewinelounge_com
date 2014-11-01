@@ -301,4 +301,63 @@ function thumbnailing($post) {
 }
 add_action('tribe_events_list_widget_before_the_event_title', 'thumbnailing');
 
+add_filter('pre_get_posts','wines_menus_archive');
 
+function wines_menus_archive( $query ) {
+
+    if ( $query->is_tax( 'menu', 'wines' ) && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', 40 );
+        //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
+        $query->set( 'post_type', array( 'menu_item' ) );
+        $query->set( 'tax_query', array(
+            'relation' => 'AND',
+            array(
+                'taxonomy' => 'menu',
+                'field' => 'slug',
+                //'terms' => $terms,
+                'terms' => array( 'by-the-glass' ),
+                'operator' => 'NOT IN'
+            ),
+            array(
+                'taxonomy' => 'menu',
+                'field' => 'slug',
+                //'terms' => $terms,
+                'terms' => array( 'wines' )
+            )
+        ) );
+    }
+
+    if ( $query->is_tax( 'menu', 'foods' ) && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', 40 );
+        //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
+        $query->set( 'post_type', array( 'menu_item' ) );
+        $query->set( 'tax_query', array(
+            'relation' => 'AND',
+            array(
+                'taxonomy' => 'menu',
+                'field' => 'slug',
+                //'terms' => $terms,
+                'terms' => array( 'charcuterie', 'cheese' ),
+                'operator' => 'NOT IN'
+            ),
+            array(
+                'taxonomy' => 'menu',
+                'field' => 'slug',
+                //'terms' => $terms,
+                'terms' => array( 'small-plates', 'thin-crust-pizzas', 'desserts' )
+            )
+        ) );
+    }
+
+    return $query;
+}
+
+function check_image( $class = '' ) {
+	if ( has_post_thumbnail() ) {
+		$class[] = 'feature-image';
+  } else {
+    $class[] = 'no-feature-image';
+  }
+	return $class;
+	}
+add_filter('post_class', 'check_image');

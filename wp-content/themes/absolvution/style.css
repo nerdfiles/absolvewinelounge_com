@@ -7827,7 +7827,7 @@ body:not(.home) .page-content {
 .post-title,
 h1.post-title {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -7840,6 +7840,14 @@ h2 {
   width: 150%;
 }
 
+/*
+ *body.term-foods {
+ *  .page-content article.menu_item[data-price="0"] {
+ *    display: none;
+ *  }
+ *}
+ */
+body.blog .post-meta .post-meta,
 body.single-post .post-meta {
   color: #fff;
 }
@@ -7927,7 +7935,13 @@ body.term-foods .page-content article.menu_item {
   width: 46.74847%;
   overflow: hidden;
   height: 10rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+body.archive .page-content article.menu_item:last-child,
+body.term-happy-hour .page-content article.menu_item:last-child,
+body.term-wines .page-content article.menu_item:last-child,
+body.term-foods .page-content article.menu_item:last-child {
+  margin-right: 0;
 }
 body.archive .page-content article.menu_item:hover .post-title a,
 body.term-happy-hour .page-content article.menu_item:hover .post-title a,
@@ -7935,11 +7949,23 @@ body.term-wines .page-content article.menu_item:hover .post-title a,
 body.term-foods .page-content article.menu_item:hover .post-title a {
   position: relative;
 }
-body.archive .page-content article.menu_item:last-child,
-body.term-happy-hour .page-content article.menu_item:last-child,
-body.term-wines .page-content article.menu_item:last-child,
-body.term-foods .page-content article.menu_item:last-child {
-  margin-right: 0;
+body.archive .page-content article.menu_item.no-feature-image,
+body.term-happy-hour .page-content article.menu_item.no-feature-image,
+body.term-wines .page-content article.menu_item.no-feature-image,
+body.term-foods .page-content article.menu_item.no-feature-image {
+  height: 4rem;
+}
+body.archive .page-content article.menu_item.no-feature-image .post-title,
+body.term-happy-hour .page-content article.menu_item.no-feature-image .post-title,
+body.term-wines .page-content article.menu_item.no-feature-image .post-title,
+body.term-foods .page-content article.menu_item.no-feature-image .post-title {
+  height: 4rem;
+}
+body.archive .page-content article.menu_item.no-feature-image .price-tag,
+body.term-happy-hour .page-content article.menu_item.no-feature-image .price-tag,
+body.term-wines .page-content article.menu_item.no-feature-image .price-tag,
+body.term-foods .page-content article.menu_item.no-feature-image .price-tag {
+  top: 2rem;
 }
 body.archive .page-content article.menu_item .post-title,
 body.term-happy-hour .page-content article.menu_item .post-title,
