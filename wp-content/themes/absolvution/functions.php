@@ -9,7 +9,7 @@
 
 
 /******************************************************************************\
-	Theme support, standard settings, menus and widgets
+  Theme support, standard settings, menus and widgets
 \******************************************************************************/
 
 add_theme_support( 'post-formats', array( 'image', 'quote', 'status', 'link' ) );
@@ -17,9 +17,9 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'automatic-feed-links' );
 
 $custom_header_args = array(
-	'width'         => 980,
-	'height'        => 300,
-	'default-image' => get_template_directory_uri() . '/images/header.png',
+  'width'         => 980,
+  'height'        => 300,
+  'default-image' => get_template_directory_uri() . '/images/header.png',
 );
 add_theme_support( 'custom-header', $custom_header_args );
 
@@ -28,20 +28,20 @@ add_theme_support( 'custom-header', $custom_header_args );
  * @return void
  */
 function absolvution_custom_header() {
-	$styles = '';
-	if ( $color = get_header_textcolor() ) {
-		echo '<style type="text/css"> ' .
-				'.site-header .logo .blog-name, .site-header .logo .blog-description {' .
-					'color: #' . $color . ';' .
-				'}' .
-			 '</style>';
-	}
+  $styles = '';
+  if ( $color = get_header_textcolor() ) {
+    echo '<style type="text/css"> ' .
+        '.site-header .logo .blog-name, .site-header .logo .blog-description {' .
+          'color: #' . $color . ';' .
+        '}' .
+       '</style>';
+  }
 }
 add_action( 'wp_head', 'absolvution_custom_header', 11 );
 
 $custom_bg_args = array(
-	'default-color' => 'fba919',
-	'default-image' => '',
+  'default-color' => 'fba919',
+  'default-image' => '',
 );
 add_theme_support( 'custom-background', $custom_bg_args );
 
@@ -50,37 +50,46 @@ register_nav_menu( 'meta-menu', __( 'Your sites meta menu', 'absolvution' ) );
 register_nav_menu( 'footer-menu', __( 'Your sites footer menu', 'absolvution' ) );
 
 if ( function_exists( 'register_sidebars' ) ) {
-	register_sidebar(
-		array(
-			'id' => 'home-sidebar',
-			'name' => __( 'Home widgets', 'absolvution' ),
-			'description' => __( 'Shows on home page', 'absolvution' )
-		)
-	);
+  register_sidebar(
+    array(
+      'id' => 'home-sidebar',
+      'name' => __( 'Home widgets', 'absolvution' ),
+      'description' => __( 'Shows on home page', 'absolvution' )
+    )
+  );
 
-	register_sidebar(
-		array(
-			'id' => 'home-sidebar-display',
-			'name' => __( 'Home widgets (Display)', 'absolvution' ),
-			'description' => __( 'Shows on home page', 'absolvution' )
-		)
-	);
+  register_sidebar(
+    array(
+      'id' => 'home-sidebar-display',
+      'name' => __( 'Home widgets (Display)', 'absolvution' ),
+      'description' => __( 'Shows on home page', 'absolvution' )
+    )
+  );
 
-	register_sidebar(
-		array(
-			'id' => 'home-sidebar-followup',
-			'name' => __( 'Home widgets (Followup)', 'absolvution' ),
-			'description' => __( 'Shows on home page', 'absolvution' )
-		)
-	);
+  register_sidebar(
+    array(
+      'id' => 'home-sidebar-followup',
+      'name' => __( 'Home widgets (Followup)', 'absolvution' ),
+      'description' => __( 'Shows on home page', 'absolvution' )
+    )
+  );
 
-	register_sidebar(
-		array(
-			'id' => 'footer-sidebar',
-			'name' => __( 'Footer widgets', 'absolvution' ),
-			'description' => __( 'Shows in the sites footer', 'absolvution' )
-		)
-	);
+  register_sidebar(
+    array(
+      'id' => 'footer-sidebar',
+      'name' => __( 'Footer widgets', 'absolvution' ),
+      'description' => __( 'Shows in the sites footer', 'absolvution' )
+    )
+  );
+
+  register_sidebar(
+    array(
+      'id' => 'menu-archive-widgets',
+      'name' => __( 'Menu Archive widgets', 'absolvution' ),
+      'description' => __( 'Shows on Menu Archive page', 'absolvution' )
+    )
+  );
+
 }
 
 if ( ! isset( $content_width ) ) $content_width = 650;
@@ -96,7 +105,7 @@ function absolvution_editor_style() {
 
 
 /******************************************************************************\
-	Scripts and Styles
+  Scripts and Styles
 \******************************************************************************/
 
 /**
@@ -125,7 +134,7 @@ define( 'AMD', false );
  * @return void
  */
 function absolvution_enqueue_scripts() {
-	wp_enqueue_style( 'absolvution-styles', get_stylesheet_uri(), array(), '1.0' );
+  wp_enqueue_style( 'absolvution-styles', get_stylesheet_uri(), array(), '1.0' );
   if ( is_singular() ) {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'comment-reply' );
@@ -167,7 +176,7 @@ function add_id_to_script($src, $handle) {
 }
 
 /******************************************************************************\
-	Content functions
+  Content functions
 \******************************************************************************/
 
 /**
@@ -175,16 +184,16 @@ function add_id_to_script($src, $handle) {
  * @return void
  */
 function absolvution_post_meta() {
-	if ( get_post_type() == 'post' ) {
-		echo sprintf(
-			__( 'Posted %s in %s%s by %s. ', 'absolvution' ),
-			get_the_time( get_option( 'date_format' ) ),
-			get_the_category_list( ', ' ),
-			get_the_tag_list( __( ', <b>Tags</b>: ', 'absolvution' ), ', ' ),
-			get_the_author_link()
-		);
-	}
-	edit_post_link( __( ' (edit)', 'absolvution' ), '<span class="edit-link">', '</span>' );
+  if ( get_post_type() == 'post' ) {
+    echo sprintf(
+      __( 'Posted %s in %s%s by %s. ', 'absolvution' ),
+      get_the_time( get_option( 'date_format' ) ),
+      get_the_category_list( ', ' ),
+      get_the_tag_list( __( ', <b>Tags</b>: ', 'absolvution' ), ', ' ),
+      get_the_author_link()
+    );
+  }
+  edit_post_link( __( ' (edit)', 'absolvution' ), '<span class="edit-link">', '</span>' );
 }
 
 function absolvution_background_gen() {
@@ -211,40 +220,40 @@ function absolvution_background_gen() {
 }
 
 function mytheme_comment($comment, $args, $depth) {
-	$GLOBALS['comment'] = $comment;
-	extract($args, EXTR_SKIP);
+  $GLOBALS['comment'] = $comment;
+  extract($args, EXTR_SKIP);
 
-	if ( 'div' == $args['style'] ) {
-		$tag = 'div';
-		$add_below = 'comment';
-	} else {
-		$tag = 'li';
-		$add_below = 'div-comment';
-	}
+  if ( 'div' == $args['style'] ) {
+    $tag = 'div';
+    $add_below = 'comment';
+  } else {
+    $tag = 'li';
+    $add_below = 'div-comment';
+  }
 ?>
-	<<?php echo $tag ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
-	<?php if ( 'div' != $args['style'] ) : ?>
-	<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
-	<?php endif; ?>
-	<div class="comment-author vcard">
-	<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-	<?php printf( __( '<cite class="fn">%s</cite> <span class="says">says:</span>' ), get_comment_author_link() ); ?>
-	</div>
-	<?php if ( $comment->comment_approved == '0' ) : ?>
-		<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em>
-		<br />
-	<?php endif; ?>
+  <<?php echo $tag ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
+  <?php if ( 'div' != $args['style'] ) : ?>
+  <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
+  <?php endif; ?>
+  <div class="comment-author vcard">
+  <?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+  <?php printf( __( '<cite class="fn">%s</cite> <span class="says">says:</span>' ), get_comment_author_link() ); ?>
+  </div>
+  <?php if ( $comment->comment_approved == '0' ) : ?>
+    <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em>
+    <br />
+  <?php endif; ?>
 
-	<div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
-		<?php
-			/* translators: 1: date, 2: time */
-			printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time() ); ?></a><?php edit_comment_link( __( '(Edit)' ), '  ', '' );
-		?>
-	</div>
+  <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
+    <?php
+      /* translators: 1: date, 2: time */
+      printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time() ); ?></a><?php edit_comment_link( __( '(Edit)' ), '  ', '' );
+    ?>
+  </div>
 
-	<?php comment_text(); ?>
+  <?php comment_text(); ?>
 
-	<div class="reply">
+  <div class="reply">
   <?php
     comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) );
   ?>
@@ -252,10 +261,10 @@ function mytheme_comment($comment, $args, $depth) {
     <span class="label">Close</span>
     <span class="icon"></span>
   </a>
-	</div>
-	<?php if ( 'div' != $args['style'] ) : ?>
-	</div>
-	<?php endif; ?>
+  </div>
+  <?php if ( 'div' != $args['style'] ) : ?>
+  </div>
+  <?php endif; ?>
 <?php
 }
 
@@ -305,6 +314,34 @@ add_filter('pre_get_posts','wines_menus_archive');
 
 function wines_menus_archive( $query ) {
 
+    if ( $query->is_tax( 'menu', 'drinks' ) && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', 40 );
+        $query->set( 'post_type', array( 'menu_item' ) );
+        $query->set( 'tax_query', array(
+            'relation' => 'AND',
+            array(
+                'taxonomy' => 'menu',
+                'field' => 'slug',
+                //'terms' => $terms,
+                'terms' => array( 'wines', 'by-the-glass', 'craft-beers' )
+            )
+        ) );
+    }
+
+    if ( $query->is_tax( 'menu', 'by-the-glass' ) && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', 40 );
+        $query->set( 'post_type', array( 'menu_item' ) );
+        $query->set( 'tax_query', array(
+            'relation' => 'AND',
+            array(
+                'taxonomy' => 'menu',
+                'field' => 'slug',
+                //'terms' => $terms,
+                'terms' => array( 'by-the-glass' )
+            )
+        ) );
+    }
+
     if ( $query->is_tax( 'menu', 'wines' ) && $query->is_main_query() ) {
         $query->set( 'posts_per_page', 40 );
         //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
@@ -323,6 +360,21 @@ function wines_menus_archive( $query ) {
                 'field' => 'slug',
                 //'terms' => $terms,
                 'terms' => array( 'wines' )
+            )
+        ) );
+    }
+
+    if ( $query->is_tax( 'menu', 'craft-beers' ) && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', 40 );
+        //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
+        $query->set( 'post_type', array( 'menu_item' ) );
+        $query->set( 'tax_query', array(
+            'relation' => 'AND',
+            array(
+                'taxonomy' => 'menu',
+                'field' => 'slug',
+                //'terms' => $terms,
+                'terms' => array( 'craft-beers' )
             )
         ) );
     }
@@ -349,15 +401,30 @@ function wines_menus_archive( $query ) {
         ) );
     }
 
+    if ( $query->is_tax( 'menu', 'charcuterie-cheese' ) && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', 40 );
+        //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
+        $query->set( 'post_type', array( 'menu_item' ) );
+        $query->set( 'tax_query', array(
+            'relation' => 'AND',
+            array(
+                'taxonomy' => 'menu',
+                'field' => 'slug',
+                //'terms' => $terms,
+                'terms' => array( 'cheese', 'charcuterie' )
+            )
+        ) );
+    }
+
     return $query;
 }
 
 function check_image( $class = '' ) {
-	if ( has_post_thumbnail() ) {
-		$class[] = 'feature-image';
+  if ( has_post_thumbnail() ) {
+    $class[] = 'feature-image';
   } else {
     $class[] = 'no-feature-image';
   }
-	return $class;
-	}
+  return $class;
+  }
 add_filter('post_class', 'check_image');

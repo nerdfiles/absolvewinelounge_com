@@ -18,10 +18,23 @@ get_header(); ?>
 
 				<aside class="post-aside">
 
-					<div class="post-links">
-						<?php previous_post_link( '%link', __( '&laquo; Previous post', 'absolvution' ) ) ?>
-						<?php next_post_link( '%link', __( 'Next post &raquo;', 'absolvution' ) ); ?>
-					</div>
+          <div class="post-links">
+            <?php if ( is_singular( 'menu_item' ) ) { ?>
+              <span class="container">
+                <?php previous_post_link( '%link', __( '<span class="fa fa-arrow-left"></span> Previous menu item', 'absolvution' ) ) ?>
+              </span>
+              <span class="container">
+                <?php next_post_link( '%link', __( 'Next menu item <span class="fa fa-arrow-right"></span>', 'absolvution' ) ); ?>
+              </span>
+            <?php } else { ?>
+              <span class="container">
+                <?php previous_post_link( '%link', __( '<span class="fa fa-arrow-left"></span> Previous post', 'absolvution' ) ) ?>
+              </span>
+              <span class="container">
+                <?php next_post_link( '%link', __( 'Next post <span class="fa fa-arrow-right"></span>', 'absolvution' ) ); ?>
+              </span>
+            <?php } ?>
+          </div>
 
 					<?php
 						if ( comments_open() || get_comments_number() > 0 ) :

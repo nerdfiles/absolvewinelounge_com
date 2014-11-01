@@ -74,6 +74,8 @@ article {
 }
 
 .post-links {
+  position: relative;
+  z-index: 9001;
   a {
     color: #83AAC9;
   }
@@ -81,6 +83,7 @@ article {
 .post-meta {
   @include span-columns(8);
   @include shift(.25);
+  color: #fff;
   /*margin-top: -2em;*/
 
   text-align: left;
@@ -214,9 +217,18 @@ body.page-gallery {
   }
 }
 
+.page-content .pagination {
+  ul {
+    background-color: transparent;
+    margin: 0;
+    padding-top: 0;
+  }
+}
+
 .pagination {
-  @include span-columns(5);
+  @include span-columns(5, block-collapse);
   @include shift(3.5);
+  @include clearfix;
   color: #fff;
   position: relative;
   left: -$gutter;

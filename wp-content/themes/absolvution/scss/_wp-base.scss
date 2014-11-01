@@ -77,18 +77,32 @@ ol.comment-list {
   padding-left: $gutter;
 }
 
-.post-links {
+div.post-links {
 
 	@include clearfix;
-	width: 70%;
+  @include span-columns(12);
 	margin: 1em auto;
+  padding-top: 2rem;
+  .container {
+    @include span-columns(6);
+    text-align: center;
+  }
+  text-transform: lowercase;
+  font-variant: small-caps;
+  .fa {
+    color: #2E6F89;
+  }
 
 	a {
-		float: right;
+    color: #f0c214;
+    background-color: #222;
+    @include pad(.5rem default);
+    margin: 0 .5rem;
+		/*float: right;*/
 	}
 
 	a:first-child {
-		float: left;
+		/*float: left;*/
 	}
 
 }
@@ -472,7 +486,7 @@ body.term-foods {
       letter-spacing: 0;
       word-spacing: 0;
       font-size: 1.5rem;
-      background: #111;
+      background: #222;
       padding: 0 .4rem;
       &:after {
         content: "USD";

@@ -38,8 +38,14 @@
       <!-- Item Price Specification -->
       <div class="price-tag">
       <?php
+        if (get_post_meta(get_the_ID(), 'item_price', true) == '0') {
+      ?>
+        <span class="fa fa-plus"></span>
+      <?php } else { ?>
+      <?php
           echo get_post_meta(get_the_ID(), 'item_price', true);
       ?>
+      <?php } ?>
       </div>
       <a
         class="read-more"

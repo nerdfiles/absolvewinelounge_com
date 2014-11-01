@@ -560,3 +560,27 @@ body.home {
     display: block;
     }
 }
+
+.menu-archive-widgets {
+  margin-bottom: 2rem;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  ul.inner {
+  }
+  .menu-legend {
+    @include clearfix;
+    ul {
+      @include span-columns(8);
+      @include shift(2);
+      @include clearfix;
+      border-bottom: 3px double #F0C214;
+      li {
+        @include span-columns(3);
+        text-align: center;
+      }
+    }
+  }
+}
