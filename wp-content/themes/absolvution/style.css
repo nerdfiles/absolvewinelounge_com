@@ -8465,6 +8465,9 @@ body.single-menu_item .menu-item-categories li:last-child {
   left: 10rem !important;
   top: -.5rem !important;
 }
+.site-banner .main-menu ul.menu > li.menu-item:hover {
+  color: #f0c214;
+}
 .site-banner .main-menu ul.menu > li.menu-item:hover ul.sub-menu {
   position: absolute;
   padding-left: 5rem;
@@ -8496,7 +8499,7 @@ body.single-menu_item .menu-item-categories li:last-child {
   letter-spacing: .1rem;
   font-weight: 700;
   text-transform: uppercase;
-  display: block;
+  display: block !important;
   padding: .15rem;
 }
 .site-banner ul.menu a:hover {
