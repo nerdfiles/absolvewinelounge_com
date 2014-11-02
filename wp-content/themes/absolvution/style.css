@@ -8303,6 +8303,27 @@ body.single-menu_item .post-content {
 body.single-menu_item .post-content:last-child {
   margin-right: 0;
 }
+body.single-menu_item .menu-item-price {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 44.17178%;
+  margin-left: 8.58896%;
+}
+body.single-menu_item .menu-item-price:last-child {
+  margin-right: 0;
+}
+body.single-menu_item .menu-item-price .label {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  color: #c6a013;
+}
+body.single-menu_item .menu-item-price .value {
+  color: #fff;
+}
+body.single-menu_item .menu-item-price span.value:after {
+  content: "USD";
+}
 body.single-menu_item .menu-item-categories {
   margin-top: 1rem;
   float: left;
@@ -8325,6 +8346,7 @@ body.single-menu_item .menu-item-categories ul {
   margin: 0;
   padding: 0;
   *zoom: 1;
+  list-style: none;
 }
 body.single-menu_item .menu-item-categories ul:before, body.single-menu_item .menu-item-categories ul:after {
   content: " ";

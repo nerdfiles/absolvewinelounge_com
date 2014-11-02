@@ -17,6 +17,15 @@ get_header(); ?>
 
         <?php get_template_part( 'loop', get_post_format() ); ?>
 
+        <div class="menu-item-price">
+          <span class="label">Price</span>
+          <span class="value">
+          <?php
+              echo get_post_meta(get_the_ID(), 'item_price', true);
+          ?>
+          </span>
+        </div>
+
         <div class="menu-item-categories">
         <?php
           $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
