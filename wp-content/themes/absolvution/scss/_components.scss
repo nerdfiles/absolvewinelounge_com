@@ -413,7 +413,7 @@ body.events-gridview {
       a {
         border-bottom: 1px solid #6689A3;
         display: block;
-        @include pad(.3rem 0 default 0);
+        /*@include pad(.3rem 0 default 0);*/
         text-transform: lowercase;
         font-variant: small-caps;
       }

@@ -7227,7 +7227,7 @@ body.events-gridview .post-content {
 .site-footer div.menu ul.menu a {
   border-bottom: 1px solid #6689A3;
   display: block;
-  padding: 0.3rem 0 3.06748% 0;
+  /*@include pad(.3rem 0 default 0);*/
   text-transform: lowercase;
   font-variant: small-caps;
 }
