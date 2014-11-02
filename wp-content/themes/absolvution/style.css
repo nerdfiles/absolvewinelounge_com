@@ -7440,6 +7440,71 @@ body.home .site-footer {
   margin-right: 0;
 }
 
+.page-content .menu {
+  *zoom: 1;
+}
+.page-content .menu:before, .page-content .menu:after {
+  content: " ";
+  display: table;
+}
+.page-content .menu:after {
+  clear: both;
+}
+.page-content .menu .wines-menu,
+.page-content .menu .foods-menu,
+.page-content .menu .drinks-menu {
+  background-color: #222;
+  border-bottom: 3px #C6A013 double;
+  margin-bottom: 2rem;
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 65.64417%;
+  margin-left: 17.17791%;
+  *zoom: 1;
+  text-align: center;
+}
+.page-content .menu .wines-menu ul,
+.page-content .menu .foods-menu ul,
+.page-content .menu .drinks-menu ul {
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.page-content .menu .wines-menu:last-child,
+.page-content .menu .foods-menu:last-child,
+.page-content .menu .drinks-menu:last-child {
+  margin-right: 0;
+}
+.page-content .menu .wines-menu:before, .page-content .menu .wines-menu:after,
+.page-content .menu .foods-menu:before,
+.page-content .menu .foods-menu:after,
+.page-content .menu .drinks-menu:before,
+.page-content .menu .drinks-menu:after {
+  content: " ";
+  display: table;
+}
+.page-content .menu .wines-menu:after,
+.page-content .menu .foods-menu:after,
+.page-content .menu .drinks-menu:after {
+  clear: both;
+}
+.page-content .menu .wines-menu a,
+.page-content .menu .foods-menu a,
+.page-content .menu .drinks-menu a {
+  display: inline-block;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.5rem 3.06748%;
+}
+.page-content .menu .wines-menu li,
+.page-content .menu .foods-menu li,
+.page-content .menu .drinks-menu li {
+  margin: 0 0;
+  display: inline;
+}
+
 .sticky {
   background: none;
 }
@@ -8988,8 +9053,8 @@ body.page-gallery .post-content:last-child {
 }
 
 .page-content .pagination ul {
-  background-color: transparent;
-  margin: 0;
+  background-color: #222;
+  margin: 0 0 2rem;
   padding-top: 0;
 }
 
@@ -9001,7 +9066,6 @@ body.page-gallery .post-content:last-child {
   *zoom: 1;
   color: #fff;
   position: relative;
-  left: -30px;
   /*border-bottom: 3px solid $color2;*/
 }
 .pagination:last-child {
@@ -9021,7 +9085,7 @@ body.page-gallery .post-content:last-child {
   list-style: none;
   text-align: center;
   margin: 1em 0 0 0;
-  padding: 0.6em 0;
+  padding: 0.6em 0 0;
   background: #222;
 }
 .pagination li {

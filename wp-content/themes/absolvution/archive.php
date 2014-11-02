@@ -49,9 +49,51 @@ get_header(); ?>
         ?>
       </h1>
 
-      <div class="pagination">
+      <?php if ( is_tax( 'menu', 'drinks' ) ) { ?>
+        <div class="menu"><?php
+          $drinks_nav_menu = wp_nav_menu(
+            array(
+              'container' => 'nav',
+              'container_class' => 'drinks-menu',
+              'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+              'theme_location' => 'drinks-menu',
+              'fallback_cb' => '__return_false',
+            )
+          ); ?>
+        </div>
+      <?php } ?>
+
+      <?php if ( is_tax( 'menu', 'wines' ) ) { ?>
+        <div class="menu"><?php
+          $wines_nav_menu = wp_nav_menu(
+            array(
+              'container' => 'nav',
+              'container_class' => 'wines-menu',
+              'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+              'theme_location' => 'wines-menu',
+              'fallback_cb' => '__return_false',
+            )
+          ); ?>
+        </div>
+      <?php } ?>
+
+      <?php if ( is_tax( 'menu', 'foods' ) ) { ?>
+        <div class="menu"><?php
+          $foods_nav_menu = wp_nav_menu(
+            array(
+              'container' => 'nav',
+              'container_class' => 'foods-menu',
+              'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+              'theme_location' => 'foods-menu',
+              'fallback_cb' => '__return_false',
+            )
+          ); ?>
+        </div>
+      <?php } ?>
+
+      <!--div class="pagination">
         <?php get_template_part( 'template-part', 'pagination' ); ?>
-      </div>
+      </div-->
 
       <?php if ( is_tax( 'menu', 'charcuterie-cheese' ) ) { ?>
         <div class="archive-widgets menu-archive-widgets">

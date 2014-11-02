@@ -219,8 +219,8 @@ body.page-gallery {
 
 .page-content .pagination {
   ul {
-    background-color: transparent;
-    margin: 0;
+    background-color: #222;
+    margin: 0 0 2rem;
     padding-top: 0;
   }
 }
@@ -231,7 +231,6 @@ body.page-gallery {
   @include clearfix;
   color: #fff;
   position: relative;
-  left: -$gutter;
 
   span.page-numbers {
   }
@@ -253,7 +252,7 @@ body.page-gallery {
     list-style: none;
     text-align: center;
     margin: 1em 0 0 0;
-    padding: 0.6em 0;
+    padding: 0.6em 0 0;
     background: $color1;
   }
 
