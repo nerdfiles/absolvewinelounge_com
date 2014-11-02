@@ -9,9 +9,9 @@
 
 get_header(); ?>
 
-	<section class="page-content primary" role="main"><?php
+	<section class="page-content primary" role="main">
 
-		if ( have_posts() ) : ?>
+    <?php if ( have_posts() ) : ?>
 
       <h1 class="archive-title">
         <?php
@@ -47,9 +47,23 @@ get_header(); ?>
 
           endif;
         ?>
-      </h1><?php
+      </h1>
 
-      if ( is_category() || is_tag() || is_tax() ):
+      <div class="pagination">
+        <?php get_template_part( 'template-part', 'pagination' ); ?>
+      </div>
+
+      <?php if ( is_tax( 'menu', 'charcuterie-cheese' ) ) { ?>
+        <div class="archive-widgets menu-archive-widgets">
+          <ul class="inner"><?php
+            if ( function_exists( 'dynamic_sidebar' ) ) :
+              dynamic_sidebar( 'menu-archive-widgets' );
+            endif;
+          ?></ul>
+        </div>
+      <?php } ?>
+
+      <?php if ( is_category() || is_tag() || is_tax() ):
         $term_description = term_description();
         if ( ! empty( $term_description ) ) : ?>
 
@@ -81,10 +95,9 @@ get_header(); ?>
     endif; ?>
 
     <div class="pagination">
-
       <?php get_template_part( 'template-part', 'pagination' ); ?>
-
     </div>
+
   </section>
 
 <?php get_footer(); ?>

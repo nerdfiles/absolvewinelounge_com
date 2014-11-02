@@ -77,18 +77,32 @@ ol.comment-list {
   padding-left: $gutter;
 }
 
-.post-links {
+div.post-links {
 
 	@include clearfix;
-	width: 70%;
+  @include span-columns(12);
 	margin: 1em auto;
+  padding-top: 2rem;
+  .container {
+    @include span-columns(6);
+    text-align: center;
+  }
+  text-transform: lowercase;
+  font-variant: small-caps;
+  .fa {
+    color: #2E6F89;
+  }
 
 	a {
-		float: right;
+    color: #f0c214;
+    background-color: #222;
+    @include pad(.5rem default);
+    margin: 0 .5rem;
+		/*float: right;*/
 	}
 
 	a:first-child {
-		float: left;
+		/*float: left;*/
 	}
 
 }
@@ -417,10 +431,13 @@ body.term-foods {
       overflow: hidden;
       height: 10rem;
       margin-bottom: 2rem;
+      border-bottom: 1px #c6a013 solid;
 
       &:hover .price-tag {
-        @extend .flip;
-        @extend .animated;
+        /*
+         *@extend .flip;
+         *@extend .animated;
+         */
       }
       &:hover {
         .post-title {
@@ -431,12 +448,12 @@ body.term-foods {
       }
 
       &.no-feature-image {
-        height: 4rem;
+        height: 5rem;
         .post-title {
-          height: 4rem;
+          height: 5rem;
         }
         .price-tag {
-          top: 2rem;
+          top: 3rem;
         }
       }
 
@@ -447,6 +464,8 @@ body.term-foods {
         @include transition (all .5s ease-in-out);
         @include span-columns(6);
         height: 10rem;
+        padding-left: .3rem;
+        padding-top: .3rem;
         a {
           height: 100%;
           display: block;
@@ -472,7 +491,7 @@ body.term-foods {
       letter-spacing: 0;
       word-spacing: 0;
       font-size: 1.5rem;
-      background: #111;
+      background: #222;
       padding: 0 .4rem;
       &:after {
         content: "USD";
@@ -523,6 +542,44 @@ body.term-foods {
     padding-left: 0px;
     opacity: .5;
   }
+
+  .menu-item-categories {
+    position: absolute;
+    top: 3.2rem;
+    padding-left: .3rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: .85rem;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-size: .8rem;
+    @include span-columns(12);
+
+    a { color: #ccc; }
+    a[href*="glass"] {
+      text-indent: -9999px;
+      display: block;
+      &:after {
+        content: "Glass";
+        text-indent: 0px;
+        display: block;
+        vertical-align: bottom;
+        margin-top: -.85rem;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      @include clearfix;
+    }
+    li {
+      display: table-cell;
+      vertical-align: bottom;
+      height: 1.6rem;
+      padding-right: 1rem;
+    }
+  }
+
 }
 
 body.single-menu_item {
@@ -537,5 +594,25 @@ body.single-menu_item {
     text-align: left;
     position: relative;
     z-index: 25;
+  }
+  .menu-item-categories {
+    margin-top: 1rem;
+    @include span-columns(5.5);
+    @include shift(1);
+    font-variant: small-caps;
+    text-transform: lowercase;
+    a {
+      color: #fff;
+      border-left: 3px #f0c214 double;
+      padding-left: .5rem;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      @include clearfix;
+    }
+    li {
+      @include span-columns(3);
+    }
   }
 }

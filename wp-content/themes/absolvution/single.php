@@ -13,15 +13,46 @@ get_header(); ?>
 
 		<?php
 			if ( have_posts() ) : the_post();
+    ?>
 
-				get_template_part( 'loop', get_post_format() ); ?>
+        <?php get_template_part( 'loop', get_post_format() ); ?>
+
+        <div class="menu-item-categories">
+        <?php
+          $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
+          if ( ! empty( $product_terms ) ) {
+            if ( ! is_wp_error( $product_terms ) ) {
+              echo '<ul>';
+                foreach( $product_terms as $term ) {
+                  if ( '' != $term->parent ) {
+                    echo '<li><a href="' . get_term_link( $term->slug, 'menu' ) . '">' . $term->name . '</a></li>';
+                  }
+                }
+              echo '</ul>';
+            }
+          }
+        ?>
+        </div>
 
 				<aside class="post-aside">
 
-					<div class="post-links">
-						<?php previous_post_link( '%link', __( '&laquo; Previous post', 'absolvution' ) ) ?>
-						<?php next_post_link( '%link', __( 'Next post &raquo;', 'absolvution' ) ); ?>
-					</div>
+          <div class="post-links">
+            <?php if ( is_singular( 'menu_item' ) ) { ?>
+              <span class="container">
+                <?php previous_post_link( '%link', __( '<span class="fa fa-arrow-left"></span> Previous menu item', 'absolvution' ) ) ?>
+              </span>
+              <span class="container">
+                <?php next_post_link( '%link', __( 'Next menu item <span class="fa fa-arrow-right"></span>', 'absolvution' ) ); ?>
+              </span>
+            <?php } else { ?>
+              <span class="container">
+                <?php previous_post_link( '%link', __( '<span class="fa fa-arrow-left"></span> Previous post', 'absolvution' ) ) ?>
+              </span>
+              <span class="container">
+                <?php next_post_link( '%link', __( 'Next post <span class="fa fa-arrow-right"></span>', 'absolvution' ) ); ?>
+              </span>
+            <?php } ?>
+          </div>
 
 					<?php
 						if ( comments_open() || get_comments_number() > 0 ) :

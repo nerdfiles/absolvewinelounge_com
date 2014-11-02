@@ -65,6 +65,33 @@ $g: $gutter + $gutter;
 
     .main-menu {
       padding-top: 0;
+      .sub-menu {
+        position: absolute;
+        left: -9999px;
+      }
+      ul.menu {
+        position: relative;
+        z-index: 500;
+      }
+      ul.sub-menu {
+        text-align: left;
+      }
+      ul.menu > li.menu-item:hover {
+        li {
+          @extend .fade-left-in;
+          @extend .animated;
+        }
+        .sub-menu {
+          @extend .fade-left-in;
+          @extend .animated;
+
+          position: absolute;
+          @include span-columns(6);
+          left: 300px;
+          top: .75rem;
+          /*background-color: #333;*/
+        }
+      }
     }
     ul.menu {
       list-style: none;

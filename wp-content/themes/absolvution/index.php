@@ -14,33 +14,33 @@ get_header(); ?>
     role="main"
   >
 
-		<?php
-			if ( have_posts() ):
-				while ( have_posts() ) : the_post();
+    <?php
+      if ( have_posts() ):
+        while ( have_posts() ) : the_post();
 
-					get_template_part( 'loop', get_post_format() );
+          get_template_part( 'loop', get_post_format() );
 
-					wp_link_pages(
-						array(
-							'before'           => '<div class="linked-page-nav"><p>' . sprintf( __( '<em>%s</em> is separated in multiple parts:', 'absolvution' ), get_the_title() ) . '<br />',
-							'after'            => '</p></div>',
-							'next_or_number'   => 'number',
-							'separator'        => ' ',
-							'pagelink'         => __( '&raquo; Part %', 'absolvution' ),
-						)
-					);
+          wp_link_pages(
+            array(
+              'before'           => '<div class="linked-page-nav"><p>' . sprintf( __( '<em>%s</em> is separated in multiple parts:', 'absolvution' ), get_the_title() ) . '<br />',
+              'after'            => '</p></div>',
+              'next_or_number'   => 'number',
+              'separator'        => ' ',
+              'pagelink'         => __( '&raquo; Part %', 'absolvution' ),
+            )
+          );
 
-				endwhile;
+        endwhile;
 
-			else :
-				get_template_part( 'loop', 'empty' );
-			endif;
-		?>
+      else :
+        get_template_part( 'loop', 'empty' );
+      endif;
+    ?>
 
-		<div class="pagination">
-			<?php get_template_part( 'template-part', 'pagination' ); ?>
-		</div>
+    <div class="pagination">
+      <?php get_template_part( 'template-part', 'pagination' ); ?>
+    </div>
 
-	</section>
+  </section>
 
 <?php get_footer(); ?>
