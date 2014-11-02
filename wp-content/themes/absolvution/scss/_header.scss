@@ -76,11 +76,25 @@ $g: $gutter + $gutter;
       ul.sub-menu {
         text-align: left;
         /*background-color: #333;*/
+        /* Cannot figure out how to layer beneath site-menu. */
+        /*background-color: rgba(0, 0, 0, .4);*/
         padding-left: 0;
         z-index: 400;
+        &:before {
+          background-color: rgba(51, 51, 51, .8);
+          content: " ";
+          display: block;
+          height: 100%;
+          width: 80%;
+          position: absolute;
+          left: 110px;
+          z-index: 2;
+        }
         li {
           padding-top: 0;
           padding-bottom: 0;
+          position: relative;
+          z-index: 9;
           a {
             padding-top: .3rem;
             padding-bottom: .3rem;
