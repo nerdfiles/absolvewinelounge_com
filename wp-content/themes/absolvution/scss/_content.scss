@@ -156,15 +156,13 @@ body.search-results .post-content {
   margin-top: 0;
   color: #fff;
   .price-tag {
-    display: inline-block;
-    position: absolute;
-    top: -25%;
-    left: 0;
+    /*
+     *position: absolute;
+     *top: -25%;
+     *left: 0;
+     */
     color: #F0C214;
     font-weight: 700;
-    &:after {
-      content: "USD";
-    }
   }
 }
 body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) {

@@ -17,6 +17,7 @@ get_header(); ?>
 
         <?php get_template_part( 'loop', get_post_format() ); ?>
 
+        <?php if (is_tax('menu')) { ?>
         <div class="menu-item-price">
           <span class="label">Price</span>
           <span class="value">
@@ -25,6 +26,7 @@ get_header(); ?>
           ?>
           </span>
         </div>
+        <?php } ?>
 
         <div class="menu-item-categories">
         <?php
