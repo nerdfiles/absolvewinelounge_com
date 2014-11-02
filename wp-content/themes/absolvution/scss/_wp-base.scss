@@ -612,7 +612,6 @@ body.single-menu_item {
       @include clearfix;
     }
     li {
-      @include span-columns(3);
     }
   }
 }
