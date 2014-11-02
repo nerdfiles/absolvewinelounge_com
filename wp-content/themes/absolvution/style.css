@@ -9001,15 +9001,13 @@ body.search-results .post-content {
   color: #fff;
 }
 body.search-results .post-content .price-tag {
-  display: inline-block;
-  position: absolute;
-  top: -25%;
-  left: 0;
+  /*
+   *position: absolute;
+   *top: -25%;
+   *left: 0;
+   */
   color: #F0C214;
   font-weight: 700;
-}
-body.search-results .post-content .price-tag:after {
-  content: "USD";
 }
 
 body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .home .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .post .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .page .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .archive .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .search .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .author .post-content {
