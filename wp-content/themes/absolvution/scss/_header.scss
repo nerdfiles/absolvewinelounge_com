@@ -75,20 +75,35 @@ $g: $gutter + $gutter;
       }
       ul.sub-menu {
         text-align: left;
+        /*background-color: #333;*/
+        padding-left: 0;
+        z-index: 400;
+        li {
+          padding-top: 0;
+          padding-bottom: 0;
+          a {
+            padding-top: .3rem;
+            padding-bottom: .3rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+        }
+        &:hover {
+          position: absolute !important;
+          padding-left: 5rem;
+          left: 10rem !important;
+          top: -.5rem !important;
+        }
       }
       ul.menu > li.menu-item:hover {
-        li {
-          @extend .fade-left-in;
-          @extend .animated;
-        }
-        .sub-menu {
+        ul.sub-menu {
           @extend .fade-left-in;
           @extend .animated;
 
           position: absolute;
-          @include span-columns(6);
-          left: 300px;
-          top: .75rem;
+          padding-left: 5rem;
+          left: 10rem;
+          top: -.5rem;
           /*background-color: #333;*/
         }
       }

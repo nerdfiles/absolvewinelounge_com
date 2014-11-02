@@ -390,7 +390,7 @@ table {
   border-spacing: 0;
 }
 
-.animated, .foogallery-panel.active, ol.comment-list li.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover li, .site-banner .main-menu ul.menu > li.menu-item:hover .sub-menu, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .google-maps-builder-wrap, body.events-gridview .type-tribe_events,
+.animated, .foogallery-panel.active, ol.comment-list li.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover ul.sub-menu, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .google-maps-builder-wrap, body.events-gridview .type-tribe_events,
 body.events-single .type-tribe_events, body.events-gridview td:hover,
 body.events-single td:hover {
   -webkit-animation-duration: 0.75s;
@@ -1345,7 +1345,7 @@ body.events-single .type-tribe_events {
     -moz-transform: translateX(0);
   }
 }
-.fade-left-in, .site-banner .main-menu ul.menu > li.menu-item:hover li, .site-banner .main-menu ul.menu > li.menu-item:hover .sub-menu {
+.fade-left-in, .site-banner .main-menu ul.menu > li.menu-item:hover ul.sub-menu {
   -webkit-animation-name: fade-left-in;
   -moz-animation-name: fade-left-in;
   -o-animation-name: fade-left-in;
@@ -2054,7 +2054,7 @@ body.events-single .type-tribe_events {
   animation-name: fold-in;
 }
 
-.animated.fold-in, .fold-in.foogallery-panel.active, ol.comment-list li.fold-in.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover li.fold-in, .site-banner .main-menu ul.menu > li.menu-item:hover .fold-in.sub-menu, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.page-contact .fold-in.google-maps-builder-wrap, body.events-gridview .fold-in.type-tribe_events,
+.animated.fold-in, .fold-in.foogallery-panel.active, ol.comment-list li.fold-in.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-in.sub-menu, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.page-contact .fold-in.google-maps-builder-wrap, body.events-gridview .fold-in.type-tribe_events,
 body.events-single .fold-in.type-tribe_events, body.events-gridview td.fold-in:hover,
 body.events-single td.fold-in:hover {
   -webkit-animation-duration: 1.2s;
@@ -2103,7 +2103,7 @@ body.events-single td.fold-in:hover {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-in, .fold-small-in.foogallery-panel.active, ol.comment-list li.fold-small-in.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover li.fold-small-in, .site-banner .main-menu ul.menu > li.menu-item:hover .fold-small-in.sub-menu, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.page-contact .fold-small-in.google-maps-builder-wrap, body.events-gridview .fold-small-in.type-tribe_events,
+.animated.fold-small-in, .fold-small-in.foogallery-panel.active, ol.comment-list li.fold-small-in.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-small-in.sub-menu, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.page-contact .fold-small-in.google-maps-builder-wrap, body.events-gridview .fold-small-in.type-tribe_events,
 body.events-single .fold-small-in.type-tribe_events, body.events-gridview td.fold-small-in:hover,
 body.events-single td.fold-small-in:hover {
   -webkit-animation-duration: 1s;
@@ -2152,7 +2152,7 @@ body.events-single td.fold-small-in:hover {
   animation-name: fold-out;
 }
 
-.animated.fold-out, .fold-out.foogallery-panel.active, ol.comment-list li.fold-out.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover li.fold-out, .site-banner .main-menu ul.menu > li.menu-item:hover .fold-out.sub-menu, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.page-contact .fold-out.google-maps-builder-wrap, body.events-gridview .fold-out.type-tribe_events,
+.animated.fold-out, .fold-out.foogallery-panel.active, ol.comment-list li.fold-out.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-out.sub-menu, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.page-contact .fold-out.google-maps-builder-wrap, body.events-gridview .fold-out.type-tribe_events,
 body.events-single .fold-out.type-tribe_events, body.events-gridview td.fold-out:hover,
 body.events-single td.fold-out:hover {
   -webkit-animation-duration: 1.2s;
@@ -2201,7 +2201,7 @@ body.events-single td.fold-out:hover {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-out, .fold-small-out.foogallery-panel.active, ol.comment-list li.fold-small-out.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover li.fold-small-out, .site-banner .main-menu ul.menu > li.menu-item:hover .fold-small-out.sub-menu, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.page-contact .fold-small-out.google-maps-builder-wrap, body.events-gridview .fold-small-out.type-tribe_events,
+.animated.fold-small-out, .fold-small-out.foogallery-panel.active, ol.comment-list li.fold-small-out.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-small-out.sub-menu, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.page-contact .fold-small-out.google-maps-builder-wrap, body.events-gridview .fold-small-out.type-tribe_events,
 body.events-single .fold-small-out.type-tribe_events, body.events-gridview td.fold-small-out:hover,
 body.events-single td.fold-small-out:hover {
   -webkit-animation-duration: 1s;
@@ -2778,7 +2778,7 @@ body.events-single td.fold-small-out:hover {
   animation-name: hinge-out;
 }
 
-.animated.hinge-out, .hinge-out.foogallery-panel.active, ol.comment-list li.hinge-out.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover li.hinge-out, .site-banner .main-menu ul.menu > li.menu-item:hover .hinge-out.sub-menu, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.page-contact .hinge-out.google-maps-builder-wrap, body.events-gridview .hinge-out.type-tribe_events,
+.animated.hinge-out, .hinge-out.foogallery-panel.active, ol.comment-list li.hinge-out.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover ul.hinge-out.sub-menu, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.page-contact .hinge-out.google-maps-builder-wrap, body.events-gridview .hinge-out.type-tribe_events,
 body.events-single .hinge-out.type-tribe_events, body.events-gridview td.hinge-out:hover,
 body.events-single td.hinge-out:hover {
   -webkit-animation-duration: 1.75s;
@@ -2870,7 +2870,7 @@ body.events-single td.hinge-out:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover li.light-speed-in, .site-banner .main-menu ul.menu > li.menu-item:hover .light-speed-in.sub-menu, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
+.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover ul.light-speed-in.sub-menu, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.4s;
@@ -2930,7 +2930,7 @@ body.events-single td.light-speed-in:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover li.light-speed-in, .site-banner .main-menu ul.menu > li.menu-item:hover .light-speed-in.sub-menu, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
+.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover ul.light-speed-in.sub-menu, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover {
   -webkit-animation-duration: 0.2s;
@@ -4141,7 +4141,7 @@ body.events-single td:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.wiggle, .wiggle.foogallery-panel.active, ol.comment-list li.wiggle.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover li.wiggle, .site-banner .main-menu ul.menu > li.menu-item:hover .wiggle.sub-menu, .site-banner .main-menu ul.menu > li.menu-item:hover .site-meta .searchform:focus div.sub-menu::after, .site-meta .searchform:focus .site-banner .main-menu ul.menu > li.menu-item:hover div.sub-menu::after, .site-banner .main-menu ul.menu > li.menu-item:hover .site-meta .searchform:active div.sub-menu::after, .site-meta .searchform:active .site-banner .main-menu ul.menu > li.menu-item:hover div.sub-menu::after, .site-banner .main-menu ul.menu > li.menu-item:hover .site-meta .searchform input[type="text"]:focus + input.sub-menu, .site-meta .searchform .site-banner .main-menu ul.menu > li.menu-item:hover input[type="text"]:focus + input.sub-menu, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .wiggle.google-maps-builder-wrap, body.events-gridview .wiggle.type-tribe_events,
+.animated.wiggle, .wiggle.foogallery-panel.active, ol.comment-list li.wiggle.bypostauthor:target, .site-banner .main-menu ul.menu > li.menu-item:hover ul.wiggle.sub-menu, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .wiggle.google-maps-builder-wrap, body.events-gridview .wiggle.type-tribe_events,
 body.events-single .wiggle.type-tribe_events, body.events-gridview td.wiggle:hover,
 body.events-single td.wiggle:hover {
   -webkit-animation-duration: 0.5;
@@ -8380,19 +8380,32 @@ body.single-menu_item .menu-item-categories li:last-child {
 }
 .site-banner .main-menu ul.sub-menu {
   text-align: left;
-}
-.site-banner .main-menu ul.menu > li.menu-item:hover .sub-menu {
-  position: absolute;
-  float: left;
-  display: block;
-  margin-right: 3.06748%;
-  width: 48.46626%;
-  left: 300px;
-  top: .75rem;
   /*background-color: #333;*/
+  padding-left: 0;
+  z-index: 400;
 }
-.site-banner .main-menu ul.menu > li.menu-item:hover .sub-menu:last-child {
-  margin-right: 0;
+.site-banner .main-menu ul.sub-menu li {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.site-banner .main-menu ul.sub-menu li a {
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.site-banner .main-menu ul.sub-menu:hover {
+  position: absolute !important;
+  padding-left: 5rem;
+  left: 10rem !important;
+  top: -.5rem !important;
+}
+.site-banner .main-menu ul.menu > li.menu-item:hover ul.sub-menu {
+  position: absolute;
+  padding-left: 5rem;
+  left: 10rem;
+  top: -.5rem;
+  /*background-color: #333;*/
 }
 .site-banner ul.menu {
   list-style: none;
