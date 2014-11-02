@@ -50,7 +50,8 @@
               foreach( $product_terms as $term ) {
                 $term_id = get_term_by('id', $term->parent, 'menu');
                 if ( '' != $term->parent && 'regions' != $term->slug && 'wines' != $term->slug ) {
-                  if ( is_tax('menu', 'by-the-glass') && 'by-the-glass' != $term->slug) {
+                  if ( is_tax('menu', $term->slug) ) {
+                  } else {
                     echo '<li><a href="' . get_term_link( $term->slug, 'menu' ) . '">' . $term->name . '</a></li>';
                   }
                 }
