@@ -16,21 +16,22 @@ get_header(); ?>
     ?>
 
         <?php get_template_part( 'loop', get_post_format() ); ?>
-
-        <?php if (is_tax('menu')) { ?>
-        <div class="menu-item-price">
-          <span class="label">Price</span>
-          <span class="value">
-          <?php
-              echo get_post_meta(get_the_ID(), 'item_price', true);
-          ?>
-          </span>
-        </div>
+        <?php
+          $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
+          if ( ! empty( $product_terms ) ) {
+        ?>
+          <div class="menu-item-price">
+            <span class="label">Price</span>
+            <span class="value">
+            <?php
+                echo get_post_meta(get_the_ID(), 'item_price', true);
+            ?>
+            </span>
+          </div>
         <?php } ?>
 
         <div class="menu-item-categories">
         <?php
-          $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
           if ( ! empty( $product_terms ) ) {
             if ( ! is_wp_error( $product_terms ) ) {
               echo '<ul>';
