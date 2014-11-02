@@ -595,6 +595,21 @@ body.single-menu_item {
     position: relative;
     z-index: 25;
   }
+  .menu-item-price {
+    @include span-columns(5.5);
+    @include shift(1);
+    .label {
+      text-transform: lowercase;
+      font-variant: small-caps;
+      color: #c6a013;
+    }
+    .value {
+      color: #fff;
+    }
+    span.value:after {
+      content: "USD";
+    }
+  }
   .menu-item-categories {
     margin-top: 1rem;
     @include span-columns(5.5);
@@ -610,6 +625,7 @@ body.single-menu_item {
       margin: 0;
       padding: 0;
       @include clearfix;
+      list-style: none;
     }
     li {
     }
