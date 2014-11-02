@@ -71,6 +71,14 @@ if ( function_exists( 'register_sidebars' ) ) {
 
   register_sidebar(
     array(
+      'id' => 'home-aside-sidebar',
+      'name' => __( 'Home widgets (Aside)', 'absolvution' ),
+      'description' => __( 'Shows on home page', 'absolvution' )
+    )
+  );
+
+  register_sidebar(
+    array(
       'id' => 'home-sidebar-followup',
       'name' => __( 'Home widgets (Followup)', 'absolvution' ),
       'description' => __( 'Shows on home page', 'absolvution' )
@@ -431,3 +439,34 @@ function check_image( $class = '' ) {
   return $class;
   }
 add_filter('post_class', 'check_image');
+
+
+/**
+ * adds meta values on search query
+ *
+ * @param object $query
+ *
+ **/
+function custom_search_query( $query ) {
+  if ( $query->is_search ) {
+    $query->set( 'meta_query', array(
+      array(
+        'key' => '_item_price',
+        'value' => $query->query_vars['s'],
+        'compare' => 'LIKE'
+      )
+    ));
+  }
+  return $query;
+}
+//add_filter( 'pre_get_posts', 'custom_search_query', 1 );
+
+function search_filter($query) {
+  if ( !is_admin() && $query->is_main_query() ) {
+    if ($query->is_search) {
+      $query->set('post_type', array( 'menu' ) );
+    }
+  }
+}
+
+//add_action('pre_get_posts','search_filter');

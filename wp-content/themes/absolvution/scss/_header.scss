@@ -91,7 +91,7 @@ $g: $gutter + $gutter;
         &:hover {
           position: absolute !important;
           padding-left: 5rem;
-          left: 10rem !important;
+          left: 65% !important;
           top: -.5rem !important;
         }
       }
@@ -104,7 +104,7 @@ $g: $gutter + $gutter;
 
           position: absolute;
           padding-left: 5rem;
-          left: 10rem;
+          left: 65%;
           top: -.5rem;
           /*background-color: #333;*/
         }

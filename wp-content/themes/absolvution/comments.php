@@ -19,6 +19,7 @@
 	<?php if ( have_comments() ) : ?>
 
 		<h2 class="comments-title">
+
 			<?php
 				printf(
 					_n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'absolvution' ),

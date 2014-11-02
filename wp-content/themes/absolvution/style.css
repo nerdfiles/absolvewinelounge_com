@@ -6674,22 +6674,6 @@ p ~ h1 {
   font-style: italic;
 }
 
-.home .post-content:after {
-  /*
-   *background-color: #2E6F89;
-   *display: block;
-   *@include span-columns(6.5);
-   *height: 100px;
-   *content: " ";
-   *@include shift(3);
-   *position: absolute;
-   *margin-left: 110.5%;
-   *width: 62.2%;
-   *top: 79.2%;
-   *opacity: 0.8;
-   */
-}
-
 /**
  * Home Banner Image
  *
@@ -7291,19 +7275,6 @@ body.home .site-footer {
   margin-bottom: 0;
   margin-top: -50px;
   left: 15px;
-  /*
-   *&:after {
-   *  content: " ";
-   *  position: absolute;
-   *  left: 11%;
-   *  top: 10px;
-   *  width: 200px;
-   *  height: 200px;
-   *  transform: rotate(-45deg);
-   *  background: #6689A3;
-   *  z-index: 0;
-   *}
-   */
 }
 .site-footer ul.footer-widgets:last-child {
   margin-right: 0;
@@ -7503,6 +7474,51 @@ body.home .site-footer {
 .page-content .menu .drinks-menu li {
   margin: 0 0;
   display: inline;
+}
+
+.home-aside-widgets {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 18.40491%;
+  margin-left: 4.29448%;
+}
+.home-aside-widgets:last-child {
+  margin-right: 0;
+}
+.home-aside-widgets ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home--recent-items a {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  color: #C6A013;
+}
+.home--recent-items h2 {
+  border-bottom: none;
+  margin: 7rem 0px 1rem;
+}
+
+.chi_display_header {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  height: 500px !important;
+}
+.chi_display_header + .menu {
+  display: none !important;
+}
+
+.home-display-widgets {
+  z-index: 20;
+}
+
+.site-meta {
+  z-index: 10;
+  position: relative;
 }
 
 .sticky {
@@ -7920,6 +7936,10 @@ h1.post-title {
   font-style: italic;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.single-menu_item article h1 {
+  border-bottom: 3px #f0c214 double;
 }
 
 h2 {
@@ -8475,7 +8495,7 @@ body.single-menu_item .menu-item-categories ul:after {
 .site-banner .main-menu ul.sub-menu:hover {
   position: absolute !important;
   padding-left: 5rem;
-  left: 10rem !important;
+  left: 65% !important;
   top: -.5rem !important;
 }
 .site-banner .main-menu ul.menu > li.menu-item:hover {
@@ -8484,7 +8504,7 @@ body.single-menu_item .menu-item-categories ul:after {
 .site-banner .main-menu ul.menu > li.menu-item:hover ul.sub-menu {
   position: absolute;
   padding-left: 5rem;
-  left: 10rem;
+  left: 65%;
   top: -.5rem;
   /*background-color: #333;*/
 }
@@ -8987,6 +9007,8 @@ singular
 customize-support
 tribe-is-responsive
 */
+body.single-menu_item .page-content,
+body.home .page-content,
 body.blog .page-content,
 body.single-post .page-content,
 body.search-results .page-content {
@@ -8995,22 +9017,36 @@ body.search-results .page-content {
   margin-bottom: 5rem;
 }
 
+body.single-menu_item .page-content {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 100%;
+}
+body.single-menu_item .page-content:last-child {
+  margin-right: 0;
+}
+body.single-menu_item .page-content .menu_item {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 65.64417%;
+}
+body.single-menu_item .page-content .menu_item:last-child {
+  margin-right: 0;
+}
+
 body.search-results .post-content {
   padding-top: 0;
   margin-top: 0;
   color: #fff;
 }
 body.search-results .post-content .price-tag {
-  /*
-   *position: absolute;
-   *top: -25%;
-   *left: 0;
-   */
   color: #F0C214;
   font-weight: 700;
 }
 
-body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .home .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .post .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .page .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .archive .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .search .post-content, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .author .post-content {
+body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .post .post-content, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .page .post-content, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .archive .post-content, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .search .post-content, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .author .post-content {
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -9022,7 +9058,44 @@ body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-sin
   position: relative;
   z-index: 25;
 }
-body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .home .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .post .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .page .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .archive .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .search .post-content:last-child, body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .author .post-content:last-child {
+body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .post .post-content:last-child, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .page .post-content:last-child, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .archive .post-content:last-child, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .search .post-content:last-child, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .author .post-content:last-child {
+  margin-right: 0;
+}
+
+body.home .page-content {
+  *zoom: 1;
+  margin-bottom: 0;
+}
+body.home .page-content:before, body.home .page-content:after {
+  content: " ";
+  display: table;
+}
+body.home .page-content:after {
+  clear: both;
+}
+body.home .page-content .page {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 44.17178%;
+  margin-left: 4.29448%;
+}
+body.home .page-content .page:last-child {
+  margin-right: 0;
+}
+body.home .page-content .page .post-content {
+  color: #efefef;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  z-index: 25;
+  background: none;
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 91.41104%;
+}
+body.home .page-content .page .post-content:last-child {
   margin-right: 0;
 }
 
@@ -9232,9 +9305,40 @@ body.events-single .post-content {
   background-color: transparent;
   color: #fff;
 }
+body.events-gridview .tribe-events-notices,
+body.events-single .tribe-events-notices {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 100%;
+  border-radius: 0 !important;
+}
+body.events-gridview .tribe-events-notices:last-child,
+body.events-single .tribe-events-notices:last-child {
+  margin-right: 0;
+}
 body.events-gridview .tribe-events-page-title,
 body.events-single .tribe-events-page-title {
   color: #fff;
+  *zoom: 1;
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 100%;
+}
+body.events-gridview .tribe-events-page-title:before, body.events-gridview .tribe-events-page-title:after,
+body.events-single .tribe-events-page-title:before,
+body.events-single .tribe-events-page-title:after {
+  content: " ";
+  display: table;
+}
+body.events-gridview .tribe-events-page-title:after,
+body.events-single .tribe-events-page-title:after {
+  clear: both;
+}
+body.events-gridview .tribe-events-page-title:last-child,
+body.events-single .tribe-events-page-title:last-child {
+  margin-right: 0;
 }
 body.events-gridview #tribe-events-content .tribe-events-calendar td,
 body.events-single #tribe-events-content .tribe-events-calendar td {

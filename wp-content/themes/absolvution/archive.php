@@ -12,7 +12,6 @@ get_header(); ?>
 	<section class="page-content primary" role="main">
 
     <?php if ( have_posts() ) : ?>
-
       <h1 class="archive-title">
         <?php
           if ( is_category() ):
