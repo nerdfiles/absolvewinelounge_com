@@ -96,6 +96,8 @@ $g: $gutter + $gutter;
         }
       }
       ul.menu > li.menu-item:hover {
+
+        color: #f0c214;
         ul.sub-menu {
           @extend .fade-left-in;
           @extend .animated;
@@ -120,7 +122,7 @@ $g: $gutter + $gutter;
         letter-spacing: .1rem;
         font-weight: 700;
         text-transform: uppercase;
-        display: block;
+        display: block !important;
         padding: .15rem;
         &:hover {
           color: #f0c214;
