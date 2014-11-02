@@ -18,17 +18,18 @@ get_header(); ?>
 
       if ( have_posts() ) : the_post();
         get_template_part( 'loop' );
-        //while ( have_posts() ) : the_post();
-          //get_template_part( 'loop', get_post_format() );
-        //endwhile;
       else :
-        //get_template_part( 'loop', 'empty' );
+        get_template_part( 'loop', 'empty' );
       endif;
 
     ?>
 
-    <div class="pagination">
-      <?php get_template_part( 'template-part', 'pagination' ); ?>
+    <div class="home-aside-widgets">
+      <ul class="inner"><?php
+        if ( function_exists( 'dynamic_sidebar' ) ) :
+          dynamic_sidebar( 'home-aside-sidebar' );
+        endif;
+      ?></ul>
     </div>
 
   </section>

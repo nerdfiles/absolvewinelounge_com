@@ -142,6 +142,8 @@ singular
 customize-support
 tribe-is-responsive
 */
+body.single-menu_item,
+body.home,
 body.blog,
 body.single-post,
 body.search-results {
@@ -151,22 +153,26 @@ body.search-results {
     margin-bottom: 5rem;
   }
 }
+body.single-menu_item {
+  .page-content {
+    @include span-columns(12);
+    .menu_item {
+      @include span-columns(8);
+    }
+  }
+}
 body.search-results .post-content {
   padding-top: 0;
   margin-top: 0;
   color: #fff;
   .price-tag {
-    /*
-     *position: absolute;
-     *top: -25%;
-     *left: 0;
-     */
     color: #F0C214;
     font-weight: 700;
   }
 }
-body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) {
-  .home, .post, .page, .archive, .search, .author {
+
+body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) {
+  .post, .page, .archive, .search, .author {
 
     .post-content {
       @include span-columns(5);
@@ -178,6 +184,24 @@ body:not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-sin
       z-index: 25;
     }
 
+  }
+}
+
+body.home .page-content {
+  @include clearfix;
+  margin-bottom: 0;
+  .page {
+    @include span-columns(5.5);
+    @include shift(.5);
+    .post-content {
+      color: $color2;
+      padding: 0;
+      text-align: left;
+      position: relative;
+      z-index: 25;
+      background: none;
+      @include span-columns(11);
+    }
   }
 }
 
@@ -343,8 +367,14 @@ body.events-single {
     background-color: transparent;
     color: #fff;
   }
+  .tribe-events-notices {
+    @include span-columns(12);
+    border-radius: 0 !important;
+  }
   .tribe-events-page-title {
     color: #fff;
+    @include clearfix;
+    @include span-columns(12);
   }
   #tribe-events-content .tribe-events-calendar td {
     border: 10px solid #222;
