@@ -88,7 +88,7 @@ $g: $gutter + $gutter;
           position: absolute;
           @include span-columns(6);
           left: 300px;
-          top: 2.25rem;
+          top: .75rem;
           /*background-color: #333;*/
         }
       }

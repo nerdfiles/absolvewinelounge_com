@@ -13,8 +13,26 @@ get_header(); ?>
 
 		<?php
 			if ( have_posts() ) : the_post();
+    ?>
 
-				get_template_part( 'loop', get_post_format() ); ?>
+        <?php get_template_part( 'loop', get_post_format() ); ?>
+
+        <div class="menu-item-categories">
+        <?php
+          $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
+          if ( ! empty( $product_terms ) ) {
+            if ( ! is_wp_error( $product_terms ) ) {
+              echo '<ul>';
+                foreach( $product_terms as $term ) {
+                  if ( '' != $term->parent ) {
+                    echo '<li><a href="' . get_term_link( $term->slug, 'menu' ) . '">' . $term->name . '</a></li>';
+                  }
+                }
+              echo '</ul>';
+            }
+          }
+        ?>
+        </div>
 
 				<aside class="post-aside">
 

@@ -15,10 +15,13 @@
     if ( is_singular() ) :
       the_title();
     else : ?>
-      <a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php
-        the_title(); ?>
-      </a><?php
-    endif; ?>
+      <a
+        href="<?php echo esc_url( get_permalink() ); ?>"
+        rel="bookmark"
+      >
+        <?php the_title(); ?>
+      </a>
+    <?php endif; ?>
 
   </h1>
 
@@ -35,6 +38,29 @@
     <?php if ( is_category() || is_archive() || is_search() ) : ?>
 
       <?php the_excerpt(); ?>
+
+      <div class="menu-item-categories">
+      <?php
+        $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
+        //$termchildren = get_term_children( $term_id->term_id, 'menu' );
+        //print_r($termchildren);
+        if ( ! empty( $product_terms ) ) {
+          if ( ! is_wp_error( $product_terms ) ) {
+            echo '<ul>';
+              foreach( $product_terms as $term ) {
+                $term_id = get_term_by('id', $term->parent, 'menu');
+                if ( '' != $term->parent && 'regions' != $term->slug && 'wines' != $term->slug ) {
+                  if ( is_tax('menu', 'by-the-glass') && 'by-the-glass' != $term->slug) {
+                    echo '<li><a href="' . get_term_link( $term->slug, 'menu' ) . '">' . $term->name . '</a></li>';
+                  }
+                }
+              }
+            echo '</ul>';
+          }
+        }
+      ?>
+      </div>
+
       <!-- Item Price Specification -->
       <div class="price-tag">
       <?php
