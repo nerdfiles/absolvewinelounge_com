@@ -8333,15 +8333,6 @@ body.single-menu_item .menu-item-categories ul:before, body.single-menu_item .me
 body.single-menu_item .menu-item-categories ul:after {
   clear: both;
 }
-body.single-menu_item .menu-item-categories li {
-  float: left;
-  display: block;
-  margin-right: 3.06748%;
-  width: 22.69939%;
-}
-body.single-menu_item .menu-item-categories li:last-child {
-  margin-right: 0;
-}
 
 .site-header {
   /*overflow: hidden;*/
