@@ -15,12 +15,16 @@
     if ( is_singular() ) :
       the_title();
     else : ?>
-      <a
-        href="<?php echo esc_url( get_permalink() ); ?>"
-        rel="bookmark"
-      >
+      <?php if (has_term('wines', 'menu') || has_term('craft-beers', 'menu')) { ?>
         <?php the_title(); ?>
-      </a>
+      <?php } else { ?>
+        <a
+          href="<?php echo esc_url( get_permalink() ); ?>"
+          rel="bookmark"
+        >
+        <?php the_title(); ?>
+        </a>
+      <?php } ?>
     <?php endif; ?>
 
   </h1>
@@ -74,10 +78,10 @@
       ?>
       <?php } ?>
       </div>
-      <a
+      <!--a
         class="read-more"
         href="<?php the_permalink(); ?>"
-      ><?php _e( 'Read more &raquo;', 'absolvution' ); ?></a>
+      ><?php _e( 'Read more &raquo;', 'absolvution' ); ?></a-->
 
 		<?php else : ?>
 
