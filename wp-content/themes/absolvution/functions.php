@@ -21,7 +21,7 @@ $custom_header_args = array(
   'height'        => 300,
   'default-image' => get_template_directory_uri() . '/images/header.png',
 );
-add_theme_support( 'custom-header', $custom_header_args );
+//add_theme_support( 'custom-header', $custom_header_args );
 
 /**
  * Print custom header styles
@@ -37,13 +37,13 @@ function absolvution_custom_header() {
        '</style>';
   }
 }
-add_action( 'wp_head', 'absolvution_custom_header', 11 );
+//add_action( 'wp_head', 'absolvution_custom_header', 11 );
 
 $custom_bg_args = array(
   'default-color' => 'fba919',
   'default-image' => '',
 );
-add_theme_support( 'custom-background', $custom_bg_args );
+//add_theme_support( 'custom-background', $custom_bg_args );
 
 register_nav_menu( 'main-menu', __( 'Your site\'s main menu', 'absolvution' ) );
 register_nav_menu( 'meta-menu', __( 'Your site\'s meta menu', 'absolvution' ) );

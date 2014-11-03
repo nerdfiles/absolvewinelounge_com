@@ -97,6 +97,7 @@
 
         <div class="site-twop">
 
+          <?php if ( is_front_page() ) : ?>
           <div class="home-widgets home-display-widgets">
             <ul class="inner"><?php
               if ( function_exists( 'dynamic_sidebar' ) ) :
@@ -104,6 +105,7 @@
               endif;
             ?></ul>
           </div>
+          <?php endif; ?>
 
           <div class="site-meta">
             <?php get_search_form(); ?>
