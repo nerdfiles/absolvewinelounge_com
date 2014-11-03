@@ -8485,7 +8485,7 @@ body.single-menu_item .menu-item-categories ul:after {
   z-index: 400;
 }
 .site-banner .main-menu ul.sub-menu:before {
-  background-color: rgba(51, 51, 51, 0.8);
+  /*background-color: rgba(51, 51, 51, .8);*/
   content: " ";
   display: block;
   height: 100%;
