@@ -9124,13 +9124,15 @@ body.page-gallery .post-content {
   background-color: transparent;
 }
 
-body.page-contact .wpcf7 {
+body.page-contact .contact-form-7-container,
+body.page-contact .parties-contact-container {
   float: left;
   display: block;
   margin-right: 3.06748%;
   width: 48.46626%;
 }
-body.page-contact .wpcf7:last-child {
+body.page-contact .contact-form-7-container:last-child,
+body.page-contact .parties-contact-container:last-child {
   margin-right: 0;
 }
 body.page-contact .post-content {
