@@ -97,7 +97,7 @@
 
         <div class="site-twop">
 
-          <?php if ( is_front_page() ) : ?>
+          <?php if ( (!is_front_page() || is_singular() || is_search()) && !is_tax('menu') ) : ?>
           <div class="home-widgets home-display-widgets">
             <ul class="inner"><?php
               if ( function_exists( 'dynamic_sidebar' ) ) :
