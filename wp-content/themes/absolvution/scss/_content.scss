@@ -221,7 +221,8 @@ body.page-contact {
     @extend .fade-in;
     @extend .animated;
   }
-  .wpcf7 {
+  .contact-form-7-container,
+  .parties-contact-container {
     @include span-columns(6);
   }
   .post-content {
