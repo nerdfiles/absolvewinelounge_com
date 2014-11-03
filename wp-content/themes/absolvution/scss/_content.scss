@@ -221,6 +221,9 @@ body.page-contact {
     @extend .fade-in;
     @extend .animated;
   }
+  .wpcf7 {
+    @include span-columns(6);
+  }
   .post-content {
     color: #fff;
     h2, h3, p, ul, ol, dl {
