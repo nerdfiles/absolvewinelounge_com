@@ -243,7 +243,7 @@ class Google_Maps_Builder_Settings {
 				array(
 					'name'    => __( 'Menu Position', $this->plugin_slug ),
 					'desc'    => sprintf( __( 'Set the menu position for Google Maps Builder. See the <a href="%s" class="new-window">menu_position</a> arg.', $this->plugin_slug ), esc_url( 'http://codex.wordpress.org/Function_Reference/register_post_type#Arguments' ) ),
-					'default' => '25',
+					'default' => 27,
 					'id'      => $prefix . 'menu_position',
 					'type'    => 'text_small'
 				),
