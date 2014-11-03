@@ -608,7 +608,7 @@ body.home {
   background-size: cover;
   position: absolute;
   top: 0;
-  height: 500px !important;
+  height: 100% !important;
 
   & + .menu {
     display: none !important;
