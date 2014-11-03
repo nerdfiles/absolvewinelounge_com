@@ -9135,6 +9135,12 @@ body.page-contact .contact-form-7-container:last-child,
 body.page-contact .parties-contact-container:last-child {
   margin-right: 0;
 }
+body.page-contact .contact-form-7-container {
+  margin-left: 4.29448%;
+}
+body.page-contact .parties-contact-container {
+  margin-left: -4.29448%;
+}
 body.page-contact .post-content {
   color: #fff;
 }
