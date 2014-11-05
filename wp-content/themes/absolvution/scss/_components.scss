@@ -624,7 +624,11 @@ body.home {
   }
 }
 
+.foogallery-panel {
+  display: none;
+}
 .foogallery-panel.active {
+  display: block;
   cursor: not-allowed;
   position: fixed;
   top: 25%;

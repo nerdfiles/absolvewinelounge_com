@@ -7567,7 +7567,12 @@ body.home .site-footer {
   color: #6689a3 !important;
 }
 
+.foogallery-panel {
+  display: none;
+}
+
 .foogallery-panel.active {
+  display: block;
   cursor: not-allowed;
   position: fixed;
   top: 25%;
