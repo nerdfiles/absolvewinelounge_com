@@ -346,7 +346,7 @@ ol.comment-list .comment-edit-link {
 }
 body:not(.home) {
   .page-content {
-    min-height: 30rem;
+    min-height: 20rem;
     margin-bottom: 5rem;
   }
 }
@@ -383,6 +383,24 @@ body.blog .post-meta,
 body.single-post {
   .post-meta {
     color: #fff;
+  }
+}
+
+body.archive {
+  .page-content {
+
+  }
+  article#post-none {
+    .post-title {
+      padding-top: 2rem;
+    }
+    .post-content {
+      &:before {
+        padding-top: 0;
+      }
+      @include span-columns(12);
+      @include shift(1);
+    }
   }
 }
 
