@@ -234,14 +234,10 @@ body.page-contact {
     @extend .fade-in;
     @extend .animated;
   }
-  .contact-form-7-container,
-  .parties-contact-container {
+  .contact-form-7-container {
+    @include span-columns(10);
     @include media($large) {
       @include span-columns(6);
-    }
-  }
-  .contact-form-7-container {
-    @include media($large) {
       @include shift(.5);
     }
   }
@@ -249,6 +245,7 @@ body.page-contact {
     @include span-columns(10);
     @include shift(1);
     @include media($large) {
+      @include span-columns(6);
       @include shift(-.5);
     }
   }
