@@ -316,6 +316,9 @@ dd {
         position: relative;
         z-index: 9001;
         color: #fff;
+        &:hover {
+          color: #fff;
+        }
         @include pad(.5rem 0.15rem 0.15rem .5rem);
         display: block;
         height: 100%;

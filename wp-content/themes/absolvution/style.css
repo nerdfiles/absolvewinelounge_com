@@ -7127,6 +7127,9 @@ dd {
   opacity: 0;
   margin-left: -5%;
 }
+.home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events a:hover {
+  color: #fff;
+}
 .home-followup-widgets .tribe-events-list-widget.home--calendar li.type-tribe_events a span {
   z-index: 9001;
   position: relative;
