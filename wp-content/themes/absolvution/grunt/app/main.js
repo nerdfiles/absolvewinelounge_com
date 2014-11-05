@@ -2,11 +2,23 @@
   (function($) {
     var $search, $vcalendar, aw, i, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
     $("body").attr('jquery-version', $.fn.jquery);
+
+    /*
+    Utils
+     */
     __ = function(obj) {
       window.console.log(obj);
     };
+
+    /*
+    Site Search
+     */
     $search = $('#s');
     $search.attr('placeholder', 'Find something new');
+
+    /*
+    Twitter Implementation
+     */
     recentTweets$ = $('.home--recent-tweets');
     if (recentTweets$.length) {
       twitterTime$ = recentTweets$.find('.twitter_time');
@@ -21,6 +33,10 @@
       }
       recentTweets$.find('.widgettitle').after("<div class='byline'>\n  Follow \n  <a href='https://twitter.com/" + s + "'>\n<span class='handler-symbol'>@</span><span class='label'>" + s + "</span>\n  </a> on <a class=\"source\" href=\"https://twitter.com/\">Twitter</a>\n</div>");
     }
+
+    /*
+    Interactive Site Gallery
+     */
     _href = void 0;
     $('.foogallery-panel').on('click', function() {
       return $('.foogallery-panel').removeClass('active');
@@ -44,6 +60,10 @@
       _href = href;
       return e.preventDefault();
     });
+
+    /*
+    Site Footer
+     */
     $('.site-footer').waypoint(function(direction) {
       var infoHours$, infoLocation$;
       infoLocation$ = $('.info--location > div');
@@ -58,6 +78,10 @@
     }, {
       offset: '75%'
     });
+
+    /*
+    Site Calendar and Events
+     */
     w = $(".tribe-events-list-widget-events").css('width');
     $vcalendar = $('body.home .vcalendar');
     aw = parseInt(w) + 10;

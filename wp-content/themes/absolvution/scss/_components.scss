@@ -599,6 +599,9 @@ body.home {
   a {
     text-transform: lowercase;
     font-variant: small-caps;
+    display: block;
+    border-right: 3px #F0C214 double;
+    margin-bottom: .5rem;
     color: #C6A013; }
   h2 { border-bottom: none; margin: 7rem 0px 1rem; }
   .menu-recent-menu-container { }

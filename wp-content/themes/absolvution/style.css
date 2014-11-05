@@ -7495,6 +7495,9 @@ body.home .site-footer {
 .home--recent-items a {
   text-transform: lowercase;
   font-variant: small-caps;
+  display: block;
+  border-right: 3px #F0C214 double;
+  margin-bottom: .5rem;
   color: #C6A013;
 }
 .home--recent-items h2 {
