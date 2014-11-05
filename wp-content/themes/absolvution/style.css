@@ -7767,6 +7767,14 @@ body.home .site-footer {
   color: #111;
 }
 
+.tribe-events-list-separator-month {
+  color: #111;
+}
+
+.tribe-events-event-meta {
+  color: #111;
+}
+
 .sticky {
   background: none;
 }
