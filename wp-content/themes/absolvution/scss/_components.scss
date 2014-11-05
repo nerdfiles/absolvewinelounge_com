@@ -628,11 +628,11 @@ body.home {
   cursor: not-allowed;
   position: fixed;
   top: 25%;
-  right: 35%;
+  right: 0;
   z-index: 9001;
   padding: 1rem;
   background: #111;
-  width: 65%;
+  width: 100%;
   height: 65%;
   border-left: 3px #F0C214 double;
   @extend .grow-in;
