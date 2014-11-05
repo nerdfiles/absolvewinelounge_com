@@ -8635,7 +8635,8 @@ body.single-menu_item .post-content {
   float: left;
   display: block;
   margin-right: 3.06748%;
-  width: 39.8773%;
+  width: 82.82209%;
+  margin-left: 8.58896%;
   background: none;
   color: #efefef;
   padding: 0;
@@ -8645,6 +8646,17 @@ body.single-menu_item .post-content {
 }
 body.single-menu_item .post-content:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 769px) {
+  body.single-menu_item .post-content {
+    float: left;
+    display: block;
+    margin-right: 3.06748%;
+    width: 39.8773%;
+  }
+  body.single-menu_item .post-content:last-child {
+    margin-right: 0;
+  }
 }
 body.single-menu_item .menu-item-price {
   float: left;
@@ -8672,13 +8684,25 @@ body.single-menu_item .menu-item-categories {
   float: left;
   display: block;
   margin-right: 3.06748%;
-  width: 44.17178%;
+  width: 82.82209%;
   margin-left: 8.58896%;
   font-variant: small-caps;
   text-transform: lowercase;
 }
 body.single-menu_item .menu-item-categories:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 769px) {
+  body.single-menu_item .menu-item-categories {
+    float: left;
+    display: block;
+    margin-right: 3.06748%;
+    width: 44.17178%;
+    margin-left: 8.58896%;
+  }
+  body.single-menu_item .menu-item-categories:last-child {
+    margin-right: 0;
+  }
 }
 body.single-menu_item .menu-item-categories a {
   color: #fff;
@@ -9536,14 +9560,16 @@ body.single-menu_item .page-content {
 body.single-menu_item .page-content:last-child {
   margin-right: 0;
 }
-body.single-menu_item .page-content .menu_item {
-  float: left;
-  display: block;
-  margin-right: 3.06748%;
-  width: 65.64417%;
-}
-body.single-menu_item .page-content .menu_item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 769px) {
+  body.single-menu_item .page-content .menu_item {
+    float: left;
+    display: block;
+    margin-right: 3.06748%;
+    width: 65.64417%;
+  }
+  body.single-menu_item .page-content .menu_item:last-child {
+    margin-right: 0;
+  }
 }
 
 body.search-results .post-content {
