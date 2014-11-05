@@ -210,8 +210,8 @@ class Tribe_Demo_APM {
 
 	public function __construct() {
 		$this->textdomain = apply_filters( 'tribe_apm_textdomain', $this->textdomain );
-		//add_action( 'init', array($this, 'test_filters') );
-		//add_action( 'admin_notices', array($this, 'notice') );
+		add_action( 'init', array($this, 'test_filters') );
+		add_action( 'admin_notices', array($this, 'notice') );
 	}
 
 	public function notice() {
@@ -229,8 +229,28 @@ class Tribe_Demo_APM {
 			echo '</p></div>';
 		}
 	}
-}
 
+	public function test_filters() {
+		$filter_args = array(
+			'tribe_post_status' => array(
+				'name' => 'Status',
+				'custom_type' => 'post_status',
+				'sortable' => true
+			)
+		);
+		$boxes = array(
+			'my_box' => 'Filter Box'
+		);
+		global $cpt_filters;
+		$cpt_filters = tribe_setup_apm($this->post_type, $filter_args, $boxes );
+		#$cpt_filters->add_taxonomies = false;
+	}
+
+	public function log($data = array() ) {
+		error_log(print_r($data,1));
+	}
+
+}
 new Tribe_Demo_APM;
 
 class Tribe_Status_Type {
@@ -298,3 +318,25 @@ class Tribe_Status_Type {
 
 }
 new Tribe_Status_Type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
