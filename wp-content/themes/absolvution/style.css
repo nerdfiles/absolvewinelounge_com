@@ -8830,7 +8830,7 @@ body.single-menu_item .menu-item-categories ul:after {
   text-shadow: 0 0 0.5em #222;
   text-indent: -9999px;
   font-size: 1em;
-  background-image: url("http://absolvewinelounge.com/wp/wp-content/uploads/2014/10/logo-test-04-01.png");
+  background-image: url("//absolvewinelounge.com/wp/wp-content/uploads/2014/10/logo-test-04-01.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 50% 25%;
@@ -8854,6 +8854,16 @@ body.single-menu_item .menu-item-categories ul:after {
 }
 .site-banner .logo h1.blog-name:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 769px) {
+  .site-banner .logo h1.blog-name {
+    background-size: 50% auto;
+  }
+}
+@media screen and (min-width: 481px) {
+  .site-banner .logo h1.blog-name {
+    background-size: 50% auto;
+  }
 }
 .site-banner .logo .blog-description {
   margin-bottom: 1.5em;
