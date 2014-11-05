@@ -6882,7 +6882,7 @@ dd {
   transform: rotate(360deg) scale(2);
 }
 .home-followup-widgets .home--our-story {
-  overflow: scroll;
+  /*overflow: scroll;*/
   background: #bf9713;
   position: relative;
   font-size: .9rem;
