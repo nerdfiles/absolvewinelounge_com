@@ -7966,6 +7966,10 @@ body.single-post .post-meta {
   color: #fff;
 }
 
+body.term-desserts .chi_display_header {
+  opacity: .5;
+}
+
 body.archive .read-more,
 body.term-happy-hour .read-more,
 body.term-wines .read-more,
