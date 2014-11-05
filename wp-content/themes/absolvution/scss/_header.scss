@@ -73,11 +73,15 @@ $g: 50px;
         background-repeat: no-repeat;
         background-size: 100% auto;
         background-position: 50% 25%;
-        @include media($large) {
-          background-size: 50% auto;
-        }
         @include media($medium) {
           background-size: 50% auto;
+        }
+        @include media($large) {
+          background-size: 100% auto;
+        }
+
+        @include media($xlarge) {
+          background-size: 100% auto;
         }
         height: 8rem;
       }
