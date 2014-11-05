@@ -427,6 +427,19 @@ body.events-gridview {
 .tribe-bar-submit {
 }
 
+.tribe-events { }
+
+.single-tribe_events  {
+  .page-content {
+    @include span-columns(10);
+    @include shift(1);
+  }
+  .tribe-events-event-meta {
+    color: #fff;
+  }
+
+}
+
 .single-tribe_events .tribe-events-event-meta {
   background: #111;
   a {
