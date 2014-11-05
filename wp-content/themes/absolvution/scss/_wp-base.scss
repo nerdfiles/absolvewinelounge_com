@@ -40,8 +40,11 @@ ol.comment-list {
     color: #f9f9f9;
     @include transition (all 1.0s ease-in-out);
     &:target {
-      @include span-columns(6);
-      @include shift(3);
+      @include span-columns(12);
+      @include media($large) {
+        @include span-columns(6);
+        @include shift(3);
+      }
       background-color: #111;
       position: fixed;
       top: 0.1em;
@@ -367,7 +370,10 @@ h2 {
 }
 .post-content h2 {
   &:first-child {
-    width: 150%;
+    width: auto;
+    @include media($large) {
+      width: 150%;
+    }
   }
 }
 
@@ -447,7 +453,6 @@ body.term-foods {
     margin-bottom: 5rem;
   }
   .page-content .menu_item {
-    background-color: #111;
     &:hover {
       img { opacity: 1; }
     }
@@ -460,11 +465,13 @@ body.term-foods {
     article.menu_item {
 
       text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
-      @include span-columns(5.8);
-      overflow: hidden;
+      @include span-columns(11.6);
+      @include media($large) {
+        @include span-columns(5.8);
+      }
+      /*overflow: hidden;*/
       height: 10rem;
       margin-bottom: 2rem;
-      border-bottom: 1px #c6a013 solid;
 
       &:hover .price-tag {
         /*
@@ -495,10 +502,18 @@ body.term-foods {
         z-index: 21;
         margin: 0;
         @include transition (all .5s ease-in-out);
-        @include span-columns(6);
+        @include span-columns(11.6);
+        @include media($large) {
+          @include span-columns(5.8);
+        }
         height: 10rem;
         padding-left: .3rem;
         padding-top: .3rem;
+        border-bottom: 1px #c6a013 solid;
+        font-size: .9rem;
+        @include media($large) {
+          font-size: 1.3rem;
+        }
         a {
           height: 100%;
           display: block;
@@ -519,12 +534,12 @@ body.term-foods {
     .price-tag {
       position: absolute;
       z-index: 28;
-      top: 8rem;
+      top: 58px;
       right: 5%;
       letter-spacing: 0;
       word-spacing: 0;
       font-size: 1.5rem;
-      background: #222;
+      /*background: #222;*/
       padding: 0 .4rem;
       &:after {
         content: "USD";
@@ -534,6 +549,8 @@ body.term-foods {
         word-spacing: 0;
         background: #c6a013;
         padding: 0 .4rem;
+        bottom: .1rem;
+        position: relative;
       }
     }
     p {
@@ -549,8 +566,10 @@ body.term-foods {
     width: 100%; /* gotta be responsive these days */
   }
   .post-content {
-    background-color: #222; /* some background color for short images */
-    overflow: hidden;
+    background-color: #222;
+    /*
+     *overflow: hidden;
+     */
     /* remove white-space for inline-block elements */
     letter-spacing: -0.31em; /* webkit */
     *letter-spacing: normal; /* reset IE < 8 */

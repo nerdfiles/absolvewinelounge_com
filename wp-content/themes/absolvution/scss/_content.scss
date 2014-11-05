@@ -175,7 +175,9 @@ body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(
   .post, .page, .archive, .search, .author {
 
     .post-content {
-      @include span-columns(5);
+      @include media($large) {
+        @include span-columns(5);
+      }
       background: none;
       color: $color2;
       padding: 0;
@@ -191,8 +193,12 @@ body.home .page-content {
   @include clearfix;
   margin-bottom: 0;
   .page {
-    @include span-columns(5.5);
-    @include shift(.5);
+    margin-top: 2rem;
+    @include media($large) {
+      margin-top: 0;
+      @include span-columns(5.5);
+      @include shift(.5);
+    }
     .post-content {
       color: $color2;
       padding: 0;
@@ -200,7 +206,10 @@ body.home .page-content {
       position: relative;
       z-index: 25;
       background: none;
-      @include span-columns(11);
+      @include span-columns(10);
+      @include media($large) {
+        @include span-columns(11);
+      }
     }
   }
 }
@@ -376,6 +385,9 @@ body.page-gallery {
 body.events-gridview,
 body.events-single {
   .post-content {
+    @include span-columns(12);
+    @include shift(0);
+    padding: 0;
     background-color: transparent;
     color: #fff;
   }
