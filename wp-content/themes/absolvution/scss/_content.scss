@@ -227,25 +227,36 @@ body.page-gallery {
 }
 
 body.page-contact {
+  input { width: 100%; }
   .google-maps-builder-wrap {
     @extend .fade-in;
     @extend .animated;
   }
   .contact-form-7-container,
   .parties-contact-container {
-    @include span-columns(6);
+    @include media($large) {
+      @include span-columns(6);
+    }
   }
   .contact-form-7-container {
-    @include shift(.5);
+    @include media($large) {
+      @include shift(.5);
+    }
   }
   .parties-contact-container {
-    @include shift(-.5);
+    @include span-columns(10);
+    @include shift(1);
+    @include media($large) {
+      @include shift(-.5);
+    }
   }
   .post-content {
     color: #fff;
     h2, h3, p, ul, ol, dl {
-      @include span-columns(11);
-      @include shift(.5);
+      /*
+       *@include span-columns(11);
+       *@include shift(.5);
+       */
     }
   }
 }

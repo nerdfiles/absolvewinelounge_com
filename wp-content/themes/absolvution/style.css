@@ -7571,11 +7571,11 @@ body.home .site-footer {
   cursor: not-allowed;
   position: fixed;
   top: 25%;
-  right: 35%;
+  right: 0;
   z-index: 9001;
   padding: 1rem;
   background: #111;
-  width: 65%;
+  width: 100%;
   height: 65%;
   border-left: 3px #F0C214 double;
 }
@@ -9641,35 +9641,50 @@ body.page-gallery .post-content {
   background-color: transparent;
 }
 
-body.page-contact .contact-form-7-container,
+body.page-contact input {
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  body.page-contact .contact-form-7-container,
+  body.page-contact .parties-contact-container {
+    float: left;
+    display: block;
+    margin-right: 3.06748%;
+    width: 48.46626%;
+  }
+  body.page-contact .contact-form-7-container:last-child,
+  body.page-contact .parties-contact-container:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  body.page-contact .contact-form-7-container {
+    margin-left: 4.29448%;
+  }
+}
 body.page-contact .parties-contact-container {
   float: left;
   display: block;
   margin-right: 3.06748%;
-  width: 48.46626%;
+  width: 82.82209%;
+  margin-left: 8.58896%;
 }
-body.page-contact .contact-form-7-container:last-child,
 body.page-contact .parties-contact-container:last-child {
   margin-right: 0;
 }
-body.page-contact .contact-form-7-container {
-  margin-left: 4.29448%;
-}
-body.page-contact .parties-contact-container {
-  margin-left: -4.29448%;
+@media screen and (min-width: 769px) {
+  body.page-contact .parties-contact-container {
+    margin-left: -4.29448%;
+  }
 }
 body.page-contact .post-content {
   color: #fff;
 }
 body.page-contact .post-content h2, body.page-contact .post-content h3, body.page-contact .post-content p, body.page-contact .post-content ul, body.page-contact .post-content ol, body.page-contact .post-content dl {
-  float: left;
-  display: block;
-  margin-right: 3.06748%;
-  width: 91.41104%;
-  margin-left: 4.29448%;
-}
-body.page-contact .post-content h2:last-child, body.page-contact .post-content h3:last-child, body.page-contact .post-content p:last-child, body.page-contact .post-content ul:last-child, body.page-contact .post-content ol:last-child, body.page-contact .post-content dl:last-child {
-  margin-right: 0;
+  /*
+   *@include span-columns(11);
+   *@include shift(.5);
+   */
 }
 
 /*body.single-post,*/
