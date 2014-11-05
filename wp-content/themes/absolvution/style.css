@@ -7930,7 +7930,7 @@ ol.comment-list .comment-edit-link {
 }
 
 body:not(.home) .page-content {
-  min-height: 30rem;
+  min-height: 20rem;
   margin-bottom: 5rem;
 }
 
@@ -7964,6 +7964,23 @@ h2 {
 body.blog .post-meta .post-meta,
 body.single-post .post-meta {
   color: #fff;
+}
+
+body.archive article#post-none .post-title {
+  padding-top: 2rem;
+}
+body.archive article#post-none .post-content {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 100%;
+  margin-left: 8.58896%;
+}
+body.archive article#post-none .post-content:before {
+  padding-top: 0;
+}
+body.archive article#post-none .post-content:last-child {
+  margin-right: 0;
 }
 
 body.term-charcuterie-cheese .site-meta ul.menu a {
