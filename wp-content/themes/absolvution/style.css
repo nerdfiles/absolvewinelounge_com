@@ -7763,6 +7763,10 @@ body.home .site-footer {
   position: relative;
 }
 
+#tribe-bar-collapse-toggle {
+  color: #111;
+}
+
 .sticky {
   background: none;
 }
