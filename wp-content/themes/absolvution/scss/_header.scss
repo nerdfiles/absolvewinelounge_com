@@ -1,4 +1,5 @@
-$g: $gutter + $gutter;
+$g: 50px;
+
 .site-header {
   /*overflow: hidden;*/
   padding: 0;
@@ -12,38 +13,58 @@ $g: $gutter + $gutter;
 
   .site-banner {
 
-    @include span-columns(2.75, block-collapse);
-    @include shift(.5);
-    @include omega();
-    background: #333333;
+    @include media($large) {
+      @include shift(.5);
+      @include span-columns(2.75, block-collapse);
+      @include omega();
 
-    &:before {
-      @include span-columns(1);
-      @include shift(-1);
-      @include pad(0 default 0 0);
-      content: ' ';
-      background: $color4;
-      position: absolute;
-      height: 100%;
+      &:before {
+        @include span-columns(1);
+        @include shift(-1);
+        @include pad(0 default 0 0);
+        content: ' ';
+        background: $color4;
+        position: absolute;
+        height: 100%;
+      }
+
     }
 
-    /*
-     *.custom-header {
-     *  position: absolute;
-     *  top:0;
-     *  left:0;
-     *}
-     */
+    padding-bottom: .1rem;
+    @include media($small) {
+      @include span-columns(12, block-collapse);
+      .blog-name { margin-top: 0; }
+    }
+    @include media($large) {
+      padding-bottom: 0;
+    }
+
+    background: #333333;
 
     .logo {
       color: $color2;
       position: relative;
       z-index: 2;
+      display: block;
       @include clearfix;
 
-      .blog-name {
-        margin-bottom: 0;
-        margin-top: 3rem;
+      h1.blog-name {
+        margin-top: 0rem;
+
+        @include media($small) {
+          margin-bottom: 2rem;
+        }
+
+        @include media($medium) {
+          margin-top: 2rem;
+        }
+
+        @include media($large) {
+          margin-bottom: 0;
+          margin-top: 3rem;
+        }
+
+        @include span-columns(12);
         text-align: center;
         text-shadow: 0 0 .5em $color1;
         text-indent: -9999px;
@@ -52,7 +73,6 @@ $g: $gutter + $gutter;
         background-repeat: no-repeat;
         background-size: 100%;
         height: 8rem;
-        @include span-columns(12);
       }
 
       .blog-description {
@@ -113,6 +133,10 @@ $g: $gutter + $gutter;
 
         color: #f0c214;
         ul.sub-menu {
+          display: none;
+          @include media($large) {
+            display: block;
+          }
           @extend .fade-left-in;
           @extend .animated;
 
@@ -144,11 +168,18 @@ $g: $gutter + $gutter;
         } } } }
 
 .home-display-widgets {
-  position: absolute;
-  top: 20%;
-  @include span-columns(8.3, block-collapse);
   text-transform: uppercase;
   font-style: italic;
+  display: none;
+
+  @include media($large) {
+    position: absolute;
+    top: 20%;
+    @include span-columns(8.3, block-collapse);
+  }
+  @include media($small) {
+  }
+
   li {
     list-style: none;
     @include pad(0 default);
@@ -157,8 +188,14 @@ $g: $gutter + $gutter;
 }
 
   .site-twop {
-    @include span-columns(8.75);
-    @include omega();
+    @include media($small) {
+      @include span-columns(12);
+    }
+    @include media($large) {
+      @include span-columns(8.75);
+      @include omega();
+    }
+
     .menu {
       list-style: none;
       padding: 0;
@@ -186,7 +223,24 @@ $g: $gutter + $gutter;
           }
         }
 
-        @include span-columns(8 of 12, block-collapse);
+        @include media($small) {
+          @include span-columns(12);
+        }
+
+        @include media($large) {
+          @include span-columns(8 of 12, block-collapse);
+        }
+
+        & > div {
+          /*
+           *position: relative;
+           *top: -1.5rem;
+           */
+          @include media($large) {
+            top: auto;
+          }
+
+        }
 
         input {
           background-color: #111;
@@ -206,12 +260,18 @@ $g: $gutter + $gutter;
             left: 0;
           }
           &[type="text"] {
-            background-color: #111;
-            @include span-columns(6, block-collapse);
-            @include shift-in-context(6);
-            @include pad(.5rem $g .5rem default);
-            position: relative;
-            left: -($gutter/2);
+            @include media($small) {
+              @include span-columns(12);
+            }
+
+            @include media($large) {
+              background-color: #111;
+              @include span-columns(6, block-collapse);
+              @include shift-in-context(6);
+              @include pad(.5rem $g .5rem default);
+              position: relative;
+              left: -($gutter/2);
+            }
 
             &:focus {
               background-color: transparent;
@@ -229,6 +289,13 @@ $g: $gutter + $gutter;
             }
           }
 
+          &#s {
+            border-radius: 0;
+            width: 100%;
+            @include media($large) {
+              width: auto;
+            }
+          }
           &#searchsubmit {
             position: absolute;
             z-index: 100;
@@ -236,6 +303,7 @@ $g: $gutter + $gutter;
             width: 50px;
             background: transparent;
             right: 0;
+            top: 0;
             border: none;
           }
         }
@@ -248,25 +316,46 @@ $g: $gutter + $gutter;
           position: absolute;
           z-index: 99;
           right: 17px;
-          top: .5em;
+          top: .4rem;
+          @include media($large) {
+            top: .5rem;
+          }
         }
 
       }
 
       div.menu {
-        @include span-columns(4 of 12);
-        @include clearfix; }
+        @include media($small) {
+          @include span-columns(12);
+        }
+        @include media($large) {
+          @include span-columns(4 of 12);
+          @include clearfix;
+        }
+
+      }
       .meta-menu {
         @include clearfix;
         @include span-columns(12);
       }
       ul.menu {
-        @include span-columns(12);
-        @include clearfix;
+        @include media($small) {
+          @include span-columns(12);
+        }
+        @include media($large) {
+          @include span-columns(12);
+          @include clearfix;
+        }
         li {
-          @include span-columns(4 of 12);
           position: relative;
           top: .5em;
+          @include span-columns(6);
+          @include media($small) {
+            @include span-columns(6);
+          }
+          @include media($large) {
+            @include span-columns(4 of 12);
+          }
         }
         a {
           color: #fff;
@@ -280,9 +369,21 @@ $g: $gutter + $gutter;
     }
 
     .site-caro {
-      @include span-columns(12);
-      @include omega();
-      margin-top: 7em;
+      margin-top: 0;
+      padding-bottom: 1rem;
+      @include media($small) {
+      }
+      @include media($medium) {
+
+      }
+      @include media($large) {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 7em;
+        @include span-columns(12);
+        @include omega();
+      }
+
       & > div.menu {
         @include row();
       }
@@ -300,7 +401,9 @@ $g: $gutter + $gutter;
           .placeholder {
             height: 37rem;
             width: 100%;
-            background: #2e6f89;
+            @include media($large) {
+              background: #2e6f89;
+            }
             position: relative;
             opacity: .8;
             /*
@@ -319,7 +422,10 @@ $g: $gutter + $gutter;
         }
       }
       ul.menu {
-        @include span-columns(12);
+        display: none;
+        @include media($large) {
+          @include span-columns(12);
+        }
         margin-bottom: 0;
       }
       .img-monad {
