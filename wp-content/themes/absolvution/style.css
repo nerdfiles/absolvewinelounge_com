@@ -7272,6 +7272,20 @@ body.events-gridview .post-content {
   z-index: 1;
 }
 
+.single-tribe_events .page-content {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 82.82209%;
+  margin-left: 8.58896%;
+}
+.single-tribe_events .page-content:last-child {
+  margin-right: 0;
+}
+.single-tribe_events .tribe-events-event-meta {
+  color: #fff;
+}
+
 .single-tribe_events .tribe-events-event-meta {
   background: #111;
 }
