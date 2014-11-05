@@ -639,7 +639,11 @@ body.single-menu_item {
     background-color: transparent;
   }
   .post-content {
-    @include span-columns(5);
+    @include span-columns(10);
+    @include shift(1);
+    @include media($large) {
+      @include span-columns(5);
+    }
     background: none;
     color: $color2;
     padding: 0;
@@ -664,8 +668,12 @@ body.single-menu_item {
   }
   .menu-item-categories {
     margin-top: 1rem;
-    @include span-columns(5.5);
+    @include span-columns(10);
     @include shift(1);
+    @include media($large) {
+      @include span-columns(5.5);
+      @include shift(1);
+    }
     font-variant: small-caps;
     text-transform: lowercase;
     a {

@@ -124,11 +124,9 @@
 
           <div class="site-caro">
 
-            <?php if (is_tax('menu')) { ?>
             <?php if(function_exists('chi_display_header')) {
               chi_display_header();
             } ?>
-            <?php } ?>
 
             <div class="menu">
 
