@@ -56,7 +56,7 @@ if ( function_exists( 'register_sidebars' ) ) {
   register_sidebar(
     array(
       'id' => 'home-sidebar',
-      'name' => __( 'Home widgets', 'absolvution' ),
+      'name' => __( 'Home widgets (Banner)', 'absolvution' ),
       'description' => __( 'Shows on home page', 'absolvution' )
     )
   );
