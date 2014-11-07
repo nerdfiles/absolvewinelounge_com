@@ -7796,6 +7796,14 @@ body.home .site-footer {
   color: #111;
 }
 
+.tribe-events-day .tribe-events-event-meta {
+  color: #fff;
+}
+
+.tribe-events-day .tribe-events-day-time-slot h5 {
+  color: #111;
+}
+
 .sticky {
   background: none;
 }
