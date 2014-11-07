@@ -15,7 +15,7 @@
     if ( is_singular() ) :
       the_title();
     else : ?>
-      <?php if (has_term('wines', 'menu') || has_term('craft-beers', 'menu')) { ?>
+      <?php if (has_term('wine', 'menu') || has_term('craft-beers', 'menu')) { ?>
         <?php the_title(); ?>
       <?php } else { ?>
         <a
@@ -53,7 +53,7 @@
             echo '<ul>';
               foreach( $product_terms as $term ) {
                 $term_id = get_term_by('id', $term->parent, 'menu');
-                if ( '' != $term->parent && 'regions' != $term->slug && 'wines' != $term->slug ) {
+                if ( '' != $term->parent && 'regions' != $term->slug && 'wine' != $term->slug ) {
                   if ( is_tax('menu', $term->slug) ) {
                   } else {
                     echo '<li><a href="' . get_term_link( $term->slug, 'menu' ) . '">' . $term->name . '</a></li>';
