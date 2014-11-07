@@ -49,7 +49,7 @@ register_nav_menu( 'main-menu', __( 'Your site\'s main menu', 'absolvution' ) );
 register_nav_menu( 'meta-menu', __( 'Your site\'s meta menu', 'absolvution' ) );
 register_nav_menu( 'footer-menu', __( 'Your site\'s footer menu', 'absolvution' ) );
 register_nav_menu( 'drinks-menu', __( 'Your site\'s drinks menu', 'absolvution' ) );
-register_nav_menu( 'wines-menu', __( 'Your site\'s wines menu', 'absolvution' ) );
+register_nav_menu( 'wine-menu', __( 'Your site\'s wine menu', 'absolvution' ) );
 register_nav_menu( 'foods-menu', __( 'Your site\'s foods menu', 'absolvution' ) );
 
 if ( function_exists( 'register_sidebars' ) ) {
@@ -321,9 +321,9 @@ function thumbnailing($post) {
 }
 add_action('tribe_events_list_widget_before_the_event_title', 'thumbnailing');
 
-add_filter('pre_get_posts','wines_menus_archive');
+add_filter('pre_get_posts','wine_menus_archive');
 
-function wines_menus_archive( $query ) {
+function wine_menus_archive( $query ) {
 
     if ( $query->is_tax( 'menu', 'drinks' ) && $query->is_main_query() ) {
         $query->set( 'posts_per_page', 500 );
@@ -334,7 +334,7 @@ function wines_menus_archive( $query ) {
                 'taxonomy' => 'menu',
                 'field' => 'slug',
                 //'terms' => $terms,
-                'terms' => array( 'wines', 'by-the-glass', 'craft-beers' )
+                'terms' => array( 'wine', 'by-the-glass', 'craft-beer' )
             )
         ) );
     }
@@ -353,7 +353,7 @@ function wines_menus_archive( $query ) {
         ) );
     }
 
-    if ( $query->is_tax( 'menu', 'wines' ) && $query->is_main_query() ) {
+    if ( $query->is_tax( 'menu', 'wine' ) && $query->is_main_query() ) {
         $query->set( 'posts_per_page', 500 );
         //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
         $query->set( 'post_type', array( 'menu_item' ) );
@@ -370,7 +370,7 @@ function wines_menus_archive( $query ) {
                 'taxonomy' => 'menu',
                 'field' => 'slug',
                 //'terms' => $terms,
-                'terms' => array( 'wines' )
+                'terms' => array( 'wine' )
             )
         ) );
     }
@@ -392,12 +392,12 @@ function wines_menus_archive( $query ) {
                 'taxonomy' => 'menu',
                 'field' => 'slug',
                 //'terms' => $terms,
-                'terms' => array( 'wines' )
+                'terms' => array( 'wine' )
             )
         ) );
     }
 
-    if ( $query->is_tax( 'menu', 'craft-beers' ) && $query->is_main_query() ) {
+    if ( $query->is_tax( 'menu', 'craft-beer' ) && $query->is_main_query() ) {
         $query->set( 'posts_per_page', 500 );
         //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
         $query->set( 'post_type', array( 'menu_item' ) );
@@ -407,7 +407,7 @@ function wines_menus_archive( $query ) {
                 'taxonomy' => 'menu',
                 'field' => 'slug',
                 //'terms' => $terms,
-                'terms' => array( 'craft-beers' )
+                'terms' => array( 'craft-beer' )
             )
         ) );
     }
