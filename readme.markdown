@@ -19,6 +19,15 @@ See https://segment.com/nerdfiles/absolvewinelounge.com/ that facilitates:
       ga('send', 'pageview');
     </script>
 
+## Testing
+
+### E2E
+
+1. Download the latest Selenium WebDriver release http://selenium-release.storage.googleapis.com/index.html
+2. ``cd ./test/e2e``
+3. ``java -jar ./node_modules/protractor/selenium/selenium-server-standalone-2.44.0.jar``
+4. ``./node_modules/protractor/bin/webdriver-manager start``
+
 ## TODO
 
 1. Use Yeoman and generator-wp-grunted-theme[1] to generate SCSS, HTML, and  
