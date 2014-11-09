@@ -2,7 +2,13 @@
 
 ## Analytics
 
-See https://segment.com/nerdfiles/absolvewinelounge.com/.
+See https://segment.com/nerdfiles/absolvewinelounge.com/ that facilitates:
+
+1. Google Analytics
+2. Mixpanel
+3. GoSquared
+
+### Google Analytics
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
