@@ -67,6 +67,8 @@ $g: 50px;
       text-shadow: 0 0 .5em $color1;
       text-indent: -9999px;
       font-size: 1em;
+      @extend .animated;
+      @extend .pulse;
       background-image: url('//absolvewinelounge.com/wp/wp-content/uploads/2014/10/logo-test-04-01.png');
       background-repeat: no-repeat;
       background-size: 100% auto;
@@ -400,6 +402,7 @@ $g: 50px;
       .long-logo {
         @include span-columns(4, block-collapse);
         @include shift(4);
+
         position: relative;
         z-index: 2;
         .inner {
