@@ -474,10 +474,8 @@ body.term-foods {
       margin-bottom: 2rem;
 
       &:hover .price-tag {
-        /*
-         *@extend .flip;
-         *@extend .animated;
-         */
+        @extend .flip;
+        @extend .animated;
       }
       &:hover {
         .post-title {

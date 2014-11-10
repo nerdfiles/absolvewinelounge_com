@@ -146,6 +146,9 @@ define( 'AMD', false );
  */
 function absolvution_enqueue_scripts() {
   wp_enqueue_style( 'absolvution-styles', get_stylesheet_uri(), array(), '1.0' );
+  // <link rel="import" href="components/paper-progress/paper-progress.html">
+  echo "<link rel='import' id='Polymer--paper-progress' href='" . get_template_directory_uri() . "/grunt/bower_components/paper-progress/paper-progress.html' />";
+
   if ( is_singular() ) {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'comment-reply' );
@@ -166,6 +169,14 @@ function absolvution_enqueue_scripts() {
   }
 }
 add_action( 'wp_enqueue_scripts', 'absolvution_enqueue_scripts' );
+
+function login_stylesheet() {
+
+    echo "<link rel='import' id='Polymer--paper-progress' href='" . get_template_directory_uri() . "/grunt/bower_components/paper-progress/paper-progress.html' />";
+    wp_enqueue_style( 'custom-login', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_script( 'custom-login', get_template_directory_uri() . '/grunt/dist/require.js', array('jquery'), '1.0', true );
+}
+add_action( 'login_enqueue_scripts', 'login_stylesheet' );
 
 /**
  * For On-demand Architecture
