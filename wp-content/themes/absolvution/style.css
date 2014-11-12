@@ -7453,10 +7453,11 @@ body.events-gridview .post-content {
 
 body.home .site-footer {
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .site-footer {
-  height: 510px;
+  height: 600px;
 }
 .site-footer div.menu {
   float: left;
@@ -7578,11 +7579,11 @@ body.home .site-footer {
   position: absolute;
   right: 0;
   z-index: 9001;
-  -webkit-transform: scaleY(1) rotate(-90deg) translateY(290%) translateX(27%);
-  -moz-transform: scaleY(1) rotate(-90deg) translateY(290%) translateX(27%);
-  -ms-transform: scaleY(1) rotate(-90deg) translateY(290%) translateX(27%);
-  -o-transform: scaleY(1) rotate(-90deg) translateY(290%) translateX(27%);
-  transform: scaleY(1) rotate(-90deg) translateY(290%) translateX(27%);
+  -webkit-transform: scaleY(1) rotate(-90deg) translateY(290%) translateX(42%);
+  -moz-transform: scaleY(1) rotate(-90deg) translateY(290%) translateX(42%);
+  -ms-transform: scaleY(1) rotate(-90deg) translateY(290%) translateX(42%);
+  -o-transform: scaleY(1) rotate(-90deg) translateY(290%) translateX(42%);
+  transform: scaleY(1) rotate(-90deg) translateY(290%) translateX(42%);
 }
 @media screen and (min-width: 769px) {
   .site-footer ul.footer-widgets .home--copyright {

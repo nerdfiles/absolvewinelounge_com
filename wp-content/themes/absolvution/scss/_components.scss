@@ -508,10 +508,11 @@ body.events-gridview {
 body.home {
   .site-footer {
     margin-top: 50px;
+    margin-bottom: 100px;
   }
 }
 .site-footer {
-  height: 510px;
+  height: 600px;
   div.menu {
     @include span-columns(10);
     @include shift(1);
@@ -575,7 +576,7 @@ body.home {
       position: absolute;
       right: 0;
       z-index: 9001;
-      @include transform(scaleY(1) rotate(-90deg) translateY(290%) translateX(27%));
+      @include transform(scaleY(1) rotate(-90deg) translateY(290%) translateX(42%));
 
       @include media($large) {
         position: absolute;
