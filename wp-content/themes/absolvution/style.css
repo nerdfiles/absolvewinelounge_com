@@ -6991,6 +6991,10 @@ dd {
 .home-followup-widgets .home--our-story h2 {
   border-bottom: 3px #306170 double;
 }
+.home-followup-widgets .home--our-story p {
+  overflow: scroll !important;
+  height: 80%;
+}
 .home-followup-widgets .home--our-story:last-child {
   margin-right: 0;
 }
