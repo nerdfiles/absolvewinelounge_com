@@ -6502,6 +6502,7 @@ a {
   /*color: $color3;*/
   text-decoration: none;
   color: #111;
+  outline: 0;
 }
 
 h1 a {
