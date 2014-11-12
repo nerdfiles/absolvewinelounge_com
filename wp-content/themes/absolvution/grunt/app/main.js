@@ -110,7 +110,7 @@
 
     /*
      */
-    $('.site-footer').append('<a target="_blank" href="http://nerdfiles.net"><img src="http://nerdfiles.net/assets/img-ui/favicon.png" /></a>');
+    $('.site-footer').after('<a target="_blank" href="http://nerdfiles.net"><img src="http://nerdfiles.net/assets/img-ui/favicon.png" /></a>');
   })(jQuery);
 
 }).call(this);
