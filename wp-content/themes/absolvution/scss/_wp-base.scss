@@ -426,6 +426,7 @@ body.search {
     @include shift(.2);
     position: relative;
     z-index: auto !important;
+    article.tribe_events,
     article.page {
       text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
       @include span-columns(11.6);
@@ -794,7 +795,7 @@ body.single-menu_item {
   }
 }
 
-.second-search {
+body.search .search-title {
   @include shift(-.5);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
