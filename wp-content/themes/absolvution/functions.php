@@ -146,7 +146,6 @@ define( 'AMD', false );
  */
 function absolvution_enqueue_scripts() {
   wp_enqueue_style( 'absolvution-styles', get_stylesheet_uri(), array(), '1.0' );
-  //echo "<link rel='import' id='Polymer--paper-progress' href='" . get_template_directory_uri() . "/grunt/bower_components/paper-progress/paper-progress.html' />";
 
   if ( is_singular() ) {
     wp_enqueue_script( 'jquery' );
@@ -165,12 +164,12 @@ function absolvution_enqueue_scripts() {
    */
   if (strpos($_SERVER['SERVER_NAME'],'local') !== false) {
     wp_enqueue_script( '', 'http://localhost:35729/livereload.js', array(), '0.0.1', true);
+    //echo "<link rel='import' id='Polymer--paper-progress' href='" . get_template_directory_uri() . "/grunt/bower_components/paper-progress/paper-progress.html' />";
   }
 }
 add_action( 'wp_enqueue_scripts', 'absolvution_enqueue_scripts' );
 
 function login_stylesheet() {
-    echo "<link rel='import' id='Polymer--paper-progress' href='" . get_template_directory_uri() . "/grunt/bower_components/paper-progress/paper-progress.html' />";
     wp_enqueue_style( 'custom-login', get_template_directory_uri() . '/style.css' );
     wp_enqueue_script( 'custom-login', get_template_directory_uri() . '/grunt/dist/require.js', array('jquery'), '1.0', true );
 }
