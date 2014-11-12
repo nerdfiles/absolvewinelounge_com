@@ -420,44 +420,7 @@ body.term-desserts {
   }
 }
 
-body.search,
-body.archive,
-body.term-happy-hour,
-body.term-wine,
-body.term-foods {
-
-  .read-more {
-    position: absolute;
-    left: -9999px;
-  }
-
-  .post-meta {
-    height: 0;
-  }
-  .site-header {
-    z-index: 0 !important;
-  }
-
-  .archive-title {
-    position: relative;
-    z-index: 9001;
-    @include shift(-.2);
-    margin-bottom: 2rem;
-  }
-  .post-meta {
-    position: absolute;
-    left: -9999px;
-  }
-  .post-content {
-    background-color: transparent;
-    margin-bottom: 5rem;
-  }
-  .page-content .menu_item {
-    &:hover {
-      img { opacity: 1; }
-    }
-  }
-
+body.search {
   .page-content {
     @include span-columns(12);
     @include shift(.2);
@@ -538,6 +501,45 @@ body.term-foods {
         bottom: .1rem;
         position: relative;
       }
+    }
+  }
+}
+
+body.search,
+body.archive,
+body.term-happy-hour,
+body.term-wine,
+body.term-foods {
+
+  .read-more {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .post-meta {
+    height: 0;
+  }
+  .site-header {
+    z-index: 0 !important;
+  }
+
+  .archive-title {
+    position: relative;
+    z-index: 9001;
+    @include shift(-.2);
+    margin-bottom: 2rem;
+  }
+  .post-meta {
+    position: absolute;
+    left: -9999px;
+  }
+  .post-content {
+    background-color: transparent;
+    margin-bottom: 5rem;
+  }
+  .page-content .menu_item {
+    &:hover {
+      img { opacity: 1; }
     }
   }
 
