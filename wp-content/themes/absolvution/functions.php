@@ -171,7 +171,6 @@ function absolvution_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'absolvution_enqueue_scripts' );
 
 function login_stylesheet() {
-
     echo "<link rel='import' id='Polymer--paper-progress' href='" . get_template_directory_uri() . "/grunt/bower_components/paper-progress/paper-progress.html' />";
     wp_enqueue_style( 'custom-login', get_template_directory_uri() . '/style.css' );
     wp_enqueue_script( 'custom-login', get_template_directory_uri() . '/grunt/dist/require.js', array('jquery'), '1.0', true );

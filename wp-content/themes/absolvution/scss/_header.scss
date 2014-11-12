@@ -348,12 +348,13 @@ $g: 50px;
           @include span-columns(4 of 12);
           @include clearfix;
         }
-
       }
+
       .meta-menu {
         @include clearfix;
         @include span-columns(12);
       }
+
       ul.menu {
         @include media($small) {
           @include span-columns(12);
@@ -382,6 +383,7 @@ $g: 50px;
           display: block;
         }
       }
+
     }
 
     .site-caro {
