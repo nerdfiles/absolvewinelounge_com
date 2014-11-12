@@ -508,11 +508,11 @@ body.events-gridview {
 body.home {
   .site-footer {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
   }
 }
 .site-footer {
-  height: 600px;
+  height: 560px;
   div.menu {
     @include span-columns(10);
     @include shift(1);
