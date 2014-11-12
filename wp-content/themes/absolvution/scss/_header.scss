@@ -456,11 +456,5 @@ $g: 50px;
         @include span-columns(4 of 12, block-collapse);
         background-size: cover;
         min-height: 14.5rem;
-        /*max-height: 14.5rem;*/
-        /*
-         *&.last {
-         *  @include shift(4);
-         *}
-         */
       }
     }

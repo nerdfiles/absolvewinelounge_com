@@ -9523,12 +9523,6 @@ body.single-menu_item .menu-item-categories ul:after {
   width: 34.35583%;
   background-size: cover;
   min-height: 14.5rem;
-  /*max-height: 14.5rem;*/
-  /*
-   *&.last {
-   *  @include shift(4);
-   *}
-   */
 }
 .site-caro li:last-child {
   width: 31.28834%;
