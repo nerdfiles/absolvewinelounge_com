@@ -7678,6 +7678,9 @@ body.home .site-footer {
   color: #6689a3 !important;
 }
 
+/**
+ * FooGallery Plugin Overrides
+ */
 .foogallery-panel {
   display: none;
 }
@@ -7686,7 +7689,7 @@ body.home .site-footer {
   display: block;
   cursor: not-allowed;
   position: fixed;
-  top: 15%;
+  top: 0;
   right: 0;
   z-index: 9001;
   padding: 1rem;
