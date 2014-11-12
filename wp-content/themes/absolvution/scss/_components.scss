@@ -187,6 +187,10 @@ dd {
     h2 {
       border-bottom: 3px #306170 double;
     }
+    p {
+      overflow: scroll !important;
+      height: 80%;
+    }
     @include span-columns(10);
     @include shift(1);
     @include media($large) {
