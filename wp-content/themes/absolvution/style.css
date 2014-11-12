@@ -10159,7 +10159,8 @@ body.page-gallery .post-content:last-child {
 .pagination {
   float: left;
   display: block;
-  width: 51.53374%;
+  margin-right: 3.06748%;
+  width: 48.46626%;
   margin-left: 25.76687%;
   *zoom: 1;
   color: #fff;
@@ -10167,7 +10168,7 @@ body.page-gallery .post-content:last-child {
   /*border-bottom: 3px solid $color2;*/
 }
 .pagination:last-child {
-  width: 48.46626%;
+  margin-right: 0;
 }
 .pagination:before, .pagination:after {
   content: " ";
