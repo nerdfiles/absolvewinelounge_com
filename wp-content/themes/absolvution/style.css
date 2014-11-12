@@ -7940,6 +7940,9 @@ body.login #lostpasswordform form label {
   color: #111;
 }
 
+.tribe-events-schedule {
+  color: #fff;
+}
 @media screen and (max-width: screen) {
   .tribe-events-schedule {
     color: #111;
