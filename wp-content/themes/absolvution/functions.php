@@ -146,8 +146,7 @@ define( 'AMD', false );
  */
 function absolvution_enqueue_scripts() {
   wp_enqueue_style( 'absolvution-styles', get_stylesheet_uri(), array(), '1.0' );
-  // <link rel="import" href="components/paper-progress/paper-progress.html">
-  echo "<link rel='import' id='Polymer--paper-progress' href='" . get_template_directory_uri() . "/grunt/bower_components/paper-progress/paper-progress.html' />";
+  //echo "<link rel='import' id='Polymer--paper-progress' href='" . get_template_directory_uri() . "/grunt/bower_components/paper-progress/paper-progress.html' />";
 
   if ( is_singular() ) {
     wp_enqueue_script( 'jquery' );
