@@ -96,7 +96,7 @@
     w = $(".tribe-events-list-widget-events").css('width');
     $vcalendar = $('body.home .vcalendar');
     aw = parseInt(w) + 10;
-    if (mobilecheck === false && $(window).width() > 330) {
+    if (mobilecheck === false && $(window).width() > 768) {
       $vcalendar.css('margin-top', '-' + aw + 'px');
     }
     $(".tribe-events-list-widget-events").each(function() {
