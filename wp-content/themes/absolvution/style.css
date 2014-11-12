@@ -6505,6 +6505,14 @@ a {
   outline: 0;
 }
 
+object, embed {
+  outline: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+}
+
 h1 a {
   color: #efefef;
 }
