@@ -390,7 +390,12 @@ table {
   border-spacing: 0;
 }
 
-.animated, .foogallery-panel.active, ol.comment-list li.bypostauthor:target, body.archive .page-content article.menu_item:hover .price-tag,
+.animated, .foogallery-panel.active, ol.comment-list li.bypostauthor:target, body.search .page-content article.page:hover .price-tag,
+body.archive .page-content article.page:hover .price-tag,
+body.term-happy-hour .page-content article.page:hover .price-tag,
+body.term-wine .page-content article.page:hover .price-tag,
+body.term-foods .page-content article.page:hover .price-tag, body.search .page-content article.menu_item:hover .price-tag,
+body.archive .page-content article.menu_item:hover .price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .price-tag,
 body.term-wine .page-content article.menu_item:hover .price-tag,
 body.term-foods .page-content article.menu_item:hover .price-tag, .site-banner .logo h1.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.sub-menu, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .google-maps-builder-wrap, body.events-gridview .type-tribe_events,
@@ -2057,7 +2062,12 @@ body.events-single .type-tribe_events {
   animation-name: fold-in;
 }
 
-.animated.fold-in, .fold-in.foogallery-panel.active, ol.comment-list li.fold-in.bypostauthor:target, body.archive .page-content article.menu_item:hover .fold-in.price-tag,
+.animated.fold-in, .fold-in.foogallery-panel.active, ol.comment-list li.fold-in.bypostauthor:target, body.search .page-content article.page:hover .fold-in.price-tag,
+body.archive .page-content article.page:hover .fold-in.price-tag,
+body.term-happy-hour .page-content article.page:hover .fold-in.price-tag,
+body.term-wine .page-content article.page:hover .fold-in.price-tag,
+body.term-foods .page-content article.page:hover .fold-in.price-tag, body.search .page-content article.menu_item:hover .fold-in.price-tag,
+body.archive .page-content article.menu_item:hover .fold-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-in.price-tag,
 body.term-wine .page-content article.menu_item:hover .fold-in.price-tag,
 body.term-foods .page-content article.menu_item:hover .fold-in.price-tag, .site-banner .logo h1.fold-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-in.sub-menu, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.page-contact .fold-in.google-maps-builder-wrap, body.events-gridview .fold-in.type-tribe_events,
@@ -2109,7 +2119,12 @@ body.events-single td.fold-in:hover {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-in, .fold-small-in.foogallery-panel.active, ol.comment-list li.fold-small-in.bypostauthor:target, body.archive .page-content article.menu_item:hover .fold-small-in.price-tag,
+.animated.fold-small-in, .fold-small-in.foogallery-panel.active, ol.comment-list li.fold-small-in.bypostauthor:target, body.search .page-content article.page:hover .fold-small-in.price-tag,
+body.archive .page-content article.page:hover .fold-small-in.price-tag,
+body.term-happy-hour .page-content article.page:hover .fold-small-in.price-tag,
+body.term-wine .page-content article.page:hover .fold-small-in.price-tag,
+body.term-foods .page-content article.page:hover .fold-small-in.price-tag, body.search .page-content article.menu_item:hover .fold-small-in.price-tag,
+body.archive .page-content article.menu_item:hover .fold-small-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-small-in.price-tag,
 body.term-wine .page-content article.menu_item:hover .fold-small-in.price-tag,
 body.term-foods .page-content article.menu_item:hover .fold-small-in.price-tag, .site-banner .logo h1.fold-small-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-small-in.sub-menu, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.page-contact .fold-small-in.google-maps-builder-wrap, body.events-gridview .fold-small-in.type-tribe_events,
@@ -2161,7 +2176,12 @@ body.events-single td.fold-small-in:hover {
   animation-name: fold-out;
 }
 
-.animated.fold-out, .fold-out.foogallery-panel.active, ol.comment-list li.fold-out.bypostauthor:target, body.archive .page-content article.menu_item:hover .fold-out.price-tag,
+.animated.fold-out, .fold-out.foogallery-panel.active, ol.comment-list li.fold-out.bypostauthor:target, body.search .page-content article.page:hover .fold-out.price-tag,
+body.archive .page-content article.page:hover .fold-out.price-tag,
+body.term-happy-hour .page-content article.page:hover .fold-out.price-tag,
+body.term-wine .page-content article.page:hover .fold-out.price-tag,
+body.term-foods .page-content article.page:hover .fold-out.price-tag, body.search .page-content article.menu_item:hover .fold-out.price-tag,
+body.archive .page-content article.menu_item:hover .fold-out.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-out.price-tag,
 body.term-wine .page-content article.menu_item:hover .fold-out.price-tag,
 body.term-foods .page-content article.menu_item:hover .fold-out.price-tag, .site-banner .logo h1.fold-out.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-out.sub-menu, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.page-contact .fold-out.google-maps-builder-wrap, body.events-gridview .fold-out.type-tribe_events,
@@ -2213,7 +2233,12 @@ body.events-single td.fold-out:hover {
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-out, .fold-small-out.foogallery-panel.active, ol.comment-list li.fold-small-out.bypostauthor:target, body.archive .page-content article.menu_item:hover .fold-small-out.price-tag,
+.animated.fold-small-out, .fold-small-out.foogallery-panel.active, ol.comment-list li.fold-small-out.bypostauthor:target, body.search .page-content article.page:hover .fold-small-out.price-tag,
+body.archive .page-content article.page:hover .fold-small-out.price-tag,
+body.term-happy-hour .page-content article.page:hover .fold-small-out.price-tag,
+body.term-wine .page-content article.page:hover .fold-small-out.price-tag,
+body.term-foods .page-content article.page:hover .fold-small-out.price-tag, body.search .page-content article.menu_item:hover .fold-small-out.price-tag,
+body.archive .page-content article.menu_item:hover .fold-small-out.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-small-out.price-tag,
 body.term-wine .page-content article.menu_item:hover .fold-small-out.price-tag,
 body.term-foods .page-content article.menu_item:hover .fold-small-out.price-tag, .site-banner .logo h1.fold-small-out.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-small-out.sub-menu, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.page-contact .fold-small-out.google-maps-builder-wrap, body.events-gridview .fold-small-out.type-tribe_events,
@@ -2313,7 +2338,12 @@ body.events-single td.fold-small-out:hover {
     -moz-animation-timing-function: ease-in;
   }
 }
-.flip, body.archive .page-content article.menu_item:hover .price-tag,
+.flip, body.search .page-content article.page:hover .price-tag,
+body.archive .page-content article.page:hover .price-tag,
+body.term-happy-hour .page-content article.page:hover .price-tag,
+body.term-wine .page-content article.page:hover .price-tag,
+body.term-foods .page-content article.page:hover .price-tag, body.search .page-content article.menu_item:hover .price-tag,
+body.archive .page-content article.menu_item:hover .price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .price-tag,
 body.term-wine .page-content article.menu_item:hover .price-tag,
 body.term-foods .page-content article.menu_item:hover .price-tag {
@@ -2796,7 +2826,12 @@ body.term-foods .page-content article.menu_item:hover .price-tag {
   animation-name: hinge-out;
 }
 
-.animated.hinge-out, .hinge-out.foogallery-panel.active, ol.comment-list li.hinge-out.bypostauthor:target, body.archive .page-content article.menu_item:hover .hinge-out.price-tag,
+.animated.hinge-out, .hinge-out.foogallery-panel.active, ol.comment-list li.hinge-out.bypostauthor:target, body.search .page-content article.page:hover .hinge-out.price-tag,
+body.archive .page-content article.page:hover .hinge-out.price-tag,
+body.term-happy-hour .page-content article.page:hover .hinge-out.price-tag,
+body.term-wine .page-content article.page:hover .hinge-out.price-tag,
+body.term-foods .page-content article.page:hover .hinge-out.price-tag, body.search .page-content article.menu_item:hover .hinge-out.price-tag,
+body.archive .page-content article.menu_item:hover .hinge-out.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .hinge-out.price-tag,
 body.term-wine .page-content article.menu_item:hover .hinge-out.price-tag,
 body.term-foods .page-content article.menu_item:hover .hinge-out.price-tag, .site-banner .logo h1.hinge-out.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.hinge-out.sub-menu, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.page-contact .hinge-out.google-maps-builder-wrap, body.events-gridview .hinge-out.type-tribe_events,
@@ -2891,7 +2926,12 @@ body.events-single td.hinge-out:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, body.archive .page-content article.menu_item:hover .light-speed-in.price-tag,
+.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, body.search .page-content article.page:hover .light-speed-in.price-tag,
+body.archive .page-content article.page:hover .light-speed-in.price-tag,
+body.term-happy-hour .page-content article.page:hover .light-speed-in.price-tag,
+body.term-wine .page-content article.page:hover .light-speed-in.price-tag,
+body.term-foods .page-content article.page:hover .light-speed-in.price-tag, body.search .page-content article.menu_item:hover .light-speed-in.price-tag,
+body.archive .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-wine .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .site-banner .logo h1.light-speed-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.light-speed-in.sub-menu, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
@@ -2954,7 +2994,12 @@ body.events-single td.light-speed-in:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, body.archive .page-content article.menu_item:hover .light-speed-in.price-tag,
+.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, body.search .page-content article.page:hover .light-speed-in.price-tag,
+body.archive .page-content article.page:hover .light-speed-in.price-tag,
+body.term-happy-hour .page-content article.page:hover .light-speed-in.price-tag,
+body.term-wine .page-content article.page:hover .light-speed-in.price-tag,
+body.term-foods .page-content article.page:hover .light-speed-in.price-tag, body.search .page-content article.menu_item:hover .light-speed-in.price-tag,
+body.archive .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-wine .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .site-banner .logo h1.light-speed-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.light-speed-in.sub-menu, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
@@ -4168,7 +4213,42 @@ body.events-single td:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.wiggle, .wiggle.foogallery-panel.active, ol.comment-list li.wiggle.bypostauthor:target, body.archive .page-content article.menu_item:hover .wiggle.price-tag, body.archive .page-content article.menu_item:hover .site-meta .searchform:focus div.price-tag::after, .site-meta .searchform:focus body.archive .page-content article.menu_item:hover div.price-tag::after, body.archive .page-content article.menu_item:hover .site-meta .searchform:active div.price-tag::after, .site-meta .searchform:active body.archive .page-content article.menu_item:hover div.price-tag::after, body.archive .page-content article.menu_item:hover .site-meta .searchform input[type="text"]:focus + input.price-tag, .site-meta .searchform body.archive .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag,
+.animated.wiggle, .wiggle.foogallery-panel.active, .site-meta .searchform:focus div.foogallery-panel.active::after, .site-meta .searchform:active div.foogallery-panel.active::after, .site-meta .searchform input[type="text"]:focus + input.foogallery-panel.active, ol.comment-list li.wiggle.bypostauthor:target, body.search .page-content article.page:hover .wiggle.price-tag, body.search .page-content article.page:hover .site-meta .searchform:focus div.price-tag::after, .site-meta .searchform:focus body.search .page-content article.page:hover div.price-tag::after, body.search .page-content article.page:hover .site-meta .searchform:active div.price-tag::after, .site-meta .searchform:active body.search .page-content article.page:hover div.price-tag::after, body.search .page-content article.page:hover .site-meta .searchform input[type="text"]:focus + input.price-tag, .site-meta .searchform body.search .page-content article.page:hover input[type="text"]:focus + input.price-tag,
+body.archive .page-content article.page:hover .wiggle.price-tag,
+body.archive .page-content article.page:hover .site-meta .searchform:focus div.price-tag::after,
+.site-meta .searchform:focus body.archive .page-content article.page:hover div.price-tag::after,
+body.archive .page-content article.page:hover .site-meta .searchform:active div.price-tag::after,
+.site-meta .searchform:active body.archive .page-content article.page:hover div.price-tag::after,
+body.archive .page-content article.page:hover .site-meta .searchform input[type="text"]:focus + input.price-tag,
+.site-meta .searchform body.archive .page-content article.page:hover input[type="text"]:focus + input.price-tag,
+body.term-happy-hour .page-content article.page:hover .wiggle.price-tag,
+body.term-happy-hour .page-content article.page:hover .site-meta .searchform:focus div.price-tag::after,
+.site-meta .searchform:focus body.term-happy-hour .page-content article.page:hover div.price-tag::after,
+body.term-happy-hour .page-content article.page:hover .site-meta .searchform:active div.price-tag::after,
+.site-meta .searchform:active body.term-happy-hour .page-content article.page:hover div.price-tag::after,
+body.term-happy-hour .page-content article.page:hover .site-meta .searchform input[type="text"]:focus + input.price-tag,
+.site-meta .searchform body.term-happy-hour .page-content article.page:hover input[type="text"]:focus + input.price-tag,
+body.term-wine .page-content article.page:hover .wiggle.price-tag,
+body.term-wine .page-content article.page:hover .site-meta .searchform:focus div.price-tag::after,
+.site-meta .searchform:focus body.term-wine .page-content article.page:hover div.price-tag::after,
+body.term-wine .page-content article.page:hover .site-meta .searchform:active div.price-tag::after,
+.site-meta .searchform:active body.term-wine .page-content article.page:hover div.price-tag::after,
+body.term-wine .page-content article.page:hover .site-meta .searchform input[type="text"]:focus + input.price-tag,
+.site-meta .searchform body.term-wine .page-content article.page:hover input[type="text"]:focus + input.price-tag,
+body.term-foods .page-content article.page:hover .wiggle.price-tag,
+body.term-foods .page-content article.page:hover .site-meta .searchform:focus div.price-tag::after,
+.site-meta .searchform:focus body.term-foods .page-content article.page:hover div.price-tag::after,
+body.term-foods .page-content article.page:hover .site-meta .searchform:active div.price-tag::after,
+.site-meta .searchform:active body.term-foods .page-content article.page:hover div.price-tag::after,
+body.term-foods .page-content article.page:hover .site-meta .searchform input[type="text"]:focus + input.price-tag,
+.site-meta .searchform body.term-foods .page-content article.page:hover input[type="text"]:focus + input.price-tag, body.search .page-content article.menu_item:hover .wiggle.price-tag, body.search .page-content article.menu_item:hover .site-meta .searchform:focus div.price-tag::after, .site-meta .searchform:focus body.search .page-content article.menu_item:hover div.price-tag::after, body.search .page-content article.menu_item:hover .site-meta .searchform:active div.price-tag::after, .site-meta .searchform:active body.search .page-content article.menu_item:hover div.price-tag::after, body.search .page-content article.menu_item:hover .site-meta .searchform input[type="text"]:focus + input.price-tag, .site-meta .searchform body.search .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag,
+body.archive .page-content article.menu_item:hover .wiggle.price-tag,
+body.archive .page-content article.menu_item:hover .site-meta .searchform:focus div.price-tag::after,
+.site-meta .searchform:focus body.archive .page-content article.menu_item:hover div.price-tag::after,
+body.archive .page-content article.menu_item:hover .site-meta .searchform:active div.price-tag::after,
+.site-meta .searchform:active body.archive .page-content article.menu_item:hover div.price-tag::after,
+body.archive .page-content article.menu_item:hover .site-meta .searchform input[type="text"]:focus + input.price-tag,
+.site-meta .searchform body.archive .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .wiggle.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .site-meta .searchform:focus div.price-tag::after,
 .site-meta .searchform:focus body.term-happy-hour .page-content article.menu_item:hover div.price-tag::after,
@@ -4189,8 +4269,14 @@ body.term-foods .page-content article.menu_item:hover .site-meta .searchform:foc
 body.term-foods .page-content article.menu_item:hover .site-meta .searchform:active div.price-tag::after,
 .site-meta .searchform:active body.term-foods .page-content article.menu_item:hover div.price-tag::after,
 body.term-foods .page-content article.menu_item:hover .site-meta .searchform input[type="text"]:focus + input.price-tag,
-.site-meta .searchform body.term-foods .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag, .site-banner .logo h1.wiggle.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.wiggle.sub-menu, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .wiggle.google-maps-builder-wrap, body.events-gridview .wiggle.type-tribe_events,
-body.events-single .wiggle.type-tribe_events, body.events-gridview td.wiggle:hover,
+.site-meta .searchform body.term-foods .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag, .site-banner .logo h1.wiggle.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.wiggle.sub-menu, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .wiggle.google-maps-builder-wrap, body.page-contact .site-meta .searchform:focus div.google-maps-builder-wrap::after, .site-meta .searchform:focus body.page-contact div.google-maps-builder-wrap::after, body.page-contact .site-meta .searchform:active div.google-maps-builder-wrap::after, .site-meta .searchform:active body.page-contact div.google-maps-builder-wrap::after, body.page-contact .site-meta .searchform input[type="text"]:focus + input.google-maps-builder-wrap, .site-meta .searchform body.page-contact input[type="text"]:focus + input.google-maps-builder-wrap, body.events-gridview .wiggle.type-tribe_events, body.events-gridview .site-meta .searchform:focus div.type-tribe_events::after, .site-meta .searchform:focus body.events-gridview div.type-tribe_events::after, body.events-gridview .site-meta .searchform:active div.type-tribe_events::after, .site-meta .searchform:active body.events-gridview div.type-tribe_events::after, body.events-gridview .site-meta .searchform input[type="text"]:focus + input.type-tribe_events, .site-meta .searchform body.events-gridview input[type="text"]:focus + input.type-tribe_events,
+body.events-single .wiggle.type-tribe_events,
+body.events-single .site-meta .searchform:focus div.type-tribe_events::after,
+.site-meta .searchform:focus body.events-single div.type-tribe_events::after,
+body.events-single .site-meta .searchform:active div.type-tribe_events::after,
+.site-meta .searchform:active body.events-single div.type-tribe_events::after,
+body.events-single .site-meta .searchform input[type="text"]:focus + input.type-tribe_events,
+.site-meta .searchform body.events-single input[type="text"]:focus + input.type-tribe_events, body.events-gridview td.wiggle:hover,
 body.events-single td.wiggle:hover {
   -webkit-animation-duration: 0.5;
   -moz-animation-duration: 0.5;
@@ -8387,6 +8473,7 @@ body.term-desserts .chi_display_header {
   opacity: .5;
 }
 
+body.search .read-more,
 body.archive .read-more,
 body.term-happy-hour .read-more,
 body.term-wine .read-more,
@@ -8394,18 +8481,21 @@ body.term-foods .read-more {
   position: absolute;
   left: -9999px;
 }
+body.search .post-meta,
 body.archive .post-meta,
 body.term-happy-hour .post-meta,
 body.term-wine .post-meta,
 body.term-foods .post-meta {
   height: 0;
 }
+body.search .site-header,
 body.archive .site-header,
 body.term-happy-hour .site-header,
 body.term-wine .site-header,
 body.term-foods .site-header {
   z-index: 0 !important;
 }
+body.search .archive-title,
 body.archive .archive-title,
 body.term-happy-hour .archive-title,
 body.term-wine .archive-title,
@@ -8415,6 +8505,7 @@ body.term-foods .archive-title {
   margin-left: -1.71779%;
   margin-bottom: 2rem;
 }
+body.search .post-meta,
 body.archive .post-meta,
 body.term-happy-hour .post-meta,
 body.term-wine .post-meta,
@@ -8422,6 +8513,7 @@ body.term-foods .post-meta {
   position: absolute;
   left: -9999px;
 }
+body.search .post-content,
 body.archive .post-content,
 body.term-happy-hour .post-content,
 body.term-wine .post-content,
@@ -8429,12 +8521,14 @@ body.term-foods .post-content {
   background-color: transparent;
   margin-bottom: 5rem;
 }
+body.search .page-content .menu_item:hover img,
 body.archive .page-content .menu_item:hover img,
 body.term-happy-hour .page-content .menu_item:hover img,
 body.term-wine .page-content .menu_item:hover img,
 body.term-foods .page-content .menu_item:hover img {
   opacity: 1;
 }
+body.search .page-content,
 body.archive .page-content,
 body.term-happy-hour .page-content,
 body.term-wine .page-content,
@@ -8447,12 +8541,197 @@ body.term-foods .page-content {
   position: relative;
   z-index: auto !important;
 }
+body.search .page-content:last-child,
 body.archive .page-content:last-child,
 body.term-happy-hour .page-content:last-child,
 body.term-wine .page-content:last-child,
 body.term-foods .page-content:last-child {
   margin-right: 0;
 }
+body.search .page-content article.page,
+body.archive .page-content article.page,
+body.term-happy-hour .page-content article.page,
+body.term-wine .page-content article.page,
+body.term-foods .page-content article.page {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 96.56442%;
+  /*overflow: hidden;*/
+  height: 10rem;
+  margin-bottom: 2rem;
+}
+body.search .page-content article.page:last-child,
+body.archive .page-content article.page:last-child,
+body.term-happy-hour .page-content article.page:last-child,
+body.term-wine .page-content article.page:last-child,
+body.term-foods .page-content article.page:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 769px) {
+  body.search .page-content article.page,
+  body.archive .page-content article.page,
+  body.term-happy-hour .page-content article.page,
+  body.term-wine .page-content article.page,
+  body.term-foods .page-content article.page {
+    float: left;
+    display: block;
+    margin-right: 3.06748%;
+    width: 46.74847%;
+  }
+  body.search .page-content article.page:last-child,
+  body.archive .page-content article.page:last-child,
+  body.term-happy-hour .page-content article.page:last-child,
+  body.term-wine .page-content article.page:last-child,
+  body.term-foods .page-content article.page:last-child {
+    margin-right: 0;
+  }
+}
+body.search .page-content article.page:hover .post-title a,
+body.archive .page-content article.page:hover .post-title a,
+body.term-happy-hour .page-content article.page:hover .post-title a,
+body.term-wine .page-content article.page:hover .post-title a,
+body.term-foods .page-content article.page:hover .post-title a {
+  position: relative;
+}
+body.search .page-content article.page.no-feature-image,
+body.archive .page-content article.page.no-feature-image,
+body.term-happy-hour .page-content article.page.no-feature-image,
+body.term-wine .page-content article.page.no-feature-image,
+body.term-foods .page-content article.page.no-feature-image {
+  height: 5rem;
+}
+body.search .page-content article.page.no-feature-image .post-title,
+body.archive .page-content article.page.no-feature-image .post-title,
+body.term-happy-hour .page-content article.page.no-feature-image .post-title,
+body.term-wine .page-content article.page.no-feature-image .post-title,
+body.term-foods .page-content article.page.no-feature-image .post-title {
+  height: 5rem;
+}
+body.search .page-content article.page.no-feature-image .price-tag,
+body.archive .page-content article.page.no-feature-image .price-tag,
+body.term-happy-hour .page-content article.page.no-feature-image .price-tag,
+body.term-wine .page-content article.page.no-feature-image .price-tag,
+body.term-foods .page-content article.page.no-feature-image .price-tag {
+  top: 3rem;
+}
+body.search .page-content article.page .post-title,
+body.archive .page-content article.page .post-title,
+body.term-happy-hour .page-content article.page .post-title,
+body.term-wine .page-content article.page .post-title,
+body.term-foods .page-content article.page .post-title {
+  position: absolute;
+  z-index: 21;
+  margin: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 96.56442%;
+  height: 10rem;
+  padding-left: .3rem;
+  padding-top: .3rem;
+  border-bottom: 1px #c6a013 solid;
+  font-size: .9rem;
+}
+body.search .page-content article.page .post-title:last-child,
+body.archive .page-content article.page .post-title:last-child,
+body.term-happy-hour .page-content article.page .post-title:last-child,
+body.term-wine .page-content article.page .post-title:last-child,
+body.term-foods .page-content article.page .post-title:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 769px) {
+  body.search .page-content article.page .post-title,
+  body.archive .page-content article.page .post-title,
+  body.term-happy-hour .page-content article.page .post-title,
+  body.term-wine .page-content article.page .post-title,
+  body.term-foods .page-content article.page .post-title {
+    float: left;
+    display: block;
+    margin-right: 3.06748%;
+    width: 46.74847%;
+  }
+  body.search .page-content article.page .post-title:last-child,
+  body.archive .page-content article.page .post-title:last-child,
+  body.term-happy-hour .page-content article.page .post-title:last-child,
+  body.term-wine .page-content article.page .post-title:last-child,
+  body.term-foods .page-content article.page .post-title:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  body.search .page-content article.page .post-title,
+  body.archive .page-content article.page .post-title,
+  body.term-happy-hour .page-content article.page .post-title,
+  body.term-wine .page-content article.page .post-title,
+  body.term-foods .page-content article.page .post-title {
+    font-size: 1.3rem;
+  }
+}
+body.search .page-content article.page .post-title a,
+body.archive .page-content article.page .post-title a,
+body.term-happy-hour .page-content article.page .post-title a,
+body.term-wine .page-content article.page .post-title a,
+body.term-foods .page-content article.page .post-title a {
+  height: 100%;
+  display: block;
+}
+body.search .page-content .price-tag,
+body.archive .page-content .price-tag,
+body.term-happy-hour .page-content .price-tag,
+body.term-wine .page-content .price-tag,
+body.term-foods .page-content .price-tag {
+  display: none;
+  position: absolute;
+  z-index: 28;
+  top: 58px;
+  right: 5%;
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-size: 1.5rem;
+  /*background: #222;*/
+  padding: 0 .4rem;
+}
+body.search .page-content .price-tag:after,
+body.archive .page-content .price-tag:after,
+body.term-happy-hour .page-content .price-tag:after,
+body.term-wine .page-content .price-tag:after,
+body.term-foods .page-content .price-tag:after {
+  content: "USD";
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0;
+  word-spacing: 0;
+  background: #c6a013;
+  padding: 0 .4rem;
+  bottom: .1rem;
+  position: relative;
+}
+body.search .page-content,
+body.archive .page-content,
+body.term-happy-hour .page-content,
+body.term-wine .page-content,
+body.term-foods .page-content {
+  float: left;
+  display: block;
+  margin-right: 3.06748%;
+  width: 100%;
+  margin-left: 1.71779%;
+  position: relative;
+  z-index: auto !important;
+}
+body.search .page-content:last-child,
+body.archive .page-content:last-child,
+body.term-happy-hour .page-content:last-child,
+body.term-wine .page-content:last-child,
+body.term-foods .page-content:last-child {
+  margin-right: 0;
+}
+body.search .page-content article.menu_item,
 body.archive .page-content article.menu_item,
 body.term-happy-hour .page-content article.menu_item,
 body.term-wine .page-content article.menu_item,
@@ -8466,6 +8745,7 @@ body.term-foods .page-content article.menu_item {
   height: 10rem;
   margin-bottom: 2rem;
 }
+body.search .page-content article.menu_item:last-child,
 body.archive .page-content article.menu_item:last-child,
 body.term-happy-hour .page-content article.menu_item:last-child,
 body.term-wine .page-content article.menu_item:last-child,
@@ -8473,6 +8753,7 @@ body.term-foods .page-content article.menu_item:last-child {
   margin-right: 0;
 }
 @media screen and (min-width: 769px) {
+  body.search .page-content article.menu_item,
   body.archive .page-content article.menu_item,
   body.term-happy-hour .page-content article.menu_item,
   body.term-wine .page-content article.menu_item,
@@ -8482,6 +8763,7 @@ body.term-foods .page-content article.menu_item:last-child {
     margin-right: 3.06748%;
     width: 46.74847%;
   }
+  body.search .page-content article.menu_item:last-child,
   body.archive .page-content article.menu_item:last-child,
   body.term-happy-hour .page-content article.menu_item:last-child,
   body.term-wine .page-content article.menu_item:last-child,
@@ -8489,30 +8771,35 @@ body.term-foods .page-content article.menu_item:last-child {
     margin-right: 0;
   }
 }
+body.search .page-content article.menu_item:hover .post-title a,
 body.archive .page-content article.menu_item:hover .post-title a,
 body.term-happy-hour .page-content article.menu_item:hover .post-title a,
 body.term-wine .page-content article.menu_item:hover .post-title a,
 body.term-foods .page-content article.menu_item:hover .post-title a {
   position: relative;
 }
+body.search .page-content article.menu_item.no-feature-image,
 body.archive .page-content article.menu_item.no-feature-image,
 body.term-happy-hour .page-content article.menu_item.no-feature-image,
 body.term-wine .page-content article.menu_item.no-feature-image,
 body.term-foods .page-content article.menu_item.no-feature-image {
   height: 5rem;
 }
+body.search .page-content article.menu_item.no-feature-image .post-title,
 body.archive .page-content article.menu_item.no-feature-image .post-title,
 body.term-happy-hour .page-content article.menu_item.no-feature-image .post-title,
 body.term-wine .page-content article.menu_item.no-feature-image .post-title,
 body.term-foods .page-content article.menu_item.no-feature-image .post-title {
   height: 5rem;
 }
+body.search .page-content article.menu_item.no-feature-image .price-tag,
 body.archive .page-content article.menu_item.no-feature-image .price-tag,
 body.term-happy-hour .page-content article.menu_item.no-feature-image .price-tag,
 body.term-wine .page-content article.menu_item.no-feature-image .price-tag,
 body.term-foods .page-content article.menu_item.no-feature-image .price-tag {
   top: 3rem;
 }
+body.search .page-content article.menu_item .post-title,
 body.archive .page-content article.menu_item .post-title,
 body.term-happy-hour .page-content article.menu_item .post-title,
 body.term-wine .page-content article.menu_item .post-title,
@@ -8533,6 +8820,7 @@ body.term-foods .page-content article.menu_item .post-title {
   border-bottom: 1px #c6a013 solid;
   font-size: .9rem;
 }
+body.search .page-content article.menu_item .post-title:last-child,
 body.archive .page-content article.menu_item .post-title:last-child,
 body.term-happy-hour .page-content article.menu_item .post-title:last-child,
 body.term-wine .page-content article.menu_item .post-title:last-child,
@@ -8540,6 +8828,7 @@ body.term-foods .page-content article.menu_item .post-title:last-child {
   margin-right: 0;
 }
 @media screen and (min-width: 769px) {
+  body.search .page-content article.menu_item .post-title,
   body.archive .page-content article.menu_item .post-title,
   body.term-happy-hour .page-content article.menu_item .post-title,
   body.term-wine .page-content article.menu_item .post-title,
@@ -8549,6 +8838,7 @@ body.term-foods .page-content article.menu_item .post-title:last-child {
     margin-right: 3.06748%;
     width: 46.74847%;
   }
+  body.search .page-content article.menu_item .post-title:last-child,
   body.archive .page-content article.menu_item .post-title:last-child,
   body.term-happy-hour .page-content article.menu_item .post-title:last-child,
   body.term-wine .page-content article.menu_item .post-title:last-child,
@@ -8557,6 +8847,7 @@ body.term-foods .page-content article.menu_item .post-title:last-child {
   }
 }
 @media screen and (min-width: 769px) {
+  body.search .page-content article.menu_item .post-title,
   body.archive .page-content article.menu_item .post-title,
   body.term-happy-hour .page-content article.menu_item .post-title,
   body.term-wine .page-content article.menu_item .post-title,
@@ -8564,6 +8855,7 @@ body.term-foods .page-content article.menu_item .post-title:last-child {
     font-size: 1.3rem;
   }
 }
+body.search .page-content article.menu_item .post-title a,
 body.archive .page-content article.menu_item .post-title a,
 body.term-happy-hour .page-content article.menu_item .post-title a,
 body.term-wine .page-content article.menu_item .post-title a,
@@ -8571,6 +8863,37 @@ body.term-foods .page-content article.menu_item .post-title a {
   height: 100%;
   display: block;
 }
+body.search .page-content .price-tag,
+body.archive .page-content .price-tag,
+body.term-happy-hour .page-content .price-tag,
+body.term-wine .page-content .price-tag,
+body.term-foods .page-content .price-tag {
+  position: absolute;
+  z-index: 28;
+  top: 58px;
+  right: 5%;
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-size: 1.5rem;
+  /*background: #222;*/
+  padding: 0 .4rem;
+}
+body.search .page-content .price-tag:after,
+body.archive .page-content .price-tag:after,
+body.term-happy-hour .page-content .price-tag:after,
+body.term-wine .page-content .price-tag:after,
+body.term-foods .page-content .price-tag:after {
+  content: "USD";
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0;
+  word-spacing: 0;
+  background: #c6a013;
+  padding: 0 .4rem;
+  bottom: .1rem;
+  position: relative;
+}
+body.search .post-content,
 body.archive .post-content,
 body.term-happy-hour .post-content,
 body.term-wine .post-content,
@@ -8583,6 +8906,7 @@ body.term-foods .post-content {
   z-index: auto !important;
   margin: 0;
 }
+body.search .post-content .price-tag,
 body.archive .post-content .price-tag,
 body.term-happy-hour .post-content .price-tag,
 body.term-wine .post-content .price-tag,
@@ -8597,6 +8921,7 @@ body.term-foods .post-content .price-tag {
   /*background: #222;*/
   padding: 0 .4rem;
 }
+body.search .post-content .price-tag:after,
 body.archive .post-content .price-tag:after,
 body.term-happy-hour .post-content .price-tag:after,
 body.term-wine .post-content .price-tag:after,
@@ -8611,6 +8936,7 @@ body.term-foods .post-content .price-tag:after {
   bottom: .1rem;
   position: relative;
 }
+body.search .post-content p,
 body.archive .post-content p,
 body.term-happy-hour .post-content p,
 body.term-wine .post-content p,
@@ -8620,6 +8946,8 @@ body.term-foods .post-content p {
   position: absolute;
   font-size: 1.3rem;
 }
+body.search .post-content,
+body.search .post-content img,
 body.archive .post-content,
 body.archive .post-content img,
 body.term-happy-hour .post-content,
@@ -8631,6 +8959,7 @@ body.term-foods .post-content img {
   width: 100%;
   /* gotta be responsive these days */
 }
+body.search .post-content,
 body.archive .post-content,
 body.term-happy-hour .post-content,
 body.term-wine .post-content,
@@ -8647,6 +8976,8 @@ body.term-foods .post-content {
   word-spacing: -0.43em;
   /* IE < 8 && gecko */
 }
+body.search .post-content:before,
+body.search .post-content img,
 body.archive .post-content:before,
 body.archive .post-content img,
 body.term-happy-hour .post-content:before,
@@ -8659,6 +8990,7 @@ body.term-foods .post-content img {
   display: inline-block;
   vertical-align: middle;
 }
+body.search .post-content:before,
 body.archive .post-content:before,
 body.term-happy-hour .post-content:before,
 body.term-wine .post-content:before,
@@ -8670,6 +9002,7 @@ body.term-foods .post-content:before {
   padding-top: 50%;
   /* % of original image width */
 }
+body.search .post-content img,
 body.archive .post-content img,
 body.term-happy-hour .post-content img,
 body.term-wine .post-content img,
@@ -8679,6 +9012,7 @@ body.term-foods .post-content img {
   padding-left: 0px;
   opacity: .5;
 }
+body.search .menu-item-categories,
 body.archive .menu-item-categories,
 body.term-happy-hour .menu-item-categories,
 body.term-wine .menu-item-categories,
@@ -8697,18 +9031,21 @@ body.term-foods .menu-item-categories {
   margin-right: 3.06748%;
   width: 100%;
 }
+body.search .menu-item-categories:last-child,
 body.archive .menu-item-categories:last-child,
 body.term-happy-hour .menu-item-categories:last-child,
 body.term-wine .menu-item-categories:last-child,
 body.term-foods .menu-item-categories:last-child {
   margin-right: 0;
 }
+body.search .menu-item-categories a,
 body.archive .menu-item-categories a,
 body.term-happy-hour .menu-item-categories a,
 body.term-wine .menu-item-categories a,
 body.term-foods .menu-item-categories a {
   color: #ccc;
 }
+body.search .menu-item-categories a[href*="glass"],
 body.archive .menu-item-categories a[href*="glass"],
 body.term-happy-hour .menu-item-categories a[href*="glass"],
 body.term-wine .menu-item-categories a[href*="glass"],
@@ -8716,6 +9053,7 @@ body.term-foods .menu-item-categories a[href*="glass"] {
   text-indent: -9999px;
   display: block;
 }
+body.search .menu-item-categories a[href*="glass"]:after,
 body.archive .menu-item-categories a[href*="glass"]:after,
 body.term-happy-hour .menu-item-categories a[href*="glass"]:after,
 body.term-wine .menu-item-categories a[href*="glass"]:after,
@@ -8726,6 +9064,7 @@ body.term-foods .menu-item-categories a[href*="glass"]:after {
   vertical-align: bottom;
   margin-top: -.85rem;
 }
+body.search .menu-item-categories ul,
 body.archive .menu-item-categories ul,
 body.term-happy-hour .menu-item-categories ul,
 body.term-wine .menu-item-categories ul,
@@ -8734,7 +9073,9 @@ body.term-foods .menu-item-categories ul {
   padding: 0;
   *zoom: 1;
 }
-body.archive .menu-item-categories ul:before, body.archive .menu-item-categories ul:after,
+body.search .menu-item-categories ul:before, body.search .menu-item-categories ul:after,
+body.archive .menu-item-categories ul:before,
+body.archive .menu-item-categories ul:after,
 body.term-happy-hour .menu-item-categories ul:before,
 body.term-happy-hour .menu-item-categories ul:after,
 body.term-wine .menu-item-categories ul:before,
@@ -8744,12 +9085,14 @@ body.term-foods .menu-item-categories ul:after {
   content: " ";
   display: table;
 }
+body.search .menu-item-categories ul:after,
 body.archive .menu-item-categories ul:after,
 body.term-happy-hour .menu-item-categories ul:after,
 body.term-wine .menu-item-categories ul:after,
 body.term-foods .menu-item-categories ul:after {
   clear: both;
 }
+body.search .menu-item-categories li,
 body.archive .menu-item-categories li,
 body.term-happy-hour .menu-item-categories li,
 body.term-wine .menu-item-categories li,

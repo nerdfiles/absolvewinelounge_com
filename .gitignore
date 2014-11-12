@@ -33,3 +33,4 @@ wp-content/plugins/*
 wp-content/themes/*
 # !wp-content/themes/my-theme/plugins
 secret.json
+.htaccess
