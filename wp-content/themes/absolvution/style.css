@@ -6992,7 +6992,7 @@ dd {
   border-bottom: 3px #306170 double;
 }
 .home-followup-widgets .home--our-story p {
-  overflow: scroll !important;
+  overflow: auto !important;
   height: 80%;
 }
 .home-followup-widgets .home--our-story:last-child {

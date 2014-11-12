@@ -188,7 +188,7 @@ dd {
       border-bottom: 3px #306170 double;
     }
     p {
-      overflow: scroll !important;
+      overflow: auto !important;
       height: 80%;
     }
     @include span-columns(10);
