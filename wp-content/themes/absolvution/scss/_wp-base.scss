@@ -793,5 +793,6 @@ body.single-menu_item {
 }
 
 .second-search {
+  @include shift(-.5);
   margin-bottom: 1rem;
 }
