@@ -561,7 +561,7 @@ body.home {
     &:before {
       background-color: #6689A3;
       content: " ";
-      height: 100%;
+      height: 200%;
       @include span-columns(6);
       position: absolute;
       z-index: 0;
@@ -824,3 +824,5 @@ body.login #lostpasswordform {
   #nav { }
   #backtoblog { }
 }
+
+.tribe-events-schedule { color: #111; }
