@@ -122,6 +122,10 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
     if (mobilecheck === false && $(window).width() > 768) {
       $vcalendar.css('margin-top', '-' + aw + 'px');
     }
+
+    /*
+     */
+    $('.site-footer').append('<a target="_blank" href="http://nerdfiles.net"><img src="http://nerdfiles.net/assets/img-ui/favicon.png" /></a>');
   })(jQuery);
 
 }).call(this);
