@@ -645,14 +645,18 @@ body.home {
   }
 }
 
+/**
+ * FooGallery Plugin Overrides
+ */
 .foogallery-panel {
   display: none;
 }
+
 .foogallery-panel.active {
   display: block;
   cursor: not-allowed;
   position: fixed;
-  top: 15%;
+  top: 0;
   right: 0;
   z-index: 9001;
   padding: 1rem;
