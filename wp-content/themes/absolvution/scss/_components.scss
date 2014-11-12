@@ -825,4 +825,9 @@ body.login #lostpasswordform {
   #backtoblog { }
 }
 
-.tribe-events-schedule { color: #111; }
+.tribe-events-schedule {
+  color: #fff;
+  @include media($small) {
+    color: #111;
+  }
+}

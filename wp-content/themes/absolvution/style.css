@@ -7941,7 +7941,12 @@ body.login #lostpasswordform form label {
 }
 
 .tribe-events-schedule {
-  color: #111;
+  color: #fff;
+}
+@media screen and (max-width: screen) {
+  .tribe-events-schedule {
+    color: #111;
+  }
 }
 
 .sticky {
