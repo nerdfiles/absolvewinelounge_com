@@ -419,6 +419,8 @@ body.term-desserts {
     opacity: .5;
   }
 }
+
+body.search,
 body.archive,
 body.term-happy-hour,
 body.term-wine,
@@ -455,13 +457,13 @@ body.term-foods {
       img { opacity: 1; }
     }
   }
+
   .page-content {
     @include span-columns(12);
     @include shift(.2);
     position: relative;
     z-index: auto !important;
-    article.menu_item {
-
+    article.page {
       text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
       @include span-columns(11.6);
       @include media($large) {
@@ -470,7 +472,6 @@ body.term-foods {
       /*overflow: hidden;*/
       height: 10rem;
       margin-bottom: 2rem;
-
       &:hover .price-tag {
         @extend .flip;
         @extend .animated;
@@ -482,7 +483,6 @@ body.term-foods {
           }
         }
       }
-
       &.no-feature-image {
         height: 5rem;
         .post-title {
@@ -492,7 +492,6 @@ body.term-foods {
           top: 3rem;
         }
       }
-
       .post-title {
         position: absolute;
         z-index: 21;
@@ -514,6 +513,111 @@ body.term-foods {
           height: 100%;
           display: block;
         }
+      }
+    }
+
+    .price-tag {
+      display: none;
+      position: absolute;
+      z-index: 28;
+      top: 58px;
+      right: 5%;
+      letter-spacing: 0;
+      word-spacing: 0;
+      font-size: 1.5rem;
+      /*background: #222;*/
+      padding: 0 .4rem;
+      &:after {
+        content: "USD";
+        display: inline-block;
+        font-size: 1rem;
+        letter-spacing: 0;
+        word-spacing: 0;
+        background: #c6a013;
+        padding: 0 .4rem;
+        bottom: .1rem;
+        position: relative;
+      }
+    }
+  }
+
+  .page-content {
+    @include span-columns(12);
+    @include shift(.2);
+    position: relative;
+    z-index: auto !important;
+    article.menu_item {
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+      @include span-columns(11.6);
+      @include media($large) {
+        @include span-columns(5.8);
+      }
+      /*overflow: hidden;*/
+      height: 10rem;
+      margin-bottom: 2rem;
+      &:hover .price-tag {
+        @extend .flip;
+        @extend .animated;
+      }
+      &:hover {
+        .post-title {
+          a {
+            position: relative;
+          }
+        }
+      }
+      &.no-feature-image {
+        height: 5rem;
+        .post-title {
+          height: 5rem;
+        }
+        .price-tag {
+          top: 3rem;
+        }
+      }
+      .post-title {
+        position: absolute;
+        z-index: 21;
+        margin: 0;
+        @include transition (all .5s ease-in-out);
+        @include span-columns(11.6);
+        @include media($large) {
+          @include span-columns(5.8);
+        }
+        height: 10rem;
+        padding-left: .3rem;
+        padding-top: .3rem;
+        border-bottom: 1px #c6a013 solid;
+        font-size: .9rem;
+        @include media($large) {
+          font-size: 1.3rem;
+        }
+        a {
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+    .price-tag {
+      position: absolute;
+      z-index: 28;
+      top: 58px;
+      right: 5%;
+      letter-spacing: 0;
+      word-spacing: 0;
+      font-size: 1.5rem;
+      /*background: #222;*/
+      padding: 0 .4rem;
+      &:after {
+        content: "USD";
+        display: inline-block;
+        font-size: 1rem;
+        letter-spacing: 0;
+        word-spacing: 0;
+        background: #c6a013;
+        padding: 0 .4rem;
+        bottom: .1rem;
+        position: relative;
       }
     }
   }
