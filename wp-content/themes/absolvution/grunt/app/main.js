@@ -54,6 +54,7 @@
         if (!this.complete || typeof this.naturalWidth === "undefined" || this.naturalWidth === 0) {
           return alert('broken image!');
         } else {
+          img.css('max-height', $(window).height());
           return $(".foogallery-panel").append(img);
         }
       });
