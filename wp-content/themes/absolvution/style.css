@@ -7817,6 +7817,7 @@ body.home .site-footer {
   background-size: cover;
   position: absolute;
   top: 0;
+  width: 100% !important;
   height: 100% !important;
 }
 .chi_display_header + .menu {
@@ -10168,6 +10169,10 @@ body.events-single label.label-tribe-bar-date {
    *  list-style: none;
    *  margin: 0;
    */
+}
+
+body.login {
+  background: #666;
 }
 
 /*# sourceMappingURL=style.css.map */
