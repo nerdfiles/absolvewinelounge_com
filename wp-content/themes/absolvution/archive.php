@@ -62,7 +62,7 @@ get_header(); ?>
         </div>
       <?php } ?>
 
-      <?php if ( is_tax( 'menu', 'wine' ) || is_tax( 'menu', 'by-the-glass' ) ) { ?>
+      <?php if ( is_tax( 'menu', 'wine' ) ) { ?>
         <div class="menu"><?php
           $wine_nav_menu = wp_nav_menu(
             array(
