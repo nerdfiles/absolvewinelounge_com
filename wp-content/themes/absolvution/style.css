@@ -7557,7 +7557,7 @@ body.home .site-footer {
 .site-footer ul.footer-widgets:before {
   background-color: #6689A3;
   content: " ";
-  height: 100%;
+  height: 200%;
   float: left;
   display: block;
   margin-right: 3.06748%;
@@ -7937,6 +7937,10 @@ body.login #lostpasswordform form {
 body.login #login label, body.login #login form label,
 body.login #lostpasswordform label,
 body.login #lostpasswordform form label {
+  color: #111;
+}
+
+.tribe-events-schedule {
   color: #111;
 }
 
