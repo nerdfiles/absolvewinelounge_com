@@ -278,8 +278,8 @@ body.page-gallery {
 }
 
 .pagination {
-  @include span-columns(5, block-collapse);
-  @include shift(3.5);
+  @include span-columns(6, block-collapse);
+  @include shift(2.5);
   @include clearfix;
   color: #fff;
   position: relative;
