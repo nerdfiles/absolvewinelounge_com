@@ -9198,6 +9198,10 @@ body.single-menu_item .menu-item-categories ul:after {
   clear: both;
 }
 
+.second-search {
+  margin-bottom: 1rem;
+}
+
 .site-header {
   /*overflow: hidden;*/
   padding: 0;
