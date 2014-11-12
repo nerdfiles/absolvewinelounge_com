@@ -7940,10 +7940,7 @@ body.login #lostpasswordform form label {
   color: #111;
 }
 
-.tribe-events-schedule {
-  color: #fff;
-}
-@media screen and (max-width: screen) {
+@media screen and (max-width: 480px) {
   .tribe-events-schedule {
     color: #111;
   }
@@ -9142,7 +9139,7 @@ body.search .search-title {
   background: #333333;
   padding-bottom: .1rem;
 }
-@media screen and (max-width: screen) {
+@media screen and (max-width: 480px) {
   .site-banner {
     float: left;
     display: block;
@@ -9213,7 +9210,7 @@ body.search .search-title {
   background-position: 50% 25%;
   height: 8rem;
 }
-@media screen and (max-width: screen) {
+@media screen and (max-width: 480px) {
   .site-banner .logo h1.blog-name {
     margin-bottom: 2rem;
   }
@@ -9373,7 +9370,7 @@ body.search .search-title {
   border-right: 5px double #F0C214;
 }
 
-@media screen and (max-width: screen) {
+@media screen and (max-width: 480px) {
   .site-twop {
     float: left;
     display: block;
@@ -9425,7 +9422,7 @@ body.search .search-title {
 .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after {
   color: #fff;
 }
-@media screen and (max-width: screen) {
+@media screen and (max-width: 480px) {
   .site-meta .searchform {
     float: left;
     display: block;
@@ -9478,7 +9475,7 @@ body.search .search-title {
 .site-meta .searchform input[type="text"] {
   padding: 0.5rem 0 0.5rem 3.06748%;
 }
-@media screen and (max-width: screen) {
+@media screen and (max-width: 480px) {
   .site-meta .searchform input[type="text"] {
     float: left;
     display: block;
@@ -9568,7 +9565,7 @@ body.search .search-title {
     top: .5rem;
   }
 }
-@media screen and (max-width: screen) {
+@media screen and (max-width: 480px) {
   .site-meta div.menu {
     float: left;
     display: block;
@@ -9615,7 +9612,7 @@ body.search .search-title {
 .site-meta .meta-menu:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: screen) {
+@media screen and (max-width: 480px) {
   .site-meta ul.menu {
     float: left;
     display: block;
@@ -9656,7 +9653,7 @@ body.search .search-title {
 .site-meta ul.menu li:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: screen) {
+@media screen and (max-width: 480px) {
   .site-meta ul.menu li {
     float: left;
     display: block;
