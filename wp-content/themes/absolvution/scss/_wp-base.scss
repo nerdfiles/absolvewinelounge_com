@@ -283,7 +283,7 @@ ol.comment-list .comment-edit-link {
 .comment-form-url {
   @include span-columns(12);
   label {
-    @include span-columns(3);
+    @include span-columns(6);
   }
   input[type="text"] {
     @include span-columns(6);
