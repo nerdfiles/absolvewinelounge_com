@@ -7941,21 +7941,25 @@ body.login #lostpasswordform form label {
 }
 
 @media screen and (max-width: 480px) {
+  .tribe-events-loop .tribe-events-event-meta,
   .tribe-events-schedule {
     color: #111;
   }
 }
 @media screen and (min-width: 481px) {
+  .tribe-events-loop .tribe-events-event-meta,
   .tribe-events-schedule {
     color: #111;
   }
 }
 @media screen and (min-width: 769px) {
+  .tribe-events-loop .tribe-events-event-meta,
   .tribe-events-schedule {
     color: #fff;
   }
 }
 @media screen and (min-width: 1025px) {
+  .tribe-events-loop .tribe-events-event-meta,
   .tribe-events-schedule {
     color: #fff;
   }

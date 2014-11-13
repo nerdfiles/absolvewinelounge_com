@@ -826,6 +826,7 @@ body.login #lostpasswordform {
 }
 
 .tribe-events-event-meta,
+.tribe-events-loop .tribe-events-event-meta,
 .tribe-events-schedule {
   @include media($small) {
     color: #111;
