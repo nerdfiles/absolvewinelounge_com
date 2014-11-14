@@ -107,6 +107,22 @@
     if (mobilecheck === false && $(window).width() > 768) {
       $vcalendar.css('margin-top', '-' + aw + 'px');
     }
+    if (mobilecheck === true) {
+      $('select.restrict').each(function() {
+        var select$;
+        select$ = $(this);
+        select$.wrap('<div class="select-wrapper not-showing"></div>');
+        return select$.find('option').each(function() {
+          var option$;
+          option$ = $(this);
+          return option$.closest('.select-wrapper').append("<div>" + (option$.text()) + "</div>");
+        });
+      });
+      $('.select-wrapper').on('click', function(e) {
+        $(this).toggleClass('not-showing');
+        return $(this).toggleClass('showing');
+      });
+    }
 
     /*
      */
