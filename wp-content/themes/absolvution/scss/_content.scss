@@ -452,9 +452,11 @@ select.restrict {
   border: none;
   padding: .3rem;
   color: #111;
-  -moz-appearance: none;
-  text-indent: 0.01px;
-  text-overflow: '';
+  /*
+   *-moz-appearance: none;
+   *text-indent: 0.01px;
+   *text-overflow: '';
+   */
   /*
    *@include media($large) {
    *  color: #ccc;
@@ -468,14 +470,14 @@ select.restrict {
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
-    color: #fff;
+    color: #111;
     /*font-size: 50px;*/
   }
 
   @include media($small) {
     /*font-size: 50px;*/
     background-color: #222;
-    color: #fff;
+    color: #111;
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
