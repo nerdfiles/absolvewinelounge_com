@@ -449,10 +449,20 @@ select.restrict {
   @include span-columns(6, block-collapse);
   @include shift(-.25);
   background-color: #222;
-  -moz-appearance: none;
-  text-indent: 0.01px;
-  text-overflow: '';
   border: none;
   padding: .3rem;
-  color: #ccc;
+  color: #111;
+
+  /*
+   *@include media($large) {
+   *  color: #ccc;
+   *  -moz-appearance: none;
+   *  text-indent: 0.01px;
+   *  text-overflow: '';
+   *}
+   */
+  @include media($small) {
+    color: #111;
+    @include span-columns(12);
+  }
 }
