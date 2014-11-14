@@ -525,6 +525,8 @@ body.events-single {
     content: "\f000";
     position: absolute;
     @include shift(1);
+    @extend .animated;
+    @extend .fade-in;
     font-size: 10rem;
     opacity: .4;
     top: 0;
