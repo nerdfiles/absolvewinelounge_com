@@ -23,7 +23,7 @@ casper = require('casper').create {
   stepTimeout    : 10000
   retryTimeout   : 150
   #clientScripts : ["jquery.min.js"]
-  viewportSize: responses.large
+  viewportSize: responses.small
   pageSettings:
     loadImages         : true
     loadPlugins        : true
