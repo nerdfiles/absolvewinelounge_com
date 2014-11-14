@@ -442,3 +442,17 @@ body.events-single {
   label.label-tribe-bar-search { color: #2E6F89; }
   label.label-tribe-bar-date { color: #2E6F89; }
 }
+
+select.restrict { 
+  position: relative;
+  z-index: 9001;
+  @include span-columns(6, block-collapse);
+  @include shift(-.25);
+  background-color: #222;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  border: none;
+  padding: .3rem;
+  color: #ccc;
+}
