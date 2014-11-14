@@ -516,3 +516,19 @@ body.events-single {
   }
 }
 
+
+.tribe-events-event-cost,
+#tribe-bar-form .tribe-bar-views-inner label {
+  @include media($small) {
+    color: #2E6F89;
+  }
+  @include media($medium) {
+    color: #2E6F89;
+  }
+  @include media($large) {
+    color: #2E6F89;
+  }
+  @include media($xlarge) {
+    color: #2E6F89;
+  }
+}
