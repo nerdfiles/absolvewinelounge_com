@@ -13,6 +13,7 @@ $browser = false;
 $mobile = false;
 $bot = false;
 $user_agent = strtolower( $_SERVER['HTTP_USER_AGENT'] );
+$type = 'mobile';
 if ( $type == 'bot' ) {
   // matches popular bots
   if ( preg_match( "/googlebot|adsbot|yahooseeker|yahoobot|msnbot|watchmouse|pingdom\.com|feedfetcher-google/", $user_agent ) ) {
@@ -80,7 +81,7 @@ if ( $type == 'bot' ) {
         //print_r($termchildren);
         if ( ! empty( $product_terms ) ) {
           if ( ! is_wp_error( $product_terms ) ) {
-              if (sizeof($product_terms) <= 3 || ($mobile == true && sizeof($product_terms) <= 3)) {
+              if (! $mobile || sizeof($product_terms) <= 3 ) {
                 echo '<ul>';
                 foreach( $product_terms as $term ) {
                   $term_id = get_term_by('id', $term->parent, 'menu');
