@@ -449,9 +449,15 @@ select.restrict {
   @include span-columns(6, block-collapse);
   @include shift(-.25);
   background-color: #222;
-  -moz-appearance: none;
-  text-indent: 0.01px;
-  text-overflow: '';
+
+  @include media($large) {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+  }
+  @include media($small) {
+    @include span-columns(12);
+  }
   border: none;
   padding: .3rem;
   color: #ccc;
