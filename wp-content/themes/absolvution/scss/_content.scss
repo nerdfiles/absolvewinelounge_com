@@ -451,7 +451,6 @@ select.restrict {
   background-color: #222;
   border: none;
   padding: .3rem;
-  color: #111;
   /*
    *-moz-appearance: none;
    *text-indent: 0.01px;
@@ -465,28 +464,27 @@ select.restrict {
    *  text-overflow: '';
    *}
    */
-  @include media(screen and (-webkit-min-device-pixel-ratio: 2)) {
-    background-color: #222;
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    color: #111;
-    /*font-size: 50px;*/
+  @include media($large) {
+    color: #ccc;
   }
-
+  @include media($medium) {
+    color: #ccc;
+  }
   @include media($small) {
     /*font-size: 50px;*/
     background-color: #222;
-    color: #111;
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
     @include span-columns(12);
   }
-  @include media($medium) {
-    color: #fff;
+  @include media(screen and (-webkit-min-device-pixel-ratio: 2)) {
+    background-color: #222;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    color: #111 !important;
+    /*font-size: 50px;*/
   }
-  @include media($large) {
-    color: #fff;
-  }
+
 }
