@@ -27,6 +27,9 @@ a {
   color: #111;
   outline: 0;
 }
+a:hover {
+  outline: 0 !important;
+}
 
 object, embed {
   outline: 0;
