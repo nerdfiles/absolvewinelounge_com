@@ -7,7 +7,6 @@
  * @since absolvution 1.0
  */
 ?>
-
 <article data-price="<?php echo get_post_meta(get_the_ID(), 'item_price', true); ?>" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<h1 class="post-title"><?php
@@ -65,6 +64,27 @@
         }
       ?>
       </div>
+
+      <!--?php
+        function custom_posts_per_tag($id, $post_type){
+          $args = array(
+                'post_type' => array($post_type),
+                'posts_per_page' => -1,
+                'tag_id' => $id
+          );
+          $the_query = new WP_Query( $args );
+          wp_reset_query();
+          return sizeof($the_query->posts);
+        }
+        $tags = get_tags();
+        global $wp_query;
+        $post_type = $wp_query->get('post_type');
+        foreach ($tags as $tag){
+          if (custom_posts_per_tag($tag->term_id, $post_type) > 0) {
+            /* Print tag link or whatever you wish here */
+          }
+        }
+      ?-->
 
       <!-- Item Price Specification -->
       <div class="price-tag">
