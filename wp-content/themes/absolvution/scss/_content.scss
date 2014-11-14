@@ -524,7 +524,7 @@ body.events-single {
     font-family: FontAwesome;
     content: "\f000";
     position: absolute;
-    @include shift(2);
+    @include shift(1);
     font-size: 10rem;
     opacity: .4;
     top: 0;
