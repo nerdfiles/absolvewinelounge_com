@@ -23,11 +23,13 @@ casper = require('casper').create {
   stepTimeout    : 10000
   retryTimeout   : 150
   #clientScripts : ["jquery.min.js"]
-  viewportSize: responses.medium
+  viewportSize: responses.small
   pageSettings:
     loadImages         : true
     loadPlugins        : true
-    userAgent          : 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv: 22.0) Gecko/20100101 Firefox/22.0'
+    #userAgent          : 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv: 22.0) Gecko/20100101 Firefox/22.0'
+    # iPhone
+    userAgent          : 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3'
     webSecurityEnabled : false
     ignoreSslErrors    : true
   onWaitTimeout: () ->
