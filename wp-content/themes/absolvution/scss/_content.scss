@@ -517,6 +517,22 @@ body.events-single {
 }
 
 
+.tribe-events-ajax-loading {
+  position: relative;
+  background-color: transparent;
+  &:before {
+    font-family: FontAwesome;
+    content: "\f000";
+    position: absolute;
+    @include shift(2);
+    font-size: 10rem;
+    opacity: .4;
+    top: 0;
+    width: 50px;
+    height: 50px;
+  }
+  img { display: none !important; }
+}
 .tribe-events-event-cost,
 .label-tribe-bar-date,
 .label-tribe-bar-search,
