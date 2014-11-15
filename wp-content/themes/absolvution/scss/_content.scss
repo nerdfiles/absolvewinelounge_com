@@ -553,9 +553,19 @@ body.events-single {
   }
 }
 
-body .site,
 .chi_display_header {
-  @extend .fade-in;
+  @extend .fade-left-in;
+  @extend .animated;
+}
+body {
+  background-color: #222;
+}
+body .r-out {
+  @extend .right-out;
+  @extend .animated;
+}
+body .r-in {
+  @extend .fade-left-in;
   @extend .animated;
 }
 .reply {

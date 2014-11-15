@@ -52,7 +52,7 @@
   </head>
 
   <body <?php body_class(); ?>>
-    <div class="site">
+    <div class="site ~r-in">
 
       <header itemscope itemtype="https://schema.org/WPHeader" class="site-header
         <?php if ( '' != get_custom_header()->url ) : ?>

@@ -698,6 +698,11 @@ body.term-foods {
     opacity: .5;
   }
 
+  .menu-item-tags + .menu-item-categories {
+    display: none;
+  }
+
+  .menu-item-tags,
   .menu-item-categories {
     position: absolute;
     top: 3.2rem;
@@ -769,6 +774,7 @@ body.single-menu_item {
       content: "USD";
     }
   }
+  .menu-item-tags,
   .menu-item-categories {
     margin-top: 1rem;
     @include span-columns(10);
