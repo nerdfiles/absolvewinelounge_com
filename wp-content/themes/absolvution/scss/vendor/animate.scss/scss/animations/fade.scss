@@ -662,3 +662,76 @@
 .fade-up-big-out {
   @include animation-name(fade-up-big-out);
 }
+
+
+// ### Fade Right Out
+
+@mixin right-out($vendor: "") {
+  0% {
+    opacity: 1;
+    #{$vendor}transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    #{$vendor}transform: translateX(320px);
+  }
+}
+
+@keyframes right-out {
+  @include right-out;
+}
+
+
+@-webkit-keyframes right-out {
+  @include right-out(-webkit-);
+}
+
+
+@-o-keyframes right-out {
+  @include right-out(-o-);
+}
+
+
+@-moz-keyframes right-out {
+  @include right-out(-moz-);
+}
+
+
+.right-out {
+  @include animation-name(right-out);
+}
+
+// ### Left In
+
+@mixin left-in($vendor: "") {
+  0% {
+    #{$vendor}transform: translateX(-20px);
+  }
+  100% {
+    #{$vendor}transform: translateX(0);
+  }
+}
+
+@keyframes left-in {
+  @include left-in;
+}
+
+
+@-webkit-keyframes left-in {
+  @include left-in(-webkit-);
+}
+
+
+@-o-keyframes left-in {
+  @include left-in(-o-);
+}
+
+
+@-moz-keyframes left-in {
+  @include left-in(-moz-);
+}
+
+
+.left-in {
+  @include animation-name(left-in);
+}

@@ -74,9 +74,24 @@ if ( $type == 'bot' ) {
 
       <?php the_excerpt(); ?>
 
-      <div class="menu-item-categories">
       <?php
         $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
+        $tags = get_the_tag_list();
+        if ( ! empty( $tags ) ) {
+          if(get_the_tag_list()) {
+            ?>
+            <div class="menu-item-tags">
+            <?php
+              echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
+            ?>
+            </div>
+            <?php
+          }
+        }
+      ?>
+
+      <div class="menu-item-categories">
+      <?php
         //$termchildren = get_term_children( $term_id->term_id, 'menu' );
         //print_r($termchildren);
         if ( ! empty( $product_terms ) ) {
