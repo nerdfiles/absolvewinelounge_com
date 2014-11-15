@@ -35,7 +35,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
       return check;
     })();
     if (mobilecheck) {
-      bodySite$ = $('body:not(.home) .site');
+      bodySite$ = $('body:not(.home):not(.page-gallery) .site');
       bodySite$.addClass('r-in');
       a$ = $('.menu a, .post-title a, .site-header a[href]').on('click.Intercept', function(e) {
         var $this, href, hrefS, t;
