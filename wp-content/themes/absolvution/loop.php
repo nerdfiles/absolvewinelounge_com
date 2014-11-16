@@ -76,22 +76,24 @@ if ( $type == 'bot' ) {
 
       <?php
         $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
-        $tags = get_the_tag_list();
+        $tags = get_the_term_list();
         if ( ! empty( $tags ) ) {
-          if(get_the_tag_list()) {
+          if(get_the_term_list()) {
             ?>
-            <div class="menu-item-tags">
-            <ul>
-            <?php
-              $posttags = get_the_tags();
+            <div class="menu-item-tags menu-item-categories">
+<?php
+              $posttags = get_the_terms();
               if ($posttags) {
-                foreach($posttags as $tag) {
-                  echo '<li><a href="/menu/' . str_replace(' ', '-', strtolower($tag->name)) . '">' . $tag->name . '</a></li>';
+                echo '<select class="restrict">';
+                foreach( $posttags as $tag) {
+                  //$term_id = get_term_by('id', $term->parent, 'menu');
+                  if ( 'regions' != strtolower($tag->name) && 'wine' != strtolower($tag->name) ) {
+                      echo '<option onChange="document.location.href=this.options[this.selectedIndex].value;">' . $tag->name . '</option>';
+                  }
                 }
+                echo '</select>';
               }
-              //echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
-            ?>
-            </ul>
+?>
             </div>
             <?php
           }
@@ -104,14 +106,14 @@ if ( $type == 'bot' ) {
         //print_r($termchildren);
         if ( ! empty( $product_terms ) ) {
           if ( ! is_wp_error( $product_terms ) ) {
-              if (! $mobile || sizeof($product_terms) <= 3 ) {
+              if (sizeof($product_terms) <= 4 ) {
                 echo '<ul>';
                 foreach( $product_terms as $term ) {
                   $term_id = get_term_by('id', $term->parent, 'menu');
                   if ( '' != $term->parent && 'regions' != $term->slug && 'wine' != $term->slug ) {
                     if ( is_tax('menu', $term->slug) ) {
                     } else {
-                      echo '<li><a href="' . get_term_link( $term->slug, 'menu' ) . '">' . $term->name . '</a></li>';
+                      echo '<li>' . $term->name . '</li>';
                     }
                   }
                 }

@@ -785,10 +785,13 @@ body.single-menu_item {
     }
     font-variant: small-caps;
     text-transform: lowercase;
-    a {
+    li {
       color: #fff;
       border-left: 3px #f0c214 double;
       padding-left: .5rem;
+    }
+    a {
+      color: #fff;
     }
     ul {
       margin: 0;

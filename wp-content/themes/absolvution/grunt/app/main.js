@@ -1,6 +1,6 @@
 (function() {
   (function($) {
-    var $search, $vcalendar, a$, aw, i, mobilecheck, postContentHeight, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
+    var $search, $vcalendar, aw, i, mobilecheck, postContentHeight, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
     $("body").attr('jquery-version', $.fn.jquery);
 
     /*
@@ -19,26 +19,28 @@
       })(navigator.userAgent || navigator.vendor || window.opera);
       return check;
     })();
-    if (mobilecheck) {
-      a$ = $('.menu a, .post-title a, .site-header a[href]').on('click.Intercept', function(e) {
-        var $this, bodySite$, href, hrefS, t;
-        $this = $(this);
-        href = $this.attr('href');
-        hrefS = href.split('/');
-        if (hrefS.length === 3) {
-          e.preventDefault();
-          window.location.href = href;
-          return;
-        }
-        bodySite$ = $('body:not(.home) .site');
-        bodySite$.removeClass('r-in');
-        bodySite$.addClass('r-out');
-        return t = window.setTimeout(function() {
-          window.clearTimeout(t);
-          return window.location.href = href;
-        }, 0);
-      });
-    }
+
+    /*
+    if mobilecheck
+       *bodySite$ = $ 'body:not(.home):not(.page-gallery) .site'
+       *bodySite$.addClass 'r-in'
+      a$ = $('.menu a, .post-title a, .site-header a[href]').on 'click.Intercept', (e) ->
+        $this = $ this
+        href = $this.attr 'href'
+        hrefS = href.split('/')
+         *window.alert hrefS
+        if hrefS.length == 3
+          e.preventDefault()
+          window.location.href = href
+          return
+        bodySite$ = $ 'body:not(.home) .site'
+        bodySite$.removeClass 'r-in'
+        bodySite$.addClass 'r-out'
+        t = window.setTimeout(() ->
+          window.clearTimeout(t)
+          window.location.href = href
+        , 0)
+     */
 
     /*
     Site Search
@@ -126,22 +128,20 @@
     if (mobilecheck === false && $(window).width() > 768) {
       $vcalendar.css('margin-top', '-' + aw + 'px');
     }
-    if (mobilecheck === true) {
-      $('select.restrict').each(function() {
-        var select$;
-        select$ = $(this);
-        select$.wrap('<div class="select-wrapper not-showing"></div>');
-        return select$.find('option').each(function() {
-          var option$;
-          option$ = $(this);
-          return option$.closest('.select-wrapper').append("<div>" + (option$.text()) + "</div>");
-        });
+    $('select.restrict').each(function() {
+      var select$;
+      select$ = $(this);
+      select$.wrap('<div class="select-wrapper not-showing"></div>');
+      return select$.find('option').each(function() {
+        var option$;
+        option$ = $(this);
+        return option$.closest('.select-wrapper').append("<div>" + (option$.text()) + "</div>");
       });
-      $('.select-wrapper').on('click', function(e) {
-        $(this).toggleClass('not-showing');
-        return $(this).toggleClass('showing');
-      });
-    }
+    });
+    $('.select-wrapper').on('click', function(e) {
+      $(this).toggleClass('not-showing');
+      return $(this).toggleClass('showing');
+    });
     if (mobilecheck === false) {
       postContentHeight = $('body.home .post-content').height();
       if (mobilecheck === false) {
