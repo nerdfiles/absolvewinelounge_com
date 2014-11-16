@@ -30,6 +30,29 @@ get_header(); ?>
           </div>
         <?php } ?>
 
+        <?php
+          $tags = get_the_tag_list();
+          if ( ! empty( $tags ) ) {
+            if(get_the_tag_list()) {
+              ?>
+              <div class="menu-item-tags">
+              <ul>
+              <?php
+                $posttags = get_the_tags();
+                if ($posttags) {
+                  foreach($posttags as $tag) {
+                    echo '<li><a href="/menu/' . str_replace(' ', '-', strtolower($tag->name)) . '">' . $tag->name . '</a></li>';
+                  }
+                }
+                //echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
+              ?>
+              </ul>
+              </div>
+              <?php
+            }
+          }
+        ?>
+
         <div class="menu-item-categories">
         <?php
           if ( ! empty( $product_terms ) ) {
