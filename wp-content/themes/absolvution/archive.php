@@ -62,19 +62,30 @@ get_header(); ?>
         </div>
       <?php } ?>
 
-      <?php if ( is_tax( 'menu', 'wine' ) ) { ?>
-        <div class="menu"><?php
-          $wine_nav_menu = wp_nav_menu(
-            array(
-              'container' => 'nav',
-              'container_class' => 'wine-menu',
-              'items_wrap' => '<ul class="%2$s">%3$s</ul>',
-              'theme_location' => 'wine-menu',
-              'fallback_cb' => '__return_false',
-            )
-          ); ?>
-        </div>
-      <?php } ?>
+      <?php
+        $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
+        $parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
+        $children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
+        if (($parent->term_id!="" && sizeof($children)>0) && ($parent->slug=='drinks'||$parent->slug=='wine'||$parent->slug=='wines')) {
+        ?>
+          <div class="menu"><?php
+            $wine_nav_menu = wp_nav_menu(
+              array(
+                'container' => 'nav',
+                'container_class' => 'wines-menu',
+                'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+                'theme_location' => 'wines-menu',
+                'fallback_cb' => '__return_false',
+              )
+            ); ?>
+          </div>
+        <?php
+        } elseif (($parent->term_id!="") && (sizeof($children)==0)) {
+          // has parent, no child
+        } elseif (($parent->term_id=="") && (sizeof($children)>0)) {
+          // no parent, has child
+        }
+      ?>
 
       <?php if ( is_tax( 'menu', 'foods' ) ) { ?>
         <div class="menu"><?php
