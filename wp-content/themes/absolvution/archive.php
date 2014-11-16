@@ -73,9 +73,9 @@ get_header(); ?>
             $wine_nav_menu = wp_nav_menu(
               array(
                 'container' => 'nav',
-                'container_class' => 'wines-menu',
+                'container_class' => 'wine-menu',
                 'items_wrap' => '<ul class="%2$s">%3$s</ul>',
-                'theme_location' => 'wines-menu',
+                'theme_location' => 'wine-menu',
                 'fallback_cb' => '__return_false',
               )
             ); ?>
