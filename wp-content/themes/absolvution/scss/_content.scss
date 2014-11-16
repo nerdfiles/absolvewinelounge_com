@@ -554,10 +554,8 @@ body.events-single {
 }
 
 .chi_display_header {
-  /*
-   *@extend .fade-left-in;
-   *@extend .animated;
-   */
+  @extend .fade-in;
+  @extend .animated;
 }
 
 body {
@@ -634,3 +632,8 @@ body .site {
     }
 }
 
+
+.tribe-events-calendar .tribe-events-tooltip {
+  background-color: #222;
+  color: #fff;
+}
