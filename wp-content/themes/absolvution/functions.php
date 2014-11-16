@@ -383,7 +383,7 @@ function wine_menus_archive( $query ) {
         ) );
     }
 
-    if ( ( $query->is_tax( 'menu', 'white' ) || $query->is_tax( 'menu', 'champagne' ) || $query->is_tax( 'menu', 'dessert' ) || $query->is_tax( 'menu', 'rose' ) || $query->is_tax( 'menu', 'red' ) ) && $query->is_main_query() ) {
+    if ( ( $query->is_tax( 'menu', 'white' ) || $query->is_tax( 'menu', 'sparkling' ) || $query->is_tax( 'menu', 'dessert' ) || $query->is_tax( 'menu', 'rose' ) || $query->is_tax( 'menu', 'red' ) ) && $query->is_main_query() ) {
         $query->set( 'posts_per_page', 25 );
         //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
         $query->set( 'post_type', array( 'menu_item' ) );
