@@ -55,7 +55,7 @@
   </head>
 
   <body <?php body_class(); ?>>
-    <div class="site r-in">
+    <div class="site ~r-in">
 
       <header itemscope itemtype="https://schema.org/WPHeader" class="site-header
         <?php if ( '' != get_custom_header()->url ) : ?>
@@ -126,13 +126,11 @@
           </div>
 
           <div class="site-caro">
-
             <?php if(function_exists('chi_display_header')) {
               chi_display_header();
             } ?>
 
             <div class="menu">
-
               <!--
                 Another Logo Placement
               -->

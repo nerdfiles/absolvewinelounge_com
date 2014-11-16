@@ -71,13 +71,17 @@ class MenuItemPostType {
       'not_found_in_trash' => __('No ' . $this->plural . ' found in Trash'),
       'parent_item_colon' => ''
     );
+
     $options = array(
       'labels' => $labels,
       'public' => true,
       'publicly_queryable' => true,
       'show_ui' => true,
       'query_var' => true,
-      'rewrite' => array('slug' => strtolower($this->plural)),
+      '_builtin' => false,
+      'rewrite' => array(
+        'slug' => strtolower($this->plural)
+      ),
       'capability_type' => 'post',
       'hierarchical' => false,
       'has_archive' => true,
@@ -110,6 +114,9 @@ class MenuItemPostType {
 	}
 
 	function add_taxonomies() {
+
+    register_taxonomy_for_object_type('post_tag', 'menu_item');
+
 	  register_taxonomy(
 	  	'menu',
 	  	array($this->type),
@@ -202,6 +209,17 @@ class MenuItemPostType {
 	}
 
 }
+
+function add_custom_types_to_tax( $query ) {
+  if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+  // Get all your post types
+  //$post_types = get_post_types();
+  $post_types = array( 'post', 'menu_item' );
+  $query->set( 'post_type', $post_types );
+    return $query;
+  }
+}
+add_filter( 'pre_get_posts', 'add_custom_types_to_tax' );
 
 class Tribe_Demo_APM {
 
