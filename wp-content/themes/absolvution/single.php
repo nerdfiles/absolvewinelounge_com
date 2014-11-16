@@ -78,7 +78,7 @@ get_header(); ?>
                     //$children = get_term_children($term->term_id, get_query_var('taxonomy'));
                     $parent = get_term($term->parent, 'menu');
                     // &&$parent!='wine')
-                    if (($term->slug!="wine"&&$term->slug!="drinks")) {
+                    if (($term->slug!="wine"&&$term->slug!="foods"&&$term->slug!="drinks")) {
                       echo '<li><a href="' . get_term_link( $term->slug, 'menu' ) . '">' . $term->name . '</a></li>';
                     }
                   }
