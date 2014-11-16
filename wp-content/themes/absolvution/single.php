@@ -31,43 +31,46 @@ get_header(); ?>
         <?php } ?>
 
         <?php
-          $tags = get_the_tag_list();
+          $tags = get_the_term_list();
           if ( ! empty( $tags ) ) {
-            if(get_the_tag_list()) {
+            if(get_the_term_list()) {
               ?>
               <div class="menu-item-tags">
               <ul>
               <?php
-                $posttags = get_the_tags();
+                $posttags = get_the_terms();
                 if ($posttags) {
                   foreach($posttags as $tag) {
-                    echo '<li><a href="/menu/' . str_replace(' ', '-', strtolower($tag->name)) . '">' . $tag->name . '</a></li>';
+                    echo '<li>' . $tag->name . '</li>';
                   }
                 }
-                //echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
+                //echo get_the_term_list('<ul><li>','</li><li>','</li></ul>');
               ?>
               </ul>
               </div>
               <?php
             }
-          }
+          } else {
         ?>
 
         <div class="menu-item-categories">
         <?php
-          if ( ! empty( $product_terms ) ) {
-            if ( ! is_wp_error( $product_terms ) ) {
-              echo '<ul>';
-                foreach( $product_terms as $term ) {
-                  if ( '' != $term->parent ) {
-                    echo '<li><a href="' . get_term_link( $term->slug, 'menu' ) . '">' . $term->name . '</a></li>';
+            if ( ! empty( $product_terms ) ) {
+              if ( ! is_wp_error( $product_terms ) ) {
+                echo '<ul>';
+                  foreach( $product_terms as $term ) {
+                    if ( '' != $term->parent ) {
+                      echo '<li><a href="' . get_term_link( $term->slug, 'menu' ) . '">' . $term->name . '</a></li>';
+                    }
                   }
-                }
-              echo '</ul>';
+                echo '</ul>';
+              }
             }
-          }
         ?>
         </div>
+        <?php
+          }
+        ?>
 
 				<aside class="post-aside">
 
