@@ -76,28 +76,30 @@ if ( $type == 'bot' ) {
 
       <?php
         $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
-        $tags = get_the_term_list();
-        if ( ! empty( $tags ) ) {
-          if(get_the_term_list()) {
-            ?>
-            <div class="menu-item-tags menu-item-categories">
-            <?php
-              $posttags = get_the_terms();
-              if ($posttags) {
-                echo '<select class="restrict">';
-                foreach( $posttags as $tag) {
-                  //$term_id = get_term_by('id', $term->parent, 'menu');
-                  if ( 'regions' != strtolower($tag->name) && 'wine' != strtolower($tag->name) ) {
-                      echo '<option onChange="document.location.href=this.options[this.selectedIndex].value;">' . $tag->name . '</option>';
-                  }
-                }
-                echo '</select>';
-              }
-            ?>
-            </div>
-            <?php
-          }
-        }
+        //$tags = get_the_term_list();
+        /*
+         *if ( ! empty( $tags ) ) {
+         *  if(get_the_term_list()) {
+         *    ?>
+         *    <div class="menu-item-tags menu-item-categories">
+         *    <?php
+         *      $posttags = get_the_terms();
+         *      if ($posttags) {
+         *        echo '<select class="restrict">';
+         *        foreach( $posttags as $tag) {
+         *          //$term_id = get_term_by('id', $term->parent, 'menu');
+         *          if ( 'regions' != strtolower($tag->name) && 'wine' != strtolower($tag->name) ) {
+         *              echo '<option onChange="document.location.href=this.options[this.selectedIndex].value;">' . $tag->name . '</option>';
+         *          }
+         *        }
+         *        echo '</select>';
+         *      }
+         *    ?>
+         *    </div>
+         *    <?php
+         *  }
+         *}
+         */
       ?>
 
       <div class="menu-item-categories">
