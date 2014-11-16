@@ -71,7 +71,8 @@ $g: 50px;
       @extend .pulse;
       background-image: url('//absolvewinelounge.com/wp/wp-content/uploads/2014/11/absolve-wine-lounge-logo-white.png');
       background-repeat: no-repeat;
-      background-size: 100% auto;
+      /*background-size: 100% auto;*/
+      background-size: contain !important;
       background-position: 50% 25%;
       @include media($medium) {
         background-size: 50% auto;
