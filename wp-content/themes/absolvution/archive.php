@@ -66,7 +66,7 @@ get_header(); ?>
         $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
         $parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
         $children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
-        if (($parent->term_id!="" && sizeof($children)>0) && ($parent->slug=='drinks'||$parent->slug=='wine'||$parent->slug=='wines')) {
+        if (($parent->term_id!="" && sizeof($children)>0) && ($parent->slug=='wine'||$parent->slug=='wines')) {
         ?>
           <div class="menu"><?php
             $wine_nav_menu = wp_nav_menu(
