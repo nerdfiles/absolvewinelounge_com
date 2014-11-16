@@ -31,26 +31,28 @@ get_header(); ?>
         <?php } ?>
 
         <?php
-          $tags = get_the_term_list();
-          if ( ! empty( $tags ) ) {
-            if(get_the_term_list()) {
-              ?>
-              <div class="menu-item-tags">
-              <ul>
-              <?php
-                $posttags = get_the_terms();
-                if ($posttags) {
-                  foreach($posttags as $tag) {
-                    echo '<li>' . $tag->name . '</li>';
-                  }
-                }
-                //echo get_the_term_list('<ul><li>','</li><li>','</li></ul>');
-              ?>
-              </ul>
-              </div>
-              <?php
-            }
-          } else {
+          /*
+           *$tags = get_the_term_list();
+           *if ( ! empty( $tags ) ) {
+           *  if(get_the_term_list()) {
+           *    ?>
+           *    <div class="menu-item-tags">
+           *    <ul>
+           *    <?php
+           *      $posttags = get_the_terms();
+           *      if ($posttags) {
+           *        foreach($posttags as $tag) {
+           *          echo '<li>' . $tag->name . '</li>';
+           *        }
+           *      }
+           *      //echo get_the_term_list('<ul><li>','</li><li>','</li></ul>');
+           *    ?>
+           *    </ul>
+           *    </div>
+           *    <?php
+           *  }
+           *} else {
+           */
         ?>
 
         <div class="menu-item-categories">
@@ -69,7 +71,9 @@ get_header(); ?>
         ?>
         </div>
         <?php
-          }
+          /*
+           *}
+           */
         ?>
 
 				<aside class="post-aside">
