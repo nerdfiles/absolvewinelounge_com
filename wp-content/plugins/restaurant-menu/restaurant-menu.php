@@ -124,7 +124,7 @@ class MenuItemPostType {
 		  	'public' => true,
 		    'query_var' => true,
 		    'rewrite' => array(
-		    	'slug' => 'menu'
+          'slug' => 'menu'
 		    ),
 		  )
 		 );

@@ -81,9 +81,17 @@ if ( $type == 'bot' ) {
           if(get_the_tag_list()) {
             ?>
             <div class="menu-item-tags">
+            <ul>
             <?php
-              echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
+              $posttags = get_the_tags();
+              if ($posttags) {
+                foreach($posttags as $tag) {
+                  echo '<li><a href="/menu/' . $tag->name . '">' . $tag->name . '</li>';
+                }
+              }
+              //echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
             ?>
+            </ul>
             </div>
             <?php
           }
