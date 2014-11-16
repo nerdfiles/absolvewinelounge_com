@@ -62,12 +62,11 @@ get_header(); ?>
         </div>
       <?php } ?>
 
-      <?php if ( is_tax( 'menu', 'wine' ) ) { ?>
       <?php
         $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
         $parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
         $children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
-        if (($parent->term_id!="" && sizeof($children)>0) && ($parent->slug=='wine'||$parent->slug=='wines')) {
+        if (($term->slug=='wine'||$term->slug=='wines') || ($parent->term_id=="") && (sizeof($children)==0)) {
         ?>
           <div class="menu"><?php
             $wine_nav_menu = wp_nav_menu(
@@ -86,7 +85,6 @@ get_header(); ?>
         } elseif (($parent->term_id=="") && (sizeof($children)>0)) {
           // no parent, has child
         }
-      }
       ?>
 
       <?php if ( is_tax( 'menu', 'foods' ) ) { ?>
