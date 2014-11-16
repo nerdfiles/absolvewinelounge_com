@@ -62,7 +62,7 @@ get_header(); ?>
         </div>
       <?php } ?>
 
-      <?php if ( is_tax( 'menu', 'foods' ) ) { ?>
+      <?php if ( is_tax( 'menu', 'wine' ) ) { ?>
       <?php
         $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
         $parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
