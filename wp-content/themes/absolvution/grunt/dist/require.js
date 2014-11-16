@@ -147,6 +147,8 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
     pc = $('body.home .post-content');
     plH = parseInt(pl.height(), 8);
     pcH = parseInt(pc.height(), 8);
+    console.log(plH);
+    console.log(pcH);
     nPlH = pcH + plH;
     pl.height(nPlH);
     $('select.restrict').each(function() {
