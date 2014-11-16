@@ -1,6 +1,6 @@
 (function() {
   (function($) {
-    var $search, $vcalendar, aw, i, mobilecheck, postContentHeight, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
+    var $search, $vcalendar, aw, i, mobilecheck, nPlH, pc, pcH, pl, plH, postContentHeight, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
     $("body").attr('jquery-version', $.fn.jquery);
 
     /*
@@ -128,6 +128,12 @@
     if (mobilecheck === false && $(window).width() > 768) {
       $vcalendar.css('margin-top', '-' + aw + 'px');
     }
+    pl = $('body.home .placeholder');
+    pc = $('body.home .post-content');
+    plH = parseInt(pl.height(), 8);
+    pcH = parseInt(pc.height(), 8);
+    nPlH = pcH + plH;
+    pl.height(nPlH);
     $('select.restrict').each(function() {
       var select$;
       select$ = $(this);
@@ -151,7 +157,7 @@
 
     /*
      */
-    $('.site-footer').after('<a target="_blank" href="http://nerdfiles.net"><img src="http://nerdfiles.net/assets/img-ui/favicon.png" /></a>');
+    $('.site-footer').after('<a style="position: relative; left: .5rem;" target="_blank" href="http://nerdfiles.net"><img src="http://nerdfiles.net/assets/img-ui/favicon.png" /></a>');
   })(jQuery);
 
 }).call(this);
