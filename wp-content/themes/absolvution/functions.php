@@ -96,8 +96,33 @@ if ( function_exists( 'register_sidebars' ) ) {
   register_sidebar(
     array(
       'id' => 'menu-archive-widgets',
-      'name' => __( 'Menu Archive widgets', 'absolvution' ),
-      'description' => __( 'Shows on Menu Archive page', 'absolvution' )
+      'name' => __( 'Menu (Submenu) widgets', 'absolvution' ),
+      'description' => __( 'Shows on Menu page(s)', 'absolvution' )
+    )
+  );
+
+  register_sidebar(
+    array(
+      'id' => 'menu-wines-introduction-widgets',
+      'name' => __( 'Menu Wines Introduction widgets', 'absolvution' ),
+      'description' => __( 'Shows on Wines Menu page', 'absolvution' )
+    )
+  );
+
+
+  register_sidebar(
+    array(
+      'id' => 'menu-drinks-introduction-widgets',
+      'name' => __( 'Menu Drinks Introduction widgets', 'absolvution' ),
+      'description' => __( 'Shows on Drinks Menu page', 'absolvution' )
+    )
+  );
+
+  register_sidebar(
+    array(
+      'id' => 'menu-foods-introduction-widgets',
+      'name' => __( 'Menu Foods Introduction widgets', 'absolvution' ),
+      'description' => __( 'Shows on Foods Menu page', 'absolvution' )
     )
   );
 
