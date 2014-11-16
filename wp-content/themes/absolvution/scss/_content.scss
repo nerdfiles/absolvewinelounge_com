@@ -557,6 +557,7 @@ body.events-single {
   @extend .fade-left-in;
   @extend .animated;
 }
+
 body {
   background-color: #222;
 }
@@ -567,6 +568,43 @@ body .r-out {
 body .r-in {
   @extend .fade-left-in;
   @extend .animated;
+}
+
+@mixin left-in($vendor: "") {
+  0% {
+    #{$vendor}transform: translateX(-20px);
+  }
+  100% {
+    #{$vendor}transform: translateX(0);
+  }
+}
+body .site {
+  @include media($small) {
+
+    @keyframes left-in {
+      @include left-in;
+    }
+
+
+    @-webkit-keyframes left-in {
+      @include left-in(-webkit-);
+    }
+
+
+    @-o-keyframes left-in {
+      @include left-in(-o-);
+    }
+
+
+    @-moz-keyframes left-in {
+      @include left-in(-moz-);
+    }
+
+
+    .left-in {
+      @include animation-name(left-in);
+    }
+  }
 }
 
 .reply {
