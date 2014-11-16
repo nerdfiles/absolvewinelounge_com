@@ -73,7 +73,7 @@ $g: 50px;
       background-repeat: no-repeat;
       /*background-size: 100% auto;*/
       background-size: contain !important;
-      background-position: 50% 25%;
+      background-position: 50% -25px !important;
       @include media($medium) {
         background-size: 50% auto;
       }
