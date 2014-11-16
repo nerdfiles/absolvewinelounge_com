@@ -62,6 +62,7 @@ get_header(); ?>
         </div>
       <?php } ?>
 
+      <?php if ( is_tax( 'menu', 'foods' ) ) { ?>
       <?php
         $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
         $parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
@@ -85,6 +86,7 @@ get_header(); ?>
         } elseif (($parent->term_id=="") && (sizeof($children)>0)) {
           // no parent, has child
         }
+      }
       ?>
 
       <?php if ( is_tax( 'menu', 'foods' ) ) { ?>
