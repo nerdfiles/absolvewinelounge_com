@@ -1,6 +1,6 @@
 (function() {
   (function($) {
-    var $search, $vcalendar, a$, aw, bodySite$, i, mobilecheck, postContentHeight, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
+    var $search, $vcalendar, a$, aw, i, mobilecheck, postContentHeight, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
     $("body").attr('jquery-version', $.fn.jquery);
 
     /*
@@ -20,10 +20,8 @@
       return check;
     })();
     if (mobilecheck) {
-      bodySite$ = $('body:not(.home):not(.page-gallery) .site');
-      bodySite$.addClass('r-in');
       a$ = $('.menu a, .post-title a, .site-header a[href]').on('click.Intercept', function(e) {
-        var $this, href, hrefS, t;
+        var $this, bodySite$, href, hrefS, t;
         $this = $(this);
         href = $this.attr('href');
         hrefS = href.split('/');

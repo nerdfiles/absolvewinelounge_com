@@ -568,6 +568,7 @@ body .r-in {
   @extend .fade-left-in;
   @extend .animated;
 }
+
 .reply {
   display: none;
 }
@@ -592,5 +593,4 @@ body .r-in {
         -webkit-transform: translateX(0);
     }
 }
-
 
