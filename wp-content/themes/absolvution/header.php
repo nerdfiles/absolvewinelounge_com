@@ -44,6 +44,9 @@
     <!--[if lt IE 9]>
       <script src="<?php echo get_template_directory_uri(); ?>/grunt/bower_components/html5shiv/dist/html5shiv.min.js"></script>
     <![endif]-->
+    <link rel="icon"
+          type="image/png"
+          href="http://absolvewinelounge.com/wp/favicon.png" />
     <?php wp_head(); ?>
     <!--[if (gte IE 6)&(lte IE 8)]>
       <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/grunt/bower_components/selectivizr/selectivizr.js"></script>
@@ -52,7 +55,7 @@
   </head>
 
   <body <?php body_class(); ?>>
-    <div class="site ~r-in">
+    <div class="site r-in">
 
       <header itemscope itemtype="https://schema.org/WPHeader" class="site-header
         <?php if ( '' != get_custom_header()->url ) : ?>
