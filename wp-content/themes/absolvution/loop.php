@@ -81,7 +81,7 @@ if ( $type == 'bot' ) {
           if(get_the_term_list()) {
             ?>
             <div class="menu-item-tags menu-item-categories">
-<?php
+            <?php
               $posttags = get_the_terms();
               if ($posttags) {
                 echo '<select class="restrict">';
@@ -93,7 +93,7 @@ if ( $type == 'bot' ) {
                 }
                 echo '</select>';
               }
-?>
+            ?>
             </div>
             <?php
           }

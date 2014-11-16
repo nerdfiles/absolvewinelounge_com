@@ -18,7 +18,7 @@ get_header(); ?>
             printf( __( 'Category Archives: %s', 'absolvution' ), single_cat_title( '', false ) );
 
           elseif ( is_tag() ):
-            printf( __( 'Tag Archives: %s', 'absolvution' ), single_tag_title( '', false ) );
+            printf( __( 'List: %s', 'absolvution' ), single_tag_title( '', false ) );
 
           elseif ( is_tax() ):
             $term     = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
