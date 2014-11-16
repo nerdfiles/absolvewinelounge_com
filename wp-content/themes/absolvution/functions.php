@@ -89,7 +89,7 @@ if ( function_exists( 'register_sidebars' ) ) {
     array(
       'id' => 'footer-sidebar',
       'name' => __( 'Footer widgets', 'absolvution' ),
-      'description' => __( 'Shows in the sites footer', 'absolvution' )
+      'description' => __( "Shows in the site's footer", 'absolvution' )
     )
   );
 
