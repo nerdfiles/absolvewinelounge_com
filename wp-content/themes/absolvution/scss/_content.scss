@@ -554,8 +554,10 @@ body.events-single {
 }
 
 .chi_display_header {
-  @extend .fade-left-in;
-  @extend .animated;
+  /*
+   *@extend .fade-left-in;
+   *@extend .animated;
+   */
 }
 
 body {
