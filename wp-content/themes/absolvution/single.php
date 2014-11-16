@@ -57,11 +57,28 @@ get_header(); ?>
 
         <div class="menu-item-categories">
         <?php
+
+          /*
+           *$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
+           *$parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
+           *$children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
+           *if(($parent->term_id!="" && sizeof($children)>0)) {
+           *  // has parent and child
+           *}elseif(($parent->term_id!="") && (sizeof($children)==0)) {
+           *  // has parent, no child
+           *}elseif(($parent->term_id=="") && (sizeof($children)>0)) {
+           *  // no parent, has child
+           *}
+           */
+
             if ( ! empty( $product_terms ) ) {
               if ( ! is_wp_error( $product_terms ) ) {
                 echo '<ul>';
                   foreach( $product_terms as $term ) {
-                    if ( '' != $term->parent ) {
+                    //$children = get_term_children($term->term_id, get_query_var('taxonomy'));
+                    $parent = get_term($term->parent, 'menu');
+                    // &&$parent!='wine')
+                    if (($term->slug!="wine"&&$term->slug!="drinks")) {
                       echo '<li><a href="' . get_term_link( $term->slug, 'menu' ) . '">' . $term->name . '</a></li>';
                     }
                   }
