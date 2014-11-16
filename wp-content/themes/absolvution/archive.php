@@ -6,7 +6,10 @@
  * @subpackage absolvution
  * @since absolvution 1.0
  */
-
+$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
+$parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
+$children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
+$req = $_SERVER['REQUEST_URI'];
 get_header(); ?>
 
 	<section class="page-content primary" role="main">
@@ -63,11 +66,8 @@ get_header(); ?>
       <?php } ?>
 
       <?php
-        $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
-        $parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
-        $children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
-        $req = $_SERVER['REQUEST_URI'];
-        if ($parent->slug!='wine' && strpos($req, 'drinks') == false) {
+        if (($parent->slug=='drinks'&&strpos($req, 'drinks')==false)) {
+        //if ($parent->slug!='wine' && $parent->slug!='foods' && strpos($req, 'drinks') != true && strpos($req, 'menu') == true) {
         ?>
           <div class="menu"><?php
             $wine_nav_menu = wp_nav_menu(
@@ -84,7 +84,9 @@ get_header(); ?>
         }
       ?>
 
-      <?php if ( is_tax( 'menu', 'foods' ) ) { ?>
+      <?php
+        if ($parent->slug == 'foods') {
+      ?>
         <div class="menu"><?php
           $foods_nav_menu = wp_nav_menu(
             array(
@@ -131,11 +133,50 @@ get_header(); ?>
 
       endif;
 
-      while ( have_posts() ) : the_post();
-
-        get_template_part( 'loop', get_post_format() );
-
-      endwhile;
+      if ( strpos($req, 'wine')!=false && (is_dynamic_sidebar('menu-wines-introduction-widgets') ) ) : ?>
+        <div class="archive-widgets menu-wines-introduction-widgets">
+          <ul class="inner"><?php
+            if ( function_exists( 'dynamic_sidebar' ) ) :
+              dynamic_sidebar( 'menu-wines-introduction-widgets' );
+            endif;
+          ?></ul>
+        </div><?php
+        if (!is_active_sidebar('menu-wines-introduction-widgets') ) :
+          while ( have_posts() ) : the_post();
+              get_template_part( 'loop', get_post_format() );
+          endwhile;
+        endif;
+      elseif ( strpos($req, 'drinks')!=false && (is_dynamic_sidebar('menu-drinks-introduction-widgets') ) ) : ?>
+        <div class="archive-widgets menu-drinks-introduction-widgets">
+          <ul class="inner"><?php
+            if ( function_exists( 'dynamic_sidebar' ) ) :
+              dynamic_sidebar( 'menu-drinks-introduction-widgets' );
+            endif;
+          ?></ul>
+        </div><?php
+        if (!is_active_sidebar('menu-drinks-introduction-widgets') ) :
+          while ( have_posts() ) : the_post();
+              get_template_part( 'loop', get_post_format() );
+          endwhile;
+        endif;
+      elseif ( strpos($req, 'foods')!=false && (is_dynamic_sidebar('menu-foods-introduction-widgets') ) ) : ?>
+        <div class="archive-widgets menu-foods-introduction-widgets">
+          <ul class="inner"><?php
+            if ( function_exists( 'dynamic_sidebar' ) ) :
+              dynamic_sidebar( 'menu-foods-introduction-widgets' );
+            endif;
+          ?></ul>
+        </div><?php
+        if (!(is_active_sidebar('menu-foods-introduction-widgets')) ) :
+          while ( have_posts() ) : the_post();
+              get_template_part( 'loop', get_post_format() );
+          endwhile;
+        endif;
+      else:
+        while ( have_posts() ) : the_post();
+            get_template_part( 'loop', get_post_format() );
+        endwhile;
+      endif;
 
     else :
 
@@ -144,7 +185,11 @@ get_header(); ?>
     endif; ?>
 
     <div class="pagination">
-      <?php get_template_part( 'template-part', 'pagination' ); ?>
+      <?php
+      if ( (!is_dynamic_sidebar('menu-drinks-introduction-widgets') && is_tax('menu', 'drinks'))||(!is_dynamic_sidebar('menu-wines-introduction-widgets') && is_tax('menu', 'wine'))||(!is_dynamic_sidebar('menu-foods-introduction-widgets') && is_tax('menu', 'foods')) ) :
+        get_template_part( 'template-part', 'pagination' );
+      endif;
+      ?>
     </div>
 
   </section>

@@ -846,3 +846,15 @@ body.login #lostpasswordform {
   }
 
 }
+
+.menu-wines-introduction-widgets, 
+.menu-foods-introduction-widgets,
+.menu-drinks-introduction-widgets { 
+  @include span-columns(8);
+  @include shift(2);
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
