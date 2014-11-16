@@ -1,6 +1,6 @@
 (function() {
   (function($) {
-    var $search, $vcalendar, aw, i, mobilecheck, nPlH, pc, pcH, pl, plH, postContentHeight, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
+    var $search, $vcalendar, aw, i, mobilecheck, nPlH, pc, pl, postContentHeight, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
     $("body").attr('jquery-version', $.fn.jquery);
 
     /*
@@ -130,11 +130,7 @@
     }
     pl = $('body.home .placeholder');
     pc = $('body.home .post-content');
-    plH = parseInt(pl.height(), 8);
-    pcH = parseInt(pc.height(), 8);
-    console.log(plH);
-    console.log(pcH);
-    nPlH = pcH + plH;
+    nPlH = pl.height() + pc.height();
     pl.height(nPlH);
     $('select.restrict').each(function() {
       var select$;
