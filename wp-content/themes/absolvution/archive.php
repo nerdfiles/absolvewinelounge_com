@@ -68,7 +68,7 @@ get_header(); ?>
         $children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
         $req = $_SERVER['REQUEST_URI'];
 
-        if ($parent->slug!='wine' && strpos($req, $parent->slug) != true) {
+        if ($parent->slug!='wine' && strpos($req, 'drinks') != true) {
         ?>
           <div class="menu"><?php
             $wine_nav_menu = wp_nav_menu(
