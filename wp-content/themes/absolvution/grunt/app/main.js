@@ -165,7 +165,7 @@
       return fl.push($(this).text());
     });
     $eventCats.append(fl.join(', '));
-    $eventTags = $('.tribe-events-event-tags');
+    $eventTags = $('.tribe-event-tags');
     $eventTags.find('a').hide();
     $eventTagss = $eventTags.find('a').clone();
     $eventTags.text('');
