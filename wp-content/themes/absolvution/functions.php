@@ -577,3 +577,25 @@ function search_filter($query) {
  *add_action( 'restrict_manage_posts', 'pippin_add_taxonomy_filters' );
  */
 
+/*
+ *function to_tax( $query ) {
+ *  if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+ *  // Get all your post types
+ *  //$post_types = get_post_types();
+ *  $post_types = array( 'events' );
+ *  $query->set( 'post_type', $post_types );
+ *    return $query;
+ *  }
+ *}
+ *add_filter( 'pre_get_posts', 'to_tax' );
+ */
+
+//add_action('template_include', 'avoid_404_event_titles', 1);
+function avoid_404_event_titles() {
+  global $wp_query;
+  print_r($wp_query);
+  /*
+   *if (property_exists($wp_query, 'tribe_is_event') && $wp_query->tribe_is_event && $wp_query->is_404)
+   *  $wp_query->is_404 = false;
+   */
+}

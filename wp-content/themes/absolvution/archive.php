@@ -10,7 +10,8 @@ $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' 
 $parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
 $children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
 $req = $_SERVER['REQUEST_URI'];
-get_header(); ?>
+get_header();
+?>
 
 	<section class="page-content primary" role="main">
 
@@ -22,7 +23,6 @@ get_header(); ?>
 
           elseif ( is_tag() ):
             printf( __( 'List: %s', 'absolvution' ), single_tag_title( '', false ) );
-
           elseif ( is_tax() ):
             $term     = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
             $taxonomy = get_taxonomy( get_query_var( 'taxonomy' ) );
@@ -31,7 +31,6 @@ get_header(); ?>
             } else {
               printf( __( '%s Archives: %s', 'absolvution' ), $taxonomy->labels->singular_name, $term->name );
             }
-
           elseif ( is_day() ) :
             printf( __( 'Daily Archives: %s', 'absolvution' ), get_the_date() );
 
