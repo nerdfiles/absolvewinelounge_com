@@ -52,6 +52,7 @@
       <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/grunt/bower_components/selectivizr/selectivizr.js"></script>
       <noscript><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" /></noscript>
     <![endif]-->
+
   </head>
 
   <body <?php body_class(); ?>>
