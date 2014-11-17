@@ -35,5 +35,25 @@
         <div class="foogallery-panel"></div>
       </div><!-- .site -->
     <?php wp_footer(); ?>
+    <?php
+    $args = array(
+        'post_type'      => 'attachment',
+        'category_name'  => 'preload',
+        'post_status'    => 'any'
+    );
+
+    $preloader_query = new WP_Query ( $args );
+
+    if ( $preloader_query->have_posts() ) :
+        ?><style>.preloader { position: absolute; left: -9999px; content:<?php while ( $preloader_query->have_posts() ) : $preloader_query->the_post();
+            echo ' url(' . wp_get_attachment_url(get_the_ID()) . ')';
+        ?>
+        <?php
+        endwhile;
+        ?>}</style><div class="preloader"></div><?php
+    endif;
+
+    wp_reset_postdata();
+    ?>
   </body>
 </html>
