@@ -13,6 +13,10 @@
  * -ms-interpolation-mode : nearest-neighbor;  [> IE (non-standard property) <]
  *}
  */
+body {
+  background-color: #222;
+}
+
 body.custom-background {
   background-position: center;
   background-repeat: no-repeat;

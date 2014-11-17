@@ -1,6 +1,6 @@
 (function() {
   (function($) {
-    var $search, $vcalendar, aw, i, mobilecheck, nPlH, pc, pl, postContentHeight, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
+    var $eventCats, $eventCatss, $eventTags, $eventTagss, $search, $vcalendar, aw, fl, i, mobilecheck, nPlH, pc, pl, postContentHeight, recentTweets$, s, tHref, twitterHref, twitterTime$, w, __, _href, _i, _ref;
     $("body").attr('jquery-version', $.fn.jquery);
 
     /*
@@ -156,6 +156,24 @@
     /*
      */
     $('.site-footer').after('<a style="position: relative; left: .5rem;" target="_blank" href="http://nerdfiles.net"><img src="http://nerdfiles.net/assets/img-ui/favicon.png" /></a>');
+    $eventCats = $('.tribe-events-event-categories');
+    $eventCats.find('a').hide();
+    $eventCatss = $eventCats.find('a').clone();
+    $eventCats.text('');
+    fl = [];
+    $eventCatss.each(function() {
+      return fl.push($(this).text());
+    });
+    $eventCats.append(fl.join(', '));
+    $eventTags = $('.tribe-events-event-tags');
+    $eventTags.find('a').hide();
+    $eventTagss = $eventTags.find('a').clone();
+    $eventTags.text('');
+    fl = [];
+    $eventTagss.each(function() {
+      return fl.push($(this).text());
+    });
+    $eventTags.append(fl.join(', '));
   })(jQuery);
 
 }).call(this);

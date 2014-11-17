@@ -75,7 +75,8 @@ if ( $type == 'bot' ) {
       <?php the_excerpt(); ?>
 
       <?php
-        $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
+        $args = array('orderby'=>'term_order', 'order' => 'ASC');
+        $product_terms = wp_get_object_terms( get_the_ID(),  'menu', $args);
         //$tags = get_the_term_list();
         /*
          *if ( ! empty( $tags ) ) {
