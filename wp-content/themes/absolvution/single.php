@@ -20,7 +20,9 @@ get_header(); ?>
           $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
           if ( ! empty( $product_terms ) ) {
         ?>
-          <div class="menu-item-price">
+          <div class="menu-item-price menu-item-price-type-<?php
+                echo get_post_meta(get_the_ID(), 'item_price', true);
+            ?>">
             <span class="label">Price</span>
             <span class="value">
             <?php
