@@ -644,3 +644,13 @@ body .site {
 .tribe-events-calendar div[id*="tribe-events-daynum-"] a {
   background-color: transparent;
 }
+
+.menu-item-price-type-0 {
+  .value {
+    display: none;
+  }
+  &:after {
+    content: "See Menu for Price Info";
+    color: #fff;
+  }
+}
