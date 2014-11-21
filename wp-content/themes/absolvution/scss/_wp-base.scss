@@ -82,12 +82,20 @@ li.tribe-events-nav-previous {
   a {
     position: relative;
     z-index: 15;
+    margin: 0px 0.5rem 0px -2rem;
   }
 	a {
     color: #f0c214;
     background-color: #222;
     @include pad(.5rem default);
     margin: 0 .5rem;
+    &:hover {
+      span {
+        @extend .animated;
+        @extend .tada;
+      }
+    }
+
 		/*float: right;*/
 	}
 
@@ -97,8 +105,9 @@ li.tribe-events-nav-previous {
     @extend .fa-arrow-circle-left;
     &:before {
       position: relative;
-      z-index: 10;
       font-size: 3rem !important;
+      left: 1rem;
+      z-index: -1;
     }
   }
 }
@@ -107,15 +116,21 @@ li.tribe-events-nav-next {
   a {
     position: relative;
     z-index: 15;
+    margin: 0px -2rem 0px 0.5rem;
   }
 	a {
     color: #f0c214;
     background-color: #222;
     @include pad(.5rem default);
     margin: 0 .5rem;
+    &:hover {
+      span {
+        @extend .animated;
+        @extend .tada;
+      }
+    }
 		/*float: right;*/
 	}
-
 
   a span {
     font-size: 0;
@@ -123,8 +138,9 @@ li.tribe-events-nav-next {
     @extend .fa-arrow-circle-right;
     &:before {
       position: relative;
-      z-index: 10;
       font-size: 3rem !important;
+      right: 1rem;
+      z-index: -1;
     }
   }
 }

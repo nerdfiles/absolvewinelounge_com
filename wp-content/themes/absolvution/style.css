@@ -390,7 +390,7 @@ table {
   border-spacing: 0;
 }
 
-.animated, .foogallery-panel.active, ol.comment-list li.bypostauthor:target, body.search .page-content article.tribe_events:hover .price-tag,
+.animated, .foogallery-panel.active, ol.comment-list li.bypostauthor:target, li.tribe-events-nav-previous a:hover span, li.tribe-events-nav-next a:hover span, body.search .page-content article.tribe_events:hover .price-tag,
 body.search .page-content article.page:hover .price-tag, body.search .page-content article.menu_item:hover .price-tag,
 body.archive .page-content article.menu_item:hover .price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .price-tag,
@@ -2145,7 +2145,7 @@ body.events-single .type-tribe_events {
   animation-name: fold-in;
 }
 
-.animated.fold-in, .fold-in.foogallery-panel.active, ol.comment-list li.fold-in.bypostauthor:target, body.search .page-content article.tribe_events:hover .fold-in.price-tag,
+.animated.fold-in, .fold-in.foogallery-panel.active, ol.comment-list li.fold-in.bypostauthor:target, li.tribe-events-nav-previous a:hover span.fold-in, li.tribe-events-nav-next a:hover span.fold-in, body.search .page-content article.tribe_events:hover .fold-in.price-tag,
 body.search .page-content article.page:hover .fold-in.price-tag, body.search .page-content article.menu_item:hover .fold-in.price-tag,
 body.archive .page-content article.menu_item:hover .fold-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-in.price-tag,
@@ -2199,7 +2199,7 @@ body.events-single td.fold-in:hover, .fold-in.tribe-events-ajax-loading:before, 
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-in, .fold-small-in.foogallery-panel.active, ol.comment-list li.fold-small-in.bypostauthor:target, body.search .page-content article.tribe_events:hover .fold-small-in.price-tag,
+.animated.fold-small-in, .fold-small-in.foogallery-panel.active, ol.comment-list li.fold-small-in.bypostauthor:target, li.tribe-events-nav-previous a:hover span.fold-small-in, li.tribe-events-nav-next a:hover span.fold-small-in, body.search .page-content article.tribe_events:hover .fold-small-in.price-tag,
 body.search .page-content article.page:hover .fold-small-in.price-tag, body.search .page-content article.menu_item:hover .fold-small-in.price-tag,
 body.archive .page-content article.menu_item:hover .fold-small-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-small-in.price-tag,
@@ -2253,7 +2253,7 @@ body.events-single td.fold-small-in:hover, .fold-small-in.tribe-events-ajax-load
   animation-name: fold-out;
 }
 
-.animated.fold-out, .fold-out.foogallery-panel.active, ol.comment-list li.fold-out.bypostauthor:target, body.search .page-content article.tribe_events:hover .fold-out.price-tag,
+.animated.fold-out, .fold-out.foogallery-panel.active, ol.comment-list li.fold-out.bypostauthor:target, li.tribe-events-nav-previous a:hover span.fold-out, li.tribe-events-nav-next a:hover span.fold-out, body.search .page-content article.tribe_events:hover .fold-out.price-tag,
 body.search .page-content article.page:hover .fold-out.price-tag, body.search .page-content article.menu_item:hover .fold-out.price-tag,
 body.archive .page-content article.menu_item:hover .fold-out.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-out.price-tag,
@@ -2307,7 +2307,7 @@ body.events-single td.fold-out:hover, .fold-out.tribe-events-ajax-loading:before
   animation-name: fold-small-out;
 }
 
-.animated.fold-small-out, .fold-small-out.foogallery-panel.active, ol.comment-list li.fold-small-out.bypostauthor:target, body.search .page-content article.tribe_events:hover .fold-small-out.price-tag,
+.animated.fold-small-out, .fold-small-out.foogallery-panel.active, ol.comment-list li.fold-small-out.bypostauthor:target, li.tribe-events-nav-previous a:hover span.fold-small-out, li.tribe-events-nav-next a:hover span.fold-small-out, body.search .page-content article.tribe_events:hover .fold-small-out.price-tag,
 body.search .page-content article.page:hover .fold-small-out.price-tag, body.search .page-content article.menu_item:hover .fold-small-out.price-tag,
 body.archive .page-content article.menu_item:hover .fold-small-out.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .fold-small-out.price-tag,
@@ -2894,7 +2894,7 @@ body.term-foods .page-content article.menu_item:hover .price-tag {
   animation-name: hinge-out;
 }
 
-.animated.hinge-out, .hinge-out.foogallery-panel.active, ol.comment-list li.hinge-out.bypostauthor:target, body.search .page-content article.tribe_events:hover .hinge-out.price-tag,
+.animated.hinge-out, .hinge-out.foogallery-panel.active, ol.comment-list li.hinge-out.bypostauthor:target, li.tribe-events-nav-previous a:hover span.hinge-out, li.tribe-events-nav-next a:hover span.hinge-out, body.search .page-content article.tribe_events:hover .hinge-out.price-tag,
 body.search .page-content article.page:hover .hinge-out.price-tag, body.search .page-content article.menu_item:hover .hinge-out.price-tag,
 body.archive .page-content article.menu_item:hover .hinge-out.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .hinge-out.price-tag,
@@ -2991,7 +2991,7 @@ body.events-single td.hinge-out:hover, .hinge-out.tribe-events-ajax-loading:befo
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, body.search .page-content article.tribe_events:hover .light-speed-in.price-tag,
+.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, li.tribe-events-nav-previous a:hover span.light-speed-in, li.tribe-events-nav-next a:hover span.light-speed-in, body.search .page-content article.tribe_events:hover .light-speed-in.price-tag,
 body.search .page-content article.page:hover .light-speed-in.price-tag, body.search .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.archive .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .light-speed-in.price-tag,
@@ -3056,7 +3056,7 @@ body.events-single td.light-speed-in:hover, .light-speed-in.tribe-events-ajax-lo
   animation-timing-function: ease-in;
 }
 
-.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, body.search .page-content article.tribe_events:hover .light-speed-in.price-tag,
+.animated.light-speed-in, .light-speed-in.foogallery-panel.active, ol.comment-list li.light-speed-in.bypostauthor:target, li.tribe-events-nav-previous a:hover span.light-speed-in, li.tribe-events-nav-next a:hover span.light-speed-in, body.search .page-content article.tribe_events:hover .light-speed-in.price-tag,
 body.search .page-content article.page:hover .light-speed-in.price-tag, body.search .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.archive .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-happy-hour .page-content article.menu_item:hover .light-speed-in.price-tag,
@@ -4114,7 +4114,7 @@ body.events-single td:hover {
     -moz-transform: scale(1) rotate(0);
   }
 }
-.tada {
+.tada, li.tribe-events-nav-previous a:hover span, li.tribe-events-nav-next a:hover span {
   -webkit-animation-name: tada;
   -moz-animation-name: tada;
   -o-animation-name: tada;
@@ -4272,7 +4272,7 @@ body.events-single td:hover {
   animation-timing-function: ease-in;
 }
 
-.animated.wiggle, .wiggle.foogallery-panel.active, .site-meta .searchform:focus div.foogallery-panel.active::after, .site-meta .searchform:active div.foogallery-panel.active::after, .site-meta .searchform input[type="text"]:focus + input.foogallery-panel.active, ol.comment-list li.wiggle.bypostauthor:target, body.search .page-content article.tribe_events:hover .wiggle.price-tag, body.search .page-content article.tribe_events:hover .site-meta .searchform:focus div.price-tag::after, .site-meta .searchform:focus body.search .page-content article.tribe_events:hover div.price-tag::after, body.search .page-content article.tribe_events:hover .site-meta .searchform:active div.price-tag::after, .site-meta .searchform:active body.search .page-content article.tribe_events:hover div.price-tag::after, body.search .page-content article.tribe_events:hover .site-meta .searchform input[type="text"]:focus + input.price-tag, .site-meta .searchform body.search .page-content article.tribe_events:hover input[type="text"]:focus + input.price-tag,
+.animated.wiggle, .wiggle.foogallery-panel.active, .site-meta .searchform:focus div.foogallery-panel.active::after, .site-meta .searchform:active div.foogallery-panel.active::after, .site-meta .searchform input[type="text"]:focus + input.foogallery-panel.active, ol.comment-list li.wiggle.bypostauthor:target, li.tribe-events-nav-previous a:hover span.wiggle, li.tribe-events-nav-next a:hover span.wiggle, body.search .page-content article.tribe_events:hover .wiggle.price-tag, body.search .page-content article.tribe_events:hover .site-meta .searchform:focus div.price-tag::after, .site-meta .searchform:focus body.search .page-content article.tribe_events:hover div.price-tag::after, body.search .page-content article.tribe_events:hover .site-meta .searchform:active div.price-tag::after, .site-meta .searchform:active body.search .page-content article.tribe_events:hover div.price-tag::after, body.search .page-content article.tribe_events:hover .site-meta .searchform input[type="text"]:focus + input.price-tag, .site-meta .searchform body.search .page-content article.tribe_events:hover input[type="text"]:focus + input.price-tag,
 body.search .page-content article.page:hover .wiggle.price-tag,
 body.search .page-content article.page:hover .site-meta .searchform:focus div.price-tag::after,
 .site-meta .searchform:focus body.search .page-content article.page:hover div.price-tag::after,
@@ -8179,6 +8179,7 @@ ol.comment-list li.bypostauthor:target a[href*="close"] .label {
 li.tribe-events-nav-previous a {
   position: relative;
   z-index: 15;
+  margin: 0px 0.5rem 0px -2rem;
 }
 li.tribe-events-nav-previous a {
   color: #f0c214;
@@ -8192,13 +8193,15 @@ li.tribe-events-nav-previous a span {
 }
 li.tribe-events-nav-previous a span:before {
   position: relative;
-  z-index: 10;
   font-size: 3rem !important;
+  left: 1rem;
+  z-index: -1;
 }
 
 li.tribe-events-nav-next a {
   position: relative;
   z-index: 15;
+  margin: 0px -2rem 0px 0.5rem;
 }
 li.tribe-events-nav-next a {
   color: #f0c214;
@@ -8212,8 +8215,9 @@ li.tribe-events-nav-next a span {
 }
 li.tribe-events-nav-next a span:before {
   position: relative;
-  z-index: 10;
   font-size: 3rem !important;
+  right: 1rem;
+  z-index: -1;
 }
 
 .tribe-events-nav-previous,
