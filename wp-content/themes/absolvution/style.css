@@ -8189,7 +8189,6 @@ li.tribe-events-nav-previous a {
 }
 li.tribe-events-nav-previous a span {
   font-size: 0;
-  text-indent: -9999px;
 }
 li.tribe-events-nav-previous a span:before {
   position: relative;
@@ -8210,7 +8209,6 @@ li.tribe-events-nav-next a {
 }
 li.tribe-events-nav-next a span {
   font-size: 0;
-  text-indent: -9999px;
 }
 li.tribe-events-nav-next a span:before {
   position: relative;

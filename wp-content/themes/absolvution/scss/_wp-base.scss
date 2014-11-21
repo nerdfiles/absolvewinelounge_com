@@ -93,7 +93,6 @@ li.tribe-events-nav-previous {
 
   a span {
     font-size: 0;
-    text-indent: -9999px;
     @extend .fa;
     @extend .fa-arrow-circle-left;
     &:before {
@@ -120,7 +119,6 @@ li.tribe-events-nav-next {
 
   a span {
     font-size: 0;
-    text-indent: -9999px;
     @extend .fa;
     @extend .fa-arrow-circle-right;
     &:before {
