@@ -381,6 +381,11 @@ add_action('tribe_events_list_widget_before_the_event_title', 'thumbnailing');
 add_filter('pre_get_posts','wine_menus_archive');
 function wine_menus_archive( $query ) {
 
+    if(is_category() || is_tag()) {
+      $post_type = array('nav_menu_item', 'post', 'page', 'attachment');
+      $query->set('post_type',$post_type);
+    }
+
     if ( $query->is_tax( 'menu', 'drinks' ) && $query->is_main_query() ) {
         $query->set( 'posts_per_page', 25 );
         $query->set( 'post_type', array( 'menu_item' ) );
@@ -393,7 +398,6 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'wine', 'by-the-glass', 'craft-beer' )
             )
         ) );
-      return $query;
     }
 
     if ( $query->is_tax( 'menu', 'by-the-glass' ) && $query->is_main_query() ) {
@@ -408,7 +412,6 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'by-the-glass' )
             )
         ) );
-      return $query;
     }
 
     if ( $query->is_tax( 'menu', 'wine' ) && $query->is_main_query() ) {
@@ -431,7 +434,6 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'wine' )
             )
         ) );
-      return $query;
     }
 
     if ( ( $query->is_tax( 'menu', 'white' ) || $query->is_tax( 'menu', 'sparkling' ) || $query->is_tax( 'menu', 'dessert' ) || $query->is_tax( 'menu', 'rose' ) || $query->is_tax( 'menu', 'red' ) ) && $query->is_main_query() ) {
@@ -454,7 +456,6 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'wine' )
             )
         ) );
-      return $query;
     }
 
     if ( $query->is_tax( 'menu', 'craft-beer' ) && $query->is_main_query() ) {
@@ -470,7 +471,6 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'craft-beer' )
             )
         ) );
-      return $query;
     }
 
     if ( $query->is_tax( 'menu', 'foods' ) && $query->is_main_query() ) {
@@ -493,7 +493,6 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'small-plates', 'thin-crust-pizzas', 'desserts' )
             )
         ) );
-      return $query;
     }
 
     if ( $query->is_tax( 'menu', 'charcuterie-cheese' ) && $query->is_main_query() ) {
@@ -509,13 +508,6 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'cheese', 'charcuterie' )
             )
         ) );
-      return $query;
-    }
-
-    if(is_archive() || is_category() || is_tag()) {
-      $post_type = array('nav_menu_item', 'post', 'page', 'attachment');
-      $query->set('post_type',$post_type);
-      return $query;
     }
 
     return $query;
