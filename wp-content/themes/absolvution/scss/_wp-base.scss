@@ -484,7 +484,7 @@ body.search {
       display: none;
       position: absolute;
       z-index: 28;
-      top: 58px;
+      top: 3rem;
       right: 5%;
       letter-spacing: 0;
       word-spacing: 0;
@@ -556,7 +556,7 @@ body.term-foods {
         @include span-columns(7);
       }
       /*overflow: hidden;*/
-      height: 10rem;
+      height: 5rem;
       margin-bottom: 2rem;
       &:hover .price-tag {
         @extend .flip;
@@ -587,7 +587,7 @@ body.term-foods {
         @include media($large) {
           @include span-columns(5.8);
         }
-        height: 10rem;
+        height: 5rem;
         padding-left: .3rem;
         padding-top: .3rem;
         border-bottom: 1px #c6a013 solid;
@@ -604,7 +604,7 @@ body.term-foods {
     .price-tag {
       position: absolute;
       z-index: 28;
-      top: 58px;
+      top: 3rem;
       right: 5%;
       letter-spacing: 0;
       word-spacing: 0;
@@ -637,7 +637,7 @@ body.term-foods {
     .price-tag {
       position: absolute;
       z-index: 28;
-      top: 58px;
+      top: 3rem;
       right: 5%;
       letter-spacing: 0;
       word-spacing: 0;
