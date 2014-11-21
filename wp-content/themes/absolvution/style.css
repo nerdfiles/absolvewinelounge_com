@@ -8590,7 +8590,7 @@ body.search .page-content article.page {
   margin-right: 3.06748%;
   width: 96.56442%;
   /*overflow: hidden;*/
-  height: 10rem;
+  height: 5rem;
   margin-bottom: 2rem;
 }
 body.search .page-content article.tribe_events:last-child,
@@ -8638,7 +8638,7 @@ body.search .page-content article.page .post-title {
   display: block;
   margin-right: 3.06748%;
   width: 96.56442%;
-  height: 10rem;
+  height: 5rem;
   padding-left: .3rem;
   padding-top: .3rem;
   border-bottom: 1px #c6a013 solid;
@@ -8801,7 +8801,7 @@ body.term-foods .page-content article.menu_item:last-child {
     float: left;
     display: block;
     margin-right: 3.06748%;
-    width: 57.05521%;
+    width: 46.74847%;
   }
   body.search .page-content article.menu_item:last-child,
   body.archive .page-content article.menu_item:last-child,
