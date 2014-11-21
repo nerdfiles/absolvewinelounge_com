@@ -8947,6 +8947,13 @@ body.term-wine .page-content:last-child,
 body.term-foods .page-content:last-child {
   margin-right: 0;
 }
+body.search .page-content article.type-post div.price-tag,
+body.archive .page-content article.type-post div.price-tag,
+body.term-happy-hour .page-content article.type-post div.price-tag,
+body.term-wine .page-content article.type-post div.price-tag,
+body.term-foods .page-content article.type-post div.price-tag {
+  display: none !important;
+}
 body.search .page-content article.type-post,
 body.search .page-content article.menu_item,
 body.archive .page-content article.type-post,

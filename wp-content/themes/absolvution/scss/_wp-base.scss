@@ -620,6 +620,11 @@ body.term-foods {
     @include shift(.2);
     position: relative;
     z-index: auto !important;
+    article.type-post {
+      div.price-tag {
+        display: none !important;
+      }
+    }
     article.type-post,
     article.menu_item {
       text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
