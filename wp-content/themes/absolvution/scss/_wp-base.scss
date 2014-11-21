@@ -913,6 +913,9 @@ body.search .search-title {
   margin-bottom: 2rem;
 }
 
+.contact-form-7-container {
+  @include shift(.5);
+}
 .wpcf7-not-valid-tip {
   position: absolute;
   left: -9999px;
