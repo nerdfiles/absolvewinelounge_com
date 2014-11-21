@@ -99,12 +99,12 @@ get_header(); ?>
 
           <div class="post-links">
             <?php if ( is_singular( 'menu_item' ) ) { ?>
-              <span class="container">
+              <!--span class="container">
                 <?php previous_post_link( '%link', __( '<span class="fa fa-arrow-left"></span> Previous menu item', 'absolvution' ) ) ?>
               </span>
               <span class="container">
                 <?php next_post_link( '%link', __( 'Next menu item <span class="fa fa-arrow-right"></span>', 'absolvution' ) ); ?>
-              </span>
+              </span-->
             <?php } else { ?>
               <span class="container">
                 <?php previous_post_link( '%link', __( '<span class="fa fa-arrow-left"></span> Previous post', 'absolvution' ) ) ?>
