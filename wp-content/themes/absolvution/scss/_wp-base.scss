@@ -78,6 +78,21 @@ ol.comment-list {
   padding-left: $gutter;
 }
 
+.tribe-events-nav-previous {
+  a span {
+    @extend .fa;
+    @extend .fa-arrow-circle-left;
+  }
+}
+
+.tribe-events-nav-right {
+  a span {
+    @extend .fa;
+    @extend .fa-arrow-circle-right;
+  }
+}
+.tribe-events-nav-previous,
+.tribe-events-nav-next,
 div.post-links {
 
 	@include clearfix;
@@ -90,6 +105,7 @@ div.post-links {
   }
   text-transform: lowercase;
   font-variant: small-caps;
+
   .fa {
     color: #2E6F89;
   }
