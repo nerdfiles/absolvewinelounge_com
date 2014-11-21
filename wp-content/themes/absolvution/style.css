@@ -8676,7 +8676,7 @@ body.search .page-content .price-tag {
   display: none;
   position: absolute;
   z-index: 28;
-  top: 58px;
+  top: 3rem;
   right: 5%;
   letter-spacing: 0;
   word-spacing: 0;
@@ -8782,7 +8782,7 @@ body.term-foods .page-content article.menu_item {
   margin-right: 3.06748%;
   width: 96.56442%;
   /*overflow: hidden;*/
-  height: 10rem;
+  height: 5rem;
   margin-bottom: 2rem;
 }
 body.search .page-content article.menu_item:last-child,
@@ -8801,7 +8801,7 @@ body.term-foods .page-content article.menu_item:last-child {
     float: left;
     display: block;
     margin-right: 3.06748%;
-    width: 46.74847%;
+    width: 57.05521%;
   }
   body.search .page-content article.menu_item:last-child,
   body.archive .page-content article.menu_item:last-child,
@@ -8854,7 +8854,7 @@ body.term-foods .page-content article.menu_item .post-title {
   display: block;
   margin-right: 3.06748%;
   width: 96.56442%;
-  height: 10rem;
+  height: 5rem;
   padding-left: .3rem;
   padding-top: .3rem;
   border-bottom: 1px #c6a013 solid;
@@ -8910,7 +8910,7 @@ body.term-wine .page-content .price-tag,
 body.term-foods .page-content .price-tag {
   position: absolute;
   z-index: 28;
-  top: 58px;
+  top: 3rem;
   right: 5%;
   letter-spacing: 0;
   word-spacing: 0;
@@ -8953,7 +8953,7 @@ body.term-wine .post-content .price-tag,
 body.term-foods .post-content .price-tag {
   position: absolute;
   z-index: 28;
-  top: 58px;
+  top: 3rem;
   right: 5%;
   letter-spacing: 0;
   word-spacing: 0;
