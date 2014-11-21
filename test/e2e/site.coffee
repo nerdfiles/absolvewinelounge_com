@@ -148,9 +148,6 @@ holdLinks = [
   "events/"
   "event/letriel-m-quartet/"
   "event/halloween-with-southern-backtones/"
-  "events/category/live-music/"
-
-  "tag/christopher-goodwin/"
 
   "gallery/"
 
