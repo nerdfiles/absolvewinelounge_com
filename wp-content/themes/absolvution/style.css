@@ -9703,7 +9703,7 @@ body.search .search-title {
   float: left;
   display: block;
   margin-right: 3.06748%;
-  width: 39.8773%;
+  width: 100%;
 }
 .meta-container.cat:last-child {
   margin-right: 0;
@@ -9716,22 +9716,24 @@ body.search .search-title {
   float: left;
   display: block;
   margin-right: 3.06748%;
-  width: 48.46626%;
+  width: 100%;
 }
 .meta-container.tag:last-child {
   margin-right: 0;
 }
 
 .meta-container.date-posted {
-  padding-left: 4rem;
+  margin-left: 8.58896%;
 }
 .meta-container.date-posted:before {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #8E9EC2;
   opacity: .3;
   margin-right: 1rem;
-  margin-left: -3rem;
+  margin-left: -1rem;
   position: absolute;
+  margin-top: -3.5rem;
+  z-index: -1;
 }
 
 .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a {
