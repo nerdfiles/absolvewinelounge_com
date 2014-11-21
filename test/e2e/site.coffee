@@ -157,8 +157,8 @@ holdLinks = [
 
   "?s=wine"
 
-
 ]
+
 x = pageName = _pageName = undefined
 i = -1
 casper.start "http://absolvewinelounge.com/", ->

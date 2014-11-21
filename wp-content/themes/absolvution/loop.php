@@ -67,7 +67,9 @@ if ( $type == 'bot' ) {
   <div class="post-content"><?php
 
     if ( '' != get_the_post_thumbnail() ) : ?>
-      <?php the_post_thumbnail(); ?><?php
+      <?php
+      //the_post_thumbnail();
+      ?><?php
     endif; ?>
 
     <?php if ( is_category() || is_archive() || is_search() ) : ?>
