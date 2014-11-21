@@ -4518,7 +4518,8 @@ body.events-single td.wiggle:hover, .wiggle.tribe-events-ajax-loading:before, .s
 body.archive .page-content article.type-post .post-meta:before,
 body.term-happy-hour .page-content article.type-post .post-meta:before,
 body.term-wine .page-content article.type-post .post-meta:before,
-body.term-foods .page-content article.type-post .post-meta:before, .site-meta .searchform div::after {
+body.term-foods .page-content article.type-post .post-meta:before, body.blog article.type-post .post-meta:before,
+body.single-post article.type-post .post-meta:before, .site-meta .searchform div::after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -4593,14 +4594,16 @@ body.term-foods .page-content article.type-post .post-meta:before, .site-meta .s
 body.archive .page-content article.type-post .pull-left.post-meta:before,
 body.term-happy-hour .page-content article.type-post .pull-left.post-meta:before,
 body.term-wine .page-content article.type-post .pull-left.post-meta:before,
-body.term-foods .page-content article.type-post .pull-left.post-meta:before, .site-meta .searchform div.pull-left::after {
+body.term-foods .page-content article.type-post .pull-left.post-meta:before, body.blog article.type-post .pull-left.post-meta:before,
+body.single-post article.type-post .pull-left.post-meta:before, .site-meta .searchform div.pull-left::after {
   margin-right: .3em;
 }
 .fa.pull-right, .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="google"], ol.comment-list li.bypostauthor:target a[href*="close"] .pull-right.icon, li.tribe-events-nav-previous a span.pull-right, li.tribe-events-nav-next a span.pull-right, body.search .page-content article.type-post .pull-right.post-meta:before,
 body.archive .page-content article.type-post .pull-right.post-meta:before,
 body.term-happy-hour .page-content article.type-post .pull-right.post-meta:before,
 body.term-wine .page-content article.type-post .pull-right.post-meta:before,
-body.term-foods .page-content article.type-post .pull-right.post-meta:before, .site-meta .searchform div.pull-right::after {
+body.term-foods .page-content article.type-post .pull-right.post-meta:before, body.blog article.type-post .pull-right.post-meta:before,
+body.single-post article.type-post .pull-right.post-meta:before, .site-meta .searchform div.pull-right::after {
   margin-left: .3em;
 }
 
@@ -5287,7 +5290,8 @@ ol.comment-list li.bypostauthor:target a[href*="close"] .icon:before,
 body.archive .page-content article.type-post .post-meta:before,
 body.term-happy-hour .page-content article.type-post .post-meta:before,
 body.term-wine .page-content article.type-post .post-meta:before,
-body.term-foods .page-content article.type-post .post-meta:before {
+body.term-foods .page-content article.type-post .post-meta:before, body.blog article.type-post .post-meta:before,
+body.single-post article.type-post .post-meta:before {
   content: "";
 }
 
@@ -8370,7 +8374,9 @@ body.term-happy-hour .page-content article.type-post .tribe-events-nav-previous 
 .tribe-events-nav-previous body.term-wine .page-content article.type-post .post-meta:before,
 body.term-wine .page-content article.type-post .tribe-events-nav-previous .post-meta:before,
 .tribe-events-nav-previous body.term-foods .page-content article.type-post .post-meta:before,
-body.term-foods .page-content article.type-post .tribe-events-nav-previous .post-meta:before, .tribe-events-nav-previous .site-meta .searchform div::after, .site-meta .searchform .tribe-events-nav-previous div::after,
+body.term-foods .page-content article.type-post .tribe-events-nav-previous .post-meta:before, .tribe-events-nav-previous body.blog article.type-post .post-meta:before, body.blog article.type-post .tribe-events-nav-previous .post-meta:before,
+.tribe-events-nav-previous body.single-post article.type-post .post-meta:before,
+body.single-post article.type-post .tribe-events-nav-previous .post-meta:before, .tribe-events-nav-previous .site-meta .searchform div::after, .site-meta .searchform .tribe-events-nav-previous div::after,
 .tribe-events-nav-next .fa,
 .tribe-events-nav-next .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="twitter"],
 .home-followup-widgets .home--social #acurax_si_widget_simple .tribe-events-nav-next a[href*="twitter"],
@@ -8395,6 +8401,10 @@ body.term-happy-hour .page-content article.type-post .tribe-events-nav-next .pos
 body.term-wine .page-content article.type-post .tribe-events-nav-next .post-meta:before,
 .tribe-events-nav-next body.term-foods .page-content article.type-post .post-meta:before,
 body.term-foods .page-content article.type-post .tribe-events-nav-next .post-meta:before,
+.tribe-events-nav-next body.blog article.type-post .post-meta:before,
+body.blog article.type-post .tribe-events-nav-next .post-meta:before,
+.tribe-events-nav-next body.single-post article.type-post .post-meta:before,
+body.single-post article.type-post .tribe-events-nav-next .post-meta:before,
 .tribe-events-nav-next .site-meta .searchform div::after,
 .site-meta .searchform .tribe-events-nav-next div::after,
 div.post-links .fa,
@@ -8422,6 +8432,10 @@ div.post-links body.term-wine .page-content article.type-post .post-meta:before,
 body.term-wine .page-content article.type-post div.post-links .post-meta:before,
 div.post-links body.term-foods .page-content article.type-post .post-meta:before,
 body.term-foods .page-content article.type-post div.post-links .post-meta:before,
+div.post-links body.blog article.type-post .post-meta:before,
+body.blog article.type-post div.post-links .post-meta:before,
+div.post-links body.single-post article.type-post .post-meta:before,
+body.single-post article.type-post div.post-links .post-meta:before,
 div.post-links .site-meta .searchform div::after,
 .site-meta .searchform div.post-links div::after {
   color: #2E6F89;
@@ -9503,6 +9517,16 @@ body.term-foods .menu-item-categories li {
   vertical-align: bottom;
   height: 1.6rem;
   padding-right: 1rem;
+}
+
+body.blog article.type-post div.price-tag,
+body.single-post article.type-post div.price-tag {
+  display: none !important;
+}
+body.blog article.type-post .post-meta:before,
+body.single-post article.type-post .post-meta:before {
+  color: #2E6F89;
+  margin-right: 2rem;
 }
 
 body.single-menu_item .post-content {
