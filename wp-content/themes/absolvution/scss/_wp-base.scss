@@ -454,6 +454,11 @@ h2 {
  *}
  */
 
+body.blog {
+  .page-content {
+    margin-top: 3.2rem;
+  }
+}
 body.blog .post-meta,
 body.single-post {
   .post-meta {
