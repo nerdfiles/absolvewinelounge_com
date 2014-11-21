@@ -78,11 +78,18 @@ ol.comment-list {
   padding-left: $gutter;
 }
 
-li.tribe-events-nav-prev {
+li.tribe-events-nav-previous {
   a {
     position: relative;
     z-index: 15;
   }
+	a {
+    color: #f0c214;
+    background-color: #222;
+    @include pad(.5rem default);
+    margin: 0 .5rem;
+		/*float: right;*/
+	}
 
   a span {
     font-size: 0;
@@ -102,6 +109,15 @@ li.tribe-events-nav-next {
     position: relative;
     z-index: 15;
   }
+	a {
+    color: #f0c214;
+    background-color: #222;
+    @include pad(.5rem default);
+    margin: 0 .5rem;
+		/*float: right;*/
+	}
+
+
   a span {
     font-size: 0;
     text-indent: -9999px;
