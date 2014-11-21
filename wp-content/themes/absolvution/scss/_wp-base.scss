@@ -835,11 +835,15 @@ body.single-post {
       display: none !important;
     }
     .post-meta {
+      color: #f0c214;
+      text-transform: lowercase;
+      font-variant: small-caps;
       &:before {
         @extend .fa;
         @extend .fa-bookmark-o;
         color: #2E6F89;
-        margin-right: 2rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
       }
     }
   }
