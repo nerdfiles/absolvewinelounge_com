@@ -142,20 +142,19 @@
         return option$.closest('.select-wrapper').append("<div>" + (option$.text()) + "</div>");
       });
     });
-    $('.select-wrapper').on('click', function(e) {
+    $('.select-wrapper').on('click', function() {
       $(this).toggleClass('not-showing');
       return $(this).toggleClass('showing');
     });
     if (mobilecheck === false) {
       postContentHeight = $('body.home .post-content').height();
       if (mobilecheck === false) {
-        console.log(postContentHeight);
+        window.console.log(postContentHeight);
       }
     }
 
     /*
      */
-    $('.site-footer').after('<a style="position: relative; left: .5rem;" target="_blank" href="http://nerdfiles.net"><img src="http://nerdfiles.net/assets/img-ui/favicon.png" /></a>');
     $eventCats = $('.tribe-events-event-categories');
     $eventCats.find('a').hide();
     $eventCatss = $eventCats.find('a').clone();
