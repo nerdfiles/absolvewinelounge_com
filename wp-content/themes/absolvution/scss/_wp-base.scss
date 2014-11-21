@@ -861,7 +861,7 @@ body.single-menu_item {
     @include span-columns(10);
     @include shift(1);
     @include media($large) {
-      @include span-columns(5);
+      @include span-columns(9);
     }
     background: none;
     color: $color2;
@@ -971,6 +971,7 @@ body.search .search-title {
     background: #333;
     color: #fff;
     font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    border-radius: none !important;
     @include span-columns(12);
   }
 }
