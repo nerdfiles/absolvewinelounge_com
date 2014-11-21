@@ -1021,3 +1021,8 @@ body.search .search-title {
 .sep.tag {
   @extend .fa-slack;
 }
+
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"]>a {
+  background-color: transparent;
+}
+.tribe-events-present {}

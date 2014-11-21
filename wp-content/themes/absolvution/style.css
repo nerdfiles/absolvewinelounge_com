@@ -9734,6 +9734,10 @@ body.search .search-title {
   position: absolute;
 }
 
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a {
+  background-color: transparent;
+}
+
 .site-header {
   /*overflow: hidden;*/
   padding: 0;
