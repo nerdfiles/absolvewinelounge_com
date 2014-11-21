@@ -828,6 +828,22 @@ body.term-foods {
 
 }
 
+body.blog,
+body.single-post {
+  article.type-post {
+    div.price-tag {
+      display: none !important;
+    }
+    .post-meta {
+      &:before {
+        @extend .fa;
+        @extend .fa-bookmark-o;
+        color: #2E6F89;
+        margin-right: 2rem;
+      }
+    }
+  }
+}
 body.single-menu_item {
   .post-content {
     background-color: transparent;
