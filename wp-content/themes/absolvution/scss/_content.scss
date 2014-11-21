@@ -81,7 +81,7 @@ article {
   }
 }
 .post-meta {
-  @include span-columns(8);
+  @include span-columns(10);
   @include shift(.25);
   color: #fff;
   /*margin-top: -2em;*/
