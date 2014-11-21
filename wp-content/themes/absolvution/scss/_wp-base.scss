@@ -80,13 +80,15 @@ ol.comment-list {
 
 .tribe-events-nav-previous {
   a span {
+    text-indent: -9999px;
     @extend .fa;
     @extend .fa-arrow-circle-left;
   }
 }
 
-.tribe-events-nav-right {
+.tribe-events-nav-next {
   a span {
+    text-indent: -9999px;
     @extend .fa;
     @extend .fa-arrow-circle-right;
   }
@@ -109,6 +111,7 @@ div.post-links {
   .fa {
     color: #2E6F89;
   }
+  color: #f0c214;
 
 	a {
     color: #f0c214;
