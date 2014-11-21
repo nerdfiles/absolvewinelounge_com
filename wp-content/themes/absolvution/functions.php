@@ -258,9 +258,9 @@ function absolvution_post_meta() {
     echo sprintf(
       __( 'Posted %s in %s%s by %s. ', 'absolvution' ),
       get_the_time( get_option( 'date_format' ) ),
-      get_the_category_list( ', ' ),
-      get_the_tag_list( __( ', <b>Tags</b>: ', 'absolvution' ), ', ' ),
-      get_the_author_link()
+      null,
+      get_the_tag_list( __( '', 'absolvution' ), ', ' ),
+      null
     );
   }
   edit_post_link( __( ' (edit)', 'absolvution' ), '<span class="edit-link">', '</span>' );
