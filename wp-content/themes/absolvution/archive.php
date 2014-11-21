@@ -65,7 +65,7 @@ get_header();
       <?php } ?>
 
       <?php
-        if (($parent->slug=='drinks'&&strpos($req, 'drinks')==false)&&strpos($req, 'beer')==false)) {
+        if (($parent->slug=='drinks'&&strpos($req, 'drinks')==false&&strpos($req, 'beer')==false)) {
         //if ($parent->slug!='wine' && $parent->slug!='foods' && strpos($req, 'drinks') != true && strpos($req, 'menu') == true) {
         ?>
           <div class="menu"><?php
