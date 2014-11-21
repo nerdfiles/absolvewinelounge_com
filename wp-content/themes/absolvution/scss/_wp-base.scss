@@ -994,25 +994,27 @@ body.search .search-title {
 .meta-container.cat {
   color: #333;
   @include shift(1);
-  @include span-columns(5);
+  @include span-columns(12);
 }
 .meta-container.tag {
   clear: left;
   color: #333;
   @include shift(1);
-  @include span-columns(6);
+  @include span-columns(12);
 }
 .meta-container.date-posted {
-  padding-left: 4rem;
+  @include shift(1);
   &:before {
     @extend .fa;
     @extend .fa-bookmark-o;
-    font-size: 3rem;
+    font-size: 5rem;
     color: #8E9EC2;
     opacity: .3;
     margin-right: 1rem;
-    margin-left: -3rem;
+    margin-left: -1rem;
     position: absolute;
+    margin-top: -3.5rem;
+    z-index: -1;
   }
 }
 .sep.cat {
