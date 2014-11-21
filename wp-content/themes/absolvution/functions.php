@@ -256,11 +256,10 @@ function add_id_to_script($src, $handle) {
 function absolvution_post_meta() {
   if ( get_post_type() == 'post' ) {
     echo sprintf(
-      __( 'Posted %s in %s%s by %s. ', 'absolvution' ),
+      __( 'Posted %s — %s%s', 'absolvution' ),
       get_the_time( get_option( 'date_format' ) ),
       null,
-      get_the_tag_list( __( '', 'absolvution' ), ', ' ),
-      null
+      get_the_tag_list( __( '', 'absolvution' ), ', ' )
     );
   }
   edit_post_link( __( ' (edit)', 'absolvution' ), '<span class="edit-link">', '</span>' );

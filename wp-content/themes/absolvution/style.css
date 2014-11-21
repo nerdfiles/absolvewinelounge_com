@@ -9523,10 +9523,17 @@ body.blog article.type-post div.price-tag,
 body.single-post article.type-post div.price-tag {
   display: none !important;
 }
+body.blog article.type-post .post-meta,
+body.single-post article.type-post .post-meta {
+  color: #f0c214;
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
 body.blog article.type-post .post-meta:before,
 body.single-post article.type-post .post-meta:before {
   color: #2E6F89;
-  margin-right: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 body.single-menu_item .post-content {
