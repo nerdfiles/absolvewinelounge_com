@@ -99,6 +99,29 @@ get_header(); ?>
 
           <div class="post-links">
             <?php if ( is_singular( 'menu_item' ) ) { ?>
+              <?php
+              /**
+              * Infinite next and previous post looping in WordPress
+              */
+              if( get_adjacent_post(false, '', true) ) {
+                echo '<span class="container">';
+                previous_post_link('%link', '<span class="fa fa-arrow-left"></span> Previous menu item');
+                echo '</span>';
+              } else {
+                $first = new WP_Query('posts_per_page=1&post_type=menu_item&order=DESC'); $first->the_post();
+                echo '<span class="container"><a href="' . get_permalink() . '"><span class="fa fa-arrow-left"></span> Previous menu item</a></span>';
+                wp_reset_query();
+              };
+              if( get_adjacent_post(false, '', false) ) {
+                echo '<span class="container">';
+                next_post_link('%link', 'Next menu item <span class="fa fa-arrow-right"></span>');
+                echo '</span>';
+              } else {
+                $last = new WP_Query('posts_per_page=1&post_type=menu_item&order=ASC'); $last->the_post();
+                echo '<span class="container"><a href="' . get_permalink() . '">Next menu item <span class="fa fa-arrow-right"></span></a></span>';
+                wp_reset_query();
+              };
+              ?>
               <!--span class="container">
                 <?php previous_post_link( '%link', __( '<span class="fa fa-arrow-left"></span> Previous menu item', 'absolvution' ) ) ?>
               </span>

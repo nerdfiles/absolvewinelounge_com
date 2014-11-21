@@ -553,7 +553,7 @@ body.term-foods {
       text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
       @include span-columns(11.6);
       @include media($large) {
-        @include span-columns(5.8);
+        @include span-columns(7);
       }
       /*overflow: hidden;*/
       height: 10rem;
