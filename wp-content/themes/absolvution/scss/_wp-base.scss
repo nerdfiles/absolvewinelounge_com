@@ -937,10 +937,20 @@ body.search .search-title {
 }
 .wpcf7-validation-errors {
   background-color: #FDCE85;
-  border: 2px solid #339999;
-  margin: 0;
+  border: 2px solid #8F3902 !important;
+  margin: 0 !important;
+  color: #8F3902;
   @extend .animated;
   @extend .wobble;
+}
+
+.wpcf7-submit + .ajax-loader {
+  width: 0;
+  height: 0;
+  &:before {
+    @extend .fa;
+    @extend .fa-spinner;
+  }
 }
 
 .wpcf7-form-control-wrap {
