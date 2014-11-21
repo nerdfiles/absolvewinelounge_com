@@ -23,7 +23,7 @@ casper = require('casper').create {
   stepTimeout    : 10000
   retryTimeout   : 150
   #clientScripts : ["jquery.min.js"]
-  viewportSize: responses.small
+  viewportSize: responses.large
   pageSettings:
     loadImages         : true
     loadPlugins        : true
@@ -55,7 +55,67 @@ casper.on('page.error', (msg, trace) ->
      @echo('   ' + step.file + ' (line ' + step.line + ')', 'ERROR')
 )
 
+
 links = [
+  "/about/"
+  "/menu/drinks/"
+  "/menu/wine/"
+  "/menu/by-the-glass/"
+  "/menu/craft-beer/"
+  "/menu/cocktails/"
+  "/menu/foods/"
+  "/menu/happy-hour/"
+  "/menu/small-plates/"
+  "/menu/thin-crust-pizzas/"
+  "/menu/desserts/"
+  "/menu/charcuterie-cheese/"
+  "/events/"
+  "/gallery/"
+  "/blog/"
+  "/contact/"
+
+  "/items/the-absolve-meat-cheese-plate/"
+  "/items/the-ultimate-charcuterie-cheese-experience/"
+  "/items/smoked-duck/"
+  "/items/spicy-borsellino/"
+  "/items/saucisson-sec/"
+  "/items/garrotxa-g/"
+  "/items/marieke-gouda-c/"
+  "/items/purple-haze/"
+  "/items/buttermilk-blue-c/"
+  "/items/reading-raclette-c/"
+  "/items/ossau-iraty/"
+  "/items/zamorano-s/"
+  "/items/baby-belletoile-c/"
+  "/items/lomo-2/"
+  "/items/loukanika-salami/"
+  "/items/prosciutto/"
+  "/items/chorizo-rioja/"
+  "/items/lomo/"
+  "/items/purple-haze-g/"
+  "/items/ossau-iraty-s/"
+
+  "/items/baaaad-az-pizza/"
+  "/items/beefy-caprese/"
+  "/items/bruschetta-trio/"
+  "/items/but-im-a-fungi/"
+  "/items/ceviche/"
+  "/items/champagne-donut-bread-pudding/"
+  "/items/chilled-avocado-soup/"
+  "/items/gimme-the-bill/"
+  "/items/herbaceous-hummus/"
+  "/items/on-the-vine/"
+  "/items/panna-cotta/"
+  "/items/smoked-salmon/"
+  "/items/the-cheese-factor-dip/"
+  "/items/the-pig-and-the-leaf/"
+  "/items/the-regular/"
+  "/items/the-two-timer/"
+  "/items/veggie-tales/"
+
+]
+
+holdLinks = [
   'index.php'
   'menu/craft-beer'
   'menu/by-the-glass'
@@ -69,6 +129,7 @@ links = [
   'menu/champagne'
   'menu/cocktails'
 ]
+
 holdLinks = [
   "about/"
 
