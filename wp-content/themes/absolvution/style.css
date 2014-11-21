@@ -400,7 +400,7 @@ body.term-happy-hour .page-content article.menu_item:hover .price-tag,
 body.term-wine .page-content article.type-post:hover .price-tag,
 body.term-wine .page-content article.menu_item:hover .price-tag,
 body.term-foods .page-content article.type-post:hover .price-tag,
-body.term-foods .page-content article.menu_item:hover .price-tag, .site-banner .logo h1.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.sub-menu, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .google-maps-builder-wrap, body.events-gridview .type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .price-tag, .wpcf7-validation-errors, .site-banner .logo h1.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.sub-menu, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .google-maps-builder-wrap, body.events-gridview .type-tribe_events,
 body.events-single .type-tribe_events, body.events-gridview td:hover,
 body.events-single td:hover, .tribe-events-ajax-loading:before, .chi_display_header, body .r-out, body .r-in {
   -webkit-animation-duration: 0.75s;
@@ -2160,7 +2160,7 @@ body.term-happy-hour .page-content article.menu_item:hover .fold-in.price-tag,
 body.term-wine .page-content article.type-post:hover .fold-in.price-tag,
 body.term-wine .page-content article.menu_item:hover .fold-in.price-tag,
 body.term-foods .page-content article.type-post:hover .fold-in.price-tag,
-body.term-foods .page-content article.menu_item:hover .fold-in.price-tag, .site-banner .logo h1.fold-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-in.sub-menu, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.page-contact .fold-in.google-maps-builder-wrap, body.events-gridview .fold-in.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .fold-in.price-tag, .fold-in.wpcf7-validation-errors, .site-banner .logo h1.fold-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-in.sub-menu, .site-meta .searchform:focus div.fold-in::after, .site-meta .searchform:active div.fold-in::after, .site-meta .searchform input.fold-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-in, body.page-contact .fold-in.google-maps-builder-wrap, body.events-gridview .fold-in.type-tribe_events,
 body.events-single .fold-in.type-tribe_events, body.events-gridview td.fold-in:hover,
 body.events-single td.fold-in:hover, .fold-in.tribe-events-ajax-loading:before, .fold-in.chi_display_header, body .fold-in.r-out, body .fold-in.r-in {
   -webkit-animation-duration: 1.2s;
@@ -2219,7 +2219,7 @@ body.term-happy-hour .page-content article.menu_item:hover .fold-small-in.price-
 body.term-wine .page-content article.type-post:hover .fold-small-in.price-tag,
 body.term-wine .page-content article.menu_item:hover .fold-small-in.price-tag,
 body.term-foods .page-content article.type-post:hover .fold-small-in.price-tag,
-body.term-foods .page-content article.menu_item:hover .fold-small-in.price-tag, .site-banner .logo h1.fold-small-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-small-in.sub-menu, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.page-contact .fold-small-in.google-maps-builder-wrap, body.events-gridview .fold-small-in.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .fold-small-in.price-tag, .fold-small-in.wpcf7-validation-errors, .site-banner .logo h1.fold-small-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-small-in.sub-menu, .site-meta .searchform:focus div.fold-small-in::after, .site-meta .searchform:active div.fold-small-in::after, .site-meta .searchform input.fold-small-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-in, body.page-contact .fold-small-in.google-maps-builder-wrap, body.events-gridview .fold-small-in.type-tribe_events,
 body.events-single .fold-small-in.type-tribe_events, body.events-gridview td.fold-small-in:hover,
 body.events-single td.fold-small-in:hover, .fold-small-in.tribe-events-ajax-loading:before, .fold-small-in.chi_display_header, body .fold-small-in.r-out, body .fold-small-in.r-in {
   -webkit-animation-duration: 1s;
@@ -2278,7 +2278,7 @@ body.term-happy-hour .page-content article.menu_item:hover .fold-out.price-tag,
 body.term-wine .page-content article.type-post:hover .fold-out.price-tag,
 body.term-wine .page-content article.menu_item:hover .fold-out.price-tag,
 body.term-foods .page-content article.type-post:hover .fold-out.price-tag,
-body.term-foods .page-content article.menu_item:hover .fold-out.price-tag, .site-banner .logo h1.fold-out.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-out.sub-menu, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.page-contact .fold-out.google-maps-builder-wrap, body.events-gridview .fold-out.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .fold-out.price-tag, .fold-out.wpcf7-validation-errors, .site-banner .logo h1.fold-out.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-out.sub-menu, .site-meta .searchform:focus div.fold-out::after, .site-meta .searchform:active div.fold-out::after, .site-meta .searchform input.fold-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-out, body.page-contact .fold-out.google-maps-builder-wrap, body.events-gridview .fold-out.type-tribe_events,
 body.events-single .fold-out.type-tribe_events, body.events-gridview td.fold-out:hover,
 body.events-single td.fold-out:hover, .fold-out.tribe-events-ajax-loading:before, .fold-out.chi_display_header, body .fold-out.r-out, body .fold-out.r-in {
   -webkit-animation-duration: 1.2s;
@@ -2337,7 +2337,7 @@ body.term-happy-hour .page-content article.menu_item:hover .fold-small-out.price
 body.term-wine .page-content article.type-post:hover .fold-small-out.price-tag,
 body.term-wine .page-content article.menu_item:hover .fold-small-out.price-tag,
 body.term-foods .page-content article.type-post:hover .fold-small-out.price-tag,
-body.term-foods .page-content article.menu_item:hover .fold-small-out.price-tag, .site-banner .logo h1.fold-small-out.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-small-out.sub-menu, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.page-contact .fold-small-out.google-maps-builder-wrap, body.events-gridview .fold-small-out.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .fold-small-out.price-tag, .fold-small-out.wpcf7-validation-errors, .site-banner .logo h1.fold-small-out.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.fold-small-out.sub-menu, .site-meta .searchform:focus div.fold-small-out::after, .site-meta .searchform:active div.fold-small-out::after, .site-meta .searchform input.fold-small-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.fold-small-out, body.page-contact .fold-small-out.google-maps-builder-wrap, body.events-gridview .fold-small-out.type-tribe_events,
 body.events-single .fold-small-out.type-tribe_events, body.events-gridview td.fold-small-out:hover,
 body.events-single td.fold-small-out:hover, .fold-small-out.tribe-events-ajax-loading:before, .fold-small-out.chi_display_header, body .fold-small-out.r-out, body .fold-small-out.r-in {
   -webkit-animation-duration: 1s;
@@ -2934,7 +2934,7 @@ body.term-happy-hour .page-content article.menu_item:hover .hinge-out.price-tag,
 body.term-wine .page-content article.type-post:hover .hinge-out.price-tag,
 body.term-wine .page-content article.menu_item:hover .hinge-out.price-tag,
 body.term-foods .page-content article.type-post:hover .hinge-out.price-tag,
-body.term-foods .page-content article.menu_item:hover .hinge-out.price-tag, .site-banner .logo h1.hinge-out.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.hinge-out.sub-menu, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.page-contact .hinge-out.google-maps-builder-wrap, body.events-gridview .hinge-out.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .hinge-out.price-tag, .hinge-out.wpcf7-validation-errors, .site-banner .logo h1.hinge-out.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.hinge-out.sub-menu, .site-meta .searchform:focus div.hinge-out::after, .site-meta .searchform:active div.hinge-out::after, .site-meta .searchform input.hinge-out[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.hinge-out, body.page-contact .hinge-out.google-maps-builder-wrap, body.events-gridview .hinge-out.type-tribe_events,
 body.events-single .hinge-out.type-tribe_events, body.events-gridview td.hinge-out:hover,
 body.events-single td.hinge-out:hover, .hinge-out.tribe-events-ajax-loading:before, .hinge-out.chi_display_header, body .hinge-out.r-out, body .hinge-out.r-in {
   -webkit-animation-duration: 1.75s;
@@ -3036,7 +3036,7 @@ body.term-happy-hour .page-content article.menu_item:hover .light-speed-in.price
 body.term-wine .page-content article.type-post:hover .light-speed-in.price-tag,
 body.term-wine .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-foods .page-content article.type-post:hover .light-speed-in.price-tag,
-body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .site-banner .logo h1.light-speed-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.light-speed-in.sub-menu, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .light-speed-in.wpcf7-validation-errors, .site-banner .logo h1.light-speed-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.light-speed-in.sub-menu, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover, .light-speed-in.tribe-events-ajax-loading:before, .light-speed-in.chi_display_header, body .light-speed-in.r-out, body .light-speed-in.r-in {
   -webkit-animation-duration: 0.4s;
@@ -3106,7 +3106,7 @@ body.term-happy-hour .page-content article.menu_item:hover .light-speed-in.price
 body.term-wine .page-content article.type-post:hover .light-speed-in.price-tag,
 body.term-wine .page-content article.menu_item:hover .light-speed-in.price-tag,
 body.term-foods .page-content article.type-post:hover .light-speed-in.price-tag,
-body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .site-banner .logo h1.light-speed-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.light-speed-in.sub-menu, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
+body.term-foods .page-content article.menu_item:hover .light-speed-in.price-tag, .light-speed-in.wpcf7-validation-errors, .site-banner .logo h1.light-speed-in.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.light-speed-in.sub-menu, .site-meta .searchform:focus div.light-speed-in::after, .site-meta .searchform:active div.light-speed-in::after, .site-meta .searchform input.light-speed-in[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input.light-speed-in, body.page-contact .light-speed-in.google-maps-builder-wrap, body.events-gridview .light-speed-in.type-tribe_events,
 body.events-single .light-speed-in.type-tribe_events, body.events-gridview td.light-speed-in:hover,
 body.events-single td.light-speed-in:hover, .light-speed-in.tribe-events-ajax-loading:before, .light-speed-in.chi_display_header, body .light-speed-in.r-out, body .light-speed-in.r-in {
   -webkit-animation-duration: 0.2s;
@@ -4387,7 +4387,7 @@ body.term-foods .page-content article.menu_item:hover .site-meta .searchform:foc
 body.term-foods .page-content article.menu_item:hover .site-meta .searchform:active div.price-tag::after,
 .site-meta .searchform:active body.term-foods .page-content article.menu_item:hover div.price-tag::after,
 body.term-foods .page-content article.menu_item:hover .site-meta .searchform input[type="text"]:focus + input.price-tag,
-.site-meta .searchform body.term-foods .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag, .site-banner .logo h1.wiggle.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.wiggle.sub-menu, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .wiggle.google-maps-builder-wrap, body.page-contact .site-meta .searchform:focus div.google-maps-builder-wrap::after, .site-meta .searchform:focus body.page-contact div.google-maps-builder-wrap::after, body.page-contact .site-meta .searchform:active div.google-maps-builder-wrap::after, .site-meta .searchform:active body.page-contact div.google-maps-builder-wrap::after, body.page-contact .site-meta .searchform input[type="text"]:focus + input.google-maps-builder-wrap, .site-meta .searchform body.page-contact input[type="text"]:focus + input.google-maps-builder-wrap, body.events-gridview .wiggle.type-tribe_events, body.events-gridview .site-meta .searchform:focus div.type-tribe_events::after, .site-meta .searchform:focus body.events-gridview div.type-tribe_events::after, body.events-gridview .site-meta .searchform:active div.type-tribe_events::after, .site-meta .searchform:active body.events-gridview div.type-tribe_events::after, body.events-gridview .site-meta .searchform input[type="text"]:focus + input.type-tribe_events, .site-meta .searchform body.events-gridview input[type="text"]:focus + input.type-tribe_events,
+.site-meta .searchform body.term-foods .page-content article.menu_item:hover input[type="text"]:focus + input.price-tag, .wiggle.wpcf7-validation-errors, .site-meta .searchform:focus div.wpcf7-validation-errors::after, .site-meta .searchform:active div.wpcf7-validation-errors::after, .site-meta .searchform input[type="text"]:focus + input.wpcf7-validation-errors, .site-banner .logo h1.wiggle.blog-name, .site-banner .main-menu ul.menu > li.menu-item:hover ul.wiggle.sub-menu, .site-meta .searchform:focus div::after, .site-meta .searchform:active div::after, .site-meta .searchform input.wiggle[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input[type="text"]:focus, .site-meta .searchform input[type="text"]:focus + input, body.page-contact .wiggle.google-maps-builder-wrap, body.page-contact .site-meta .searchform:focus div.google-maps-builder-wrap::after, .site-meta .searchform:focus body.page-contact div.google-maps-builder-wrap::after, body.page-contact .site-meta .searchform:active div.google-maps-builder-wrap::after, .site-meta .searchform:active body.page-contact div.google-maps-builder-wrap::after, body.page-contact .site-meta .searchform input[type="text"]:focus + input.google-maps-builder-wrap, .site-meta .searchform body.page-contact input[type="text"]:focus + input.google-maps-builder-wrap, body.events-gridview .wiggle.type-tribe_events, body.events-gridview .site-meta .searchform:focus div.type-tribe_events::after, .site-meta .searchform:focus body.events-gridview div.type-tribe_events::after, body.events-gridview .site-meta .searchform:active div.type-tribe_events::after, .site-meta .searchform:active body.events-gridview div.type-tribe_events::after, body.events-gridview .site-meta .searchform input[type="text"]:focus + input.type-tribe_events, .site-meta .searchform body.events-gridview input[type="text"]:focus + input.type-tribe_events,
 body.events-single .wiggle.type-tribe_events,
 body.events-single .site-meta .searchform:focus div.type-tribe_events::after,
 .site-meta .searchform:focus body.events-single div.type-tribe_events::after,
@@ -4494,7 +4494,7 @@ body.events-single td.wiggle:hover, .wiggle.tribe-events-ajax-loading:before, .s
     -moz-transform: translateX(0%);
   }
 }
-.wobble {
+.wobble, .wpcf7-validation-errors {
   -webkit-animation-name: wobble;
   -moz-animation-name: wobble;
   -o-animation-name: wobble;
@@ -9651,6 +9651,21 @@ body.single-menu_item .menu-item-categories ul:after {
 body.search .search-title {
   margin-left: -4.29448%;
   margin-bottom: 2rem;
+}
+
+.wpcf7-not-valid-tip {
+  position: absolute;
+  left: -9999px;
+}
+
+.wpcf7-not-valid {
+  border: 2px #8F3902 solid;
+}
+
+.wpcf7-validation-errors {
+  background-color: #FDCE85;
+  border: 2px solid #339999;
+  margin: 0;
 }
 
 .site-header {

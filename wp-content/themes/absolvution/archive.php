@@ -22,7 +22,7 @@ get_header();
             printf( __( 'Category Archives: %s', 'absolvution' ), single_cat_title( '', false ) );
 
           elseif ( is_tag() ):
-            printf( __( 'List: %s', 'absolvution' ), single_tag_title( '', false ) );
+            printf( __( 'Tag: %s', 'absolvution' ), single_tag_title( '', false ) );
           elseif ( is_tax() ):
             $term     = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
             $taxonomy = get_taxonomy( get_query_var( 'taxonomy' ) );
@@ -193,4 +193,7 @@ get_header();
 
   </section>
 
-<?php get_footer(); ?>
+<?php
+wp_reset_postdata();
+wp_reset_query();
+get_footer(); ?>
