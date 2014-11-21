@@ -9740,6 +9740,10 @@ body.search .search-title {
   background-color: transparent;
 }
 
+.search-no-results .post-content {
+  display: none;
+}
+
 .site-header {
   /*overflow: hidden;*/
   padding: 0;
