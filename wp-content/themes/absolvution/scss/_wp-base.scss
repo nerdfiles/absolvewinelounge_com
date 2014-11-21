@@ -86,7 +86,7 @@ li.tribe-events-nav-previous {
   }
 	a {
     color: #f0c214;
-    background-color: #222;
+    background-color: transparent;
     @include pad(.5rem default);
     margin: 0 .5rem;
     &:hover {
@@ -120,7 +120,7 @@ li.tribe-events-nav-next {
   }
 	a {
     color: #f0c214;
-    background-color: #222;
+    background-color: transparent;
     @include pad(.5rem default);
     margin: 0 .5rem;
     &:hover {
@@ -510,7 +510,7 @@ body.search {
         @include span-columns(5.8);
       }
       /*overflow: hidden;*/
-      height: 10rem;
+      height: 5rem;
       margin-bottom: 2rem;
       &:hover .price-tag {
         @extend .flip;
@@ -541,7 +541,7 @@ body.search {
         @include media($large) {
           @include span-columns(5.8);
         }
-        height: 10rem;
+        height: 5rem;
         padding-left: .3rem;
         padding-top: .3rem;
         border-bottom: 1px #c6a013 solid;
@@ -843,13 +843,6 @@ body.single-post {
       color: #f0c214;
       text-transform: lowercase;
       font-variant: small-caps;
-      &:before {
-        @extend .fa;
-        @extend .fa-bookmark-o;
-        color: #2E6F89;
-        margin-right: 1rem;
-        margin-left: 1rem;
-      }
     }
   }
 }
@@ -986,4 +979,45 @@ body.search .search-title {
 }
 .your-message {
   @extend .fa-quote-right;
+}
+
+.post-meta {
+}
+.sep {
+  @extend .fa;
+  @extend .fa-bars;
+  color: #8E9EC2;
+  opacity: .3;
+}
+.meta-container {
+}
+.meta-container.cat {
+  color: #333;
+  @include shift(1);
+  @include span-columns(5);
+}
+.meta-container.tag {
+  clear: left;
+  color: #333;
+  @include shift(1);
+  @include span-columns(6);
+}
+.meta-container.date-posted {
+  padding-left: 4rem;
+  &:before {
+    @extend .fa;
+    @extend .fa-bookmark-o;
+    font-size: 3rem;
+    color: #8E9EC2;
+    opacity: .3;
+    margin-right: 1rem;
+    margin-left: -3rem;
+    position: absolute;
+  }
+}
+.sep.cat {
+  @extend .fa-tag;
+}
+.sep.tag {
+  @extend .fa-slack;
 }

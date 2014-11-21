@@ -7,7 +7,6 @@
  * @since absolvution 1.0
  */
 
-
 /******************************************************************************\
   Theme support, standard settings, menus and widgets
 \******************************************************************************/
@@ -256,9 +255,9 @@ function add_id_to_script($src, $handle) {
 function absolvution_post_meta() {
   if ( get_post_type() == 'post' ) {
     echo sprintf(
-      __( 'Posted %s — %s%s', 'absolvution' ),
+      __( '<div class="meta-container date-posted">Posted %s </div><div class="meta-container cat"><span class="sep cat"></span> %s </div><div class="meta-container tag "><span class="sep tag"></span> %s </div>', 'absolvution' ),
       get_the_time( get_option( 'date_format' ) ),
-      null,
+      get_the_category_list( ', ' ),
       get_the_tag_list( __( '', 'absolvution' ), ', ' )
     );
   }
@@ -380,7 +379,6 @@ function thumbnailing($post) {
 add_action('tribe_events_list_widget_before_the_event_title', 'thumbnailing');
 
 add_filter('pre_get_posts','wine_menus_archive');
-
 function wine_menus_archive( $query ) {
 
     if ( $query->is_tax( 'menu', 'drinks' ) && $query->is_main_query() ) {
@@ -395,6 +393,7 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'wine', 'by-the-glass', 'craft-beer' )
             )
         ) );
+      return $query;
     }
 
     if ( $query->is_tax( 'menu', 'by-the-glass' ) && $query->is_main_query() ) {
@@ -409,6 +408,7 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'by-the-glass' )
             )
         ) );
+      return $query;
     }
 
     if ( $query->is_tax( 'menu', 'wine' ) && $query->is_main_query() ) {
@@ -431,6 +431,7 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'wine' )
             )
         ) );
+      return $query;
     }
 
     if ( ( $query->is_tax( 'menu', 'white' ) || $query->is_tax( 'menu', 'sparkling' ) || $query->is_tax( 'menu', 'dessert' ) || $query->is_tax( 'menu', 'rose' ) || $query->is_tax( 'menu', 'red' ) ) && $query->is_main_query() ) {
@@ -453,6 +454,7 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'wine' )
             )
         ) );
+      return $query;
     }
 
     if ( $query->is_tax( 'menu', 'craft-beer' ) && $query->is_main_query() ) {
@@ -468,6 +470,7 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'craft-beer' )
             )
         ) );
+      return $query;
     }
 
     if ( $query->is_tax( 'menu', 'foods' ) && $query->is_main_query() ) {
@@ -490,6 +493,7 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'small-plates', 'thin-crust-pizzas', 'desserts' )
             )
         ) );
+      return $query;
     }
 
     if ( $query->is_tax( 'menu', 'charcuterie-cheese' ) && $query->is_main_query() ) {
@@ -505,6 +509,13 @@ function wine_menus_archive( $query ) {
                 'terms' => array( 'cheese', 'charcuterie' )
             )
         ) );
+      return $query;
+    }
+
+    if(is_archive() || is_category() || is_tag()) {
+      $post_type = array('nav_menu_item', 'post', 'page', 'attachment');
+      $query->set('post_type',$post_type);
+      return $query;
     }
 
     return $query;
@@ -588,13 +599,3 @@ function search_filter($query) {
  *}
  *add_filter( 'pre_get_posts', 'to_tax' );
  */
-
-//add_action('template_include', 'avoid_404_event_titles', 1);
-function avoid_404_event_titles() {
-  global $wp_query;
-  print_r($wp_query);
-  /*
-   *if (property_exists($wp_query, 'tribe_is_event') && $wp_query->tribe_is_event && $wp_query->is_404)
-   *  $wp_query->is_404 = false;
-   */
-}
