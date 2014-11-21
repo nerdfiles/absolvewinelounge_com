@@ -942,3 +942,37 @@ body.search .search-title {
   @extend .animated;
   @extend .wobble;
 }
+
+.wpcf7-form-control-wrap {
+  @extend .fa;
+  position: relative;
+  margin-bottom: .5rem;
+  &:before {
+    font-size: 4rem;
+    color: #8E9EC2;
+    position: absolute;
+    right: -2rem;
+    z-index: -1;
+    opacity: 0.5;
+    top: -2.5rem;
+    opacity: .1;
+  }
+  input, textarea {
+    background: #333;
+    color: #fff;
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    @include span-columns(12);
+  }
+}
+.your-email {
+  @extend .fa-at;
+}
+.your-name {
+  @extend .fa-font;
+}
+.your-subject {
+  @extend .fa-reply;
+}
+.your-message {
+  @extend .fa-quote-right;
+}
