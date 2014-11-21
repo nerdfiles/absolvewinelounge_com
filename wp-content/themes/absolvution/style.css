@@ -10212,7 +10212,7 @@ body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(
     float: left;
     display: block;
     margin-right: 3.06748%;
-    width: 39.8773%;
+    width: 48.46626%;
   }
   body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .post .post-content:last-child, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .page .post-content:last-child, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .archive .post-content:last-child, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .search .post-content:last-child, body:not(.home):not(.events-gridview):not(.page-contact):not(.page-gallery):not(.events-single) .author .post-content:last-child {
     margin-right: 0;
