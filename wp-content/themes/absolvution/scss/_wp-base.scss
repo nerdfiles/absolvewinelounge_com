@@ -78,21 +78,43 @@ ol.comment-list {
   padding-left: $gutter;
 }
 
-.tribe-events-nav-previous {
+li.tribe-events-nav-prev {
+  a {
+    position: relative;
+    z-index: 15;
+  }
+
   a span {
+    font-size: 0;
     text-indent: -9999px;
     @extend .fa;
     @extend .fa-arrow-circle-left;
+    &:before {
+      position: relative;
+      z-index: 10;
+      font-size: 3rem !important;
+    }
   }
 }
 
-.tribe-events-nav-next {
+li.tribe-events-nav-next {
+  a {
+    position: relative;
+    z-index: 15;
+  }
   a span {
+    font-size: 0;
     text-indent: -9999px;
     @extend .fa;
     @extend .fa-arrow-circle-right;
+    &:before {
+      position: relative;
+      z-index: 10;
+      font-size: 3rem !important;
+    }
   }
 }
+
 .tribe-events-nav-previous,
 .tribe-events-nav-next,
 div.post-links {
