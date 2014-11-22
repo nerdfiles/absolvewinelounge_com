@@ -712,7 +712,7 @@ body.home {
         margin-bottom: 0;
         list-style: none; }
       @include span-columns(8);
-      @include shift(2);
+      @include shift(1.75);
       @include clearfix;
       text-align: center;
       a {
