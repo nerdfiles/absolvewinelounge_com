@@ -185,7 +185,9 @@ get_header();
 
     <div class="pagination">
       <?php
-      if ( is_dynamic_sidebar('menu-drinks-introduction-widgets') || is_dynamic_sidebar('menu-wines-introduction-widgets') || is_dynamic_sidebar('menu-foods-introduction-widgets' ) ) :
+      if ( is_dynamic_sidebar('menu-drinks-introduction-widgets') ):
+      elseif ( is_dynamic_sidebar('menu-wines-introduction-widgets') ):
+      elseif ( is_dynamic_sidebar('menu-foods-introduction-widgets' ) ) :
       else:
         get_template_part( 'template-part', 'pagination' );
       endif;
