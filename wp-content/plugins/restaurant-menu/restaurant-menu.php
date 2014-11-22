@@ -86,7 +86,7 @@ class MenuItemPostType {
       'hierarchical' => false,
       'has_archive' => true,
       'menu_position' => 8,
-      'taxonomies' => array( 'post_tag' ),
+      'taxonomies' => array(),
       'supports' => array(
       	'title',
       	'editor',
@@ -97,6 +97,7 @@ class MenuItemPostType {
       ),
     );
     register_post_type($this->type, $options);
+    flush_rewrite_rules( false );
   }
 
 
@@ -115,7 +116,7 @@ class MenuItemPostType {
 
 	function add_taxonomies() {
 
-    register_taxonomy_for_object_type('post_tag', 'menu_item');
+    //register_taxonomy_for_object_type('post_tag', 'menu_item');
 
 	  register_taxonomy(
 	  	'menu',
