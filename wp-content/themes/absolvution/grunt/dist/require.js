@@ -147,20 +147,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
     pc = $('body.home .post-content');
     nPlH = pl.height() + pc.height();
     pl.height(nPlH);
-    $('select.restrict').each(function() {
-      var select$;
-      select$ = $(this);
-      select$.wrap('<div class="select-wrapper not-showing"></div>');
-      return select$.find('option').each(function() {
-        var option$;
-        option$ = $(this);
-        return option$.closest('.select-wrapper').append("<div>" + (option$.text()) + "</div>");
-      });
-    });
-    $('.select-wrapper').on('click', function() {
-      $(this).toggleClass('not-showing');
-      return $(this).toggleClass('showing');
-    });
     if (mobilecheck === false) {
       postContentHeight = $('body.home .post-content').height();
       if (mobilecheck === false) {
