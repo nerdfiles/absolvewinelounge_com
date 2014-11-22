@@ -676,23 +676,48 @@ body.home {
 
 .menu-archive-widgets {
   margin-bottom: 2rem;
+  @include clearfix;
   ul {
+    position: relative;
     list-style: none;
     margin: 0;
     padding-left: 0;
   }
   ul.inner {
   }
+
+  .menu--choose {
+    &:before {
+      position: absolute;
+      left: 0;
+      margin-top: .3rem;
+      @include shift(10);
+      @extend .fa;
+      @extend .fa-mail-reply;
+    }
+  }
+
   .menu-legend {
-    @include clearfix;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      margin-top: .3rem;
+      @include shift(.8);
+      @extend .fa;
+      @extend .fa-mail-forward;
+    }
+
     ul {
       @include span-columns(8);
       @include shift(1.75);
       @include clearfix;
-      border-bottom: 3px double #F0C214;
+      border-bottom: 3px double #2E6F89;
       li {
         @include span-columns(3);
         text-align: center;
+        padding-bottom: .5rem;
       }
     }
   }
