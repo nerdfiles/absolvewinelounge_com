@@ -8277,13 +8277,13 @@ ol.comment-list li.bypostauthor:target a[href*="close"] .label {
 li.tribe-events-nav-previous a {
   position: relative;
   z-index: 15;
-  margin: 0px 0.5rem 0px -2rem;
+  margin: 0px 0 0px -2rem;
 }
 li.tribe-events-nav-previous a {
   color: #f0c214;
   background-color: transparent;
-  padding: 0.5rem 3.06748%;
-  margin: 0 .5rem;
+  padding: 0.5rem 0;
+  margin: 0 0;
   /*float: right;*/
 }
 li.tribe-events-nav-previous a span {
@@ -8299,13 +8299,13 @@ li.tribe-events-nav-previous a span:before {
 li.tribe-events-nav-next a {
   position: relative;
   z-index: 15;
-  margin: 0px -2rem 0px 0.5rem;
+  margin: 0px -2rem 0px 0;
 }
 li.tribe-events-nav-next a {
   color: #f0c214;
   background-color: transparent;
-  padding: 0.5rem 3.06748%;
-  margin: 0 .5rem;
+  padding: 0.5rem 0;
+  margin: 0 0;
   /*float: right;*/
 }
 li.tribe-events-nav-next a span {
@@ -9746,6 +9746,11 @@ body.search .search-title {
 
 .search-no-results .post-content {
   display: none;
+}
+
+.search-title {
+  position: absolute;
+  left: -9999px;
 }
 
 .site-header {
