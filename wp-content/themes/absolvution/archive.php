@@ -47,14 +47,12 @@ get_header();
             _e( 'Archives', 'absolvution' );
 
           endif;
-          /*
-           *print_r($term);
-           *print_r($parent);
-           */
+          print_r($term);
+          print_r($parent);
         ?>
       </h1>
 
-      <?php if ( $term->slug=='drinks' && $parent->slug!='foods' ) { ?>
+      <?php if ( $term->slug=='drinks' || $parent->slug == 'wine') { ?>
         <div class="menu"><?php
           $drinks_nav_menu = wp_nav_menu(
             array(
@@ -64,10 +62,13 @@ get_header();
               'theme_location' => 'drinks-menu',
               'fallback_cb' => '__return_false',
             )
-          ); ?>
+          );
+        ?>
         </div>
+
       <?php
-        } elseif ($term->slug=='wine' && $term->slug!='drinks' ) {
+      }
+        if ($term->slug=='wine' && strpos($req, 'drinks')==false) {
         //if ($parent->slug!='wine' && $parent->slug!='foods' && strpos($req, 'drinks') != true && strpos($req, 'menu') == true) {
         ?>
           <div class="menu"><?php
