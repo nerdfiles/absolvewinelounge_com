@@ -50,7 +50,7 @@ get_header();
         ?>
       </h1>
 
-      <?php if ( $term->slug=='drinks' || $parent->slug == 'wine') { ?>
+      <?php if ( strpos($req, 'wine') == false && ($parent->slug=='drinks' || $parent->slug == 'wine') ) { ?>
         <div class="menu"><?php
           $drinks_nav_menu = wp_nav_menu(
             array(
