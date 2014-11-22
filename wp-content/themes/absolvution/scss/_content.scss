@@ -660,4 +660,5 @@ body .site {
 .menu-wines-introduction-widgets + .pagination {
   display: none;
 }
-body.term-wine .pagination { display: none; }
+
+.tribe-mobile-container { @include span-columns(10); @include shift(1); }
