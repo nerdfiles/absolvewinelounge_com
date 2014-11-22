@@ -111,31 +111,38 @@ if ( $type == 'bot' ) {
         //print_r($termchildren);
         if ( ! empty( $product_terms ) ) {
           if ( ! is_wp_error( $product_terms ) ) {
-              if (sizeof($product_terms) <= 4 ) {
+              $counter = 0;
+              //if (sizeof($product_terms) <= 4 ) {
                 echo '<ul>';
                 foreach( $product_terms as $term ) {
-                  $term_id = get_term_by('id', $term->parent, 'menu');
-                  if ( '' != $term->parent && 'regions' != $term->slug && 'wine' != $term->slug ) {
-                    if ( is_tax('menu', $term->slug) ) {
-                    } else {
-                      echo '<li>' . $term->name . '</li>';
+                  $counter += 1;
+                  if ($counter < 4) {
+                    $term_id = get_term_by('id', $term->parent, 'menu');
+                    if ( '' != $term->parent && 'regions' != $term->slug && 'wine' != $term->slug ) {
+                      if ( is_tax('menu', $term->slug) ) {
+                      } else {
+                        echo '<li>' . $term->name . '</li>';
+                      }
                     }
                   }
                 }
+                $counter = 0;
                 echo '</ul>';
-              } else {
-                echo '<select class="restrict">';
-                foreach( $product_terms as $term ) {
-                  $term_id = get_term_by('id', $term->parent, 'menu');
-                  if ( '' != $term->parent && 'regions' != $term->slug && 'wine' != $term->slug ) {
-                    if ( is_tax('menu', $term->slug) ) {
-                    } else {
-                      echo '<option onChange="document.location.href=this.options[this.selectedIndex].value;">' . $term->name . '</option>';
-                    }
-                  }
-                }
-                echo '</select>';
-              }
+              /*
+               *} else {
+               *  echo '<select class="restrict">';
+               *  foreach( $product_terms as $term ) {
+               *    $term_id = get_term_by('id', $term->parent, 'menu');
+               *    if ( '' != $term->parent && 'regions' != $term->slug && 'wine' != $term->slug ) {
+               *      if ( is_tax('menu', $term->slug) ) {
+               *      } else {
+               *        echo '<option onChange="document.location.href=this.options[this.selectedIndex].value;">' . $term->name . '</option>';
+               *      }
+               *    }
+               *  }
+               *  echo '</select>';
+               *}
+               */
           }
         }
       ?>
