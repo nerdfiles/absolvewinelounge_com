@@ -8283,7 +8283,7 @@ li.tribe-events-nav-previous a {
   color: #f0c214;
   background-color: transparent;
   padding: 0.5rem 0;
-  margin: 0 0;
+  margin: 0 .5rem;
   /*float: right;*/
 }
 li.tribe-events-nav-previous a span {
@@ -8305,7 +8305,7 @@ li.tribe-events-nav-next a {
   color: #f0c214;
   background-color: transparent;
   padding: 0.5rem 0;
-  margin: 0 0;
+  margin: 0 .5rem;
   /*float: right;*/
 }
 li.tribe-events-nav-next a span {
