@@ -687,7 +687,7 @@ body.home {
     @include clearfix;
     ul {
       @include span-columns(8);
-      @include shift(2);
+      @include shift(1.75);
       @include clearfix;
       border-bottom: 3px double #F0C214;
       li {
