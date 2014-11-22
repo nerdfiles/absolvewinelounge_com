@@ -851,7 +851,7 @@ body.login #lostpasswordform {
 .menu-foods-introduction-widgets,
 .menu-drinks-introduction-widgets { 
   @include span-columns(10);
-  @include shift(.5);
+  @include shift(.75);
   ul {
     list-style: none;
     margin: 0;
