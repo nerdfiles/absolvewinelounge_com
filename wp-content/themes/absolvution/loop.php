@@ -116,7 +116,7 @@ if ( $type == 'bot' ) {
                 echo '<ul>';
                 foreach( $product_terms as $term ) {
                   $counter += 1;
-                  if ($counter < 4) {
+                  if ($counter < 6) {
                     $term_id = get_term_by('id', $term->parent, 'menu');
                     if ( '' != $term->parent && 'regions' != $term->slug && 'wine' != $term->slug ) {
                       if ( is_tax('menu', $term->slug) ) {
