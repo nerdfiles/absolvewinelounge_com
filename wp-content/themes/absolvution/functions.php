@@ -387,7 +387,7 @@ function wine_menus_archive( $query ) {
     }
 
     if ( $query->is_tax( 'menu', 'drinks' ) && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', 30 );
+        $query->set( 'posts_per_page', 100 );
         $query->set( 'post_type', array( 'menu_item' ) );
         $query->set( 'tax_query', array(
             'relation' => 'AND',
@@ -401,7 +401,7 @@ function wine_menus_archive( $query ) {
     }
 
     if ( $query->is_tax( 'menu', 'by-the-glass' ) && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', 30 );
+        $query->set( 'posts_per_page', 100 );
         $query->set( 'post_type', array( 'menu_item' ) );
         $query->set( 'tax_query', array(
             'relation' => 'AND',
@@ -415,7 +415,7 @@ function wine_menus_archive( $query ) {
     }
 
     if ( $query->is_tax( 'menu', 'wine' ) && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', 30 );
+        $query->set( 'posts_per_page', 100 );
         //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
         $query->set( 'post_type', array( 'menu_item' ) );
         $query->set( 'tax_query', array(
@@ -437,7 +437,7 @@ function wine_menus_archive( $query ) {
     }
 
     if ( ( $query->is_tax( 'menu', 'white' ) || $query->is_tax( 'menu', 'sparkling' ) || $query->is_tax( 'menu', 'dessert' ) || $query->is_tax( 'menu', 'rose' ) || $query->is_tax( 'menu', 'red' ) ) && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', 30 );
+        $query->set( 'posts_per_page', 100 );
         //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
         $query->set( 'post_type', array( 'menu_item' ) );
         $query->set( 'tax_query', array(
@@ -459,7 +459,7 @@ function wine_menus_archive( $query ) {
     }
 
     if ( $query->is_tax( 'menu', 'craft-beer' ) && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', 30 );
+        $query->set( 'posts_per_page', 100 );
         //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
         $query->set( 'post_type', array( 'menu_item' ) );
         $query->set( 'tax_query', array(
@@ -474,7 +474,7 @@ function wine_menus_archive( $query ) {
     }
 
     if ( $query->is_tax( 'menu', 'foods' ) && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', 30 );
+        $query->set( 'posts_per_page', 100 );
         //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
         $query->set( 'post_type', array( 'menu_item' ) );
         $query->set( 'tax_query', array(
@@ -496,7 +496,7 @@ function wine_menus_archive( $query ) {
     }
 
     if ( $query->is_tax( 'menu', 'charcuterie-cheese' ) && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', 30 );
+        $query->set( 'posts_per_page', 100 );
         //$terms = get_terms( 'menu', array( 'fields' => 'ids' ) );
         $query->set( 'post_type', array( 'menu_item' ) );
         $query->set( 'tax_query', array(
