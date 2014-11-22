@@ -50,7 +50,7 @@ get_header();
         ?>
       </h1>
 
-      <?php if ( is_tax( 'menu', 'drinks' ) ) { ?>
+      <?php if ( $term->slug!='wine' ) { ?>
         <div class="menu"><?php
           $drinks_nav_menu = wp_nav_menu(
             array(
@@ -62,10 +62,8 @@ get_header();
             )
           ); ?>
         </div>
-      <?php } ?>
-
       <?php
-        if (($parent->slug=='drinks'&&strpos($req, 'drinks')==false&&strpos($req, 'beer')==false)) {
+        } elseif ($term->slug=='wine' ) {
         //if ($parent->slug!='wine' && $parent->slug!='foods' && strpos($req, 'drinks') != true && strpos($req, 'menu') == true) {
         ?>
           <div class="menu"><?php
