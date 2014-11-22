@@ -6,14 +6,16 @@
  * @subpackage absolvution
  * @since absolvution 1.0
  */
-
 get_header(); ?>
 
-	<section class="page-content primary" role="main">
+  <section class="page-content primary" role="main">
 
-		<?php
-			if ( have_posts() ) : the_post();
+    <?php
+      if ( have_posts() ) : the_post();
+        $feat_image = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
     ?>
+
+        <img style="position: absolute; left: -9999px;" src="<?php echo $feat_image; ?>" />
 
         <?php get_template_part( 'loop', get_post_format() ); ?>
         <?php
@@ -95,7 +97,7 @@ get_header(); ?>
            */
         ?>
 
-				<aside class="post-aside">
+        <aside class="post-aside">
 
           <div class="post-links">
             <?php if ( is_singular( 'menu_item' ) ) { ?>
@@ -138,21 +140,21 @@ get_header(); ?>
             <?php } ?>
           </div>
 
-					<?php
-						if ( comments_open() || get_comments_number() > 0 ) :
-							comments_template( '', true );
-						endif;
-					?>
+          <?php
+            if ( comments_open() || get_comments_number() > 0 ) :
+              comments_template( '', true );
+            endif;
+          ?>
 
-				</aside><?php
+        </aside><?php
 
-			else :
+      else :
 
-				get_template_part( 'loop', 'empty' );
+        get_template_part( 'loop', 'empty' );
 
-			endif;
-		?>
+      endif;
+    ?>
 
-	</section>
+  </section>
 
 <?php get_footer(); ?>
