@@ -11259,14 +11259,14 @@ body {
   display: none;
 }
 
-.tribe-mobile-container {
+#tribe-mobile-container {
   float: left;
   display: block;
   margin-right: 3.06748%;
   width: 82.82209%;
   margin-left: 8.58896%;
 }
-.tribe-mobile-container:last-child {
+#tribe-mobile-container:last-child {
   margin-right: 0;
 }
 
