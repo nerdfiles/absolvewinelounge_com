@@ -47,8 +47,6 @@ get_header();
             _e( 'Archives', 'absolvution' );
 
           endif;
-          print_r($term);
-          print_r($parent);
         ?>
       </h1>
 
