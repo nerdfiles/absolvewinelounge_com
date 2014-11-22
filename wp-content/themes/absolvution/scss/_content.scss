@@ -654,3 +654,10 @@ body .site {
     color: #fff;
   }
 }
+
+.menu-foods-introduction-widgets + .pagination,
+.menu-drinks-introduction-widgets + .pagination,
+.menu-wines-introduction-widgets + .pagination {
+  display: none;
+}
+body.term-wine .pagination { display: none; }

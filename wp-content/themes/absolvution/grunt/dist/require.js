@@ -147,6 +147,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
     pc = $('body.home .post-content');
     nPlH = pl.height() + pc.height();
     pl.height(nPlH);
+    $('.menu-foods-introduction-widgets + .pagination, .menu-drinks-introduction-widgets + .pagination, .menu-wines-introduction-widgets + .pagination').hide();
     if (mobilecheck === false) {
       postContentHeight = $('body.home .post-content').height();
       if (mobilecheck === false) {
