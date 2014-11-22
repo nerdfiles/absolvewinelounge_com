@@ -185,7 +185,7 @@ get_header();
 
     <div class="pagination">
       <?php
-      if ( (!is_dynamic_sidebar('menu-drinks-introduction-widgets') && is_tax('menu', 'drinks'))&&(!is_dynamic_sidebar('menu-wines-introduction-widgets') && is_tax('menu', 'wine'))&&(!is_dynamic_sidebar('menu-foods-introduction-widgets') && is_tax('menu', 'foods')) ) :
+      if ( (!is_dynamic_sidebar('menu-drinks-introduction-widgets'))&&(!is_dynamic_sidebar('menu-wines-introduction-widgets'))&&(!is_dynamic_sidebar('menu-foods-introduction-widgets')) ) :
         get_template_part( 'template-part', 'pagination' );
       endif;
       ?>
