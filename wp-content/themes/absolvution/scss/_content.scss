@@ -661,4 +661,4 @@ body .site {
   display: none;
 }
 
-.tribe-mobile-container { @include span-columns(10); @include shift(1); }
+#tribe-mobile-container { @include span-columns(10); @include shift(1); }
