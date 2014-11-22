@@ -367,7 +367,7 @@ if ( class_exists( 'TribeEvents' ) ) {
 		$classes     = array();
 		$tribe_paged = ( ! empty( $_REQUEST['tribe_paged'] ) ) ? $_REQUEST['tribe_paged'] : 1;
 
-		$classes['direction'] = tribe_is_upcoming() ? 'tribe-events-nav-next' : 'tribe-events-nav-previous';
+		$classes['direction'] = tribe_is_upcoming() ? 'tribe-events-nav-previous' : 'tribe-events-nav-next';
 		$classes['side']      = 'tribe-events-nav-right';
 
 		if ( tribe_is_past() && $tribe_paged > 1 ) {
