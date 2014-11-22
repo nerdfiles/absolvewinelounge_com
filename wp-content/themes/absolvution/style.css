@@ -4514,7 +4514,7 @@ body.events-single td.wiggle:hover, .wiggle.tribe-events-ajax-loading:before, .s
   font-weight: normal;
   font-style: normal;
 }
-.fa, .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"], ol.comment-list li.bypostauthor:target a[href*="close"] .icon, li.tribe-events-nav-previous a span, li.tribe-events-nav-next a span, body.search .page-content article.type-post .post-meta:before,
+.fa, .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"], .menu-archive-widgets .menu--choose:before, .menu-archive-widgets .menu-legend:before, ol.comment-list li.bypostauthor:target a[href*="close"] .icon, li.tribe-events-nav-previous a span, li.tribe-events-nav-next a span, body.search .page-content article.type-post .post-meta:before,
 body.archive .page-content article.type-post .post-meta:before,
 body.term-happy-hour .page-content article.type-post .post-meta:before,
 body.term-wine .page-content article.type-post .post-meta:before,
@@ -4589,14 +4589,14 @@ body.term-foods .page-content article.type-post .post-meta:before, .wpcf7-submit
   float: left;
 }
 
-.fa.pull-left, .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="google"], ol.comment-list li.bypostauthor:target a[href*="close"] .pull-left.icon, li.tribe-events-nav-previous a span.pull-left, li.tribe-events-nav-next a span.pull-left, body.search .page-content article.type-post .pull-left.post-meta:before,
+.fa.pull-left, .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-left[href*="google"], .menu-archive-widgets .pull-left.menu--choose:before, .menu-archive-widgets .pull-left.menu-legend:before, ol.comment-list li.bypostauthor:target a[href*="close"] .pull-left.icon, li.tribe-events-nav-previous a span.pull-left, li.tribe-events-nav-next a span.pull-left, body.search .page-content article.type-post .pull-left.post-meta:before,
 body.archive .page-content article.type-post .pull-left.post-meta:before,
 body.term-happy-hour .page-content article.type-post .pull-left.post-meta:before,
 body.term-wine .page-content article.type-post .pull-left.post-meta:before,
 body.term-foods .page-content article.type-post .pull-left.post-meta:before, .wpcf7-submit + .pull-left.ajax-loader:before, .pull-left.wpcf7-form-control-wrap, .pull-left.sep, .pull-left.meta-container.date-posted:before, .site-meta .searchform div.pull-left::after {
   margin-right: .3em;
 }
-.fa.pull-right, .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="google"], ol.comment-list li.bypostauthor:target a[href*="close"] .pull-right.icon, li.tribe-events-nav-previous a span.pull-right, li.tribe-events-nav-next a span.pull-right, body.search .page-content article.type-post .pull-right.post-meta:before,
+.fa.pull-right, .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple a.pull-right[href*="google"], .menu-archive-widgets .pull-right.menu--choose:before, .menu-archive-widgets .pull-right.menu-legend:before, ol.comment-list li.bypostauthor:target a[href*="close"] .pull-right.icon, li.tribe-events-nav-previous a span.pull-right, li.tribe-events-nav-next a span.pull-right, body.search .page-content article.type-post .pull-right.post-meta:before,
 body.archive .page-content article.type-post .pull-right.post-meta:before,
 body.term-happy-hour .page-content article.type-post .pull-right.post-meta:before,
 body.term-wine .page-content article.type-post .pull-right.post-meta:before,
@@ -5087,7 +5087,7 @@ ol.comment-list li.bypostauthor:target a[href*="close"] .icon:before,
   content: "";
 }
 
-.fa-mail-forward:before,
+.fa-mail-forward:before, .menu-archive-widgets .menu-legend:before,
 .fa-share:before {
   content: "";
 }
@@ -5716,7 +5716,7 @@ body.term-foods .page-content article.type-post .post-meta:before, .meta-contain
   content: "";
 }
 
-.fa-mail-reply:before,
+.fa-mail-reply:before, .menu-archive-widgets .menu--choose:before,
 .fa-reply:before,
 .your-subject:before {
   content: "";
@@ -7904,21 +7904,35 @@ body.home .site-footer {
 
 .menu-archive-widgets {
   margin-bottom: 2rem;
+  *zoom: 1;
+}
+.menu-archive-widgets:before, .menu-archive-widgets:after {
+  content: " ";
+  display: table;
+}
+.menu-archive-widgets:after {
+  clear: both;
 }
 .menu-archive-widgets ul {
+  position: relative;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
+.menu-archive-widgets .menu--choose:before {
+  position: absolute;
+  left: 0;
+  margin-top: .3rem;
+  margin-left: 85.88957%;
+}
 .menu-archive-widgets .menu-legend {
-  *zoom: 1;
+  position: relative;
 }
-.menu-archive-widgets .menu-legend:before, .menu-archive-widgets .menu-legend:after {
-  content: " ";
-  display: table;
-}
-.menu-archive-widgets .menu-legend:after {
-  clear: both;
+.menu-archive-widgets .menu-legend:before {
+  position: absolute;
+  left: 0;
+  margin-top: .3rem;
+  margin-left: 6.87117%;
 }
 .menu-archive-widgets .menu-legend ul {
   float: left;
@@ -7927,7 +7941,7 @@ body.home .site-footer {
   width: 65.64417%;
   margin-left: 15.03067%;
   *zoom: 1;
-  border-bottom: 3px double #F0C214;
+  border-bottom: 3px double #2E6F89;
 }
 .menu-archive-widgets .menu-legend ul:last-child {
   margin-right: 0;
@@ -7945,6 +7959,7 @@ body.home .site-footer {
   margin-right: 3.06748%;
   width: 22.69939%;
   text-align: center;
+  padding-bottom: .5rem;
 }
 .menu-archive-widgets .menu-legend ul li:last-child {
   margin-right: 0;
@@ -8362,7 +8377,7 @@ div.post-links .container {
 div.post-links .container:last-child {
   margin-right: 0;
 }
-.tribe-events-nav-previous .fa, .tribe-events-nav-previous .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple .tribe-events-nav-previous a[href*="twitter"], .tribe-events-nav-previous .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple .tribe-events-nav-previous a[href*="facebook"], .tribe-events-nav-previous .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple .tribe-events-nav-previous a[href*="pinterest"], .tribe-events-nav-previous .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"], .home-followup-widgets .home--social #acurax_si_widget_simple .tribe-events-nav-previous a[href*="google"], .tribe-events-nav-previous ol.comment-list li.bypostauthor:target a[href*="close"] .icon, ol.comment-list li.bypostauthor:target a[href*="close"] .tribe-events-nav-previous .icon, li.tribe-events-nav-previous a span, .tribe-events-nav-previous li.tribe-events-nav-next a span, li.tribe-events-nav-next a .tribe-events-nav-previous span, .tribe-events-nav-previous body.search .page-content article.type-post .post-meta:before, body.search .page-content article.type-post .tribe-events-nav-previous .post-meta:before,
+.tribe-events-nav-previous .fa, .tribe-events-nav-previous .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="twitter"], .home-followup-widgets .home--social #acurax_si_widget_simple .tribe-events-nav-previous a[href*="twitter"], .tribe-events-nav-previous .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="facebook"], .home-followup-widgets .home--social #acurax_si_widget_simple .tribe-events-nav-previous a[href*="facebook"], .tribe-events-nav-previous .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="pinterest"], .home-followup-widgets .home--social #acurax_si_widget_simple .tribe-events-nav-previous a[href*="pinterest"], .tribe-events-nav-previous .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"], .home-followup-widgets .home--social #acurax_si_widget_simple .tribe-events-nav-previous a[href*="google"], .tribe-events-nav-previous .menu-archive-widgets .menu--choose:before, .menu-archive-widgets .tribe-events-nav-previous .menu--choose:before, .tribe-events-nav-previous .menu-archive-widgets .menu-legend:before, .menu-archive-widgets .tribe-events-nav-previous .menu-legend:before, .tribe-events-nav-previous ol.comment-list li.bypostauthor:target a[href*="close"] .icon, ol.comment-list li.bypostauthor:target a[href*="close"] .tribe-events-nav-previous .icon, li.tribe-events-nav-previous a span, .tribe-events-nav-previous li.tribe-events-nav-next a span, li.tribe-events-nav-next a .tribe-events-nav-previous span, .tribe-events-nav-previous body.search .page-content article.type-post .post-meta:before, body.search .page-content article.type-post .tribe-events-nav-previous .post-meta:before,
 .tribe-events-nav-previous body.archive .page-content article.type-post .post-meta:before,
 body.archive .page-content article.type-post .tribe-events-nav-previous .post-meta:before,
 .tribe-events-nav-previous body.term-happy-hour .page-content article.type-post .post-meta:before,
@@ -8380,6 +8395,10 @@ body.term-foods .page-content article.type-post .tribe-events-nav-previous .post
 .home-followup-widgets .home--social #acurax_si_widget_simple .tribe-events-nav-next a[href*="pinterest"],
 .tribe-events-nav-next .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"],
 .home-followup-widgets .home--social #acurax_si_widget_simple .tribe-events-nav-next a[href*="google"],
+.tribe-events-nav-next .menu-archive-widgets .menu--choose:before,
+.menu-archive-widgets .tribe-events-nav-next .menu--choose:before,
+.tribe-events-nav-next .menu-archive-widgets .menu-legend:before,
+.menu-archive-widgets .tribe-events-nav-next .menu-legend:before,
 .tribe-events-nav-next ol.comment-list li.bypostauthor:target a[href*="close"] .icon,
 ol.comment-list li.bypostauthor:target a[href*="close"] .tribe-events-nav-next .icon,
 .tribe-events-nav-next li.tribe-events-nav-previous a span,
@@ -8410,6 +8429,10 @@ div.post-links .home-followup-widgets .home--social #acurax_si_widget_simple a[h
 .home-followup-widgets .home--social #acurax_si_widget_simple div.post-links a[href*="pinterest"],
 div.post-links .home-followup-widgets .home--social #acurax_si_widget_simple a[href*="google"],
 .home-followup-widgets .home--social #acurax_si_widget_simple div.post-links a[href*="google"],
+div.post-links .menu-archive-widgets .menu--choose:before,
+.menu-archive-widgets div.post-links .menu--choose:before,
+div.post-links .menu-archive-widgets .menu-legend:before,
+.menu-archive-widgets div.post-links .menu-legend:before,
 div.post-links ol.comment-list li.bypostauthor:target a[href*="close"] .icon,
 ol.comment-list li.bypostauthor:target a[href*="close"] div.post-links .icon,
 div.post-links li.tribe-events-nav-previous a span,
