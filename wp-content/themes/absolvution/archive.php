@@ -104,7 +104,7 @@ get_header();
         <?php get_template_part( 'template-part', 'pagination' ); ?>
       </div-->
 
-      <?php if ( is_tax( 'menu', 'charcuterie-cheese' ) || is_tax( 'menu', 'cheese' ) ) { ?>
+      <?php if ( is_tax( 'menu', 'charcuterie-cheese' ) || is_tax( 'menu', 'cheese' ) || is_tax( 'menu', 'charcuterie' ) ) { ?>
         <div class="archive-widgets menu-archive-widgets">
           <ul class="inner"><?php
             if ( function_exists( 'dynamic_sidebar' ) ) :
