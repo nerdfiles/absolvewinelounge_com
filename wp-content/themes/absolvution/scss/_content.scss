@@ -662,3 +662,24 @@ body .site {
 }
 
 #tribe-mobile-container { @include span-columns(10); @include shift(1); }
+
+body.single .short-description-enabled {
+  @include span-columns(12);
+  @include shift(.75);
+  font-style: italic;
+  color: #ccc;
+}
+body.archive article.short-description-enabled {
+  .menu-item-categories {
+    top: 4.2rem !important;
+  }
+  height: 7rem;
+}
+body.archive .post-content div.short-description p {
+  display: block;
+  margin-top: 3.5rem;
+  margin-left: .25rem;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  word-spacing: .01rem;
+}

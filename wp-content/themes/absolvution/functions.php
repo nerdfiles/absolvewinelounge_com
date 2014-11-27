@@ -519,8 +519,14 @@ function check_image( $class = '' ) {
   } else {
     $class[] = 'no-feature-image';
   }
-  return $class;
+  global $post;
+  if (get_post_meta($post->ID, 'short_desc', true) != '') {
+    $class[] = "short-description-enabled";
+  } else {
+    $class[] = "short-description-disabled";
   }
+  return $class;
+}
 add_filter('post_class', 'check_image');
 
 
