@@ -18,6 +18,15 @@ get_header(); ?>
         <img style="position: absolute; left: -9999px;" src="<?php echo $feat_image; ?>" />
 
         <?php get_template_part( 'loop', get_post_format() ); ?>
+
+        <div class="short-description">
+          <p>
+          <?php
+              echo get_post_meta(get_the_ID(), 'short_desc', true);
+          ?>
+          </p>
+        </div>
+
         <?php
           $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
           if ( ! empty( $product_terms ) ) {
@@ -33,31 +42,6 @@ get_header(); ?>
             </span>
           </div>
         <?php } ?>
-
-        <?php
-          /*
-           *$tags = get_the_term_list();
-           *if ( ! empty( $tags ) ) {
-           *  if(get_the_term_list()) {
-           *    ?>
-           *    <div class="menu-item-tags">
-           *    <ul>
-           *    <?php
-           *      $posttags = get_the_terms();
-           *      if ($posttags) {
-           *        foreach($posttags as $tag) {
-           *          echo '<li>' . $tag->name . '</li>';
-           *        }
-           *      }
-           *      //echo get_the_term_list('<ul><li>','</li><li>','</li></ul>');
-           *    ?>
-           *    </ul>
-           *    </div>
-           *    <?php
-           *  }
-           *} else {
-           */
-        ?>
 
         <div class="menu-item-categories">
         <?php

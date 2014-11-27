@@ -152,8 +152,8 @@ class MenuItemPostType {
 	  wp_nonce_field( plugin_basename(__FILE__), 'noncename' );  // Use nonce for verification
 	?>
 		<p>
-	  <label for="data[short_title]">Short Title</label>
-	  <input type="text" id= "data[short_title]" name="data[short_title]" value="<?php echo $short_title[0] ?>"  placeholder="5-6 Word Title" size="75" />
+	  <label for="data[short_desc]">Short Descrption</label>
+	  <input type="text" id= "data[short_desc]" name="data[short_desc]" value="<?php echo $short_desc[0] ?>"  placeholder="5-6 Description" size="75" />
 	  </p>
 
 		<p>

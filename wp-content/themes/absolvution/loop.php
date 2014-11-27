@@ -169,6 +169,14 @@ if ( $type == 'bot' ) {
         }
       ?-->
 
+      <div class="short-description">
+        <p>
+        <?php
+            echo get_post_meta(get_the_ID(), 'short_desc', true);
+        ?>
+        </p>
+      </div>
+
       <!-- Item Price Specification -->
       <div class="price-tag">
       <?php
