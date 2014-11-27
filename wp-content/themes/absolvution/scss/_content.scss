@@ -663,9 +663,9 @@ body .site {
 
 #tribe-mobile-container { @include span-columns(10); @include shift(1); }
 
-body.single .short-description-enabled {
+body.single div.short-description {
   @include span-columns(12);
-  @include shift(.75);
+  @include shift(.65);
   font-style: italic;
   color: #ccc;
 }
