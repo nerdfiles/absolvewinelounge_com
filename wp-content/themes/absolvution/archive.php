@@ -86,7 +86,7 @@ get_header();
       ?>
 
       <?php
-        if ($parent->slug == 'charcuterie-cheese' || $parent->slug == 'foods') {
+        if ($parent->slug == 'charcuterie-cheese' || $parent->slug == 'foods' || $term->slug == 'foods') {
       ?>
         <div class="menu"><?php
           $foods_nav_menu = wp_nav_menu(
