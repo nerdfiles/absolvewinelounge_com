@@ -168,6 +168,7 @@ if ( $type == 'bot' ) {
           }
         }
       ?-->
+      <?php if (get_post_meta(get_the_ID(), 'item_weight', true) == '') { ?>
 
       <div class="short-description">
         <p>
@@ -176,6 +177,8 @@ if ( $type == 'bot' ) {
         ?>
         </p>
       </div>
+
+      <?php } ?>
 
       <!-- Item Price Specification -->
       <div class="price-tag">

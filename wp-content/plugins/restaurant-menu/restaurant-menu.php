@@ -45,7 +45,21 @@ class MenuItemPostType {
 		# Save entered data
 		add_action('save_post', array( &$this, 'save_postdata') );
 
+    add_filter( 'manage_edit-menu_item', array( &$this, 'edit_menu_items' ) );
+
 	}
+
+  function edit_menu_items ( $columns ) {
+    print_r($columns);
+    $columns = array(
+      'cb' => '<input type="checkbox" />',
+      'title' => __( 'Menu Item' ),
+      'item_weight' => __( 'Weight' ),
+      'item_price' => __( 'Price' ),
+      'date' => __( 'Date' )
+    );
+    return $columns;
+  }
 
 	# @credit: http://www.wpinsideout.com/advanced-custom-post-types-php-class-integration
   function init($options = null){
@@ -154,6 +168,19 @@ class MenuItemPostType {
 		<p>
 	  <label for="data[short_desc]">Short Descrption</label>
 	  <input type="text" id= "data[short_desc]" name="data[short_desc]" value="<?php echo $short_desc[0] ?>"  placeholder="5-6 Description" size="75" />
+	  </p>
+
+		<p>
+    <label for="data[item_weight]">Item Weight</label>
+    <input
+      type="number"
+      step="any"
+      min="0"
+      id= "data[item_weight]"
+      name="data[item_weight]"
+      value="<?php echo $item_weight[0] ?>"
+      placeholder="..."
+      size="25" />
 	  </p>
 
 		<p>
