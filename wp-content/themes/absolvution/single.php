@@ -19,13 +19,15 @@ get_header(); ?>
 
         <?php get_template_part( 'loop', get_post_format() ); ?>
 
-        <div class="short-description">
-          <p>
-          <?php
-              echo get_post_meta(get_the_ID(), 'short_desc', true);
-          ?>
-          </p>
-        </div>
+        <?php if (get_post_meta(get_the_ID(), 'item_weight', true) == '') { ?>
+          <div class="short-description">
+            <p>
+            <?php
+                echo get_post_meta(get_the_ID(), 'short_desc', true);
+            ?>
+            </p>
+          </div>
+        <?php } ?>
 
         <?php
           $product_terms = wp_get_object_terms( get_the_ID(),  'menu' );
