@@ -87,7 +87,7 @@ get_header();
 
       <?php
         //if ($parent->slug == 'charcuterie-cheese' || $parent->slug == 'foods' || $term->slug == 'foods' ) {
-        if (is_tax('menu', 'food')) {
+        if (is_tax('menu', 'foods')) {
       ?>
         <div class="menu"><?php
           $foods_nav_menu = wp_nav_menu(
