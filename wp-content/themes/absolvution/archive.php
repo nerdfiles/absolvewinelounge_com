@@ -194,6 +194,8 @@ get_header();
   </section>
 
 <?php
-wp_reset_postdata();
-wp_reset_query();
+/*
+ *wp_reset_postdata();
+ *wp_reset_query();
+ */
 get_footer(); ?>
