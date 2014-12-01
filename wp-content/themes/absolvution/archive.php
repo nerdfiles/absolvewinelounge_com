@@ -7,16 +7,13 @@
  * @since absolvution 1.0
  */
 get_header();
+$req = $_SERVER['REQUEST_URI'];
 ?>
 
 	<section class="page-content primary" role="main">
 
     <?php
       if ( have_posts() ) :
-      $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
-      $parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
-      $children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
-      $req = $_SERVER['REQUEST_URI'];
     ?>
       <h1 class="archive-title">
         <?php
@@ -26,7 +23,9 @@ get_header();
           elseif ( is_tag() ):
             printf( __( 'Tag: %s', 'absolvution' ), single_tag_title( '', false ) );
           elseif ( is_tax() ):
-            $term     = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+            $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
+            $parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
+            $children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
             $taxonomy = get_taxonomy( get_query_var( 'taxonomy' ) );
             if (is_tax('menu')) {
               wp_title( '', true, 'right' );
