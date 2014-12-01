@@ -6,16 +6,18 @@
  * @subpackage absolvution
  * @since absolvution 1.0
  */
-$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
-$parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
-$children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
-$req = $_SERVER['REQUEST_URI'];
 get_header();
 ?>
 
 	<section class="page-content primary" role="main">
 
-    <?php if ( have_posts() ) : ?>
+    <?php
+      if ( have_posts() ) :
+      $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
+      $parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
+      $children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
+      $req = $_SERVER['REQUEST_URI'];
+    ?>
       <h1 class="archive-title">
         <?php
           if ( is_category() ):
