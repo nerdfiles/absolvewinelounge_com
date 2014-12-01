@@ -525,8 +525,6 @@ function check_image( $class = '' ) {
   } else {
     $class[] = "short-description-disabled";
   }
-  wp_reset_postdata();
-  wp_reset_query();
   return $class;
 }
 add_filter('post_class', 'check_image');
