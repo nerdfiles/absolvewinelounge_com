@@ -86,7 +86,7 @@ get_header();
       ?>
 
       <?php
-        if ($parent->slug == 'foods' || $term->slug == 'foods' ) {
+        if ($parent->slug == 'charcuterie-cheese' || $parent->slug == 'foods' || $term->slug == 'foods' ) {
       ?>
         <div class="menu"><?php
           $foods_nav_menu = wp_nav_menu(
@@ -194,6 +194,8 @@ get_header();
   </section>
 
 <?php
-wp_reset_postdata();
-wp_reset_query();
+/*
+ *wp_reset_postdata();
+ *wp_reset_query();
+ */
 get_footer(); ?>
