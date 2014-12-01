@@ -514,17 +514,19 @@ function wine_menus_archive( $query ) {
 }
 
 function check_image( $class = '' ) {
+  global $post;
   if ( has_post_thumbnail() ) {
     $class[] = 'feature-image';
   } else {
     $class[] = 'no-feature-image';
   }
-  global $post;
   if (get_post_meta($post->ID, 'short_desc', true) != '') {
     $class[] = "short-description-enabled";
   } else {
     $class[] = "short-description-disabled";
   }
+  wp_reset_postdata();
+  wp_reset_query();
   return $class;
 }
 add_filter('post_class', 'check_image');
