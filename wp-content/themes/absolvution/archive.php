@@ -23,10 +23,12 @@ $req = $_SERVER['REQUEST_URI'];
           elseif ( is_tag() ):
             printf( __( 'Tag: %s', 'absolvution' ), single_tag_title( '', false ) );
           elseif ( is_tax() ):
+
             $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); // get current term
             $parent = get_term($term->parent, get_query_var('taxonomy') ); // get parent term
             $children = get_term_children($term->term_id, get_query_var('taxonomy')); // get children
             $taxonomy = get_taxonomy( get_query_var( 'taxonomy' ) );
+
             if (is_tax('menu')) {
               wp_title( '', true, 'right' );
             } else {
@@ -52,7 +54,8 @@ $req = $_SERVER['REQUEST_URI'];
       </h1>
 
       <?php
-        if ( (strpos($req, 'wine') == false && strpos($req, 'white') == false && strpos($req, 'red') == false&& strpos($req, 'rose') == false&& strpos($req, 'sparkling') == false&& strpos($req, 'dessert') == false) && ($parent->slug=='drinks' || $parent->slug == 'wine') ) { ?>
+        if ( (strpos($req, 'wine') == false && strpos($req, 'white') == false && strpos($req, 'red') == false&& strpos($req, 'rose') == false&& strpos($req, 'sparkling') == false&& strpos($req, 'dessert') == false) && ($parent->slug=='drinks' || $parent->slug == 'wine') ) {
+      ?>
         <div class="menu"><?php
           $drinks_nav_menu = wp_nav_menu(
             array(
@@ -65,12 +68,11 @@ $req = $_SERVER['REQUEST_URI'];
           );
         ?>
         </div>
-
       <?php
       }
-        if ($term->slug=='wine' && strpos($req, 'drinks')==false) {
-        //if ($parent->slug!='wine' && $parent->slug!='foods' && strpos($req, 'drinks') != true && strpos($req, 'menu') == true) {
-        ?>
+
+      if ($term->slug=='wine' && strpos($req, 'drinks')==false) {
+      ?>
           <div class="menu"><?php
             $wine_nav_menu = wp_nav_menu(
               array(
@@ -82,16 +84,13 @@ $req = $_SERVER['REQUEST_URI'];
               )
             ); ?>
           </div>
-        <?php
-        }
+      <?php
+      }
       ?>
 
       <?php
-        echo '<!--';
-        print_r($parent);
-        print_r($term);
-        echo '-->';
-        if ($parent->slug == 'charcuterie-cheese' || $parent->slug == 'foods' || $term->slug == 'foods' ) {
+        // @TODO Why this doesn't work on the production server is beyond me.
+        if (is_tax('menu', 'foods') || $parent->slug == 'charcuterie-cheese' || $parent->slug == 'foods' || $term->slug == 'foods' ) {
       ?>
         <div class="menu"><?php
           $foods_nav_menu = wp_nav_menu(
@@ -199,6 +198,8 @@ $req = $_SERVER['REQUEST_URI'];
   </section>
 
 <?php
-wp_reset_postdata();
-wp_reset_query();
+/*
+ *wp_reset_postdata();
+ *wp_reset_query();
+ */
 get_footer(); ?>
