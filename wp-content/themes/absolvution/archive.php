@@ -86,6 +86,10 @@ get_header();
       ?>
 
       <?php
+        echo '<!--';
+        print_r($parent);
+        print_r($term);
+        echo '-->';
         if ($parent->slug == 'charcuterie-cheese' || $parent->slug == 'foods' || $term->slug == 'foods' ) {
       ?>
         <div class="menu"><?php
