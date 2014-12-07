@@ -99,7 +99,7 @@ class TribeEventsListWidget extends WP_Widget {
 				'tribe_events_list_widget_query_args', array(
 					'eventDisplay'   => 'all',
           'posts_per_page' => $limit,
-          'order' => 'DESC'
+          'order' => 'ASC'
 				)
 			)
 		);
