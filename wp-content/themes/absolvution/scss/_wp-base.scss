@@ -528,6 +528,9 @@ body.search {
         .post-title {
           height: 5rem;
           zoom: 1 !important;
+          a {
+            width: 100% !important;
+          }
         }
         .price-tag {
           top: 3rem;
@@ -666,6 +669,9 @@ body.term-foods {
         .post-title {
           height: 5rem;
           zoom: 1 !important;
+          a {
+            width: 100% !important;
+          }
         }
         .price-tag {
           top: 3rem;
