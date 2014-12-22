@@ -320,7 +320,7 @@ module.exports = function(grunt) {
       'sass:editorstyles',
       'clean:dist',
       'copyto:dist',
-      'notify:dist'
+      //'notify:dist'
     ]);
   });
 
