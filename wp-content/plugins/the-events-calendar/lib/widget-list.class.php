@@ -104,17 +104,18 @@ class TribeEventsListWidget extends WP_Widget {
 			)
 		);
     $count_diff = count( $post );
-		$posts_diff = tribe_get_events(
+		$posts_past = tribe_get_events(
 			apply_filters(
 				'tribe_events_list_widget_query_args', array(
 					'eventDisplay'   => 'all',
-          'posts_per_page' => ($limit - $count_diff),
-          'order' => 'ASC'
+          'posts_per_page' => ($count_diff),
+          'offset' => ($limit - $count_diff),
+          'order' => 'DESC'
 				)
 			)
 		);
 
-    $posts_construct = array_merge($posts_diff, $posts);
+    $posts_construct = array_merge($posts_past, $posts);
     $posts = $posts_construct;
 
 		// If no posts, and the don't show if no posts checked, let's bail
