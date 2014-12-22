@@ -115,7 +115,7 @@ class TribeEventsListWidget extends WP_Widget {
 		);
 
     $posts_construct = array_merge($posts_diff, $posts);
-    print_r( $posts_construct );
+    $posts = $posts_construct;
 
 		// If no posts, and the don't show if no posts checked, let's bail
 		if ( ! $posts && $no_upcoming_events ) {
